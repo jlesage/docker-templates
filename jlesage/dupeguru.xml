@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>dupeguru</Name>
+  <Name>dupeGuru</Name>
   <Repository>jlesage/dupeguru</Repository>
   <Registry>https://hub.docker.com/r/jlesage/dupeguru/</Registry>
   <Network>bridge</Network>
