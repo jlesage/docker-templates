@@ -24,8 +24,14 @@ The graphical user interface (GUI) is accessible through a modern web browser or
   <Changes>
   [center][font size=5]Change Log[/font][/center]
 
-  [font size=4][b]2017-04-07[/b][/font]
-    - Initial release.
+  [font size=4][b]2017-05-05 - v1.0.1[/b][/font]
+  [ul]
+    [li]Some configuration files used by dupeGuru were not saved outside the container.[/li]
+  [ul]
+  [font size=4][b]2017-04-07 - v1.0.0[/b][/font]
+  [ul]
+    [li]Initial release.[/li]
+  [/ul]
   </Changes>
   <Networking>
     <Mode>bridge</Mode>
