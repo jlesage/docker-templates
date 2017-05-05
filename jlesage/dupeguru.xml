@@ -20,14 +20,24 @@ The graphical user interface (GUI) is accessible through a modern web browser or
 The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (less than 100MB).</Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2017-04-07</Date>
+  <Date>2017-05-05</Date>
   <Changes>
   [center][font size=5]Change Log[/font][/center]
 
+  [font size=4][b]2017-05-05 - v1.0.2[/b][/font]
+  [ul]
+    [li]Now using baseimage v1.0.1, which bring the following fixes:
+      [ul]
+        [li]Fixed issue where VNC password was still applied after removal of the VNC password file from /config.[/li]
+        [li]Fixed mouse handling when accessing the container's GUI via Microsoft Internet Explorer/Edge.[/li]
+        [li]Fixed a crash of the build-in VNC server.[/li]
+      [/ul]
+    [/li]
+  [/ul]
   [font size=4][b]2017-05-05 - v1.0.1[/b][/font]
   [ul]
     [li]Some configuration files used by dupeGuru were not saved outside the container.[/li]
-  [ul]
+  [/ul]
   [font size=4][b]2017-04-07 - v1.0.0[/b][/font]
   [ul]
     [li]Initial release.[/li]
