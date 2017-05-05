@@ -61,6 +61,16 @@ The graphical user interface (GUI) is accessible through a modern web browser or
   </Data>
   <Environment>
     <Variable>
+      <Value>1280</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>768</Value>
+      <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>99</Value>
       <Name>USER_ID</Name>
       <Mode/>
@@ -73,6 +83,8 @@ The graphical user interface (GUI) is accessible through a modern web browser or
   </Environment>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This is where files and folders on your host are made available to dupeGuru.&amp;lt;br&amp;gt;&#13;&#10;Container Path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Trash" Target="/trash" Default="" Mode="rw" Description="This is where dupeGuru moves files when they are sent to trash.  This can be removed if a trash is not wanted (i.e. if you want files to be permanently deleted).&amp;lt;br&amp;gt;&#13;&#10;Container path: /trash" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/trash</Config>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of dupeGuru's application window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of dupeGuru's application window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user dupeGuru runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group dupeGuru runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/dupeguru" Mode="rw" Description="This is where dupeGuru stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/dupeguru</Config>
