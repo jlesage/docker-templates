@@ -22,25 +22,25 @@ The graphical user interface (GUI) is accessible through a modern web browser or
   <Project>https://www.hardcoded.net/dupeguru/</Project>
   <Date>2017-05-05</Date>
   <Changes>
-  [center][font size=5]Change Log[/font][/center]
+  [center][font size=4]Change Log[/font][/center]
 
-  [font size=4][b]2017-05-05 - v1.0.2[/b][/font]
-  [ul]
-    [li]Now using baseimage v1.0.1, which bring the following fixes:
-      [ul]
-        [li]Fixed issue where VNC password was still applied after removal of the VNC password file from /config.[/li]
-        [li]Fixed mouse handling when accessing the container's GUI via Microsoft Internet Explorer/Edge.[/li]
-        [li]Fixed a crash of the build-in VNC server.[/li]
+  [font size=3 style='margin:0;'][b]2017-05-05 - v1.0.2[/b][/font]
+  [ul style='margin:0;']
+    [li style='margin:0;']Now using baseimage v1.0.1, which bring the following fixes:
+      [ul style='margin:0;']
+        [li style='margin:0;']Fixed issue where VNC password was still applied after removal of the VNC password file from /config.[/li]
+        [li style='margin:0;']Fixed mouse handling when accessing the container's GUI via Microsoft Internet Explorer/Edge.[/li]
+        [li style='margin:0;']Fixed a crash of the build-in VNC server.[/li]
       [/ul]
     [/li]
   [/ul]
-  [font size=4][b]2017-05-05 - v1.0.1[/b][/font]
-  [ul]
-    [li]Some configuration files used by dupeGuru were not saved outside the container.[/li]
+  [font size=3 style='margin:0;'][b]2017-05-05 - v1.0.1[/b][/font]
+  [ul style='margin:0;']
+    [li style='margin:0;']Some configuration files used by dupeGuru were not saved outside the container.[/li]
   [/ul]
-  [font size=4][b]2017-04-07 - v1.0.0[/b][/font]
-  [ul]
-    [li]Initial release.[/li]
+  [font size=3 style='margin:0;'][b]2017-04-07 - v1.0.0[/b][/font]
+  [ul style='margin:0;']
+    [li style='margin:0;']Initial release.[/li]
   [/ul]
   </Changes>
   <Networking>
