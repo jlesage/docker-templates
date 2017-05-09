@@ -88,7 +88,7 @@ Now using baseimage v1.0.1, which bring the following fixes:
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This is where files and folders on your host are made available to dupeGuru.&amp;lt;br&amp;gt;&#13;&#10;Container Path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This is where files and folders on your host are made available to dupeGuru.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Trash" Target="/trash" Default="" Mode="rw" Description="This is where dupeGuru moves files when they are sent to trash.  This can be removed if a trash is not wanted (i.e. if you want files to be permanently deleted).&amp;lt;br&amp;gt;&#13;&#10;Container path: /trash" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/trash</Config>
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of dupeGuru's application window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of dupeGuru's application window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
