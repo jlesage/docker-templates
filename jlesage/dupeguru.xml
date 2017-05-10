@@ -22,16 +22,16 @@ The graphical user interface (GUI) is accessible through a modern web browser or
   <Project>https://www.hardcoded.net/dupeguru/</Project>
   <Date>2017-05-05</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
-[font size=3][b]v1.0.2[/b][/font]
+[font size=3][b]v1.0.2[/b] (2017-05-05)[/font]
 Now using baseimage v1.0.1, which bring the following fixes:
 - Fixed issue where VNC password was still applied after removal of the VNC password file from /config.
 - Fixed mouse handling when accessing the container's GUI via Microsoft Internet Explorer/Edge.
 - Fixed a crash of the build-in VNC server.
 
-[font size=3][b]v1.0.1[/b][/font]
+[font size=3][b]v1.0.1[/b] (2017-05-05)[/font]
 - Some configuration files used by dupeGuru were not saved outside the container.
 
-[font size=3][b]v1.0.0[/b][/font]
+[font size=3][b]v1.0.0[/b] (2017-04-07)[/font]
 - Initial release.
   </Changes>
   <Networking>
