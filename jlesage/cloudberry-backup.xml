@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CloudBerryBackup</Name>
+  <Repository>jlesage/cloudberry-backup</Repository>
+  <Registry>https://hub.docker.com/r/jlesage/cloudberry-backup/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.lime-technology.com/topic/57217-support-cloudberry-backup/</Support>
+  <Overview>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (less than 60MB).</Overview>
+  <Category>Backup:</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/cloudberry-backup-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1491905411</DateInstalled>
+  <Description>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (less than 60MB).</Description>
+  <Beta>False</Beta>
+  <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
+  <Date>2017-05-09</Date>
+  <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+  [center][font size=5]Change Log[/font][/center]
+
+[font size=3][b]v1.0.0[/b] (2017-05-09)[/font]
+    - Initial release.
+  </Changes>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7802</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7902</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/boot</HostDir>
+      <ContainerDir>/flash</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/cloudberry-backup</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1280</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>768</Value>
+      <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GROUP_ID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This is where files and folders to backup are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="Flash" Target="/flash" Default="/boot" Mode="ro" Description="This is where data on your unRAID flash device is located.  Useful to backup your unRAID configuration.&amp;lt;br&amp;gt;&#13;&#10;Container path: /flash" Type="Path" Display="always" Required="false" Mask="false">/boot</Config>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of CloudBerry Backup's application window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of CloudBerry Backup's application window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user CloudBerry Backup runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group CloudBerry Backup runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/cloudberry-backup" Mode="rw" Description="This is where CloudBerry Backup stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/cloudberry-backup</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7802" Mode="tcp" Description="Port used to access the CloudBerry Backup GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7802</Config>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7902" Mode="tcp" Description="Port used to access the CloudBerry Backup GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7902</Config>
+</Container>
