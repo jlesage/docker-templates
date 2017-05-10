@@ -18,6 +18,17 @@
   <Project>https://www.hardcoded.net/dupeguru/</Project>
   <Date>2017-05-05</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b] (2017-05-10)[/font]
+Now using baseimage v1.2.0, which bring a new UI for web access to the container:
+- Based on Bootstrap and JQuery.
+- Mobile friendly.
+- Hideable navigation bar.
+- Downscaling support.
+- Clipboard support.
+- Fullscreen toggle.
+- Draggable remote screen when it doesn't fix the client's window.
+- Virtual keyboard support on mobile.
+- Right-click via long touch on mobile.
 [font size=3][b]v1.0.2[/b] (2017-05-05)[/font]
 Now using baseimage v1.0.1, which bring the following fixes:
 - Fixed issue where VNC password was still applied after removal of the VNC password file from /config.
