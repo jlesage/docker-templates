@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>CloudBerry Backup</Name>
+  <Name>CloudBerryBackup</Name>
   <Repository>jlesage/cloudberry-backup</Repository>
   <Registry>https://hub.docker.com/r/jlesage/cloudberry-backup/</Registry>
   <Network>bridge</Network>
