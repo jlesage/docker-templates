@@ -16,7 +16,7 @@
   <Description>dupeGuru is a tool to find duplicate files on your computer. It can scan either filenames or contents. The filename scan features a fuzzy matching algorithm that can find duplicate filenames even when they are not exactly the same.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (less than 100MB).</Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2017-05-05</Date>
+  <Date>2017-05-11</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
 [font size=3][b]v1.1.2[/b] (2017-05-11)[/font]
 Now using baseimage v1.2.2, which brings the following changes:

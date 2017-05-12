@@ -16,7 +16,7 @@
   <Description>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (less than 60MB).</Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2017-05-09</Date>
+  <Date>2017-05-11</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
 [font size=3][b]v1.0.2[/b] (2017-05-11)[/font]
 Now using baseimage v1.2.2, which brings the following changes:
