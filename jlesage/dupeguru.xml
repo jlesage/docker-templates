@@ -111,6 +111,11 @@ Now using baseimage v1.0.1, which brings the following fixes:
       <Name>GROUP_ID</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This is where files and folders on your host are made available to dupeGuru.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Trash" Target="/trash" Default="" Mode="rw" Description="This is where dupeGuru moves files when they are sent to trash.  This can be removed if a trash is not wanted (i.e. if you want files to be permanently deleted).&amp;lt;br&amp;gt;&#13;&#10;Container path: /trash" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/trash</Config>
@@ -119,6 +124,7 @@ Now using baseimage v1.0.1, which brings the following fixes:
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user dupeGuru runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group dupeGuru runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/dupeguru" Mode="rw" Description="This is where dupeGuru stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/dupeguru</Config>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which dupeGuru should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="WEB Port for GUI" Target="5800" Default="7801" Mode="tcp" Description="Port used to access the dupeGuru GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7801</Config>
   <Config Name="VNC Port for GUI" Target="5900" Default="7901" Mode="tcp" Description="Port used to access the dupeGuru GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7901</Config>
 </Container>
