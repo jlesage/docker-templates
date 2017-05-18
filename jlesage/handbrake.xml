@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>HandBrake</Name>
+  <Repository>jlesage/handbrake</Repository>
+  <Registry>https://hub.docker.com/r/jlesage/handbrake/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.lime-technology.com/topic/57420-support-handbrake/</Support>
+  <Overview>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.  Also, being based on Alpine Linux, size of this container is very small (less than 80MB).</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/handbrake-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1491228523</DateInstalled>
+  <Description>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.  Also, being based on Alpine Linux, size of this container is very small (less than 80MB).</Description>
+  <Beta>False</Beta>
+  <Project>https://handbrake.fr/</Project>
+  <Date>2017-05-18</Date>
+  <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.0.1[/b] (2017-05-18)[/font]
+- The watch folder is now monitored without inotify for better compatibility.
+
+[font size=3][b]v1.0.0[/b] (2017-05-18)[/font]
+- Initial release.
+  </Changes>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7803</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7903</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/usr</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/watch</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/output</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/handbrake</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Very Fast 1080p30</Value>
+      <Name>AUTOMATED_CONVERSION_PRESET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>mp4</Value>
+      <Name>AUTOMATED_CONVERSION_FORMAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1280</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>768</Value>
+      <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GROUP_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Storage" Target="/storage" Default="/mnt/usr" Mode="ro" Description="This is where video files to be converted are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/usr</Config>
+  <Config Name="Output Folder" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos.  Also used by the automatic video converter.&amp;lt;br&amp;gt;&#13;&#10;Container path: /output" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Watch Folder" Target="/watch" Default="" Mode="ro" Description="This is the watch folder of the automatic video converter.  Any video copied into this folder will be automatically converted by HandBrake.&amp;lt;br&amp;gt;&#13;&#10;Container path: /watch" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false">Very Fast 1080p30</Config>
+  <Config Name="Automatic Video Converter Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="false" Mask="false">mp4</Config>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of HandBrake's application window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of HandBrake's application window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user HandBrake runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group HandBrake runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which dupeGuru should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where HandBrake stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/handbrake</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the HandBrake GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7803</Config>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the HandBrake GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7903</Config>
+</Container>
