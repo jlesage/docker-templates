@@ -41,7 +41,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/usr</HostDir>
+      <HostDir>/mnt/user</HostDir>
       <ContainerDir>/storage</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
@@ -98,7 +98,7 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Storage" Target="/storage" Default="/mnt/usr" Mode="ro" Description="This is where video files to be converted are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/usr</Config>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This is where video files to be converted are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Output Folder" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos.  Also used by the automatic video converter.&amp;lt;br&amp;gt;&#13;&#10;Container path: /output" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Watch Folder" Target="/watch" Default="" Mode="ro" Description="This is the watch folder of the automatic video converter.  Any video copied into this folder will be automatically converted by HandBrake.&amp;lt;br&amp;gt;&#13;&#10;Container path: /watch" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false">Very Fast 1080p30</Config>
