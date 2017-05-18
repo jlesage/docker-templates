@@ -19,10 +19,10 @@
   <Date>2017-05-18</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
 [font size=3][b]v1.0.1[/b] (2017-05-18)[/font]
-- The watch folder is now monitored without inotify for better compatibility.
+  - The watch folder is now monitored without inotify for better compatibility.
 
 [font size=3][b]v1.0.0[/b] (2017-05-18)[/font]
-- Initial release.
+  - Initial release.
   </Changes>
   <Networking>
     <Mode>bridge</Mode>

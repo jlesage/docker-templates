@@ -24,22 +24,22 @@ Now using baseimage v1.3.1, which brings the following changes:
 
 [font size=3][b]v1.1.0[/b][/font] (2017-05-15)
 Now using baseimage v1.3.0, which brings the following changes:
-- Added support for application's niceness configuration.
+  - Added support for application's niceness configuration.
 
 [font size=3][b]v1.0.3[/b][/font] (2017-05-12)
 Now using baseimage v1.2.3, which brings the following changes:
-- Adjusted the default display width to 1280 pixels, as documented.
+  - Adjusted the default display width to 1280 pixels, as documented.
 
 [font size=3][b]v1.0.2[/b][/font] (2017-05-11)
 Now using baseimage v1.2.2, which brings the following changes:
-- Fixed issue with the web UI, where the remote application's window was not taking the available height after activating/deactivating the hideable navigation bar.
+  - Fixed issue with the web UI, where the remote application's window was not taking the available height after activating/deactivating the hideable navigation bar.
 
 [font size=3][b]v1.0.1[/b][/font] (2017-05-10)
 Now using baseimage v1.2.1, which brings the following changes:
-- Fixed issue where clipboard content was lost on modal window closure.
+  - Fixed issue where clipboard content was lost on modal window closure.
 
 [font size=3][b]v1.0.0[/b][/font] (2017-05-09)
-    - Initial release.
+  - Initial release.
   </Changes>
   <Networking>
     <Mode>bridge</Mode>
