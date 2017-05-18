@@ -6,14 +6,14 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/56392-support-dupeguru/</Support>
-  <Overview>dupeGuru is a tool to find duplicate files on your computer. It can scan either filenames or contents. The filename scan features a fuzzy matching algorithm that can find duplicate filenames even when they are not exactly the same.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 100MB).</Overview>
+  <Overview>dupeGuru is a tool to find duplicate files on your computer. It can scan either filenames or contents. The filename scan features a fuzzy matching algorithm that can find duplicate filenames even when they are not exactly the same.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 100MB in download size).</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/dupeguru-icon.png</Icon>
   <ExtraParams/>
   <DateInstalled>1491228523</DateInstalled>
-  <Description>dupeGuru is a tool to find duplicate files on your computer. It can scan either filenames or contents. The filename scan features a fuzzy matching algorithm that can find duplicate filenames even when they are not exactly the same.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 100MB).</Description>
+  <Description>dupeGuru is a tool to find duplicate files on your computer. It can scan either filenames or contents. The filename scan features a fuzzy matching algorithm that can find duplicate filenames even when they are not exactly the same.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 100MB in download size).</Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
   <Date>2017-05-17</Date>
