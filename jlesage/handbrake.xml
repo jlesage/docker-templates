@@ -18,6 +18,9 @@
   <Project>https://handbrake.fr/</Project>
   <Date>2017-05-24</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.1.2[/b] (2017-05-24)[/font]
+  - Watch folder: Changed the way files being transferred are detected. Method used previously was not working properly in all cases.
+
 [font size=3][b]v1.1.1[/b] (2017-05-24)[/font]
   - Watch folder: temporarily skip files being accessed/transferred.
   - Watch folder: improved robustness.
