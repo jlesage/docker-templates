@@ -16,8 +16,12 @@
   <Description>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.  Also, being based on Alpine Linux, size of this container is very small (less than 80MB in download size).</Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2017-05-24</Date>
+  <Date>2017-05-26</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.1.3[/b] (2017-05-26)[/font]
+  - Watch folder: Fixed issue where, after a first successful conversion, conversion of next available video files would not start.
+  - Renamed the 'Watch Folder' service to 'Automatic Video Converter'.
+
 [font size=3][b]v1.1.2[/b] (2017-05-24)[/font]
   - Watch folder: Changed the way files being transferred are detected. Method used previously was not working properly in all cases.
 
