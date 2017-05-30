@@ -16,8 +16,12 @@
   <Description>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 60MB in download size).</Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2017-05-17</Date>
+  <Date>2017-05-30</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.1.2[/b][/font] (2017-05-30)
+Now using baseimage v1.3.2, which brings the following changes:
+- Fixed password modal window not showing up when required.
+
 [font size=3][b]v1.1.1[/b][/font] (2017-05-17)
 Now using baseimage v1.3.1, which brings the following changes:
 - Better font is used.
