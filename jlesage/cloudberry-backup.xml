@@ -6,8 +6,7 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/57217-support-cloudberry-backup/</Support>
-  <Overview>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (about 60MB in download size).&#xD;
-[br][br]Note that some parameters may be missing from this template.  For a complete documentation about this container, see [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].</Overview>
+  <Overview>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (about 60MB in download size).</Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
