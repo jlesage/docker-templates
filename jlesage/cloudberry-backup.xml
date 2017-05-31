@@ -6,14 +6,16 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/57217-support-cloudberry-backup/</Support>
-  <Overview>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (about 60MB in download size).</Overview>
+  <Overview>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (about 60MB in download size).&#xD;
+[br][br]Note that some parameters may be missing from this template.  For a complete documentation about this container, see [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].</Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/cloudberry-backup-icon.png</Icon>
   <ExtraParams/>
   <DateInstalled>1491905411</DateInstalled>
-  <Description>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 60MB in download size).</Description>
+  <Description>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 60MB in download size).&#xD;
+[br][br]Note that some parameters may be missing from this template.  For a complete documentation about this container, see [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].</Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
   <Date>2017-05-30</Date>

@@ -6,14 +6,16 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/57420-support-handbrake/</Support>
-  <Overview>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.  Also, being based on Alpine Linux, size of this container is very small (less than 80MB in download size).</Overview>
+  <Overview>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.  Also, being based on Alpine Linux, size of this container is very small (less than 80MB in download size).&#xD;
+[br][br]Note that some parameters may be missing from this template.  For a complete documentation about this container, see [a href="https://github.com/jlesage/docker-handbrake/blob/master/README.md"]https://github.com/jlesage/docker-handbrake/blob/master/README.md[/a].</Overview>
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/handbrake-icon.png</Icon>
   <ExtraParams/>
   <DateInstalled>1491228523</DateInstalled>
-  <Description>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.  Also, being based on Alpine Linux, size of this container is very small (less than 80MB in download size).</Description>
+  <Description>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.  Also, being based on Alpine Linux, size of this container is very small (less than 80MB in download size).&#xD;
+[br][br]Note that some parameters may be missing from this template.  For a complete documentation about this container, see [a href="https://github.com/jlesage/docker-handbrake/blob/master/README.md"]https://github.com/jlesage/docker-handbrake/blob/master/README.md[/a].</Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
   <Date>2017-05-30</Date>
