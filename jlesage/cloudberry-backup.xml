@@ -44,27 +44,27 @@
   <Date>2017-05-30</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
 [font size=3][b]v1.1.2[/b][/font] (2017-05-30)
-&#x00a0;&#x00a0;Now using baseimage v1.3.2, which brings the following changes:
+&#x00a0;&#x00a0;- Now using baseimage v1.3.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed password modal window not showing up when required.
 
 [font size=3][b]v1.1.1[/b][/font] (2017-05-17)
-&#x00a0;&#x00a0;Now using baseimage v1.3.1, which brings the following changes:
+&#x00a0;&#x00a0;- Now using baseimage v1.3.1, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Better font is used.
 
 [font size=3][b]v1.1.0[/b][/font] (2017-05-15)
-&#x00a0;&#x00a0;Now using baseimage v1.3.0, which brings the following changes:
+&#x00a0;&#x00a0;- Now using baseimage v1.3.0, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added support for application's niceness configuration.
 
 [font size=3][b]v1.0.3[/b][/font] (2017-05-12)
-&#x00a0;&#x00a0;Now using baseimage v1.2.3, which brings the following changes:
+&#x00a0;&#x00a0;- Now using baseimage v1.2.3, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the default display width to 1280 pixels, as documented.
 
 [font size=3][b]v1.0.2[/b][/font] (2017-05-11)
-&#x00a0;&#x00a0;Now using baseimage v1.2.2, which brings the following changes:
+&#x00a0;&#x00a0;- Now using baseimage v1.2.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue with the web UI, where the remote application's window was not taking the available height after activating/deactivating the hideable navigation bar.
 
 [font size=3][b]v1.0.1[/b][/font] (2017-05-10)
-&#x00a0;&#x00a0;Now using baseimage v1.2.1, which brings the following changes:
+&#x00a0;&#x00a0;- Now using baseimage v1.2.1, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where clipboard content was lost on modal window closure.
 
 [font size=3][b]v1.0.0[/b][/font] (2017-05-09)
