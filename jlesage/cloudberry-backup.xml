@@ -6,45 +6,69 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/57217-support-cloudberry-backup/</Support>
-  <Overview>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (about 60MB in download size).</Overview>
+  <Overview>
+    Backup files and folders to cloud storage of your choice: Amazon S3, Azure
+    Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files,
+    OpenStack, DreamObjects and other.
+    [br][br]
+    The graphical user interface (GUI) is accessible through a modern web
+    browser or via any VNC client.  Also, being based on Alpine Linux, size of
+    this container is very small (about 60MB in download size).
+    [br][br][span][/span]
+    For a complete documentation of this container, see
+    [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]
+    https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].
+  </Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/cloudberry-backup-icon.png</Icon>
   <ExtraParams/>
   <DateInstalled>1491905411</DateInstalled>
-  <Description>Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.[br][br]The graphical user interface (GUI) is accessible through a modern web browser or via any VNC client.  Also, being based on Alpine Linux, size of this container is very small (around 60MB in download size).&#xD;
-[br][br]Note that some parameters may be missing from this template.  For a complete documentation about this container, see [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].</Description>
+  <Description>
+    [br][br]Note that some parameters may be missing from this template.  For a complete documentation of this container, see [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].
+    Backup files and folders to cloud storage of your choice: Amazon S3, Azure
+    Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files,
+    OpenStack, DreamObjects and other.
+    [br][br]
+    The graphical user interface (GUI) is accessible through a modern web
+    browser or via any VNC client.  Also, being based on Alpine Linux, size of
+    this container is very small (about 60MB in download size).
+    [br][br][span][/span]
+    For a complete documentation of this container, see
+    [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]
+    https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].
+  </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
   <Date>2017-05-30</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
 [font size=3][b]v1.1.2[/b][/font] (2017-05-30)
-Now using baseimage v1.3.2, which brings the following changes:
-- Fixed password modal window not showing up when required.
+&#x00a0;&#x00a0;Now using baseimage v1.3.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed password modal window not showing up when required.
 
 [font size=3][b]v1.1.1[/b][/font] (2017-05-17)
-Now using baseimage v1.3.1, which brings the following changes:
-- Better font is used.
+&#x00a0;&#x00a0;Now using baseimage v1.3.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Better font is used.
 
 [font size=3][b]v1.1.0[/b][/font] (2017-05-15)
-Now using baseimage v1.3.0, which brings the following changes:
-  - Added support for application's niceness configuration.
+&#x00a0;&#x00a0;Now using baseimage v1.3.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added support for application's niceness configuration.
 
 [font size=3][b]v1.0.3[/b][/font] (2017-05-12)
-Now using baseimage v1.2.3, which brings the following changes:
-  - Adjusted the default display width to 1280 pixels, as documented.
+&#x00a0;&#x00a0;Now using baseimage v1.2.3, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the default display width to 1280 pixels, as documented.
 
 [font size=3][b]v1.0.2[/b][/font] (2017-05-11)
-Now using baseimage v1.2.2, which brings the following changes:
-  - Fixed issue with the web UI, where the remote application's window was not taking the available height after activating/deactivating the hideable navigation bar.
+&#x00a0;&#x00a0;Now using baseimage v1.2.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue with the web UI, where the remote application's window was not taking the available height after activating/deactivating the hideable navigation bar.
 
 [font size=3][b]v1.0.1[/b][/font] (2017-05-10)
-Now using baseimage v1.2.1, which brings the following changes:
-  - Fixed issue where clipboard content was lost on modal window closure.
+&#x00a0;&#x00a0;Now using baseimage v1.2.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where clipboard content was lost on modal window closure.
 
 [font size=3][b]v1.0.0[/b][/font] (2017-05-09)
-  - Initial release.
+&#x00a0;&#x00a0;- Initial release.
   </Changes>
   <Networking>
     <Mode>bridge</Mode>
