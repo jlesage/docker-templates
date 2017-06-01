@@ -42,9 +42,9 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2017-05-30</Date>
+  <Date>2017-06-01</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
-[font size=3][b]v1.2.2[/b][/font] (2017-05-30)
+[font size=3][b]v1.2.2[/b][/font] (2017-06-01)
 &#x00a0;&#x00a0;- Now using baseimage v1.3.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed password modal window not showing up when required.
 
