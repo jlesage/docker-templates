@@ -109,6 +109,11 @@
   </Networking>
   <Data>
     <Volume>
+      <HostDir>/mnt/user/appdata/dupeguru</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/storage</ContainerDir>
       <Mode>rw</Mode>
@@ -116,11 +121,6 @@
     <Volume>
       <HostDir>/mnt/user/trash</HostDir>
       <ContainerDir>/trash</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/dupeguru</HostDir>
-      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -152,16 +152,16 @@
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/dupeguru" Mode="rw" Description="This is where dupeGuru stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/dupeguru</Config>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/dupeguru" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/dupeguru</Config>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This is where files and folders on your host are made available to dupeGuru.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Trash" Target="/trash" Default="" Mode="rw" Description="This is where dupeGuru moves files when they are sent to trash.  This can be removed if a trash is not wanted (i.e. if you want files to be permanently deleted).&amp;lt;br&amp;gt;&#13;&#10;Container path: /trash" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/trash</Config>
   <!-- Variable Mappings -->
-  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of dupeGuru's application window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
-  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of dupeGuru's application window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
-  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user dupeGuru runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
-  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group dupeGuru runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which dupeGuru should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI" Target="5800" Default="7801" Mode="tcp" Description="Port used to access the dupeGuru GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7801</Config>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7901" Mode="tcp" Description="Port used to access the dupeGuru GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7901</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7801" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7801</Config>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7901" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7901</Config>
 </Container>

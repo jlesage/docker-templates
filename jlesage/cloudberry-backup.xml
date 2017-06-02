@@ -87,6 +87,11 @@
   </Networking>
   <Data>
     <Volume>
+      <HostDir>/mnt/user/appdata/cloudberry-backup</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/storage</ContainerDir>
       <Mode>ro</Mode>
@@ -100,11 +105,6 @@
       <HostDir>/mnt/disks</HostDir>
       <ContainerDir>/unassigned</ContainerDir>
       <Mode>ro,slave</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/cloudberry-backup</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
@@ -135,17 +135,17 @@
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/cloudberry-backup" Mode="rw" Description="This is where CloudBerry Backup stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/cloudberry-backup</Config>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/cloudberry-backup" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/cloudberry-backup</Config>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This is where files and folders to backup are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Flash" Target="/flash" Default="/boot" Mode="ro" Description="This is where data on your unRAID flash device is located.  Useful to backup your unRAID configuration.&amp;lt;br&amp;gt;&#13;&#10;Container path: /flash" Type="Path" Display="always" Required="false" Mask="false">/boot</Config>
   <Config Name="Unassigned Devices" Target="/unassigned" Default="/mnt/disks" Mode="ro,slave" Description="This is where unassigned devices are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /unassigned" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/disks</Config>
   <!-- Variable Mappings -->
-  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of CloudBerry Backup's application window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
-  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of CloudBerry Backup's application window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
-  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user CloudBerry Backup runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
-  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group CloudBerry Backup runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which CloudBerry Backup should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI" Target="5800" Default="7802" Mode="tcp" Description="Port used to access the CloudBerry Backup GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7802</Config>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7902" Mode="tcp" Description="Port used to access the CloudBerry Backup GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7902</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7802" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7802</Config>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7902" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7902</Config>
 </Container>

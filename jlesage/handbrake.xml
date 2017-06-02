@@ -92,6 +92,11 @@
   </Networking>
   <Data>
     <Volume>
+      <HostDir>/mnt/user/appdata/handbrake</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/storage</ContainerDir>
       <Mode>ro</Mode>
@@ -106,33 +111,8 @@
       <ContainerDir>/output</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/handbrake</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Environment>
-    <Variable>
-      <Value>Very Fast 1080p30</Value>
-      <Name>AUTOMATED_CONVERSION_PRESET</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>mp4</Value>
-      <Name>AUTOMATED_CONVERSION_FORMAT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>1</Value>
-      <Name>AUTOMATED_CONVERSION_KEEP_SOURCE</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>5</Value>
-      <Name>AUTOMATED_CONVERSION_SOURCE_STABLE_TIME</Name>
-      <Mode/>
-    </Variable>
     <Variable>
       <Value>1280</Value>
       <Name>DISPLAY_WIDTH</Name>
@@ -158,23 +138,43 @@
       <Name>APP_NICENESS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>Very Fast 1080p30</Value>
+      <Name>AUTOMATED_CONVERSION_PRESET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>mp4</Value>
+      <Name>AUTOMATED_CONVERSION_FORMAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>AUTOMATED_CONVERSION_KEEP_SOURCE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5</Value>
+      <Name>AUTOMATED_CONVERSION_SOURCE_STABLE_TIME</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where HandBrake stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/handbrake</Config>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/handbrake</Config>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This is where video files to be converted are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Output Directory" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos.  Also used by the automatic video converter.&amp;lt;br&amp;gt;&#13;&#10;Container path: /output" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Watch Directory" Target="/watch" Default="" Mode="ro" Description="This is the watch folder of the automatic video converter.  Any video copied into this folder will be automatically converted by HandBrake.&amp;lt;br&amp;gt;&#13;&#10;Container path: /watch" Type="Path" Display="always" Required="false" Mask="false"/>
   <!-- Variable Mappings -->
-  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of HandBrake's application window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
-  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of HandBrake's application window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
-  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user HandBrake runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
-  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group HandBrake runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which HandBrake should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false">Very Fast 1080p30</Config>
   <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="false" Mask="false">mp4</Config>
   <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="Automatic Video Converter: Source File Stable Time" Target="AUTOMATED_CONVERSION_SOURCE_STABLE_TIME" Default="5" Mode="" Description="Time during which properties (e.g. size, time, etc) of a video file in the watch folder need to remain the same.  This is to avoid processing a file that is being copied." Type="Variable" Display="advanced" Required="false" Mask="false">5</Config>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the HandBrake GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7803</Config>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the HandBrake GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7903</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7803</Config>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7903</Config>
 </Container>
