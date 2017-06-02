@@ -22,7 +22,7 @@
     https://github.com/jlesage/docker-crashplan/blob/master/README.md[/a].
     [br][br]
     [span style='color: red;'][b]Warning:[/b][/span] Make sure to read the
-    [i]Taking Over Existing Backup[/i] from the documentation if you are
+    [i]Taking Over Existing Backup[/i] section from the documentation if you are
     installing this container to replace another CrashPlan installation (from
     Windows, Linux, Mac or even another Docker container).
   </Overview>
@@ -48,7 +48,7 @@
     https://github.com/jlesage/docker-crashplan/blob/master/README.md[/a].
     [br][br]
     [span style='color: red;'][b]Warning:[/b][/span] Make sure to read the
-    [i]Taking Over Existing Backup[/i] from the documentation if you are
+    [i]Taking Over Existing Backup[/i] section from the documentation if you are
     installing this container to replace another CrashPlan installation (from
     Windows, Linux, Mac or even another Docker container).
   </Description>
