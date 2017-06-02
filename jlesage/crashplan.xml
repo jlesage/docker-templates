@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CrashPlan</Name>
+  <Repository>jlesage/crashplan</Repository>
+  <Registry>https://hub.docker.com/r/jlesage/crashplan/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.lime-technology.com/topic/57756-support-crashplan/</Support>
+  <Overview>
+    CrashPlan makes it easy to protect your digital life, so you can get back to
+    what’s important in real life. Only CrashPlan offers totally free local and
+    offsite backup. A subscription to the cloud backup service gets you
+    continuous backup, mobile file access and lots more. For the ultimate in
+    computer backup, get all three, from the same easy application.
+    [br][br]
+    The graphical user interface (GUI) is accessible through a modern web
+    browser or via any VNC client.  Also, being based on Alpine Linux, size of
+    this container is very small (about 160MB in download size).
+    [br][br][span][/span]
+    For a complete documentation of this container, see
+    [a href="https://github.com/jlesage/docker-crashplan/blob/master/README.md"]
+    https://github.com/jlesage/docker-crashplan/blob/master/README.md[/a].
+    [br][br]
+    [span style='color: red;'][b]Warning:[/b][/span] Make sure to read the
+    [i]Taking Over Existing Backup[/i] from the documentation if you are
+    installing this container to replace another CrashPlan installation (from
+    Windows, Linux, Mac or even another Docker container).
+  </Overview>
+  <Category>Backup:</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/crashplan-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1491905411</DateInstalled>
+  <Description>
+    CrashPlan makes it easy to protect your digital life, so you can get back to
+    what’s important in real life. Only CrashPlan offers totally free local and
+    offsite backup. A subscription to the cloud backup service gets you
+    continuous backup, mobile file access and lots more. For the ultimate in
+    computer backup, get all three, from the same easy application.
+    [br][br]
+    The graphical user interface (GUI) is accessible through a modern web
+    browser or via any VNC client.  Also, being based on Alpine Linux, size of
+    this container is very small (about 160MB in download size).
+    [br][br][span][/span]
+    For a complete documentation of this container, see
+    [a href="https://github.com/jlesage/docker-crashplan/blob/master/README.md"]
+    https://github.com/jlesage/docker-crashplan/blob/master/README.md[/a].
+    [br][br]
+    [span style='color: red;'][b]Warning:[/b][/span] Make sure to read the
+    [i]Taking Over Existing Backup[/i] from the documentation if you are
+    installing this container to replace another CrashPlan installation (from
+    Windows, Linux, Mac or even another Docker container).
+  </Description>
+  <Beta>False</Beta>
+  <Project>https://www.crashplan.com/</Project>
+  <Date>2017-05-30</Date>
+  <Changes>[font size=4][center]CrashPlan Change Log[/center][/font]
+[font size=3][b]v1.0.1[/b][/font] (2017-05-30)
+&#x00a0;&#x00a0;- Now using baseimage v1.3.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed password modal window not showing up when required.
+&#x00a0;&#x00a0;- Maximum amount of memory used by the CrashPlan Engine can now be set via the CRASHPLAN_SRV_MAX_MEM environment variable.
+
+[font size=3][b]v1.0.0[/b][/font] (2017-05-29)
+&#x00a0;&#x00a0;- Initial release.
+  </Changes>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7804</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7904</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4242</HostPort>
+        <ContainerPort>4242</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/crashplan</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/boot</HostDir>
+      <ContainerDir>/flash</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/disks</HostDir>
+      <ContainerDir>/unassigned</ContainerDir>
+      <Mode>ro,slave</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/crashplanBackupArchives</HostDir>
+      <ContainerDir>/backupArchives</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1280</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>768</Value>
+      <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GROUP_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>CRASHPLAN_SRV_MAX_MEM</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <!-- Volume Mappings -->
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/crashplan" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/crashplan</Config>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This is where files and folders to backup are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="Flash" Target="/flash" Default="/boot" Mode="ro" Description="This is where data on your unRAID flash device is located.  Useful to backup your unRAID configuration.&amp;lt;br&amp;gt;&#13;&#10;Container path: /flash" Type="Path" Display="always" Required="false" Mask="false">/boot</Config>
+  <Config Name="Unassigned Devices" Target="/unassigned" Default="/mnt/disks" Mode="ro,slave" Description="This is where unassigned devices are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /unassigned" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/disks</Config>
+  <Config Name="Inbound Backup Directory" Target="/backupArchives" Default="/mnt/user/crashplanBackupArchives" Mode="rw" Description="This is where inboud backup archives are stored.&amp;lt;br&amp;gt;&#13;&#10;Container path: /backupArchives&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This volume mapping is not needed if computer-to-computer backup feature is not used." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/crashplanBackupArchives</Config>
+  <!-- Variable Mappings -->
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Maximum Memory" Target="CRASHPLAN_SRV_MAX_MEM" Default="" Mode="" Description="Maximum amount of memory the CrashPlan Engine is allowed to use.   Format of the value is &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;size[g&#x2223;G&#x2223;m&#x2223;M&#x2223;k&#x2223;K]&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;. By default, when this variable is not set, a maximum of 1024MB of memory is allowed." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <!-- Port Mappings -->
+  <Config Name="WEB Port for GUI" Target="5800" Default="7804" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7804</Config>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7904" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7904</Config>
+  <Config Name="Computer-to-Computer Backup Port" Target="4242" Default="4242" Mode="tcp" Description="Port used for computer-to-computer backup.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; To receive backups from remote computers over the internet, make sure to properly configure port-forwarding on your router.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This port mapping is not needed if computer-to-computer backup feature is not used." Type="Port" Display="always" Required="false" Mask="false">4242</Config>
+</Container>
