@@ -101,11 +101,6 @@
       <Mode>ro</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/disks</HostDir>
-      <ContainerDir>/unassigned</ContainerDir>
-      <Mode>ro,slave</Mode>
-    </Volume>
-    <Volume>
       <HostDir>/mnt/user/crashplanBackupArchives</HostDir>
       <ContainerDir>/backupArchives</ContainerDir>
       <Mode>rw</Mode>
@@ -147,7 +142,6 @@
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/crashplan" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/crashplan</Config>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This is where files and folders to backup are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Flash" Target="/flash" Default="/boot" Mode="ro" Description="This is where data on your unRAID flash device is located.  Useful to backup your unRAID configuration.&amp;lt;br&amp;gt;&#13;&#10;Container path: /flash" Type="Path" Display="always" Required="false" Mask="false">/boot</Config>
-  <Config Name="Unassigned Devices" Target="/unassigned" Default="/mnt/disks" Mode="ro,slave" Description="This is where unassigned devices are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /unassigned" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/disks</Config>
   <Config Name="Inbound Backup Directory" Target="/backupArchives" Default="/mnt/user/crashplanBackupArchives" Mode="rw" Description="This is where inboud backup archives are stored.&amp;lt;br&amp;gt;&#13;&#10;Container path: /backupArchives&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This volume mapping is not needed if computer-to-computer backup feature is not used." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/crashplanBackupArchives</Config>
   <!-- Variable Mappings -->
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
