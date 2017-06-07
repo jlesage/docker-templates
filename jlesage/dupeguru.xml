@@ -42,8 +42,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2017-06-01</Date>
+  <Date>2017-06-06</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
+[font size=3][b]v1.3.0[/b][/font] (2017-06-06)
+&#x00a0;&#x00a0;- Now using baseimage v1.4.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Improved process startup and shutdown.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- When container is stopped or restarted, processes are now terminated gracefully and in proper order. This allow the GUI application to execute its termination routine.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- No more error messages when container is stopped or restarted.
+&#x00a0;&#x00a0;- Added OS signals handling to dupeGuru. This allows the application to properly close when the container is stopped or restarted.
+&#x00a0;&#x00a0;- Now that dupeGuru closes gracefully, all settings are properly saved.
+
 [font size=3][b]v1.2.2[/b][/font] (2017-06-01)
 &#x00a0;&#x00a0;- Now using baseimage v1.3.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed password modal window not showing up when required.
