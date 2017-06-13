@@ -24,7 +24,6 @@
   <TemplateURL>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/cloudberry-backup.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/cloudberry-backup-icon.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1491905411</DateInstalled>
   <Description>
     [br][br]Note that some parameters may be missing from this template.  For a complete documentation of this container, see [a href="https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md"]https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md[/a].
     Backup files and folders to cloud storage of your choice: Amazon S3, Azure

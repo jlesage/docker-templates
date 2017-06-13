@@ -31,7 +31,6 @@
   <TemplateURL>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/crashplan.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/crashplan-icon.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1491905411</DateInstalled>
   <Description>
     CrashPlan makes it easy to protect your digital life, so you can get back to
     what’s important in real life. Only CrashPlan offers totally free local and

@@ -25,7 +25,6 @@
   <TemplateURL>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/dupeguru.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/dupeguru-icon.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1491228523</DateInstalled>
   <Description>
     dupeGuru is a tool to find duplicate files on your computer. It can scan
     either filenames or contents. The filename scan features a fuzzy matching
