@@ -48,12 +48,12 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>7803</HostPort>
+        <HostPort>7805</HostPort>
         <ContainerPort>5800</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>7903</HostPort>
+        <HostPort>7905</HostPort>
         <ContainerPort>5900</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -108,6 +108,6 @@
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7803</Config>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7903</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7805" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7805</Config>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7905" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7905</Config>
 </Container>
