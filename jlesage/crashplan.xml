@@ -28,7 +28,7 @@
   </Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/crashplan.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/crashplan-icon.png</Icon>
   <ExtraParams/>
   <DateInstalled>1491905411</DateInstalled>

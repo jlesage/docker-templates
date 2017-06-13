@@ -22,7 +22,7 @@
   </Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/dupeguru.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/dupeguru-icon.png</Icon>
   <ExtraParams/>
   <DateInstalled>1491228523</DateInstalled>
