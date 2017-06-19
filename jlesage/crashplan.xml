@@ -53,8 +53,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/</Project>
-  <Date>2017-05-30</Date>
+  <Date>2017-06-19</Date>
   <Changes>[font size=4][center]CrashPlan Change Log[/center][/font]
+[font size=3][b]v1.0.2[/b][/font] (2017-06-19)
+&#x00a0;&#x00a0;- Upgraded CrashPlan to version 4.8.3.
+
 [font size=3][b]v1.0.1[/b][/font] (2017-05-30)
 &#x00a0;&#x00a0;- Now using baseimage v1.3.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed password modal window not showing up when required.
