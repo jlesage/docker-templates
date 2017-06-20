@@ -10,10 +10,8 @@
     MKVToolNix is a set of tools to create, alter and inspect Matroska files.
     [br][br]
     The graphical user interface (GUI) is accessible through a modern web
-    browser or via any VNC client.  A fully automated mode is also available:
-    drop files into a watch folder and let MKVToolNix process them without any
-    user interaction.  Also, being based on Alpine Linux, size of this container
-    is very small (less than 100MB in download size).
+    browser or via any VNC client.  Also, being based on Alpine Linux, size of
+    this container is very small (less than 100MB in download size).
     [br][br][span][/span]
     For a complete documentation of this container, see
     [a href="https://github.com/jlesage/docker-mkvtoolnix/blob/master/README.md"]
@@ -28,10 +26,8 @@
     MKVToolNix is a set of tools to create, alter and inspect Matroska files.
     [br][br]
     The graphical user interface (GUI) is accessible through a modern web
-    browser or via any VNC client.  A fully automated mode is also available:
-    drop files into a watch folder and let MKVToolNix process them without any
-    user interaction.  Also, being based on Alpine Linux, size of this container
-    is very small (less than 100MB in download size).
+    browser or via any VNC client.  Also, being based on Alpine Linux, size of
+    this container is very small (less than 100MB in download size).
     [br][br][span][/span]
     For a complete documentation of this container, see
     [a href="https://github.com/jlesage/docker-mkvtoolnix/blob/master/README.md"]
