@@ -9,9 +9,9 @@
   <Overview>
     MKVToolNix is a set of tools to create, alter and inspect Matroska files.
     [br][br]
-    The graphical user interface (GUI) is accessible through a modern web
-    browser or via any VNC client.  Also, being based on Alpine Linux, size of
-    this container is very small (less than 100MB in download size).
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    Also, being based on Alpine Linux, size of this container
+    is very small (less than 100MB in download size).
     [br][br][span][/span]
     For a complete documentation of this container, see
     [a href="https://github.com/jlesage/docker-mkvtoolnix/blob/master/README.md"]
@@ -25,9 +25,9 @@
   <Description>
     MKVToolNix is a set of tools to create, alter and inspect Matroska files.
     [br][br]
-    The graphical user interface (GUI) is accessible through a modern web
-    browser or via any VNC client.  Also, being based on Alpine Linux, size of
-    this container is very small (less than 100MB in download size).
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    Also, being based on Alpine Linux, size of this container
+    is very small (less than 100MB in download size).
     [br][br][span][/span]
     For a complete documentation of this container, see
     [a href="https://github.com/jlesage/docker-mkvtoolnix/blob/master/README.md"]
@@ -37,8 +37,9 @@
   <Project>https://mkvtoolnix.download/</Project>
   <Date>2017-06-13</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
-[font size=3][b]v1.0.0[/b] (2017-06-13)[/font]
+[font size=3][b]v1.0.0[/b][/font] (2017-06-13)
 &#x00a0;&#x00a0;- Initial release.
+
   </Changes>
   <Networking>
     <Mode>bridge</Mode>
@@ -95,15 +96,15 @@
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/mkvtoolnix" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/mkvtoolnix</Config>
-  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This is where video files to be edited are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/mkvtoolnix" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This location contains files from your host that need to be accessible by the application.&amp;lt;br&amp;gt;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false"/>
   <!-- Variable Mappings -->
-  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
-  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
-  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
-  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI" Target="5800" Default="7805" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7805</Config>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7905" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7905</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7805" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7905" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.&amp;lt;br&amp;gt;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
 </Container>
