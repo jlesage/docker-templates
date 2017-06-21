@@ -53,8 +53,18 @@ get all three, from the same easy application.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2017-06-19</Date>
+  <Date>2017-06-21</Date>
   <Changes>[font size=4][center]CrashPlan Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b][/font] (2017-06-21)
+&#x00a0;&#x00a0;- Now using baseimage v1.4.2, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Switched to Alpine Linux 3.6.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Associate the application's icon to a unique version to avoid browser cache issues.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed prefix of some service related messages.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added support for supplying supplementary groups of the application.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Improved process startup and shutdown.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- When container is stopped or restarted, processes are now terminated gracefully and in proper order. This allow the GUI application to execute its termination routine.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- No more error messages when container is stopped or restarted.
+
 [font size=3][b]v1.0.2[/b][/font] (2017-06-19)
 &#x00a0;&#x00a0;- Upgraded CrashPlan to version 4.8.3.
 
