@@ -7,13 +7,11 @@
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/57420-support-handbrake/</Support>
   <Overview>
-    HandBrake is a tool for converting video from nearly any format to a
-    selection of modern, widely supported codecs.
+    HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
     [br][br]
-    The graphical user interface (GUI) is accessible through a modern web
-    browser or via any VNC client.  A fully automated mode is also available:
-    drop files into a watch folder and let HandBrake process them without any
-    user interaction.  Also, being based on Alpine Linux, size of this container
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.
+    Also, being based on Alpine Linux, size of this container
     is very small (less than 80MB in download size).
     [br][br][span][/span]
     For a complete documentation of this container, see
@@ -26,13 +24,11 @@
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/handbrake-icon.png</Icon>
   <ExtraParams/>
   <Description>
-    HandBrake is a tool for converting video from nearly any format to a
-    selection of modern, widely supported codecs.
+    HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
     [br][br]
-    The graphical user interface (GUI) is accessible through a modern web
-    browser or via any VNC client.  A fully automated mode is also available:
-    drop files into a watch folder and let HandBrake process them without any
-    user interaction.  Also, being based on Alpine Linux, size of this container
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.
+    Also, being based on Alpine Linux, size of this container
     is very small (less than 80MB in download size).
     [br][br][span][/span]
     For a complete documentation of this container, see
@@ -50,29 +46,30 @@
 &#x00a0;&#x00a0;- Now using baseimage v1.3.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed password modal window not showing up when required.
 
-[font size=3][b]v1.1.3[/b] (2017-05-26)[/font]
+[font size=3][b]v1.1.3[/b][/font] (2017-05-26)
 &#x00a0;&#x00a0;- Watch folder: Fixed issue where, after a first successful conversion, conversion of next available video files would not start.
 &#x00a0;&#x00a0;- Renamed the 'Watch Folder' service to 'Automatic Video Converter'.
 
-[font size=3][b]v1.1.2[/b] (2017-05-24)[/font]
+[font size=3][b]v1.1.2[/b][/font] (2017-05-24)
 &#x00a0;&#x00a0;- Watch folder: Changed the way files being transferred are detected. Method used previously was not working properly in all cases.
 
-[font size=3][b]v1.1.1[/b] (2017-05-24)[/font]
+[font size=3][b]v1.1.1[/b][/font] (2017-05-24)
 &#x00a0;&#x00a0;- Watch folder: temporarily skip files being accessed/transferred.
 &#x00a0;&#x00a0;- Watch folder: improved robustness.
 
-[font size=3][b]v1.1.0[/b] (2017-05-23)[/font]
+[font size=3][b]v1.1.0[/b][/font] (2017-05-23)
 &#x00a0;&#x00a0;- Watch folder: properly support filenames containing spaces.
 &#x00a0;&#x00a0;- Watch folder: added support for symbolic links.
 &#x00a0;&#x00a0;- HandBrake debug can now be enabled via the HANDBRAKE_DEBUG environment variable.
 &#x00a0;&#x00a0;- Take ownership of the `/output` folder.
 &#x00a0;&#x00a0;- Added the ability to remove video source files from the watch folder after successfully conversion.
 
-[font size=3][b]v1.0.1[/b] (2017-05-18)[/font]
+[font size=3][b]v1.0.1[/b][/font] (2017-05-18)
 &#x00a0;&#x00a0;- The watch folder is now monitored without inotify for better compatibility.
 
-[font size=3][b]v1.0.0[/b] (2017-05-18)[/font]
+[font size=3][b]v1.0.0[/b][/font] (2017-05-18)
 &#x00a0;&#x00a0;- Initial release.
+
   </Changes>
   <Networking>
     <Mode>bridge</Mode>
@@ -159,21 +156,21 @@
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;&#13;&#10;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/handbrake</Config>
-  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This is where video files to be converted are located.&amp;lt;br&amp;gt;&#13;&#10;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user</Config>
-  <Config Name="Output Directory" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos.  Also used by the automatic video converter.&amp;lt;br&amp;gt;&#13;&#10;Container path: /output" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Watch Directory" Target="/watch" Default="" Mode="ro" Description="This is the watch folder of the automatic video converter.  Any video copied into this folder will be automatically converted by HandBrake.&amp;lt;br&amp;gt;&#13;&#10;Container path: /watch" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible by the application.&amp;lt;br&amp;gt;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false"/>
+  <Config Name="Watch Directory" Target="/watch" Default="" Mode="rw" Description="This is the watch folder of the automatic video converter.  Any video copied into this folder will be automatically converted by HandBrake.&amp;lt;br&amp;gt;Container path: /watch" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Output Directory" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos.  Also used by the automatic video converter.&amp;lt;br&amp;gt;Container path: /output" Type="Path" Display="always" Required="true" Mask="false"/>
   <!-- Variable Mappings -->
-  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
-  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
-  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">1280</Config>
-  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height, in pixels, of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false">768</Config>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of &#x2212;20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&#13;&#10;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false">Very Fast 1080p30</Config>
-  <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="false" Mask="false">mp4</Config>
-  <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
-  <Config Name="Automatic Video Converter: Source File Stable Time" Target="AUTOMATED_CONVERSION_SOURCE_STABLE_TIME" Default="5" Mode="" Description="Time during which properties (e.g. size, time, etc) of a video file in the watch folder need to remain the same.  This is to avoid processing a file that is being copied." Type="Variable" Display="advanced" Required="false" Mask="false">5</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Source File Stable Time" Target="AUTOMATED_CONVERSION_SOURCE_STABLE_TIME" Default="5" Mode="" Description="Time during which properties (e.g. size, time, etc) of a video file in the watch folder need to remain the same.  This is to avoid processing a file that is being copied." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI with a web browser." Type="Port" Display="advanced-hide" Required="true" Mask="false">7803</Config>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI with VNC client.&amp;lt;br&amp;gt;&#13;&#10;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false">7903</Config>
+  <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.&amp;lt;br&amp;gt;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
 </Container>
