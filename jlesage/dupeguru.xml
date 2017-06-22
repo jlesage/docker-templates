@@ -39,8 +39,15 @@ that can find duplicate filenames even when they are not exactly the same.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2017-06-21</Date>
+  <Date>2017-06-22</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
+[font size=3][b]v1.4.1[/b][/font] (2017-06-22)
+&#x00a0;&#x00a0;- Now using baseimage v1.4.3, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated Alpine Linux to version 3.6.2.
+
+[font size=3][b]v1.4.0[/b][/font] (2017-06-22)
+&#x00a0;&#x00a0;- Switched to Alpine Linux 3.6 baseimage.
+
 [font size=3][b]v1.3.1[/b][/font] (2017-06-21)
 &#x00a0;&#x00a0;- Now using baseimage v1.4.2, which brings the following changes (from last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Associate the application's icon to a unique version to avoid browser cache issues.
