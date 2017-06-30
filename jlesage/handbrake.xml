@@ -37,8 +37,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2017-06-27</Date>
+  <Date>2017-06-30</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.3.3[/b][/font] (2017-06-30)
+&#x00a0;&#x00a0;- Watch folder: Added handling of environment variable AUTOMATED_CONVERSION_OUTPUT_SUBDIR, which allows customization of the output location of automatically converted videos..
+&#x00a0;&#x00a0;- The default source folder is now /storage.
+
 [font size=3][b]v1.3.2[/b][/font] (2017-06-27)
 &#x00a0;&#x00a0;- Watch folder: also process files in subfolders.
 
