@@ -37,8 +37,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2017-06-30</Date>
+  <Date>2017-07-04</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.4.0[/b][/font] (2017-07-04)
+&#x00a0;&#x00a0;- Watch folder: Make sure to respect the configured umask.
+&#x00a0;&#x00a0;- Now using baseimage v1.5.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the UMASK environment variable to control how file permissions are set for newly created files.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the X11VNC_EXTRA_OPTS environment variable used to pass additional arguments to the x11vnc server.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- By default, activate auto-scaling of application's window.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Applied latest Alpine Linux security updates.
+
 [font size=3][b]v1.3.3[/b][/font] (2017-06-30)
 &#x00a0;&#x00a0;- Watch folder: Added handling of environment variable AUTOMATED_CONVERSION_OUTPUT_SUBDIR, which allows customization of the output location of automatically converted videos..
 &#x00a0;&#x00a0;- The default source folder is now /storage.
@@ -141,6 +149,11 @@
       <Mode/>
     </Variable>
     <Variable>
+      <Value>000</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>1280</Value>
       <Name>DISPLAY_WIDTH</Name>
       <Mode/>
@@ -153,6 +166,11 @@
     <Variable>
       <Value/>
       <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>X11VNC_EXTRA_OPTS</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -189,9 +207,11 @@
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Umask" Target="UMASK" Default="000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="false" Mask="false"/>
