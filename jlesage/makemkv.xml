@@ -61,8 +61,17 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2017-06-26</Date>
+  <Date>2017-07-04</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b][/font] (2017-07-04)
+&#x00a0;&#x00a0;- Make sure the respect the umask when creating MKV files.
+&#x00a0;&#x00a0;- Fixed disc ejection after rip.
+&#x00a0;&#x00a0;- Now using baseimage v1.5.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the UMASK environment variable to control how file permissions are set for newly created files.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the X11VNC_EXTRA_OPTS environment variable used to pass additional arguments to the x11vnc server.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- By default, activate auto-scaling of application's window.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Applied latest Alpine Linux security updates.
+
 [font size=3][b]v1.0.0[/b][/font] (2017-06-26)
 &#x00a0;&#x00a0;- Initial release.
 
@@ -116,6 +125,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
       <Mode/>
     </Variable>
     <Variable>
+      <Value>000</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>1280</Value>
       <Name>DISPLAY_WIDTH</Name>
       <Mode/>
@@ -128,6 +142,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
     <Variable>
       <Value/>
       <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>X11VNC_EXTRA_OPTS</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -163,9 +182,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Umask" Target="UMASK" Default="000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Licence Key" Target="MAKEMKV_KEY" Default="BETA" Mode="" Description="MakeMKV registration key to use.  The key is written to the configuration file during container startup.  When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;BETA&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, the latest beta key is automatically used.  When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;UNSET&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, no key is automatically written to the configuration file." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Enabled" Target="AUTO_DISC_RIPPER" Default="0" Mode="" Description="Set to 1 to enable automatic rippping of DVD/Blu-ray discs." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Eject" Target="AUTO_DISC_RIPPER_EJECT" Default="0" Mode="" Description="Set to 1 to eject disc when ripping is terminated." Type="Variable" Display="always" Required="false" Mask="false"/>
