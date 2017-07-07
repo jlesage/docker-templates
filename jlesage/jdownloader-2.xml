@@ -43,8 +43,13 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2017-07-05</Date>
+  <Date>2017-07-07</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.0.1[/b][/font] (2017-07-07)
+&#x00a0;&#x00a0;- Fixed the auto archive extractor.
+&#x00a0;&#x00a0;- Allow more time to JDownloader to gracefully shutdown.
+&#x00a0;&#x00a0;- Improved handling/monitoring of JDownloader process.
+
 [font size=3][b]v1.0.0[/b][/font] (2017-07-05)
 &#x00a0;&#x00a0;- Initial release.
 
