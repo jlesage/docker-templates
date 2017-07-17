@@ -43,8 +43,13 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2017-07-07</Date>
+  <Date>2017-07-17</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b][/font] (2017-07-17)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Various internal enhancements.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed the way a service waits for another one.
+
 [font size=3][b]v1.0.1[/b][/font] (2017-07-07)
 &#x00a0;&#x00a0;- Fixed the auto archive extractor.
 &#x00a0;&#x00a0;- Allow more time to JDownloader to gracefully shutdown.
@@ -98,6 +103,11 @@ your valuable time every day!
       <Mode/>
     </Variable>
     <Variable>
+      <Value/>
+      <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>1280</Value>
       <Name>DISPLAY_WIDTH</Name>
       <Mode/>
@@ -105,11 +115,6 @@ your valuable time every day!
     <Variable>
       <Value>768</Value>
       <Name>DISPLAY_HEIGHT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>APP_NICENESS</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -125,9 +130,9 @@ your valuable time every day!
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Umask" Target="UMASK" Default="000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7807" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
