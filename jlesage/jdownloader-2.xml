@@ -43,8 +43,13 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2017-07-17</Date>
+  <Date>2017-07-18</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.1.1[/b][/font] (2017-07-18)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Internal enhancements.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clean temporary files left by npm.
+
 [font size=3][b]v1.1.0[/b][/font] (2017-07-17)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.0, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Various internal enhancements.

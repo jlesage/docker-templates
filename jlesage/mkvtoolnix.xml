@@ -35,8 +35,18 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2017-07-04</Date>
+  <Date>2017-07-18</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.3.1[/b][/font] (2017-07-18)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Internal enhancements.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clean temporary files left by npm.
+
+[font size=3][b]v1.3.0[/b][/font] (2017-07-17)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Various internal enhancements.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed the way a service waits for another one.
+
 [font size=3][b]v1.2.0[/b][/font] (2017-07-04)
 &#x00a0;&#x00a0;- Now using baseimage v1.5.0, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the UMASK environment variable to control how file permissions are set for newly created files.
