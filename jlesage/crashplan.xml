@@ -53,8 +53,14 @@ get all three, from the same easy application.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2017-07-17</Date>
+  <Date>2017-07-18</Date>
   <Changes>[font size=4][center]CrashPlan Change Log[/center][/font]
+[font size=3][b]v1.3.1[/b][/font] (2017-07-18)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Internal enhancements.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clean temporary files left by npm.
+&#x00a0;&#x00a0;- Fixed usage of unRAID notification system.
+
 [font size=3][b]v1.3.0[/b][/font] (2017-07-17)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.0, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Various internal enhancements.
@@ -138,8 +144,8 @@ get all three, from the same easy application.
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/usr/local/emhttp/webGui</HostDir>
-      <ContainerDir>/usr/local/emhttp/webGui</ContainerDir>
+      <HostDir>/var/local/emhttp</HostDir>
+      <ContainerDir>/var/local/emhttp</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
   </Data>
@@ -190,7 +196,7 @@ get all three, from the same easy application.
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible by the application.&amp;lt;br&amp;gt;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false"/>
   <Config Name="Flash" Target="/flash" Default="/boot" Mode="ro" Description="This is where data on your unRAID flash device is located.  Useful to backup your unRAID configuration.&amp;lt;br&amp;gt;Container path: /flash" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Inbound Backup Directory" Target="/backupArchives" Default="/mnt/user/crashplanBackupArchives" Mode="rw" Description="This is where inboud backup archives are stored.&amp;lt;br&amp;gt;Container path: /backupArchives&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This volume mapping is not needed if computer-to-computer backup feature is not used." Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="unRAID Notification" Target="/usr/local/emhttp/webGui" Default="/usr/local/emhttp/webGui" Mode="ro" Description="This is where the unRAID notification system is located.  This allows the container to generate unRAID notifications about common CrashPlan issues.&amp;lt;br&amp;gt;Container path: /usr/local/emhttp/webGui" Type="Path" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="unRAID States" Target="/var/local/emhttp" Default="/var/local/emhttp" Mode="ro" Description="This is where unRAID state files are located.  This is used by the container to generate unRAID notifications about common CrashPlan issues.&amp;lt;br&amp;gt;Container path: /var/local/emhttp" Type="Path" Display="advanced" Required="false" Mask="false"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
