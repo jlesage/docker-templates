@@ -37,8 +37,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2017-07-23</Date>
+  <Date>2017-07-25</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.5.3[/b][/font] (2017-07-25)
+&#x00a0;&#x00a0;- Fixed HandBrake CLI crash that was occuring when working with ISO files or DVD folders.
+&#x00a0;&#x00a0;- Small adjustments to the default configuration file.
+
 [font size=3][b]v1.5.2[/b][/font] (2017-07-23)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Proper VNC port is exposed.
