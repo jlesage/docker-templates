@@ -37,8 +37,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2017-07-25</Date>
+  <Date>2017-07-26</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.5.4[/b][/font] (2017-07-26)
+&#x00a0;&#x00a0;- Watch folder: properly support video discs (ISO files, DVD/Blu-ray folders).
+&#x00a0;&#x00a0;- Watch folder: when removing empty folders, ignore the watch folder itself.
+&#x00a0;&#x00a0;- Watch folder: make sure to abort if destination file already exists.
+
 [font size=3][b]v1.5.3[/b][/font] (2017-07-25)
 &#x00a0;&#x00a0;- Fixed HandBrake CLI crash that was occuring when working with ISO files or DVD folders.
 &#x00a0;&#x00a0;- Small adjustments to the default configuration file.
@@ -218,6 +223,11 @@
       <Name>AUTOMATED_CONVERSION_SOURCE_STABLE_TIME</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>10</Value>
+      <Name>AUTOMATED_CONVERSION_SOURCE_MIN_DURATION</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
@@ -237,6 +247,7 @@
   <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Output Subdirectory" Target="AUTOMATED_CONVERSION_OUTPUT_SUBDIR" Default="" Mode="" Description="Subdirectory of the output folder into which converted videos should be written.&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Leave value empty to save converted videos directly into &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;/output/&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Use the special value &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;SAME_AS_SRC&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; to use the same subfolder as the source.  For example, if the video source file is &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;/watch/Movies/mymovie.mkv&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, the converted video will be written to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;/output/Movies/&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Use any subfolder name.  For example, setting the value &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;Home/Movies&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; will make converted videos written to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;/output/Home/Movies&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;/&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Source File Stable Time" Target="AUTOMATED_CONVERSION_SOURCE_STABLE_TIME" Default="5" Mode="" Description="Time during which properties (e.g. size, time, etc) of a video file in the watch folder need to remain the same.  This is to avoid processing a file that is being copied." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Minimum Title Duration" Target="AUTOMATED_CONVERSION_SOURCE_MIN_DURATION" Default="10" Mode="" Description="Minimum title duration (in seconds).  Shorter titles will be ignored.  This applies only to video disc sources (ISO file, &amp;lt;i&amp;gt;VIDEO_TS&amp;lt;/i&amp;gt; folder or &amp;lt;i&amp;gt;BDMV&amp;lt;/i&amp;gt; folder)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.&amp;lt;br&amp;gt;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
