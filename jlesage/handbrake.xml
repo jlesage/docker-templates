@@ -39,6 +39,9 @@
   <Project>https://handbrake.fr/</Project>
   <Date>2017-07-27</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.5.6[/b][/font] (2017-07-27)
+&#x00a0;&#x00a0;- Watch folder: recursively remove empty directories.
+
 [font size=3][b]v1.5.5[/b][/font] (2017-07-27)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.3, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Improved robustness of the X server starting process.
