@@ -164,7 +164,7 @@ that can find duplicate filenames even when they are not exactly the same.
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/trash</HostDir>
+      <HostDir>/dev/null</HostDir>
       <ContainerDir>/trash</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -209,7 +209,7 @@ that can find duplicate filenames even when they are not exactly the same.
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/dupeguru" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This location contains files from your host that need to be accessible by the application.&amp;lt;br&amp;gt;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false"/>
-  <Config Name="Trash" Target="/trash" Default="/mnt/user/trash" Mode="rw" Description="This is where dupeGuru moves files when they are sent to trash.  This can be removed if a trash is not wanted (i.e. if you want files to be permanently deleted).&amp;lt;br&amp;gt;Container path: /trash" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Trash" Target="/trash" Default="/dev/null" Mode="rw" Description="This is where dupeGuru moves files when they are sent to trash.  Usage of the trash is optional.  The default value of &amp;lt;i&amp;gt;/dev/null&amp;lt;/i&amp;gt; can be kept if the trash is not wanted.&amp;lt;br&amp;gt;Container path: /trash" Type="Path" Display="always-hide" Required="false" Mask="false"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
