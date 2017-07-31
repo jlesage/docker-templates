@@ -53,8 +53,16 @@ get all three, from the same easy application.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2017-07-27</Date>
+  <Date>2017-07-31</Date>
   <Changes>[font size=4][center]CrashPlan Change Log[/center][/font]
+[font size=3][b]v1.3.4[/b][/font] (2017-07-31)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.5, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clear the environment of the container during startup.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clear the /tmp folder during startup.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Cleanly terminate the X server when container is restarted/stopped.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Improved robustness of X server starting process.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Removed unneeded files from the image.
+
 [font size=3][b]v1.3.3[/b][/font] (2017-07-27)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.3, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Improved robustness of the X server starting process.
