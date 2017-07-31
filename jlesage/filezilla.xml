@@ -37,6 +37,12 @@
   <Project>https://filezilla-project.org/</Project>
   <Date>2017-07-31</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b][/font] (2017-07-31)
+&#x00a0;&#x00a0;- FileZilla does not support being terminated with signals.  So when the container is stopped, try closing FileZilla by simulating ctrl+q key presses.  This allows FileZilla to save all its configuration files.
+&#x00a0;&#x00a0;- Fixed error with host keys saving.
+&#x00a0;&#x00a0;- Create required directories.
+&#x00a0;&#x00a0;- Added text editor to allow editing files from FileZilla.
+
 [font size=3][b]v1.0.1[/b][/font] (2017-07-31)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.5, which brings the following changes (from last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clear the environment of the container during startup.
