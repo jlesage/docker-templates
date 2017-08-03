@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2017-07-31</Date>
+  <Date>2017-08-03</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.1.1[/b][/font] (2017-08-03)
+&#x00a0;&#x00a0;- Changed the editor to gvim.
+
 [font size=3][b]v1.1.0[/b][/font] (2017-07-31)
 &#x00a0;&#x00a0;- FileZilla does not support being terminated with signals.  So when the container is stopped, try closing FileZilla by simulating ctrl+q key presses.  This allows FileZilla to save all its configuration files.
 &#x00a0;&#x00a0;- Fixed error with host keys saving.
