@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2017-08-03</Date>
+  <Date>2017-08-14</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.1.2[/b][/font] (2017-08-14)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.6, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.20.0.0.
+
 [font size=3][b]v1.1.1[/b][/font] (2017-08-03)
 &#x00a0;&#x00a0;- Changed the editor to gvim.
 
