@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2017-08-14</Date>
+  <Date>2017-08-28</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.5.6[/b][/font] (2017-08-28)
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.0.3.25.
+
 [font size=3][b]v1.5.5[/b][/font] (2017-08-14)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.6, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.20.0.0.
