@@ -43,8 +43,12 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2017-08-14</Date>
+  <Date>2017-09-01</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.1.7[/b][/font] (2017-09-01)
+&#x00a0;&#x00a0;- Fixed issue where the first-run indication had the wrong ownership.
+&#x00a0;&#x00a0;- Fixedissue where increase of the time before forcefully killing processes was not respected.
+
 [font size=3][b]v1.1.6[/b][/font] (2017-08-14)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.6, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.20.0.0.
