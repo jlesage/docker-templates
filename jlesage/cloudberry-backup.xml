@@ -35,8 +35,14 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2017-08-28</Date>
+  <Date>2017-09-06</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.5.7[/b][/font] (2017-09-06)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.7, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed timezone support on alpine-glibc images.
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.0.3.26.
+&#x00a0;&#x00a0;- Minor fix in displayed app title.
+
 [font size=3][b]v1.5.6[/b][/font] (2017-08-28)
 &#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.0.3.25.
 
