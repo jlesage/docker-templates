@@ -37,8 +37,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2017-08-16</Date>
+  <Date>2017-09-08</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.6.1[/b][/font] (2017-09-08)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.8, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed timezone support on alpine-glibc images.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed duplicated entries in /etc/passwd and /etc/group that were created after a restart of the container.
+
 [font size=3][b]v1.6.0[/b][/font] (2017-08-16)
 &#x00a0;&#x00a0;- Added libdvdcss to allow reading of encrypted DVD video files.
 

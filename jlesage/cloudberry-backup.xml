@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2017-09-06</Date>
+  <Date>2017-09-08</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.5.8[/b][/font] (2017-09-08)
+&#x00a0;&#x00a0;- Now using baseimage v2.0.8, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed duplicated entries in /etc/passwd and /etc/group that were created after a restart of the container.
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.0.3.30.
+
 [font size=3][b]v1.5.7[/b][/font] (2017-09-06)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.7, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed timezone support on alpine-glibc images.
