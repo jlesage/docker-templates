@@ -17,6 +17,13 @@
     For a complete documentation of this container, see
     [a href="https://github.com/jlesage/docker-handbrake/blob/master/README.md"]
     https://github.com/jlesage/docker-handbrake/blob/master/README.md[/a].
+    [br][br]
+    [span style='color: red;'][b]NOTE:[/b][/span] For the container to have
+access to your optical drive(s), you need to allow access to the proper
+device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
+[b][i]--device DEV[/i][/b] in the [i]Extra Parameters[/i] field (shown when
+[i]Advanced View[/i] is enabled). For example, if your optical drive is at
+[b][i]/dev/sr0[/i][/b], you need to add [b][i]--device /dev/sr0[/i][/b].
   </Overview>
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -34,11 +41,22 @@
     For a complete documentation of this container, see
     [a href="https://github.com/jlesage/docker-handbrake/blob/master/README.md"]
     https://github.com/jlesage/docker-handbrake/blob/master/README.md[/a].
+    [br][br]
+    [span style='color: red;'][b]NOTE:[/b][/span] For the container to have
+access to your optical drive(s), you need to allow access to the proper
+device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
+[b][i]--device DEV[/i][/b] in the [i]Extra Parameters[/i] field (shown when
+[i]Advanced View[/i] is enabled). For example, if your optical drive is at
+[b][i]/dev/sr0[/i][/b], you need to add [b][i]--device /dev/sr0[/i][/b].
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2017-09-08</Date>
+  <Date>2017-09-18</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.7.0[/b][/font] (2017-09-18)
+&#x00a0;&#x00a0;- Added support for optical drive(s) access.
+&#x00a0;&#x00a0;- Removed some useless shortcuts in the video source selection window.
+
 [font size=3][b]v1.6.1[/b][/font] (2017-09-08)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.8, which brings the following changes (from last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed timezone support on alpine-glibc images.
