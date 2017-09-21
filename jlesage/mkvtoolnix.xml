@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2017-09-08</Date>
+  <Date>2017-09-21</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.6.0[/b][/font] (2017-09-21)
+&#x00a0;&#x00a0;- Added support for interface language.
+&#x00a0;&#x00a0;- Now using baseimage v2.0.9, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Restore default `/etc/shadow` during container startup.
+
 [font size=3][b]v1.5.1[/b][/font] (2017-09-08)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.8, which brings the following changes (from last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed timezone support on alpine-glibc images.
