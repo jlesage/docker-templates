@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2017-09-20</Date>
+  <Date>2017-10-09</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.7.0[/b][/font] (2017-10-09)
+&#x00a0;&#x00a0;- Now using baseimage v3.0.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Better support for service dependencies.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added support for secure access to the application's GUI.
+
 [font size=3][b]v1.6.0[/b][/font] (2017-09-20)
 &#x00a0;&#x00a0;- Now using baseimage v2.0.9, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Restore default `/etc/shadow` during container startup.
@@ -213,6 +218,11 @@
       <Mode/>
     </Variable>
     <Variable>
+      <Value>0</Value>
+      <Name>SECURE_CONNECTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value/>
       <Name>X11VNC_EXTRA_OPTS</Name>
       <Mode/>
@@ -239,12 +249,13 @@
   <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;1&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; to encrypt the connection." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="CloudBerry Backup Web Interface User" Target="CBB_WEB_INTERFACE_USER" Default="" Mode="" Description="Username to use to login to the CloudBerry Backup's web interface." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="CloudBerry Backup Web Interface Password" Target="CBB_WEB_INTERFACE_PASSWORD" Default="" Mode="" Description="Password to use to login to the CloudBerry Backup's web interface.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; See documentation for a more secure way to specify the password." Type="Variable" Display="advanced" Required="false" Mask="true"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7802" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7902" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.&amp;lt;br&amp;gt;Make sure this port is equal to the WEB GUI port + 100." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="VNC Port for GUI" Target="5900" Default="7902" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
   <Config Name="CloudBerry Backup Web Interface HTTP Port" Target="43210" Default="43210" Mode="tcp" Description="Port used to access the CloudBerry Backup's web interface via HTTP." Type="Port" Display="advanced" Required="false" Mask="false"/>
   <Config Name="CloudBerry Backup Web Interface HTTPs Port" Target="43211" Default="43211" Mode="tcp" Description="Port used to access the CloudBerry Backup's web interface via HTTPs." Type="Port" Display="advanced" Required="false" Mask="false"/>
   <DonateLink>https://paypal.me/JocelynLeSage</DonateLink>
