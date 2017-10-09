@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2017-10-07</Date>
+  <Date>2017-10-08</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.8.1[/b][/font] (2017-10-08)
+&#x00a0;&#x00a0;- Now using baseimage v3.0.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed nginx config for systems without IPV6 support.
+
 [font size=3][b]v1.8.0[/b][/font] (2017-10-07)
 &#x00a0;&#x00a0;- Now using baseimage v3.0.0, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Better support for service dependencies.
