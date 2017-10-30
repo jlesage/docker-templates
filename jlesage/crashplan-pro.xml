@@ -61,8 +61,17 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2017-10-09</Date>
+  <Date>2017-10-30</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v1.2.0[/b][/font] (2017-10-30)
+&#x00a0;&#x00a0;- Now using baseimage v3.1.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.1.1.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Enhanced integration of service dependencies functionality.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added a simple log monitor.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed race condition where container's exit code would not be the expected one.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where application's GUI fails to displayed when accessing it through the web interface via standard ports 80/443.
+&#x00a0;&#x00a0;- Alert user of common problems.
+
 [font size=3][b]v1.1.2[/b][/font] (2017-10-09)
 &#x00a0;&#x00a0;- Now using baseimage v3.0.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where nginx config change was not applied correctly on systems without IPV6 support and secure connection disabled.
