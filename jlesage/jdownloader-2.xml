@@ -43,8 +43,16 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2017-10-10</Date>
+  <Date>2017-10-29</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.3.0[/b][/font] (2017-10-29)
+&#x00a0;&#x00a0;- Now using baseimage v3.1.0, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.1.1.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Enhanced integration of service dependencies functionality.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added a simple log monitor.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed race condition where container's exit code would not be the expected one.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where application's GUI fails to displayed when accessing it through the web interface via standard ports 80/443.
+
 [font size=3][b]v1.2.0[/b][/font] (2017-10-10)
 &#x00a0;&#x00a0;- Now using baseimage v3.0.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Better support for service dependencies.
