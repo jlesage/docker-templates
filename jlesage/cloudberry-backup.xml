@@ -35,8 +35,14 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2017-10-29</Date>
+  <Date>2017-11-07</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.8.1[/b][/font] (2017-11-07)
+&#x00a0;&#x00a0;- Now using baseimage v3.1.2, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed an issue where a self-disabled service could be restarted.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.0.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use a more efficient way to monitor status files.
+
 [font size=3][b]v1.8.0[/b][/font] (2017-10-29)
 &#x00a0;&#x00a0;- Now using baseimage v3.1.0, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.1.1.
