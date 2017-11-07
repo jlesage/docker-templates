@@ -35,8 +35,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2017-10-29</Date>
+  <Date>2017-11-06</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.5.0[/b][/font] (2017-11-06)
+&#x00a0;&#x00a0;- Now using baseimage v3.1.2, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed an issue where a self-disabled service could be restarted.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.0.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use a more efficient way to monitor status files.
+&#x00a0;&#x00a0;- Upgraded FileZilla to version 3.29.0.
+&#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.11.1.
+
 [font size=3][b]v1.4.0[/b][/font] (2017-10-29)
 &#x00a0;&#x00a0;- Now using baseimage v3.1.0, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.1.1.
