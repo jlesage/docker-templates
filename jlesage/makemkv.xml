@@ -61,8 +61,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2017-11-20</Date>
+  <Date>2017-11-30</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.4.1[/b][/font] (2017-11-30)
+&#x00a0;&#x00a0;- Removed unused volume.
+
 [font size=3][b]v1.4.0[/b][/font] (2017-11-20)
 &#x00a0;&#x00a0;- Now using baseimage v3.1.3, which brings the following changes (from last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.1.
