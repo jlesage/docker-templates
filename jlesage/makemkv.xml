@@ -61,8 +61,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2017-11-30</Date>
+  <Date>2017-12-04</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.5.0[/b][/font] (2017-12-04)
+&#x00a0;&#x00a0;- Added `AUTO_DISC_RIPPER_INTERVAL` environment variable, used to set the interval the automatic disc ripper checks for the presence of a DVD/Blu-ray discs.
+
 [font size=3][b]v1.4.1[/b][/font] (2017-11-30)
 &#x00a0;&#x00a0;- Removed unused volume.
 
