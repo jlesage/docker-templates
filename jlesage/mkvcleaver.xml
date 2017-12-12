@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://blogs.sapib.ca/apps/mkvcleaver/</Project>
-  <Date>2017-11-27</Date>
+  <Date>2017-12-12</Date>
   <Changes>[font size=4][center]MKVCleaver Change Log[/center][/font]
+[font size=3][b]v1.0.1[/b][/font] (2017-12-12)
+&#x00a0;&#x00a0;- Now using baseimage v3.1.4, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set 2 worker processes for nginx.
+
 [font size=3][b]v1.0.0[/b][/font] (2017-11-27)
 &#x00a0;&#x00a0;- Initial release.
 

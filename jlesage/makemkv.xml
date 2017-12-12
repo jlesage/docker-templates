@@ -61,8 +61,12 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2017-12-04</Date>
+  <Date>2017-12-12</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.5.1[/b][/font] (2017-12-12)
+&#x00a0;&#x00a0;- Now using baseimage v3.1.4, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set 2 worker processes for nginx.
+
 [font size=3][b]v1.5.0[/b][/font] (2017-12-04)
 &#x00a0;&#x00a0;- Added `AUTO_DISC_RIPPER_INTERVAL` environment variable, used to set the interval the automatic disc ripper checks for the presence of a DVD/Blu-ray discs.
 
