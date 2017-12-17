@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2017-12-12</Date>
+  <Date>2017-12-17</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.12.0[/b][/font] (2017-12-17)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 19.0.0.
+
 [font size=3][b]v1.11.2[/b][/font] (2017-12-12)
 &#x00a0;&#x00a0;- Now using baseimage v3.1.4, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set 2 worker processes for nginx.
