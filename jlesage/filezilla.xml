@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2017-12-12</Date>
+  <Date>2018-01-08</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.6.0[/b][/font] (2018-01-08)
+&#x00a0;&#x00a0;- Upgraded FileZilla to version 3.30.0.
+&#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.11.2.
+
 [font size=3][b]v1.5.2[/b][/font] (2017-12-12)
 &#x00a0;&#x00a0;- Now using baseimage v3.1.4, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set 2 worker processes for nginx.
