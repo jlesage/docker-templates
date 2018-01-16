@@ -53,8 +53,11 @@ get all three, from the same easy application.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2018-01-11</Date>
+  <Date>2018-01-12</Date>
   <Changes>[font size=4][center]CrashPlan Change Log[/center][/font]
+[font size=3][b]v1.5.7[/b][/font] (2018-01-12)
+&#x00a0;&#x00a0;- Upgraded CrashPlan to version 4.8.4.
+
 [font size=3][b]v1.5.6[/b][/font] (2018-01-11)
 &#x00a0;&#x00a0;- Fixed issue where libraries were not found.
 
