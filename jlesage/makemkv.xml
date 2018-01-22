@@ -61,8 +61,14 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-01-19</Date>
+  <Date>2018-01-22</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.6.0[/b][/font] (2018-01-22)
+&#x00a0;&#x00a0;- Now using baseimage v3.3.0, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- For Alpine Linux images with glibc, automatically update dynamic linker's cache after new libraries are installed.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed the LANG environment variable not being set properly.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the ability to automatically install a CJK (Chinese/Japanese/Korean) font.
+
 [font size=3][b]v1.5.3[/b][/font] (2018-01-19)
 &#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.10.10.
 
