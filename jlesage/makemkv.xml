@@ -25,10 +25,17 @@ multiple video/audio tracks with all meta-information and preserve chapters.
     [br][br]
     [span style='color: red;'][b]NOTE:[/b][/span] For the container to have
 access to your optical drive(s), you need to allow access to the proper
-device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
+Linux devices by adding (one for each of them) the parameter
 [b][i]--device DEV[/i][/b] in the [i]Extra Parameters[/i] field (shown when
-[i]Advanced View[/i] is enabled). For example, if your optical drive is at
-[b][i]/dev/sr0[/i][/b], you need to add [b][i]--device /dev/sr0[/i][/b].
+[i]Advanced View[/i] is enabled).[br]
+An optical drive is represented by two Linux device files: [b][i]/dev/srX[/i][/b]
+and [b][i]/dev/sgY[/i][/b].  For optimal performance, the container needs both
+of them.  So if your optical drive is represented by [b][i]/dev/sr0[/i][/b] and
+[b][i]/dev/sg2[/i][/b], you need to add
+[b][i]--device /dev/sr0 --device /dev/sg2[/i][/b] to the [i]Extra Parameters[/i]
+field.[br]
+To determine the right devices to use, start the container and looks at its
+log.  Look at the documentation for more details.
   </Overview>
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -54,15 +61,26 @@ multiple video/audio tracks with all meta-information and preserve chapters.
     [br][br]
     [span style='color: red;'][b]NOTE:[/b][/span] For the container to have
 access to your optical drive(s), you need to allow access to the proper
-device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
+Linux devices by adding (one for each of them) the parameter
 [b][i]--device DEV[/i][/b] in the [i]Extra Parameters[/i] field (shown when
-[i]Advanced View[/i] is enabled). For example, if your optical drive is at
-[b][i]/dev/sr0[/i][/b], you need to add [b][i]--device /dev/sr0[/i][/b].
+[i]Advanced View[/i] is enabled).[br]
+An optical drive is represented by two Linux device files: [b][i]/dev/srX[/i][/b]
+and [b][i]/dev/sgY[/i][/b].  For optimal performance, the container needs both
+of them.  So if your optical drive is represented by [b][i]/dev/sr0[/i][/b] and
+[b][i]/dev/sg2[/i][/b], you need to add
+[b][i]--device /dev/sr0 --device /dev/sg2[/i][/b] to the [i]Extra Parameters[/i]
+field.[br]
+To determine the right devices to use, start the container and looks at its
+log.  Look at the documentation for more details.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
   <Date>2018-01-22</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.6.1[/b][/font] (2018-01-22)
+&#x00a0;&#x00a0;- Updated the way optical drives are detected.
+&#x00a0;&#x00a0;- Display, in the container's log, devices associated to an optical drive that need to be exposed.
+
 [font size=3][b]v1.6.0[/b][/font] (2018-01-22)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.0, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- For Alpine Linux images with glibc, automatically update dynamic linker's cache after new libraries are installed.
