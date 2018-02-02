@@ -75,8 +75,11 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-01-30</Date>
+  <Date>2018-02-02</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.6.3[/b][/font] (2018-02-02)
+&#x00a0;&#x00a0;- Updated the beta key in the default configuration file.
+
 [font size=3][b]v1.6.2[/b][/font] (2018-01-30)
 &#x00a0;&#x00a0;- Adjusted the way some ressources are accessed to better support reverse proxy to the container.
 
