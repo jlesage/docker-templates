@@ -35,10 +35,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2018-01-30</Date>
+  <Date>2018-02-03</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.11.2[/b][/font] (2018-02-03)
+&#x00a0;&#x00a0;- Now using baseimage v3.3.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Restored timezone support in Alpine Linux images with glibc.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue in `add-pkg` helper where a package could be incorrectly detected as installed.
+
 [font size=3][b]v1.11.1[/b][/font] (2018-01-30)
-&#x00a0;&#x00a0;- Adjusted the way some ressources are accessed to better support reverse proxy to the container.
+&#x00a0;&#x00a0;- Now using baseimage v3.3.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the way some ressources are accessed to better support reverse proxy to the container.
 
 [font size=3][b]v1.11.0[/b][/font] (2018-01-26)
 &#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.3.0.12.
