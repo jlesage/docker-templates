@@ -61,8 +61,11 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2018-01-30</Date>
+  <Date>2018-02-02</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.2.0[/b][/font] (2018-02-02)
+&#x00a0;&#x00a0;- Updated CrashPlan PRO to version 6.7.0.
+
 [font size=3][b]v2.1.1[/b][/font] (2018-01-30)
 &#x00a0;&#x00a0;- Adjusted the way some ressources are accessed to better support reverse proxy to the container.
 
