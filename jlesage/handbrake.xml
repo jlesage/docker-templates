@@ -51,8 +51,14 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-02-03</Date>
+  <Date>2018-02-13</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.11.3[/b][/font] (2018-02-13)
+&#x00a0;&#x00a0;- Fixed an issue where encoding audio to FLAC would cause a crash.
+&#x00a0;&#x00a0;- Use AAC encoder from libavcodec.
+&#x00a0;&#x00a0;- Fixed an issue where automatic conversion of a multi-titles medias would produce only the first one.
+&#x00a0;&#x00a0;- Improved logging of the automatic video converter while processing multi-titles medias.
+
 [font size=3][b]v1.11.2[/b][/font] (2018-02-03)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Restored timezone support in Alpine Linux images with glibc.
