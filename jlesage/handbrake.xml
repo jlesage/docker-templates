@@ -51,8 +51,13 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-02-13</Date>
+  <Date>2018-03-01</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.11.4[/b][/font] (2018-03-01)
+&#x00a0;&#x00a0;- Since HandBrake doesn't work well with ffmpeg, reverted to libav.
+&#x00a0;&#x00a0;- Thus, the FLAC encoder crash has been fixed in libav instead.
+&#x00a0;&#x00a0;- Make sure the main window is always visible in background.
+
 [font size=3][b]v1.11.3[/b][/font] (2018-02-13)
 &#x00a0;&#x00a0;- Fixed an issue where encoding audio to FLAC would cause a crash.
 &#x00a0;&#x00a0;- Use AAC encoder from libavcodec.
