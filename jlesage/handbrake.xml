@@ -51,8 +51,14 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-03-01</Date>
+  <Date>2018-03-02</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.11.5[/b][/font] (2018-03-02)
+&#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed an issue where the log monitor `yad` target would use XDG folders of the application.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
+
 [font size=3][b]v1.11.4[/b][/font] (2018-03-01)
 &#x00a0;&#x00a0;- Since HandBrake doesn't work well with ffmpeg, reverted to libav.
 &#x00a0;&#x00a0;- Thus, the FLAC encoder crash has been fixed in libav instead.

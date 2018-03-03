@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2018-02-16</Date>
+  <Date>2018-03-02</Date>
   <Changes>[font size=4][center]Firefox Change Log[/center][/font]
+[font size=3][b]v1.0.1[/b][/font] (2018-03-02)
+&#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
+
 [font size=3][b]v1.0.0[/b][/font] (2018-02-16)
 &#x00a0;&#x00a0;- Initial release.
 

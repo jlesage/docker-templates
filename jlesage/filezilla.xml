@@ -35,8 +35,14 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2018-02-25</Date>
+  <Date>2018-03-02</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.8.1[/b][/font] (2018-03-02)
+&#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed an issue where the log monitor `yad` target would use XDG folders of the application.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
+
 [font size=3][b]v1.8.0[/b][/font] (2018-02-25)
 &#x00a0;&#x00a0;- Upgraded FileZilla to version 3.31.0.
 &#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.12.1.
