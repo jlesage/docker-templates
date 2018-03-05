@@ -40,6 +40,7 @@
 [font size=3][b]v1.0.1[/b][/font] (2018-03-02)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
+&#x00a0;&#x00a0;- Updated Firefox to version 58.0.1-r2.
 
 [font size=3][b]v1.0.0[/b][/font] (2018-02-16)
 &#x00a0;&#x00a0;- Initial release.
