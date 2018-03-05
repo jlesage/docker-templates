@@ -53,8 +53,11 @@ get all three, from the same easy application.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2018-03-02</Date>
+  <Date>2018-03-05</Date>
   <Changes>[font size=4][center]CrashPlan Change Log[/center][/font]
+[font size=3][b]v1.6.4[/b][/font] (2018-03-05)
+&#x00a0;&#x00a0;- Use the correct variable to keep the application running.
+
 [font size=3][b]v1.6.3[/b][/font] (2018-03-02)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
