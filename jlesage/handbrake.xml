@@ -51,8 +51,13 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-03-02</Date>
+  <Date>2018-03-22</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.12.0[/b][/font] (2018-03-22)
+&#x00a0;&#x00a0;- Added pre-conversion hook for the automatic video converter.
+&#x00a0;&#x00a0;- Added support for creation of image based on the latest HandBrake development code.
+&#x00a0;&#x00a0;- Switched to a baseimage based on Alpine Linux 3.7.
+
 [font size=3][b]v1.11.5[/b][/font] (2018-03-02)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
