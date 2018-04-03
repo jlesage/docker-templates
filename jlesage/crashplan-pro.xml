@@ -61,8 +61,13 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2018-03-05</Date>
+  <Date>2018-04-03</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.3.2[/b][/font] (2018-04-03)
+&#x00a0;&#x00a0;- Upgraded CrashPlan to version 6.7.1.
+&#x00a0;&#x00a0;- Fixed an issue where running the container as user `nobody` (id 65534) would fail.
+&#x00a0;&#x00a0;- Switched to a baseimage based on Alpine Linux 3.7.
+
 [font size=3][b]v2.3.1[/b][/font] (2018-03-05)
 &#x00a0;&#x00a0;- Use the correct variable to keep the application running.
 
