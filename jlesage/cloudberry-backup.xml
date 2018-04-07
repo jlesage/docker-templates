@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2018-03-27</Date>
+  <Date>2018-04-07</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.12.1[/b][/font] (2018-04-07)
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.4.1.6.
+
 [font size=3][b]v1.12.0[/b][/font] (2018-03-27)
 &#x00a0;&#x00a0;- Updapted CloudBerry Backup to version 2.4.0.17.
 &#x00a0;&#x00a0;- Switched to a baseimage based on Alpine Linux 3.7.
