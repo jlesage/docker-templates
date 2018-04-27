@@ -51,8 +51,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-04-09</Date>
+  <Date>2018-04-26</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.13.1[/b][/font] (2018-04-26)
+&#x00a0;&#x00a0;- Improved fix for FLAC encoder crash.
+
 [font size=3][b]v1.13.0[/b][/font] (2018-04-09)
 &#x00a0;&#x00a0;- Upgraded HandBrake to version 1.1.0.
 
