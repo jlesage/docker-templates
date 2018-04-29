@@ -75,8 +75,14 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-03-02</Date>
+  <Date>2018-04-28</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.8.0[/b][/font] (2018-04-28)
+&#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.12.2.
+&#x00a0;&#x00a0;- Upgraded FDK AAC to version 0.1.6.
+&#x00a0;&#x00a0;- Upgraded FFmpeg to version 2.8.14.
+&#x00a0;&#x00a0;- Switched to a baseimage based on Alpine Linux 3.7.
+
 [font size=3][b]v1.7.1[/b][/font] (2018-03-02)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
