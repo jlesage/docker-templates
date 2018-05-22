@@ -51,8 +51,12 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-05-09</Date>
+  <Date>2018-05-21</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.13.3[/b][/font] (2018-05-21)
+&#x00a0;&#x00a0;- Moved the HandBrake debug log under the proper directory.
+&#x00a0;&#x00a0;- Fixed the nightly build.
+
 [font size=3][b]v1.13.2[/b][/font] (2018-05-09)
 &#x00a0;&#x00a0;- Fixed issue where handling DVD structure would cause a crash.
 
