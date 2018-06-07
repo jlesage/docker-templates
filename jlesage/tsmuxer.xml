@@ -241,6 +241,6 @@ compliant Blu-ray Disc or AVCHD.  Blu-ray 3D support.
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7808" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7908" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
-  <DonateLink>https://paypal.me/JocelynLeSage</DonateLink>
+  <DonateLink>https://paypal.me/JocelynLeSage/0usd</DonateLink>
   <DonateImg>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/donate.png</DonateImg>
 </Container>

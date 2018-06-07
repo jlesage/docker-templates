@@ -325,6 +325,6 @@ get all three, from the same easy application.
   <Config Name="WEB Port for GUI" Target="5800" Default="7804" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7904" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
   <Config Name="WEB Port for GUI" Target="4242" Default="4242" Mode="tcp" Description="Port used for computer-to-computer backup.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; To receive backups from remote computers over the internet, make sure to properly configure port-forwarding on your router.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This port mapping is not needed if computer-to-computer backup feature is not used." Type="Port" Display="advanced" Required="false" Mask="false"/>
-  <DonateLink>https://paypal.me/JocelynLeSage</DonateLink>
+  <DonateLink>https://paypal.me/JocelynLeSage/0usd</DonateLink>
   <DonateImg>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/donate.png</DonateImg>
 </Container>
