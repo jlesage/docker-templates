@@ -35,8 +35,15 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2018-05-02</Date>
+  <Date>2018-06-11</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.18.0[/b][/font] (2018-06-11)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 24.0.0.
+&#x00a0;&#x00a0;- Now using baseimage v3.3.6, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded s6-overlay to version 1.21.4.0.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Wait for a limited time when terminating a service.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set and create the XDG_RUNTIME_DIR directory.
+
 [font size=3][b]v1.17.0[/b][/font] (2018-05-02)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 23.0.0.
 
