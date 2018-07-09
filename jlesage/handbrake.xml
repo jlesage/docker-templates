@@ -51,8 +51,16 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-06-18</Date>
+  <Date>2018-07-09</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.14.0[/b][/font] (2018-07-09)
+&#x00a0;&#x00a0;- Added support for Intel Quick Sync Video hardware-accelerated encoding.
+&#x00a0;&#x00a0;- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
+&#x00a0;&#x00a0;- Fixed issue where selecting a different video encoder would result in incorrect video preset selection.
+&#x00a0;&#x00a0;- Fixed an issue where the automatic video converter would choose an incorrect output subfolder when `SAME_AS_SRC` is used.
+&#x00a0;&#x00a0;- Fixed an issue where the automatic video converter, during source cleanup, would try to remove the watch folder itself.
+&#x00a0;&#x00a0;- Fixed an issue where the automatic video converter would choose an incorrect output filename when the source is a DVD/Blu-Ray folder.
+
 [font size=3][b]v1.13.5[/b][/font] (2018-06-18)
 &#x00a0;&#x00a0;- Fixed nightly build.
 
