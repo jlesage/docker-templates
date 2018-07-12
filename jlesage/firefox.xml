@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2018-05-31</Date>
+  <Date>2018-07-12</Date>
   <Changes>[font size=4][center]Firefox Change Log[/center][/font]
+[font size=3][b]v1.2.0[/b][/font] (2018-07-12)
+&#x00a0;&#x00a0;- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
+&#x00a0;&#x00a0;- Upgraded Firefox to version 61.0.1-r0.
+
 [font size=3][b]v1.1.0[/b][/font] (2018-05-31)
 &#x00a0;&#x00a0;- Upgraded Firefox to version 60.0.1-r0.
 
