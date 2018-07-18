@@ -51,8 +51,14 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-07-13</Date>
+  <Date>2018-07-17</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.14.4[/b][/font] (2018-07-17)
+&#x00a0;&#x00a0;- Fixed an issue where HandBrake could crash while encoding a video using x264.
+
+[font size=3][b]v1.14.3[/b][/font] (2018-07-16)
+&#x00a0;&#x00a0;- Added support for debug images.
+
 [font size=3][b]v1.14.2[/b][/font] (2018-07-13)
 &#x00a0;&#x00a0;- Upgraded HandBrake to version 1.1.1.
 &#x00a0;&#x00a0;- Reduced the size of the container image.
