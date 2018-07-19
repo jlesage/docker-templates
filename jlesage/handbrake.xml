@@ -51,8 +51,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-07-17</Date>
+  <Date>2018-07-19</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.14.5[/b][/font] (2018-07-19)
+&#x00a0;&#x00a0;- A video being converted is now written to a temporary directory before being moved to its final location.
+
 [font size=3][b]v1.14.4[/b][/font] (2018-07-17)
 &#x00a0;&#x00a0;- Fixed an issue where HandBrake could crash while encoding a video using x264.
 
