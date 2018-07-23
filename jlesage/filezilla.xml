@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2018-06-18</Date>
+  <Date>2018-07-23</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.11.0[/b][/font] (2018-07-23)
+&#x00a0;&#x00a0;- Upgraded FileZilla to version 3.35.0.
+&#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.13.0.
+&#x00a0;&#x00a0;- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
+
 [font size=3][b]v1.10.2[/b][/font] (2018-06-18)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.6, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded s6-overlay to version 1.21.4.0.
