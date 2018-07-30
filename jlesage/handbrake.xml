@@ -51,8 +51,12 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-07-19</Date>
+  <Date>2018-07-30</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.14.6[/b][/font] (2018-07-30)
+&#x00a0;&#x00a0;- Fixed an issue where the automatic video converter would fail to convert video with multiple titles.
+&#x00a0;&#x00a0;- Make sure to apply the `HANDBRAKE_DEBUG` environment variable to the automatic video converter.
+
 [font size=3][b]v1.14.5[/b][/font] (2018-07-19)
 &#x00a0;&#x00a0;- A video being converted is now written to a temporary directory before being moved to its final location.
 
