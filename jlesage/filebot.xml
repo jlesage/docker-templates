@@ -39,8 +39,12 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2018-03-02</Date>
+  <Date>2018-07-30</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b][/font] (2018-07-30)
+&#x00a0;&#x00a0;- Upgraded FileBot to version 4.8.2.
+&#x00a0;&#x00a0;- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
+
 [font size=3][b]v1.0.2[/b][/font] (2018-03-02)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
