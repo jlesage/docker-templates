@@ -75,8 +75,11 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-07-27</Date>
+  <Date>2018-08-20</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.9.2[/b][/font] (2018-08-20)
+&#x00a0;&#x00a0;- Fixed an issue where fetching the beta key would fail.
+
 [font size=3][b]v1.9.1[/b][/font] (2018-07-27)
 &#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.12.3.
 &#x00a0;&#x00a0;- Reverted FFmpeg to version 2.8.14.
