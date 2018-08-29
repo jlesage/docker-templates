@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2018-08-27</Date>
+  <Date>2018-08-29</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.1.3[/b][/font] (2018-08-29)
+&#x00a0;&#x00a0;- Upgraded FileBot to version 4.8.4 (r5846).
+
 [font size=3][b]v1.1.2[/b][/font] (2018-08-27)
 &#x00a0;&#x00a0;- Upgraded FileBot to version 4.8.2 (r5789).
 
