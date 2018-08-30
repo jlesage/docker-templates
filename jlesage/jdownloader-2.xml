@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/jdownloader-2/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/58552-support-jdownloader-2/</Support>
+  <Support>https://forums.unraid.net/topic/58552-support-jdownloader-2/</Support>
   <Overview>
     JDownloader 2 is a free, open-source download management tool with a huge
 community of developers that makes downloading as easy and fast as it should be.

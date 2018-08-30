@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/firefox/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/69440-support-firefox/</Support>
+  <Support>https://forums.unraid.net/topic/69440-support-firefox/</Support>
   <Overview>
     Mozilla Firefox is a free and open-source web browser developed by Mozilla Foundation and its subsidiary, Mozilla Corporation.
     [br][br]

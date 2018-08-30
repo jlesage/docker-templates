@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/crashplan/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/57756-support-crashplan/</Support>
+  <Support>https://forums.unraid.net/topic/57756-support-crashplan/</Support>
   <Overview>
     CrashPlan makes it easy to protect your digital life, so you can get back to
 what’s important in real life.  Only CrashPlan offers totally free local and

@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/cloudberry-backup/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/57217-support-cloudberry-backup/</Support>
+  <Support>https://forums.unraid.net/topic/57217-support-cloudberry-backup/</Support>
   <Overview>
     Backup files and folders to cloud storage of your choice: Amazon S3, Azure Blob Storage, Google Cloud Storage, HP Cloud, Rackspace Cloud Files, OpenStack, DreamObjects and other.
     [br][br]

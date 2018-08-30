@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/crashplan-pro/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/59647-support-crashplan-pro/</Support>
+  <Support>https://forums.unraid.net/topic/59647-support-crashplan-pro/</Support>
   <Overview>
     CrashPlan offers the most comprehensive online backup solution to tens of
 thousands of businesses around the world.  The highly secure, automatic and

@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/mkvtoolnix/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/58039-support-mkvtoolnix/</Support>
+  <Support>https://forums.unraid.net/topic/58039-support-mkvtoolnix/</Support>
   <Overview>
     MKVToolNix is a set of tools to create, alter and inspect Matroska files.
     [br][br]

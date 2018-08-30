@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/makemkv/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/58352-support-makemkv/</Support>
+  <Support>https://forums.unraid.net/topic/58352-support-makemkv/</Support>
   <Overview>
     MakeMKV is your one-click solution to convert video that you own into free and
 patents-unencumbered format that can be played everywhere. MakeMKV is a format

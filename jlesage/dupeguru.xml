@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/dupeguru/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/56392-support-dupeguru/</Support>
+  <Support>https://forums.unraid.net/topic/56392-support-dupeguru/</Support>
   <Overview>
     dupeGuru is a tool to find duplicate files on your computer. It can scan either
 filenames or contents. The filename scan features a fuzzy matching algorithm

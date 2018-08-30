@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/tsmuxer/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/58629-support-tsmuxer/</Support>
+  <Support>https://forums.unraid.net/topic/58629-support-tsmuxer/</Support>
   <Overview>
     tsMuxer is a Transport Stream muxer. Remux/mux elementary streams, EVO/VOB/MPG,
 MKV/MKA, MP4/MOV, TS, M2TS to TS to M2TS. Supported video codecs H.264, VC-1,

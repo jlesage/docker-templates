@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/filebot/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/68916-support-filebot/</Support>
+  <Support>https://forums.unraid.net/topic/68916-support-filebot/</Support>
   <Overview>
     FileBot is the ultimate tool for organizing and renaming your movies, tv shows
 or anime, and music well as downloading subtitles and artwork. It's smart and

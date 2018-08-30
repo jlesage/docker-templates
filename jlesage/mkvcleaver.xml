@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/mkvcleaver/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/61701-support-mkvcleaver/</Support>
+  <Support>https://forums.unraid.net/topic/61701-support-mkvcleaver/</Support>
   <Overview>
     MKVCleaver is a tool for batch extraction of data from MKV files
     [br][br]

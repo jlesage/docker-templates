@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/filezilla/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/59047-support-filezilla/</Support>
+  <Support>https://forums.unraid.net/topic/59047-support-filezilla/</Support>
   <Overview>
     FileZilla is a cross-platform graphical FTP, SFTP, and FTPS file management tool with a vast list of features.
     [br][br]

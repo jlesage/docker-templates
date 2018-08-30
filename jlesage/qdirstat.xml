@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/qdirstat/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.lime-technology.com/topic/72787-support-qdirstat/</Support>
+  <Support>https://forums.unraid.net/topic/72787-support-qdirstat/</Support>
   <Overview>
     QDirStat is a graphical application to show where your disk space has gone and to help you to clean it up.
     [br][br]
