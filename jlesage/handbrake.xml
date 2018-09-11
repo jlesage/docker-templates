@@ -51,8 +51,16 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-07-30</Date>
+  <Date>2018-09-11</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.14.7[/b][/font] (2018-09-11)
+&#x00a0;&#x00a0;- Upgraded to HandBrake version 1.1.2.
+&#x00a0;&#x00a0;- Fixes to the automatic video converter:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Gracefully handle the case where the pre-conversion hook removes the source video file.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Skip unreadable files.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Drop root privileges at start.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Better handling of unexisting cache files.
+
 [font size=3][b]v1.14.6[/b][/font] (2018-07-30)
 &#x00a0;&#x00a0;- Fixed an issue where the automatic video converter would fail to convert video with multiple titles.
 &#x00a0;&#x00a0;- Make sure to apply the `HANDBRAKE_DEBUG` environment variable to the automatic video converter.
