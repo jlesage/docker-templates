@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>http://avidemux.org/</Project>
-  <Date>2018-03-02</Date>
+  <Date>2018-09-11</Date>
   <Changes>[font size=4][center]Avidemux Change Log[/center][/font]
+[font size=3][b]v1.2.4[/b][/font] (2018-09-11)
+&#x00a0;&#x00a0;- Upgraded Avidemux to version 2.7.1.
+&#x00a0;&#x00a0;- Fixed an issue where configuration files would not have the proper ownership.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.0, based on Alpine Linux 3.8.
+
 [font size=3][b]v1.2.3[/b][/font] (2018-03-02)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
