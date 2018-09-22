@@ -35,8 +35,18 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2018-08-27</Date>
+  <Date>2018-09-21</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.13.1[/b][/font] (2018-09-21)
+&#x00a0;&#x00a0;- Upgraded FileZilla to version 3.37.1.
+&#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.13.2.
+
+[font size=3][b]v1.13.0[/b][/font] (2018-09-18)
+&#x00a0;&#x00a0;- Upgraded FileZilla to version 3.37.0.
+&#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.13.1.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 [font size=3][b]v1.12.0[/b][/font] (2018-08-27)
 &#x00a0;&#x00a0;- Upgraded FileZilla to version 3.36.0.
 

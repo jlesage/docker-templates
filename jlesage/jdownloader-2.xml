@@ -43,8 +43,19 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2018-03-02</Date>
+  <Date>2018-09-21</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.5.0[/b][/font] (2018-09-21)
+&#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Image based on Alpine Linux 3.8.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded s6-overlay to version 1.21.4.0.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Wait for a limited time when terminating a service.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set and create the XDG_RUNTIME_DIR directory.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Upgraded Java JRE to version 8u181.
+&#x00a0;&#x00a0;- Install `ffmpeg`, `ffprobe` and `rtmpdump` to allow JDownloader to use them.
+&#x00a0;&#x00a0;- Fixed an issue where JDownloader would not work on a filesystem without execution permission.
+
 [font size=3][b]v1.4.3[/b][/font] (2018-03-02)
 &#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.

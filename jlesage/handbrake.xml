@@ -51,8 +51,12 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-09-11</Date>
+  <Date>2018-09-19</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.14.8[/b][/font] (2018-09-19)
+&#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 [font size=3][b]v1.14.7[/b][/font] (2018-09-11)
 &#x00a0;&#x00a0;- Upgraded to HandBrake version 1.1.2.
 &#x00a0;&#x00a0;- Fixes to the automatic video converter:
