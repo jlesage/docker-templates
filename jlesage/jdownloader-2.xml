@@ -43,8 +43,11 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2018-09-21</Date>
+  <Date>2018-09-25</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.5.1[/b][/font] (2018-09-25)
+&#x00a0;&#x00a0;- Fixed issue where opening/processing captcha would crash JDownloader.
+
 [font size=3][b]v1.5.0[/b][/font] (2018-09-21)
 &#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes (since last used version):
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Image based on Alpine Linux 3.8.
