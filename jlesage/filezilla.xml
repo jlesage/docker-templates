@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2018-10-04</Date>
+  <Date>2018-10-26</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.14.0[/b][/font] (2018-10-26)
+&#x00a0;&#x00a0;- Upgraded FileZilla to version 3.38.0.
+&#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.15.0.
+&#x00a0;&#x00a0;- Switched to the Adwaita GTK theme.
+
 [font size=3][b]v1.13.2[/b][/font] (2018-10-04)
 &#x00a0;&#x00a0;- Upgraded FileZilla to version 3.37.4.
 &#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.14.0.
