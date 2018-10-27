@@ -75,8 +75,12 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-10-02</Date>
+  <Date>2018-10-26</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.9.5[/b][/font] (2018-10-26)
+&#x00a0;&#x00a0;- Updated OpenJDK to version 11.0.1.  This fixes an issue where MakeMKV would crash with certain BluRay discs.
+&#x00a0;&#x00a0;- Auto disc ripper: Make sure to abort if tray is opened.
+
 [font size=3][b]v1.9.4[/b][/font] (2018-10-02)
 &#x00a0;&#x00a0;- Fixed issue where files and folders created for the backup of a Blu-Ray disc would not follow the configured umask.
 &#x00a0;&#x00a0;- The auto disc ripper now drops root privileges at start.
