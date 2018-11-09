@@ -75,8 +75,11 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-11-08</Date>
+  <Date>2018-11-09</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.10.1[/b][/font] (2018-11-09)
+&#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.14.1.
+
 [font size=3][b]v1.10.0[/b][/font] (2018-11-08)
 &#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.14.0.
 &#x00a0;&#x00a0;- Upgraded FFmpeg to version 4.1.
