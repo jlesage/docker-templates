@@ -75,8 +75,14 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-10-26</Date>
+  <Date>2018-11-08</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.10.0[/b][/font] (2018-11-08)
+&#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.14.0.
+&#x00a0;&#x00a0;- Upgraded FFmpeg to version 4.1.
+&#x00a0;&#x00a0;- Fixed Java invocation failure.
+&#x00a0;&#x00a0;- Small enhancements to the MakeMKV builder.
+
 [font size=3][b]v1.9.5[/b][/font] (2018-10-26)
 &#x00a0;&#x00a0;- Updated OpenJDK to version 11.0.1.  This fixes an issue where MakeMKV would crash with certain BluRay discs.
 &#x00a0;&#x00a0;- Auto disc ripper: Make sure to abort if tray is opened.
