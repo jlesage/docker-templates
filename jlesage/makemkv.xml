@@ -249,11 +249,6 @@ log.
         <ContainerPort>5900</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-      <Port>
-        <HostPort>51000</HostPort>
-        <ContainerPort>51000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Data>
@@ -379,7 +374,6 @@ log.
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7806" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7906" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
-  <Config Name="Streaming Port" Target="51000" Default="51000" Mode="tcp" Description="Port used by the streaming service.  This can be removed if the feature is not used." Type="Port" Display="advanced" Required="false" Mask="false"/>
   <DonateLink>https://paypal.me/JocelynLeSage/0usd</DonateLink>
   <DonateImg>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/donate.png</DonateImg>
 </Container>
