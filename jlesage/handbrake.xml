@@ -51,8 +51,14 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2018-09-19</Date>
+  <Date>2018-11-12</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.14.9[/b][/font] (2018-11-12)
+&#x00a0;&#x00a0;- The automatic video converter now processes older files first.
+&#x00a0;&#x00a0;- Fixed an issue where the automatic video converter would fail to start when `USER_ID` is set to `0`.
+&#x00a0;&#x00a0;- Do not setup supplementary group if device for Intel QSV is already accessible.
+&#x00a0;&#x00a0;- Added a new log message for a scenario where Intel QSV would not work.
+
 [font size=3][b]v1.14.8[/b][/font] (2018-09-19)
 &#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
