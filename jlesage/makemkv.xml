@@ -75,8 +75,12 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2018-11-13</Date>
+  <Date>2018-12-03</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.10.4[/b][/font] (2018-12-03)
+&#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.14.2.
+&#x00a0;&#x00a0;- Added ccextractor, needed to extract closed captions.
+
 [font size=3][b]v1.10.3[/b][/font] (2018-11-13)
 &#x00a0;&#x00a0;- Reduced the size of the Docker image.
 
