@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2018-10-26</Date>
+  <Date>2018-12-03</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.22.0[/b][/font] (2018-12-03)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 29.0.0.
+
 [font size=3][b]v1.21.0[/b][/font] (2018-10-26)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 28.2.0.
 &#x00a0;&#x00a0;- Added MediaInfo, which can be invoked from MKVToolNix context menu.
