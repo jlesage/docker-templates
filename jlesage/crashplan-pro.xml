@@ -61,8 +61,11 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2018-12-09</Date>
+  <Date>2018-12-19</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.6.1[/b][/font] (2018-12-19)
+&#x00a0;&#x00a0;- Updated logo of Crashplan.
+
 [font size=3][b]v2.6.0[/b][/font] (2018-12-09)
 &#x00a0;&#x00a0;- Upgraded CrashPlan PRO to version 6.9.0.
 &#x00a0;&#x00a0;- Make sure only the numerical kernel version is reported to CrashPlan PRO.
