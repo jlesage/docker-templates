@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2018-09-18</Date>
+  <Date>2019-01-07</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.1.5[/b][/font] (2019-01-07)
+&#x00a0;&#x00a0;- The default folder when loading files is now `/storage`.
+
 [font size=3][b]v1.1.4[/b][/font] (2018-09-18)
 &#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
