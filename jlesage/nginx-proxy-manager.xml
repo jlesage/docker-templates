@@ -49,8 +49,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2019-01-07</Date>
+  <Date>2019-01-26</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.2.1[/b][/font] (2019-01-26)
+&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.9.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Increased custom SSL certificate file size limit.
+
 [font size=3][b]v1.2.0[/b][/font] (2019-01-07)
 &#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.8.
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the ability to enable/disable hosts.
