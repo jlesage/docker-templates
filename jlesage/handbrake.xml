@@ -51,8 +51,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2019-01-14</Date>
+  <Date>2019-02-12</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.15.1[/b][/font] (2019-02-12)
+&#x00a0;&#x00a0;- Fixed issue where Intel QSV would not be setup properly when its associated Linux devices where having different owners.
+
 [font size=3][b]v1.15.0[/b][/font] (2019-01-14)
 &#x00a0;&#x00a0;- Upgraded HandBrake to version 1.2.0.
 &#x00a0;&#x00a0;- The automatic video converter now creates the output folder just before moving the video.
