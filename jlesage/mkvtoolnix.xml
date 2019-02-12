@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2019-01-07</Date>
+  <Date>2019-02-12</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.24.0[/b][/font] (2019-02-12)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 31.0.0.
+&#x00a0;&#x00a0;- Upgraded MediaInfo to version 18.12.
+
 [font size=3][b]v1.23.0[/b][/font] (2019-01-07)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 30.1.0.
 &#x00a0;&#x00a0;- Fixed issue where special characters would not display correctly in open file dialog box.
