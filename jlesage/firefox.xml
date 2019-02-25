@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2018-09-18</Date>
+  <Date>2019-02-24</Date>
   <Changes>[font size=4][center]Firefox Change Log[/center][/font]
+[font size=3][b]v1.4.0[/b][/font] (2019-02-24)
+&#x00a0;&#x00a0;- Upgraded Firefox to version 62.0.3-r2.
+&#x00a0;&#x00a0;- Preferences can now be set via environment variables.
+&#x00a0;&#x00a0;- Use baseimage based on Alpine Linux 3.9.
+
 [font size=3][b]v1.3.1[/b][/font] (2018-09-18)
 &#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
