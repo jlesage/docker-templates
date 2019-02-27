@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2018-10-02</Date>
+  <Date>2019-02-27</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.16.0[/b][/font] (2019-02-27)
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.8.0.35.
+&#x00a0;&#x00a0;- Make sure to start the UI only when the management service is ready.
+
 [font size=3][b]v1.15.0[/b][/font] (2018-10-02)
 &#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.6.0.31.
 
