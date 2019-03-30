@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-03-25</Date>
+  <Date>2019-03-26</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.2.2[/b][/font] (2019-03-26)
+&#x00a0;&#x00a0;- Adjusted archive extraction to work with the latest FileBot build.
+
 [font size=3][b]v1.2.1[/b][/font] (2019-03-25)
 &#x00a0;&#x00a0;- Use 7zip for archive extraction.
 
