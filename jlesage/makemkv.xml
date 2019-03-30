@@ -75,8 +75,11 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2019-03-18</Date>
+  <Date>2019-03-30</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.11.1[/b][/font] (2019-03-30)
+&#x00a0;&#x00a0;- Updated URL the beta key is fetched from.
+
 [font size=3][b]v1.11.0[/b][/font] (2019-03-18)
 &#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.14.3.
 &#x00a0;&#x00a0;- Upgraded FDK AAC to version 2.0.0.
