@@ -51,8 +51,18 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2019-02-12</Date>
+  <Date>2019-03-25</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.16.0[/b][/font] (2019-03-25)
+&#x00a0;&#x00a0;- Upgraded HandBrake to version 1.2.2.
+&#x00a0;&#x00a0;- Upgraded libva to version 2.4.0.
+&#x00a0;&#x00a0;- Upgraded Intel Media SDK to version 18.4.1.
+&#x00a0;&#x00a0;- Upgraded Intel Media Driver to version 18.4.1.
+&#x00a0;&#x00a0;- Use baseimage based on Alpine Linux 3.9.
+&#x00a0;&#x00a0;- The number of watch folders is now configurable.
+&#x00a0;&#x00a0;- The root output directory used by the automatic video converter is now configurable.
+&#x00a0;&#x00a0;- Added hook invoked after all files in a watch folder are processed.
+
 [font size=3][b]v1.15.1[/b][/font] (2019-02-12)
 &#x00a0;&#x00a0;- Fixed issue where Intel QSV would not be setup properly when its associated Linux devices where having different owners.
 
