@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-03-26</Date>
+  <Date>2019-04-03</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.2.3[/b][/font] (2019-04-03)
+&#x00a0;&#x00a0;- Upgraded FileBot to final version 4.8.5 (r6224).
+
 [font size=3][b]v1.2.2[/b][/font] (2019-03-26)
 &#x00a0;&#x00a0;- Adjusted archive extraction to work with the latest FileBot build.
 
