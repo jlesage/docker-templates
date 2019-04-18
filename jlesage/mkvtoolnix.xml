@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2019-03-13</Date>
+  <Date>2019-04-18</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.26.0[/b][/font] (2019-04-18)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 33.1.0.
+
 [font size=3][b]v1.25.0[/b][/font] (2019-03-13)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 32.0.0.
 &#x00a0;&#x00a0;- Use baseimage based on Alpine Linux 3.9.
