@@ -51,8 +51,17 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2019-03-25</Date>
+  <Date>2019-04-26</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.17.0[/b][/font] (2019-04-26)
+&#x00a0;&#x00a0;- Progress of conversions performed by the automatic video converter can be seen in the HandBrake GUI.
+&#x00a0;&#x00a0;- Fixed an issue where a video conversion failure would not be detected.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+
 [font size=3][b]v1.16.0[/b][/font] (2019-03-25)
 &#x00a0;&#x00a0;- Upgraded HandBrake to version 1.2.2.
 &#x00a0;&#x00a0;- Upgraded libva to version 2.4.0.
@@ -467,6 +476,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
       <Name>AUTOMATED_CONVERSION_MAX_WATCH_FOLDERS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>AUTOMATED_CONVERSION_NO_GUI_PROGRESS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
@@ -491,6 +505,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <Config Name="Automatic Video Converter: Minimum Title Duration" Target="AUTOMATED_CONVERSION_SOURCE_MIN_DURATION" Default="10" Mode="" Description="Minimum title duration (in seconds).  Shorter titles will be ignored.  This applies only to video disc sources (ISO file, &amp;lt;i&amp;gt;VIDEO_TS&amp;lt;/i&amp;gt; folder or &amp;lt;i&amp;gt;BDMV&amp;lt;/i&amp;gt; folder)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Check Interval" Target="AUTOMATED_CONVERSION_CHECK_INTERVAL" Default="5" Mode="" Description="Interval (in seconds) at which the automatic video converter checks for new files." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Number of Watch Folders" Target="AUTOMATED_CONVERSION_MAX_WATCH_FOLDERS" Default="5" Mode="" Description="Maximum number of watch folders handled by the automatic video converter." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Disable Progress in GUI" Target="AUTOMATED_CONVERSION_NO_GUI_PROGRESS" Default="0" Mode="" Description="Set to 1 to disable display of the video conversion progress in HandBrake GUI." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
