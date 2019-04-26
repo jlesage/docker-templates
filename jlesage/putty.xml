@@ -35,8 +35,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.putty.org</Project>
-  <Date>2018-09-18</Date>
+  <Date>2019-04-25</Date>
   <Changes>[font size=4][center]PuTTY Change Log[/center][/font]
+[font size=3][b]v1.0.2[/b][/font] (2019-04-25)
+&#x00a0;&#x00a0;- Upgraded PuTTY to version 0.71.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+
 [font size=3][b]v1.0.1[/b][/font] (2018-09-18)
 &#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
