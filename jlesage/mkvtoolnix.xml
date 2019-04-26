@@ -35,8 +35,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2019-04-18</Date>
+  <Date>2019-04-26</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.27.0[/b][/font] (2019-04-26)
+&#x00a0;&#x00a0;- Upgraded MediaInfo to version 19.04.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+
 [font size=3][b]v1.26.0[/b][/font] (2019-04-18)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 33.1.0.
 
