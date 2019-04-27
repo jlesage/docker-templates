@@ -39,8 +39,15 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-04-03</Date>
+  <Date>2019-04-26</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.2.4[/b][/font] (2019-04-26)
+&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+
 [font size=3][b]v1.2.3[/b][/font] (2019-04-03)
 &#x00a0;&#x00a0;- Upgraded FileBot to final version 4.8.5 (r6224).
 
