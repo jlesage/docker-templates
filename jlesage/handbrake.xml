@@ -51,8 +51,13 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2019-04-26</Date>
+  <Date>2019-05-04</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.17.1[/b][/font] (2019-05-04)
+&#x00a0;&#x00a0;- Fixed an issue where the progress output of the automatic video converter would hang.
+&#x00a0;&#x00a0;- Enhanced the progress output of the automatic video converter by showing the path of the video being converted.
+&#x00a0;&#x00a0;- Enhanced the progress output of the automatic video converter by adjusting the frequency of messages.
+
 [font size=3][b]v1.17.0[/b][/font] (2019-04-26)
 &#x00a0;&#x00a0;- Progress of conversions performed by the automatic video converter can be seen in the HandBrake GUI.
 &#x00a0;&#x00a0;- Fixed an issue where a video conversion failure would not be detected.
