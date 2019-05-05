@@ -43,8 +43,16 @@ your valuable time every day!
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org/</Project>
-  <Date>2018-09-25</Date>
+  <Date>2019-04-27</Date>
   <Changes>[font size=4][center]JDownloader 2 Change Log[/center][/font]
+[font size=3][b]v1.5.2[/b][/font] (2019-04-27)
+&#x00a0;&#x00a0;- Now using Java JRE from Amazon instead of Oracle.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+
 [font size=3][b]v1.5.1[/b][/font] (2018-09-25)
 &#x00a0;&#x00a0;- Fixed issue where opening/processing captcha would crash JDownloader.
 
