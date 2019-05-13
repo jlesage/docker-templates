@@ -49,8 +49,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2019-04-18</Date>
+  <Date>2019-05-09</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.5.0[/b][/font] (2019-05-09)
+&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.13.
+&#x00a0;&#x00a0;- Now using baseimage v2.4.2, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 [font size=3][b]v1.4.2[/b][/font] (2019-04-18)
 &#x00a0;&#x00a0;- Fixed issue where using a hostname for the upstream proxy host would not work.
 
