@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2019-05-09</Date>
+  <Date>2019-05-12</Date>
   <Changes>[font size=4][center]Firefox Change Log[/center][/font]
+[font size=3][b]v1.5.1[/b][/font] (2019-05-12)
+&#x00a0;&#x00a0;- Upgraded Firefox to version 66.0.5-r1.
+
 [font size=3][b]v1.5.0[/b][/font] (2019-05-09)
 &#x00a0;&#x00a0;- Upgraded Firefox to version 66.0.4-r0.
 &#x00a0;&#x00a0;- Print the Firefox version during the container startup.
