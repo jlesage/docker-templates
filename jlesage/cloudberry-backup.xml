@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2019-04-24</Date>
+  <Date>2019-05-17</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.19.0[/b][/font] (2019-05-17)
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.9.0.114.
+
 [font size=3][b]v1.18.1[/b][/font] (2019-04-24)
 &#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
