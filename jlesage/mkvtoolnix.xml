@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2019-04-26</Date>
+  <Date>2019-05-28</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.28.0[/b][/font] (2019-05-28)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 34.0.0.
+
 [font size=3][b]v1.27.0[/b][/font] (2019-04-26)
 &#x00a0;&#x00a0;- Upgraded MediaInfo to version 19.04.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
