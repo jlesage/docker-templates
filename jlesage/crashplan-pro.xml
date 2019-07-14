@@ -61,8 +61,11 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2019-06-22</Date>
+  <Date>2019-07-13</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.7.2[/b][/font] (2019-07-13)
+&#x00a0;&#x00a0;- Upgraded CrashPlan PRO to version 7.0.0 build 585.
+
 [font size=3][b]v2.7.1[/b][/font] (2019-06-22)
 &#x00a0;&#x00a0;- Fixed an issue where setting (via the environment variable) the maximum amount of memory CrashPlan is allowed to use would prevent the engine to start.
 
