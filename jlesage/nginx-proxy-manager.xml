@@ -49,8 +49,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2019-07-02</Date>
+  <Date>2019-08-20</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.5.2[/b][/font] (2019-08-20)
+&#x00a0;&#x00a0;- Use baseimage based on Alpine 3.9.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- This fixes TLS1.3 support.
+&#x00a0;&#x00a0;- Keep the `fastcgi.conf` and `fastcgi_params` Nginx configuration files.
+
 [font size=3][b]v1.5.1[/b][/font] (2019-07-02)
 &#x00a0;&#x00a0;- Fixed issue where the wrong SSL protocols/ciphers were used.
 
