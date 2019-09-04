@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>http://avidemux.org/</Project>
-  <Date>2019-04-26</Date>
+  <Date>2019-09-04</Date>
   <Changes>[font size=4][center]Avidemux Change Log[/center][/font]
+[font size=3][b]v1.2.7[/b][/font] (2019-09-04)
+&#x00a0;&#x00a0;- Upgraded Avidemux to version 2.7.4.
+
 [font size=3][b]v1.2.6[/b][/font] (2019-04-26)
 &#x00a0;&#x00a0;- Upgraded Avidemux to version 2.7.3.
 &#x00a0;&#x00a0;- Upgraded libdca to version 0.0.6.
