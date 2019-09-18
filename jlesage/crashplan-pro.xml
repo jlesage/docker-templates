@@ -61,8 +61,11 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2019-09-05</Date>
+  <Date>2019-09-18</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.8.0[/b][/font] (2019-09-18)
+&#x00a0;&#x00a0;- Upgraded CrashPlan Enterprise to version 7.2.0.
+
 [font size=3][b]v2.7.3[/b][/font] (2019-09-05)
 &#x00a0;&#x00a0;- Fixed misleading message about real-time file watching failure.
 
