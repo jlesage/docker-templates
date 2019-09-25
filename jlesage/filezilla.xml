@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2019-09-24</Date>
+  <Date>2019-09-25</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.21.1[/b][/font] (2019-09-25)
+&#x00a0;&#x00a0;- Upgraded FileZilla to version 3.45.1.
+
 [font size=3][b]v1.21.0[/b][/font] (2019-09-24)
 &#x00a0;&#x00a0;- Upgraded FileZilla to version 3.25.0.
 &#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.18.2.
