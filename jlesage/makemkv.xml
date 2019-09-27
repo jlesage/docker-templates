@@ -75,8 +75,11 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2019-09-15</Date>
+  <Date>2019-09-27</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.12.2[/b][/font] (2019-09-27)
+&#x00a0;&#x00a0;- Fixed issue where the container would not start with Docker version less than 18.06.
+
 [font size=3][b]v1.12.1[/b][/font] (2019-09-15)
 &#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.14.5.
 &#x00a0;&#x00a0;- Fixed fontconfig errors showing during startup.
