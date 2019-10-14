@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-04-26</Date>
+  <Date>2019-10-13</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.3.0[/b][/font] (2019-10-13)
+&#x00a0;&#x00a0;- Added support for the FileBot's Automated Media Center (AMC) script.
+
 [font size=3][b]v1.2.4[/b][/font] (2019-04-26)
 &#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
@@ -164,6 +167,71 @@ just works.
       <Name>X11VNC_EXTRA_OPTS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>OPENSUBTITLES_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OPENSUBTITLES_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1800</Value>
+      <Name>AMC_INTERVAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10</Value>
+      <Name>AMC_INPUT_STABLE_TIME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>test</Value>
+      <Name>AMC_ACTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>auto</Value>
+      <Name>AMC_CONFLICT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>{plex}</Value>
+      <Name>AMC_MUSIC_FORMAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>{plex}</Value>
+      <Name>AMC_MOVIE_FORMAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>{plex}</Value>
+      <Name>AMC_SERIES_FORMAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>{plex}</Value>
+      <Name>AMC_ANIME_FORMAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>y</Value>
+      <Name>AMC_PROCESS_MUSIC</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>AMC_SUBTITLE_LANG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>AMC_CUSTOM_OPTIONS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/filebot" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
@@ -177,6 +245,19 @@ just works.
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;1&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; to encrypt the connection.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Note:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; When enabling the secure connection, security parameters needs to be generated.  This &amp;lt;b&amp;gt;one-time&amp;lt;/b&amp;gt; operation is done during container startup.  Depending on your system, this could take a few minutes.  GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="OpenSubtitles Username" Target="OPENSUBTITLES_USERNAME" Default="" Mode="" Description="Username of your OpenSubtitles (https://www.opensubtitles.org) account.  Required to download subtitles." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OpenSubtitles Passowrd" Target="OPENSUBTITLES_PASSWORD" Default="" Mode="" Description="Password of your OpenSubtitles (https://www.opensubtitles.org) account.  Required to download subtitles." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Interval" Target="AMC_INTERVAL" Default="1800" Mode="" Description="Time (in seconds) between each invocation of the Automated Media Center (AMC) script." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Input Stable Time" Target="AMC_INPUT_STABLE_TIME" Default="10" Mode="" Description="Time (in seconds) during which properties (e.g. size, time, etc) of files in the watch folder need to remain the same before invoking the Automated Media Center (AMC) script.  This is to avoid processing the watch folder while files are being copied." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Action" Target="AMC_ACTION" Default="test" Mode="" Description="Action performed by the Automated Media Center (AMC) script on files.  Valid values are &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;test&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;copy&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;move&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; or &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;hardlink&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;.  Use the &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;test&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; operation to perform a dry-run and verify that everything gets matched up correctly." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Conflict Resolution" Target="AMC_CONFLICT" Default="auto" Mode="" Description="Conflict resolution strategy used by the Automated Media Center (AMC) script.  When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;skip&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, existing files are never overriden. &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;auto&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; overrides existing file only if new media is better." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Music Format" Target="AMC_MUSIC_FORMAT" Default="{plex}" Mode="" Description="Define how music files are renamed by the Automated Media Center (AMC) script.  Filebot supports a very powerful naming scheme.  See &amp;lt;i&amp;gt;https://www.filebot.net/naming.html&amp;lt;/i&amp;gt; for complete documentation." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Movie Format" Target="AMC_MOVIE_FORMAT" Default="{plex}" Mode="" Description="Define how movie files are renamed by the Automated Media Center (AMC) script.  Filebot supports a very powerful naming scheme.  See &amp;lt;i&amp;gt;https://www.filebot.net/naming.html&amp;lt;/i&amp;gt; for complete documentation." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: TV Series Format" Target="AMC_SERIES_FORMAT" Default="{plex}" Mode="" Description="Define how TV series files are renamed by the Automated Media Center (AMC) script.  Filebot supports a very powerful naming scheme.  See &amp;lt;i&amp;gt;https://www.filebot.net/naming.html&amp;lt;/i&amp;gt; for complete documentation." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Anime Format" Target="AMC_ANIME_FORMAT" Default="{plex}" Mode="" Description="Define how anime files are renamed by the Automated Media Center (AMC) script.  Filebot supports a very powerful naming scheme.  See &amp;lt;i&amp;gt;https://www.filebot.net/naming.html&amp;lt;/i&amp;gt; for complete documentation." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Process Music" Target="AMC_PROCESS_MUSIC" Default="y" Mode="" Description="When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;y&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, music files are processed by the Automated Media Center (AMC) script.  A value of &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;n&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; does not process them." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Custom Options" Target="AMC_SUBTITLE_LANG" Default="" Mode="" Description="Comma-separated list of subtitle languages to download.  Example: &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;en,de,fr&amp;lt;i&amp;gt;&amp;lt;b&amp;gt;." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Custom Options" Target="AMC_CUSTOM_OPTIONS" Default="" Mode="" Description="Custom arguments to pass to the Automated Media Center (AMC) script." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7813" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7913" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
