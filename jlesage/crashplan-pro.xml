@@ -61,8 +61,11 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2019-10-08</Date>
+  <Date>2019-10-22</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.8.2[/b][/font] (2019-10-22)
+&#x00a0;&#x00a0;- Fixed a notification message.
+
 [font size=3][b]v2.8.1[/b][/font] (2019-10-08)
 &#x00a0;&#x00a0;- Fixed issue where the wrong log file was monitored.
 
