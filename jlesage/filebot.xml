@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-10-24</Date>
+  <Date>2019-10-28</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.4.0[/b][/font] (2019-10-28)
+&#x00a0;&#x00a0;- The match mode used by the AMC script is now configurable.
+
 [font size=3][b]v1.3.1[/b][/font] (2019-10-24)
 &#x00a0;&#x00a0;- The AMC script is now invoked with the `-non-strict` option.
 
