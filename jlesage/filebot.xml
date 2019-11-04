@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-10-29</Date>
+  <Date>2019-11-04</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.5.1[/b][/font] (2019-11-04)
+&#x00a0;&#x00a0;- Implemented workaround for the AMC script's artwork and nfo fetching not working without xattr support.
+
 [font size=3][b]v1.5.0[/b][/font] (2019-10-29)
 &#x00a0;&#x00a0;- The ability to fetch artwork and generate NFO file using the AMC script is now configurable.
 
