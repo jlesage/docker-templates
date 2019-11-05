@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2019-10-06</Date>
+  <Date>2019-11-05</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.33.0[/b][/font] (2019-11-05)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 39.0.0.
+
 [font size=3][b]v1.32.0[/b][/font] (2019-10-06)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 38.0.0.
 
