@@ -270,6 +270,16 @@ just works.
       <Name>AMC_CUSTOM_OPTIONS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>/watch</Value>
+      <Name>AMC_INPUT_DIR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/output</Value>
+      <Name>AMC_OUTPUT_DIR</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/filebot" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
@@ -300,6 +310,8 @@ just works.
   <Config Name="Automated Media Center: Process Music" Target="AMC_PROCESS_MUSIC" Default="y" Mode="" Description="When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;y&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, music files are processed by the Automated Media Center (AMC) script.  A value of &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;n&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; does not process them." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Subtitle Languages" Target="AMC_SUBTITLE_LANG" Default="" Mode="" Description="Comma-separated list of subtitle languages to download.  Example: &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;en,de,fr&amp;lt;i&amp;gt;&amp;lt;b&amp;gt;." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Custom Options" Target="AMC_CUSTOM_OPTIONS" Default="" Mode="" Description="Custom arguments to pass to the Automated Media Center (AMC) script." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Input Directory" Target="AMC_INPUT_DIR" Default="/watch" Mode="" Description="Directory inside the container used as the input folder of the Automated Media Center (AMC) script." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Automated Media Center: Output Directory" Target="AMC_OUTPUT_DIR" Default="/output" Mode="" Description="Directory inside the container used as the output folder of the Automated Media Center (AMC) script." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7813" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7913" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
