@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-11-05</Date>
+  <Date>2019-11-19</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.6.0[/b][/font] (2019-11-19)
+&#x00a0;&#x00a0;- Added the ability to configure the input and output folders used by the AMC script.
+
 [font size=3][b]v1.5.3[/b][/font] (2019-11-05)
 &#x00a0;&#x00a0;- Fixed issue where the configured umask was not used by the AMC script.
 
