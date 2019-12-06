@@ -75,8 +75,11 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2019-12-03</Date>
+  <Date>2019-12-05</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.13.1[/b][/font] (2019-12-05)
+&#x00a0;&#x00a0;- Updated MakeMKV to version 1.14.7.
+
 [font size=3][b]v1.13.0[/b][/font] (2019-12-03)
 &#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.14.6.
 
