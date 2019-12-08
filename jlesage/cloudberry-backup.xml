@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2019-10-27</Date>
+  <Date>2019-12-08</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.21.2[/b][/font] (2019-12-08)
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.10.1.36.
+
 [font size=3][b]v1.21.1[/b][/font] (2019-10-27)
 &#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.10.1.26.
 
