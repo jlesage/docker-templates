@@ -39,8 +39,14 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-12-08</Date>
+  <Date>2019-12-30</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.8.0[/b][/font] (2019-12-30)
+&#x00a0;&#x00a0;- Custom arguments can now be passed to FileBot UI via the `FILEBOT_CUSTOM_OPTIONS` environment variable.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+
 [font size=3][b]v1.7.0[/b][/font] (2019-12-08)
 &#x00a0;&#x00a0;- Added the ability to install custom Alpine Linux packages.  This allows user-defined scripts invoked by the AMC script to use tools that are normally not part of the container image.
 
