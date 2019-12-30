@@ -212,6 +212,11 @@ just works.
       <Mode/>
     </Variable>
     <Variable>
+      <Value/>
+      <Name>FILEBOT_CUSTOM_OPTIONS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>1800</Value>
       <Name>AMC_INTERVAL</Name>
       <Mode/>
@@ -308,6 +313,7 @@ just works.
   <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="OpenSubtitles Username" Target="OPENSUBTITLES_USERNAME" Default="" Mode="" Description="Username of your OpenSubtitles (https://www.opensubtitles.org) account.  Required to download subtitles." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="OpenSubtitles Password" Target="OPENSUBTITLES_PASSWORD" Default="" Mode="" Description="Password of your OpenSubtitles (https://www.opensubtitles.org) account.  Required to download subtitles." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Custom Options" Target="FILEBOT_CUSTOM_OPTIONS" Default="" Mode="" Description="Custom arguments to pass to FileBot.  This apply to the UI only." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Interval" Target="AMC_INTERVAL" Default="1800" Mode="" Description="Time (in seconds) between each invocation of the Automated Media Center (AMC) script." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Input Stable Time" Target="AMC_INPUT_STABLE_TIME" Default="10" Mode="" Description="Time (in seconds) during which properties (e.g. size, time, etc) of files in the watch folder need to remain the same before invoking the Automated Media Center (AMC) script.  This is to avoid processing the watch folder while files are being copied." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Action" Target="AMC_ACTION" Default="test" Mode="" Description="Action performed by the Automated Media Center (AMC) script on files.  Valid values are &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;test&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;copy&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;move&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;symlink&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;hardlink&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;keeplink&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;duplicate&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; or &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;clone&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;.  Use the &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;test&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; operation to perform a dry-run and verify that everything gets matched up correctly." Type="Variable" Display="always" Required="false" Mask="false"/>
