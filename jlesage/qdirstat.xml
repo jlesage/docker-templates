@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/shundhammer/qdirstat</Project>
-  <Date>2020-01-24</Date>
+  <Date>2020-02-15</Date>
   <Changes>[font size=4][center]QDirStat Change Log[/center][/font]
+[font size=3][b]v1.1.1[/b][/font] (2020-02-15)
+&#x00a0;&#x00a0;- Upgraded QDirStat to version 1.6.1.
+
 [font size=3][b]v1.1.0[/b][/font] (2020-01-24)
 &#x00a0;&#x00a0;- Upgraded QDirStat to version 1.6.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
