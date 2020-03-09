@@ -520,6 +520,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
       <Name>AUTOMATED_CONVERSION_HANDBRAKE_CUSTOM_ARGS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>AUTOMATED_CONVERSION_INSTALL_PKGS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
@@ -548,6 +553,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <Config Name="Automatic Video Converter: Number of Watch Folders" Target="AUTOMATED_CONVERSION_MAX_WATCH_FOLDERS" Default="5" Mode="" Description="Maximum number of watch folders handled by the automatic video converter." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Disable Progress in GUI" Target="AUTOMATED_CONVERSION_NO_GUI_PROGRESS" Default="0" Mode="" Description="Set to 1 to disable display of the video conversion progress in HandBrake GUI." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Custom HandBrake Arguments" Target="AUTOMATED_CONVERSION_HANDBRAKE_CUSTOM_ARGS" Default="" Mode="" Description="Custom arguments to pass to HandBrake when performing a conversion." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Install Packages" Target="AUTOMATED_CONVERSION_INSTALL_PKGS" Default="" Mode="" Description="Space-separated list of Alpine Linux packages to install.  This is useful when the automatic video converter's hooks require requires tools not available in the container image.  See &amp;lt;i&amp;gt;https://pkgs.alpinelinux.org&amp;lt;/i&amp;gt; for the list of available Alpine Linux packages." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
