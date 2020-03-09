@@ -75,8 +75,13 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2019-12-05</Date>
+  <Date>2020-03-08</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.14.0[/b][/font] (2020-03-08)
+&#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.15.0.
+&#x00a0;&#x00a0;- Upgraded FFmpeg to version 4.2.2.
+&#x00a0;&#x00a0;- Upgraded FDK AAC to version 2.0.1.
+
 [font size=3][b]v1.13.1[/b][/font] (2019-12-05)
 &#x00a0;&#x00a0;- Updated MakeMKV to version 1.14.7.
 
