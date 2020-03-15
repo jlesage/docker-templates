@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2020-02-10</Date>
+  <Date>2020-03-15</Date>
   <Changes>[font size=4][center]Firefox Change Log[/center][/font]
+[font size=3][b]v1.10.0[/b][/font] (2020-03-15)
+&#x00a0;&#x00a0;- Upgraded Firefox to version 74.0-r0.
+
 [font size=3][b]v1.9.1[/b][/font] (2020-02-10)
 &#x00a0;&#x00a0;- Upgraded Firefox to version 72.0.2-r0.
 
