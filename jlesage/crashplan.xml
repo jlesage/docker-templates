@@ -260,11 +260,6 @@ get all three, from the same easy application.
       <Mode>ro</Mode>
     </Volume>
     <Volume>
-      <HostDir>/boot</HostDir>
-      <ContainerDir>/flash</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
-    <Volume>
       <HostDir>/mnt/user/crashplanBackupArchives</HostDir>
       <ContainerDir>/backupArchives</ContainerDir>
       <Mode>rw</Mode>
@@ -325,7 +320,6 @@ get all three, from the same easy application.
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/crashplan" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible by the application.&amp;lt;br&amp;gt;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false"/>
-  <Config Name="Flash" Target="/flash" Default="/boot" Mode="ro" Description="This is where data on your unRAID flash device is located.  Useful to backup your unRAID configuration.&amp;lt;br&amp;gt;Container path: /flash" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Inbound Backup Directory" Target="/backupArchives" Default="/mnt/user/crashplanBackupArchives" Mode="rw" Description="This is where inboud backup archives are stored.&amp;lt;br&amp;gt;Container path: /backupArchives&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This volume mapping is not needed if computer-to-computer backup feature is not used." Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="unRAID States" Target="/var/local/emhttp" Default="/var/local/emhttp" Mode="ro" Description="This is where unRAID state files are located.  This is used by the container to generate unRAID notifications about common CrashPlan issues.&amp;lt;br&amp;gt;Container path: /var/local/emhttp" Type="Path" Display="advanced" Required="false" Mask="false"/>
   <!-- Variable Mappings -->
