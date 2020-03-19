@@ -39,8 +39,12 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2019-12-30</Date>
+  <Date>2020-03-18</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.9.0[/b][/font] (2020-03-18)
+&#x00a0;&#x00a0;- Upgraded FileBot to version 4.9.0.
+&#x00a0;&#x00a0;- Switched to baseimage based on Alpine 11.
+
 [font size=3][b]v1.8.0[/b][/font] (2019-12-30)
 &#x00a0;&#x00a0;- Custom arguments can now be passed to FileBot UI via the `FILEBOT_CUSTOM_OPTIONS` environment variable.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
