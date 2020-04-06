@@ -35,8 +35,14 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2019-09-11</Date>
+  <Date>2020-04-05</Date>
   <Changes>[font size=4][center]MediaInfo Change Log[/center][/font]
+[font size=3][b]v1.4.0[/b][/font] (2020-04-05)
+&#x00a0;&#x00a0;- Upgraded MediaInfo to version 20.03.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+
 [font size=3][b]v1.3.0[/b][/font] (2019-09-11)
 &#x00a0;&#x00a0;- Upgraded MediaInfo to version 19.09.
 
