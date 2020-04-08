@@ -49,8 +49,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2020-04-07</Date>
+  <Date>2020-04-08</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.7.4[/b][/font] (2020-04-08)
+&#x00a0;&#x00a0;- Fixed issue where generated proxy host config would use incorrect ports.
+
 [font size=3][b]v1.7.3[/b][/font] (2020-04-07)
 &#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.2.
 
