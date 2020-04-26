@@ -39,8 +39,12 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2020-03-18</Date>
+  <Date>2020-04-25</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.9.1[/b][/font] (2020-04-25)
+&#x00a0;&#x00a0;- Upgraded FileBot to version 4.9.1.
+&#x00a0;&#x00a0;- Fixed issue that would prevent renaming files.
+
 [font size=3][b]v1.9.0[/b][/font] (2020-03-18)
 &#x00a0;&#x00a0;- Upgraded FileBot to version 4.9.0.
 &#x00a0;&#x00a0;- Switched to baseimage based on Alpine 11.
