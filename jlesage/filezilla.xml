@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2020-03-15</Date>
+  <Date>2020-04-25</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.24.0[/b][/font] (2020-04-25)
+&#x00a0;&#x00a0;- Added the ability to install extra packages to the container image.
+
 [font size=3][b]v1.23.1[/b][/font] (2020-03-15)
 &#x00a0;&#x00a0;- Upgraded FileZilla to version 3.47.2.1.
 &#x00a0;&#x00a0;- Upgraded libfilezilla to version 0.20.2.
