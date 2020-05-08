@@ -55,6 +55,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
 [font size=3][b]v1.22.0[/b][/font] (2020-05-04)
 &#x00a0;&#x00a0;- Upgraded HandBrake to version 1.3.2.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- NOTE: Presets are now identified with their group. This means that any preset configured for the automatic video converter needs to be adjusted.
 &#x00a0;&#x00a0;- Upgraded libva to version 2.7.1.
 &#x00a0;&#x00a0;- Upgraded Intel Media Driver to version 20.1.1.
 &#x00a0;&#x00a0;- Upgraded Intel Media SDK to version 20.1.1.
@@ -465,7 +466,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
       <Mode/>
     </Variable>
     <Variable>
-      <Value>Very Fast 1080p30</Value>
+      <Value>General/Very Fast 1080p30</Value>
       <Name>AUTOMATED_CONVERSION_PRESET</Name>
       <Mode/>
     </Variable>
@@ -549,7 +550,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;1&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; to encrypt the connection.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Note:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; When enabling the secure connection, security parameters needs to be generated.  This &amp;lt;b&amp;gt;one-time&amp;lt;/b&amp;gt; operation is done during container startup.  Depending on your system, this could take a few minutes.  GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="General/Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Name of all available presets can be seen via the HandBrake GUI.  Note that group of the preset must be included." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Non-Video File Action" Target="AUTOMATED_CONVERSION_NON_VIDEO_FILE_ACTION" Default="ignore" Mode="" Description="Set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;ignore&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; to ignore non-video files from the watch folder, or set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;copy&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; to copy them as-is to the output folder." Type="Variable" Display="always" Required="false" Mask="false"/>
