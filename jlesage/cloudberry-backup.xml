@@ -35,8 +35,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2019-12-08</Date>
+  <Date>2020-05-09</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.22.0[/b][/font] (2020-05-09)
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 3.0.0.100.
+&#x00a0;&#x00a0;- The backup engine now runs under the configured user.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- NOTE: Make sure `USER_ID` and `GROUP_ID` environment variables are properly set to allow CloudBerry Backup to access your files.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+
 [font size=3][b]v1.21.2[/b][/font] (2019-12-08)
 &#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 2.10.1.36.
 
