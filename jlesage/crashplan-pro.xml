@@ -61,8 +61,11 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2020-04-06</Date>
+  <Date>2020-05-10</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.11.0[/b][/font] (2020-05-10)
+&#x00a0;&#x00a0;- Upgraded CrashPlan PRO to version 8.0.0.
+
 [font size=3][b]v2.10.1[/b][/font] (2020-04-06)
 &#x00a0;&#x00a0;- Fixed handling of CRASHPLAN_SRV_MAX_MEM.
 
