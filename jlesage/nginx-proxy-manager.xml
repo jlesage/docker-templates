@@ -49,8 +49,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2020-04-15</Date>
+  <Date>2020-05-21</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.8.1[/b][/font] (2020-05-21)
+&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.4.
+
 [font size=3][b]v1.8.0[/b][/font] (2020-04-15)
 &#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.3.
 
