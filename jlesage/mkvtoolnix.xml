@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2020-05-04</Date>
+  <Date>2020-06-22</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.41.0[/b][/font] (2020-06-22)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 47.0.0.
+
 [font size=3][b]v1.40.0[/b][/font] (2020-05-04)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 46.0.0.
 
