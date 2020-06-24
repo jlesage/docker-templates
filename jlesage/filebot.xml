@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2020-04-25</Date>
+  <Date>2020-06-24</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.9.2[/b][/font] (2020-06-24)
+&#x00a0;&#x00a0;- Improved handling of options contained in `AMC_CUSTOM_OPTIONS`.
+
 [font size=3][b]v1.9.1[/b][/font] (2020-04-25)
 &#x00a0;&#x00a0;- Upgraded FileBot to version 4.9.1.
 &#x00a0;&#x00a0;- Fixed issue that would prevent renaming files.
