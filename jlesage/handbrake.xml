@@ -9,7 +9,7 @@
   <Overview>
     HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
     [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
     A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.
     Also, being based on Alpine Linux, size of this container
     is very small (less than 80MB in download size).
@@ -33,7 +33,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <Description>
     HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
     [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
     A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.
     Also, being based on Alpine Linux, size of this container
     is very small (less than 80MB in download size).
@@ -56,7 +56,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
 [font size=3][b]v1.22.3[/b][/font] (2020-06-22)
 &#x00a0;&#x00a0;- Upgraded HandBrake to version 1.3.3.
 &#x00a0;&#x00a0;- Upgraded Intel VAAPI driver to version 2.4.1.
-&#x00a0;&#x00a0;- Now using Alpine 11 baseimage.
+&#x00a0;&#x00a0;- Now using Alpine 3.11 baseimage.
 
 [font size=3][b]v1.22.2[/b][/font] (2020-05-26)
 &#x00a0;&#x00a0;- Fixed issue where Intel QSV H.265 encoding would fail.

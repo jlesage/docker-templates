@@ -9,7 +9,7 @@
   <Overview>
     MKVCleaver is a tool for batch extraction of data from MKV files
     [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
     Also, being based on Alpine Linux, size of this container
     is very small (less than 100MB in download size).
     [br][br][span][/span]
@@ -25,7 +25,7 @@
   <Description>
     MKVCleaver is a tool for batch extraction of data from MKV files
     [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
     Also, being based on Alpine Linux, size of this container
     is very small (less than 100MB in download size).
     [br][br][span][/span]
