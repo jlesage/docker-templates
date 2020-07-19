@@ -61,8 +61,15 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2020-05-10</Date>
+  <Date>2020-07-19</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.12.0[/b][/font] (2020-07-19)
+&#x00a0;&#x00a0;- Upgraded CrashPlan PRO to version 8.2.0.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.5, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+
 [font size=3][b]v2.11.0[/b][/font] (2020-05-10)
 &#x00a0;&#x00a0;- Upgraded CrashPlan PRO to version 8.0.0.
 
