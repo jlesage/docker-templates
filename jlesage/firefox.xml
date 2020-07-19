@@ -35,8 +35,16 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2020-06-24</Date>
+  <Date>2020-07-19</Date>
   <Changes>[font size=4][center]Firefox Change Log[/center][/font]
+[font size=3][b]v1.13.0[/b][/font] (2020-07-19)
+&#x00a0;&#x00a0;- Upgraded Firefox to version 78.0.2-r1.
+&#x00a0;&#x00a0;- Added check for missing `membarrier` system call support.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+
 [font size=3][b]v1.12.0[/b][/font] (2020-06-24)
 &#x00a0;&#x00a0;- Upgraded Firefox to version 77.0.1-r2.
 
