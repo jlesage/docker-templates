@@ -35,8 +35,15 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2020-05-09</Date>
+  <Date>2020-07-19</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.23.0[/b][/font] (2020-07-19)
+&#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 3.0.2.122.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+
 [font size=3][b]v1.22.0[/b][/font] (2020-05-09)
 &#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 3.0.0.100.
 &#x00a0;&#x00a0;- The backup engine now runs under the configured user.
