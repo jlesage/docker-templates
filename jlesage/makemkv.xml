@@ -75,8 +75,15 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2020-05-11</Date>
+  <Date>2020-07-23</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.16.0[/b][/font] (2020-07-23)
+&#x00a0;&#x00a0;- Upgraded MakeMKV to version 1.15.2.
+&#x00a0;&#x00a0;- Now using baseimage v3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+
 [font size=3][b]v1.15.1[/b][/font] (2020-05-11)
 &#x00a0;&#x00a0;- Fixed an issue where the automatic disc ripper would not use a drive under certain conditions.
 
