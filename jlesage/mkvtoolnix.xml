@@ -39,7 +39,7 @@
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
 [font size=3][b]v1.43.0[/b][/font] (2020-08-05)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 49.0.0.
-&#x00a0;&#x00a0;- Now using baseimage to version 3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;- Now using baseimage version 3.5.6, which brings the following changes:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
 
 [font size=3][b]v1.42.0[/b][/font] (2020-07-19)
