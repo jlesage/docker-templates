@@ -51,8 +51,16 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2020-06-22</Date>
+  <Date>2020-08-05</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.22.4[/b][/font] (2020-08-05)
+&#x00a0;&#x00a0;- Upgraded libva to version 2.8.0.
+&#x00a0;&#x00a0;- Upgraded Intel Media SDK to version 20.2.1.
+&#x00a0;&#x00a0;- Upgraded Intel Media Driver to version 20.2.0.
+&#x00a0;&#x00a0;- Fixed an issue where non-video files would fail to be copied.
+&#x00a0;&#x00a0;- Now using baseimage version 3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
+
 [font size=3][b]v1.22.3[/b][/font] (2020-06-22)
 &#x00a0;&#x00a0;- Upgraded HandBrake to version 1.3.3.
 &#x00a0;&#x00a0;- Upgraded Intel VAAPI driver to version 2.4.1.
