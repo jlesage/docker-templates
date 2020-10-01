@@ -39,8 +39,15 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2020-06-24</Date>
+  <Date>2020-10-01</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.10.0[/b][/font] (2020-10-01)
+&#x00a0;&#x00a0;- Upgraded FileBot to version 4.9.2.
+&#x00a0;&#x00a0;- Updated baseimage to version 3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+
 [font size=3][b]v1.9.2[/b][/font] (2020-06-24)
 &#x00a0;&#x00a0;- Improved handling of options contained in `AMC_CUSTOM_OPTIONS`.
 
