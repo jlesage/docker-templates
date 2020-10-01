@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2020-08-05</Date>
+  <Date>2020-10-01</Date>
   <Changes>[font size=4][center]Firefox Change Log[/center][/font]
+[font size=3][b]v1.15.0[/b][/font] (2020-10-01)
+&#x00a0;&#x00a0;- Updated Firefox to version 81.0-r0
+
 [font size=3][b]v1.14.0[/b][/font] (2020-08-05)
 &#x00a0;&#x00a0;- Upgraded Firefox to version 79.0-r0.
 &#x00a0;&#x00a0;- Now using baseimage to version 3.5.6, which brings the following changes:
