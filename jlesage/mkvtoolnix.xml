@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2020-09-08</Date>
+  <Date>2020-10-04</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.45.0[/b][/font] (2020-10-04)
+&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 51.0.0.
+
 [font size=3][b]v1.44.0[/b][/font] (2020-09-08)
 &#x00a0;&#x00a0;- Upgraded MKVToolNix to version 50.0.0.
 &#x00a0;&#x00a0;- Upgraded MediaInfo to version 20.08.
