@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2020-09-10</Date>
+  <Date>2020-10-09</Date>
   <Changes>[font size=4][center]MediaInfo Change Log[/center][/font]
+[font size=3][b]v1.6.0[/b][/font] (2020-10-09)
+&#x00a0;&#x00a0;- Updated MediaInfo to version 20.09.
+
 [font size=3][b]v1.5.0[/b][/font] (2020-09-10)
 &#x00a0;&#x00a0;- Upgraded MediaInfo to version 20.08.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.6, based on Alpine 3.12, which brings the following changes:
