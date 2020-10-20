@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2020-07-19</Date>
+  <Date>2020-10-20</Date>
   <Changes>[font size=4][center]CloudBerry Backup Change Log[/center][/font]
+[font size=3][b]v1.24.0[/b][/font] (2020-10-20)
+&#x00a0;&#x00a0;- Updated CloudBerry Backup to version 3.1.0.83.
+
 [font size=3][b]v1.23.0[/b][/font] (2020-07-19)
 &#x00a0;&#x00a0;- Upgraded CloudBerry Backup to version 3.0.2.122.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.6, which brings the following changes:
