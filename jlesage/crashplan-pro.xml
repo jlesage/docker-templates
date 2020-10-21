@@ -61,8 +61,11 @@ is protected and easily accessible.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2020-09-10</Date>
+  <Date>2020-10-20</Date>
   <Changes>[font size=4][center]CrashPlan PRO Change Log[/center][/font]
+[font size=3][b]v2.13.0[/b][/font] (2020-10-20)
+&#x00a0;&#x00a0;- Updated CrashPlan PRO to version 8.5.0.
+
 [font size=3][b]v2.12.2[/b][/font] (2020-09-10)
 &#x00a0;&#x00a0;- Fixed an issue that was preventing files to be restored.
 &#x00a0;&#x00a0;- Fixed an issue where the restart command of the console would not work.
