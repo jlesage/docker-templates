@@ -194,6 +194,11 @@
       <Name>APP_NICENESS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>DISABLE_IPV6</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/nginx-proxy-manager" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
@@ -202,6 +207,7 @@
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Umask" Target="UMASK" Default="000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Disable IPv6" Target="DISABLE_IPV6" Default="0" Mode="" Description="When set to '1', IPv6 support is disabled." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="Web UI Port" Target="8181" Default="7818" Mode="tcp" Description="Port used to access the web interface of the application." Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="HTTP Port" Target="8080" Default="1880" Mode="tcp" Description="Port used to serve HTTP requests.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Your router should be configured to forward port &amp;lt;i&amp;gt;80&amp;lt;/i&amp;gt; to this port.  If your router doesn't allow setting the destination/internal IP address, this &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;must&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; be set to &amp;lt;b&amp;gt;80&amp;lt;/b&amp;gt;." Type="Port" Display="always" Required="true" Mask="false"/>
