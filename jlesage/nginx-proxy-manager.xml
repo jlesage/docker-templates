@@ -49,8 +49,17 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2020-07-10</Date>
+  <Date>2020-10-25</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.10.0[/b][/font] (2020-10-25)
+&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.6.1.
+&#x00a0;&#x00a0;- Now using baseimage version 2.4.4, based on Alpine 3.12, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Use sqlite as database instead of mariadb.
+&#x00a0;&#x00a0;- Added proper support for the `DISABLE_IPV6` environment variable.
+&#x00a0;&#x00a0;- Periodically clean Let's Encrypt certificates.
+
 [font size=3][b]v1.9.2[/b][/font] (2020-07-10)
 &#x00a0;&#x00a0;- Fixed an issue where the container would fail to start if custom Nginx files are mounted by Docker.
 
