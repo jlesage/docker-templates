@@ -51,6 +51,9 @@
   <Project>https://nginxproxymanager.jc21.com</Project>
   <Date>2020-10-26</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.10.2[/b][/font] (2020-10-26)
+&#x00a0;&#x00a0;- Fixed generation of certificates that use DNS challenge.
+
 [font size=3][b]v1.10.1[/b][/font] (2020-10-26)
 &#x00a0;&#x00a0;- Fixed automatic installation of Certbot plugins.
 
