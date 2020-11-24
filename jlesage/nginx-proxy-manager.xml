@@ -49,8 +49,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2020-11-06</Date>
+  <Date>2020-11-24</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.11.0[/b][/font] (2020-11-24)
+&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.7.1.
+&#x00a0;&#x00a0;- Fixed rotation of nginx log files.
+
 [font size=3][b]v1.10.3[/b][/font] (2020-11-06)
 &#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.6.2.
 
