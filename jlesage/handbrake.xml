@@ -501,6 +501,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
       <Mode/>
     </Variable>
     <Variable>
+      <Value/>
+      <Name>AUTOMATED_CONVERSION_VIDEO_FILE_EXTENSIONS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>ignore</Value>
       <Name>AUTOMATED_CONVERSION_NON_VIDEO_FILE_ACTION</Name>
       <Mode/>
@@ -578,6 +583,7 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="General/Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Identification of the preset must follow the format 'CATEGORY/PRESET NAME'.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Video File Extensions" Target="AUTOMATED_CONVERSION_VIDEO_FILE_EXTENSIONS" Default="" Mode="" Description="Space-separated list of file extensions to be considered as video files.  By default, this list is empty, meaning that the automatic video converter will let HandBrake automatically detects if a file, no matter its extension, is a video or not (note that extensions defined by the &amp;lt;i&amp;gt;Non-Video File Extensions&amp;lt;/i&amp;gt; list are always considered as non-video files).  Normally, this variable doesn't need to be set.  Usage of this variable is useful when only specific video files need to converted." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Non-Video File Action" Target="AUTOMATED_CONVERSION_NON_VIDEO_FILE_ACTION" Default="ignore" Mode="" Description="Set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;ignore&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; to ignore non-video files from the watch folder, or set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;copy&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; to copy them as-is to the output folder." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Non-Video File Extensions" Target="AUTOMATED_CONVERSION_NON_VIDEO_FILE_EXTENSIONS" Default="jpg jpeg bmp png gif txt nfo" Mode="" Description="Space-separated list of file extensions to be considered as not being videos.  Most non-video files are properly rejected by HandBrake.  However, some files, like images, are convertible by HandBrake even if they are not video files." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Output directory" Target="AUTOMATED_CONVERSION_OUTPUT_DIR" Default="/output" Mode="" Description="Root directory where converted videos should be written." Type="Variable" Display="always" Required="false" Mask="false"/>
