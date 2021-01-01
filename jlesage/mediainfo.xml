@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2020-10-09</Date>
+  <Date>2021-01-01</Date>
   <Changes>[font size=4][center]MediaInfo Change Log[/center][/font]
+[font size=3][b]v1.6.1[/b][/font] (2021-01-01)
+&#x00a0;&#x00a0;- Fixed libmediainfo not being at the expected version.
+
 [font size=3][b]v1.6.0[/b][/font] (2020-10-09)
 &#x00a0;&#x00a0;- Updated MediaInfo to version 20.09.
 
