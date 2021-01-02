@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://github.com/jlesage.png</Icon>
+  <Profile>Creator of many Docker containers for great applications.  All containers are developed with simplicity and easy of use in mind.  Being based on Alpine Linux, they are lightweight and contain only what is required to run the dockerized application.</Profile>
+  <DonateLink>https://paypal.me/JocelynLeSage/0usd</DonateLink>
+  <DonateText>If you like my work please consider donating.</DonateText>
+</Maintainer>
