@@ -425,6 +425,11 @@ log.
       <Name>AUTO_DISC_RIPPER_FORCE_UNIQUE_OUTPUT_DIR</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>AUTO_DISC_RIPPER_NO_GUI_PROGRESS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/makemkv" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
@@ -447,6 +452,7 @@ log.
   <Config Name="Automatic Disc Ripper: Minimum Title Length" Target="AUTO_DISC_RIPPER_MIN_TITLE_LENGTH" Default="" Mode="" Description="Titles with a length less than this value are ignored.  Length is in seconds.  By default, no value is set, meaning that value from MakeMKV's configuration file is taken." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Blu-ray Rip Mode" Target="AUTO_DISC_RIPPER_BD_MODE" Default="mkv" Mode="" Description="Rip mode of Blu-ray discs.  &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;mkv&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; is the default mode, where a set of MKV files are produced.  When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;backup&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, a copy of the (decrypted) file system is created instead. &amp;lt;b&amp;gt;NOTE&amp;lt;/b&amp;gt;: This applies to Blu-ray discs only.  For DVD, MKV files are always produced." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Force Unique Output Directory" Target="AUTO_DISC_RIPPER_FORCE_UNIQUE_OUTPUT_DIR" Default="0" Mode="" Description="When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;0&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, files are written to &amp;lt;i&amp;gt;/output/DISC_LABEL/&amp;lt;/i&amp;gt;, where &amp;lt;i&amp;gt;DISC_LABEL&amp;lt;/i&amp;gt; is the label/name of the disc.  If this directory exists, then files are written to &amp;lt;i&amp;gt;/output/DISC_LABEL-XXXXXX&amp;lt;/i&amp;gt;, where &amp;lt;i&amp;gt;XXXXXX&amp;lt;/i&amp;gt; are random readable characters.  When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;1&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, the &amp;lt;i&amp;gt;/output/DISC_LABEL-XXXXXX&amp;lt;/i&amp;gt; pattern is always used." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Disc Ripper: Disable Progress in GUI" Target="AUTO_DISC_RIPPER_NO_GUI_PROGRESS" Default="0" Mode="" Description="When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;1&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, progress of discs ripped by the automatic disc ripper is not shown in the MakeMKV GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7806" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7906" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
