@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://www.putty.org</Project>
-  <Date>2020-07-19</Date>
+  <Date>2021-01-04</Date>
   <Changes>[font size=4][center]PuTTY Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b][/font] (2021-01-04)
+&#x00a0;&#x00a0;- Added dialog window to easily restart the PuTTY session.
+&#x00a0;&#x00a0;- Updated baseimage to version 3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
+
 [font size=3][b]v1.0.5[/b][/font] (2020-07-19)
 &#x00a0;&#x00a0;- Upgraded PuTTY to version 0.74.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
