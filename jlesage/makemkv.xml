@@ -75,8 +75,18 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2020-12-14</Date>
+  <Date>2021-01-04</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.19.0[/b][/font] (2021-01-04)
+&#x00a0;&#x00a0;- The progress of a disc processed by the automatic disc ripper is now visible in the UI.
+&#x00a0;&#x00a0;- Fixed issue where titles were not identified for discs using playlist obfuscation.
+&#x00a0;&#x00a0;- Fixed issue where the automatic disc ripper would stop processing the disc on an 'READ OF SCRAMBLED SECTOR WITHOUT AUTHENTICATION' error, even though this error can be harmless in some situations.
+&#x00a0;&#x00a0;- Fixed issue where the automatic disc ripper would fail to kill the right MakeMKV instance.
+&#x00a0;&#x00a0;- Now using baseimage based on Alpine 3.12.
+
+[font size=3][b]v1.18.1[/b][/font] (2020-12-15)
+&#x00a0;&#x00a0;- Fixed issue where ripping of UHD discs would fail.
+
 [font size=3][b]v1.18.0[/b][/font] (2020-12-14)
 &#x00a0;&#x00a0;- Updated MakeMKV to version 1.15.4.
 &#x00a0;&#x00a0;- Updated FFmpeg to version 4.3.1.
