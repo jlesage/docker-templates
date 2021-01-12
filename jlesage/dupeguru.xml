@@ -39,8 +39,16 @@ that can find duplicate filenames even when they are not exactly the same.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2019-05-15</Date>
+  <Date>2021-01-11</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
+[font size=3][b]v1.11.0[/b][/font] (2021-01-11)
+&#x00a0;&#x00a0;- Updated dupeGuru to version 4.1.0.
+&#x00a0;&#x00a0;- Now using baseimage version 3.5.6, based on Alpine 3.12, which bring the following changes (since last used version):
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+
 [font size=3][b]v1.10.2[/b][/font] (2019-05-15)
 &#x00a0;&#x00a0;- Upgraded dupeGuru to version 4.0.4.
 
