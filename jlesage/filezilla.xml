@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2021-01-08</Date>
+  <Date>2021-01-20</Date>
   <Changes>[font size=4][center]FileZilla Change Log[/center][/font]
+[font size=3][b]v1.29.3[/b][/font] (2021-01-20)
+&#x00a0;&#x00a0;- Updated FileZilla to version 3.52.2.
+
 [font size=3][b]v1.29.2[/b][/font] (2021-01-08)
 &#x00a0;&#x00a0;- Updated FileZilla to version 3.52.0.5.
 
