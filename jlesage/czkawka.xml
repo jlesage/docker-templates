@@ -37,8 +37,12 @@ unnecessary files from your computer.
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2021-01-15</Date>
+  <Date>2021-01-26</Date>
   <Changes>[font size=4][center]Czkawka Change Log[/center][/font]
+[font size=3][b]v1.1.0[/b][/font] (2021-01-26)
+&#x00a0;&#x00a0;- Updated Czkawka to version 2.3.2.
+&#x00a0;&#x00a0;- Added Czkawka CLI to the image.
+
 [font size=3][b]v1.0.0[/b][/font] (2021-01-15)
 &#x00a0;&#x00a0;- Initial release.
 
