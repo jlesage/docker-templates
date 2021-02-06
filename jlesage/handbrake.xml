@@ -51,8 +51,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2021-01-01</Date>
+  <Date>2021-02-06</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.23.1[/b][/font] (2021-02-06)
+&#x00a0;&#x00a0;- Fixed an issue where the automatic video converter would not process Blu-ray video disc folder.
+
 [font size=3][b]v1.23.0[/b][/font] (2021-01-01)
 &#x00a0;&#x00a0;- Added the ability to overwrite the output file if it exists.
 &#x00a0;&#x00a0;- Added the ability to define the file extensions to be considered as video files.
