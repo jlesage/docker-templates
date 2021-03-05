@@ -75,8 +75,11 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2021-01-04</Date>
+  <Date>2021-03-04</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.20.0[/b][/font] (2021-03-04)
+&#x00a0;&#x00a0;- Updated MakeMKV to version 1.16.0.
+
 [font size=3][b]v1.19.0[/b][/font] (2021-01-04)
 &#x00a0;&#x00a0;- The progress of a disc processed by the automatic disc ripper is now visible in the UI.
 &#x00a0;&#x00a0;- Fixed issue where titles were not identified for discs using playlist obfuscation.
