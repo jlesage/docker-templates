@@ -49,8 +49,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2021-02-09</Date>
+  <Date>2021-03-13</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.13.1[/b][/font] (2021-03-13)
+&#x00a0;&#x00a0;- Fixed issue where saving the default site setting would fail.
+
 [font size=3][b]v1.13.0[/b][/font] (2021-02-09)
 &#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.8.0.
 &#x00a0;&#x00a0;- Updated OpenResty to version 1.19.3.1.
