@@ -51,8 +51,11 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2021-02-06</Date>
+  <Date>2021-03-13</Date>
   <Changes>[font size=4][center]HandBrake Change Log[/center][/font]
+[font size=3][b]v1.23.2[/b][/font] (2021-03-13)
+&#x00a0;&#x00a0;- Fixed issue where the wrong parameter was passed to the post watch folder processing hook.
+
 [font size=3][b]v1.23.1[/b][/font] (2021-02-06)
 &#x00a0;&#x00a0;- Fixed an issue where the automatic video converter would not process Blu-ray video disc folder.
 
