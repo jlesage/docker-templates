@@ -39,8 +39,11 @@ that can find duplicate filenames even when they are not exactly the same.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2021-01-11</Date>
+  <Date>2021-03-22</Date>
   <Changes>[font size=4][center]dupeGuru Change Log[/center][/font]
+[font size=3][b]v1.11.1[/b][/font] (2021-03-22)
+&#x00a0;&#x00a0;- Updated dupeGuru to version 4.1.1.
+
 [font size=3][b]v1.11.0[/b][/font] (2021-01-11)
 &#x00a0;&#x00a0;- Updated dupeGuru to version 4.1.0.
 &#x00a0;&#x00a0;- Now using baseimage version 3.5.6, based on Alpine 3.12, which bring the following changes (since last used version):
