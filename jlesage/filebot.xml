@@ -39,8 +39,11 @@ just works.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2020-10-02</Date>
+  <Date>2021-03-31</Date>
   <Changes>[font size=4][center]FileBot Change Log[/center][/font]
+[font size=3][b]v1.11.0[/b][/font] (2021-03-31)
+&#x00a0;&#x00a0;- Updated FileBot to version 4.9.3 (r8340).
+
 [font size=3][b]v1.10.2[/b][/font] (2020-10-02)
 &#x00a0;&#x00a0;- Fixed issue where selecting a file/folder would show an error message.
 
