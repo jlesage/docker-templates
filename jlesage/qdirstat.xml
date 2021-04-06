@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/shundhammer/qdirstat</Project>
-  <Date>2020-08-05</Date>
+  <Date>2021-04-06</Date>
   <Changes>[font size=4][center]QDirStat Change Log[/center][/font]
+[font size=3][b]v1.3.0[/b][/font] (2021-04-06)
+&#x00a0;&#x00a0;- Updated QDirStat to version 1.7.1.
+
 [font size=3][b]v1.2.0[/b][/font] (2020-08-05)
 &#x00a0;&#x00a0;- Upgraded QDirStat to version 1.7.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.6, based on Alpine 12, which brings the following changes:
