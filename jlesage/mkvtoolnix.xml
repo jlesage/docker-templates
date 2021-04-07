@@ -35,8 +35,15 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2021-03-05</Date>
+  <Date>2021-04-07</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.50.0[/b][/font] (2021-04-07)
+&#x00a0;&#x00a0;- Updated MKVToolNix to version 56.0.0.
+&#x00a0;&#x00a0;- Updated MediaInfo to version 21.03.
+
+[font size=3][b]v1.49.0[/b][/font] (2021-03-13)
+&#x00a0;&#x00a0;- Updated MKVToolNix to version 55.0.0.
+
 [font size=3][b]v1.48.0[/b][/font] (2021-03-05)
 &#x00a0;&#x00a0;- Updated MKVToolNix to version 54.0.0.
 
