@@ -75,8 +75,12 @@ log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2021-03-21</Date>
+  <Date>2021-04-14</Date>
   <Changes>[font size=4][center]MakeMKV Change Log[/center][/font]
+[font size=3][b]v1.20.3[/b][/font] (2021-04-14)
+&#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 [font size=3][b]v1.20.2[/b][/font] (2021-03-21)
 &#x00a0;&#x00a0;- Updated MakeMKV to version 1.16.3.
 
