@@ -83,6 +83,11 @@ unnecessary files from your computer.
       <ContainerDir>/storage</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/trash</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
@@ -129,6 +134,7 @@ unnecessary files from your computer.
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/czkawka" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This location contains files from your host that need to be accessible by the application.&amp;lt;br&amp;gt;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false"/>
+  <Config Name="Trash" Target="/trash" Default="" Mode="rw" Description="This is where duplicated files are moved files when they are sent to trash.  Usage of the trash is optional.&amp;lt;br&amp;gt;Container path: /trash" Type="Path" Display="always-hide" Required="false" Mask="false"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
