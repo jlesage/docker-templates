@@ -35,8 +35,13 @@
   </Description>
   <Beta>False</Beta>
   <Project>http://avidemux.org/</Project>
-  <Date>2020-08-05</Date>
+  <Date>2021-04-14</Date>
   <Changes>[font size=4][center]Avidemux Change Log[/center][/font]
+[font size=3][b]v1.4.0[/b][/font] (2021-04-14)
+&#x00a0;&#x00a0;- Updated Avidemux to version 2.7.8.
+&#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 [font size=3][b]v1.3.0[/b][/font] (2020-08-05)
 &#x00a0;&#x00a0;- Upgraded Avidemux to version 2.7.4.
 &#x00a0;&#x00a0;- Now using baseimage v3.5.6, based on Alpine 12, which brings the following changes:
