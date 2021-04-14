@@ -35,8 +35,12 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2021-03-30</Date>
+  <Date>2021-04-13</Date>
   <Changes>[font size=4][center]MediaInfo Change Log[/center][/font]
+[font size=3][b]v1.7.1[/b][/font] (2021-04-13)
+&#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
+&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 [font size=3][b]v1.7.0[/b][/font] (2021-03-30)
 &#x00a0;&#x00a0;- Updated MediaInfo to version 21.03.
 
