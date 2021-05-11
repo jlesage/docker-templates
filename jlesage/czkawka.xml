@@ -37,8 +37,11 @@ unnecessary files from your computer.
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2021-04-13</Date>
+  <Date>2021-05-10</Date>
   <Changes>[font size=4][center]Czkawka Change Log[/center][/font]
+[font size=3][b]v1.4.0[/b][/font] (2021-05-10)
+&#x00a0;&#x00a0;- Updated Czkawka to version 3.1.0.
+
 [font size=3][b]v1.3.1[/b][/font] (2021-04-13)
 &#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
