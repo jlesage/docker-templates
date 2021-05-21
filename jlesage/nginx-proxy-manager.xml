@@ -49,8 +49,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2021-05-10</Date>
+  <Date>2021-05-21</Date>
   <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
+[font size=3][b]v1.16.0[/b][/font] (2021-05-21)
+&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.9.3.
+
 [font size=3][b]v1.15.0[/b][/font] (2021-05-10)
 &#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.9.2.
 &#x00a0;&#x00a0;- Use the most recent certbot version.
