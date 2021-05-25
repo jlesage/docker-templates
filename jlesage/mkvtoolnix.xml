@@ -35,8 +35,11 @@
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2021-04-13</Date>
+  <Date>2021-05-25</Date>
   <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
+[font size=3][b]v1.52.0[/b][/font] (2021-05-25)
+&#x00a0;&#x00a0;- Updated MKVToolNix to version 57.0.0.
+
 [font size=3][b]v1.51.1[/b][/font] (2021-04-13)
 &#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
 &#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
