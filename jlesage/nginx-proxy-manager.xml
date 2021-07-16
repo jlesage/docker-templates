@@ -50,151 +50,151 @@
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
   <Date>2021-06-25</Date>
-  <Changes>[font size=4][center]Nginx Proxy Manager Change Log[/center][/font]
-[font size=3][b]v1.17.0[/b][/font] (2021-06-25)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.9.4.
+  <Changes>
+###v1.17.0 (2021-06-25)
+- Updated Nginx Proxy Manager to version 2.9.4.
 
-[font size=3][b]v1.16.1[/b][/font] (2021-05-31)
-&#x00a0;&#x00a0;- Fixed issue where Certbot plugins installation would cause Python packages conflicts.
+###v1.16.1 (2021-05-31)
+- Fixed issue where Certbot plugins installation would cause Python packages conflicts.
 
-[font size=3][b]v1.16.0[/b][/font] (2021-05-21)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.9.3.
+###v1.16.0 (2021-05-21)
+- Updated Nginx Proxy Manager to version 2.9.3.
 
-[font size=3][b]v1.15.0[/b][/font] (2021-05-10)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.9.2.
-&#x00a0;&#x00a0;- Use the most recent certbot version.
-&#x00a0;&#x00a0;- Updated baseimage to version 2.4.5.
+###v1.15.0 (2021-05-10)
+- Updated Nginx Proxy Manager to version 2.9.2.
+- Use the most recent certbot version.
+- Updated baseimage to version 2.4.5.
 
-[font size=3][b]v1.14.0[/b][/font] (2021-03-22)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.8.1.
+###v1.14.0 (2021-03-22)
+- Updated Nginx Proxy Manager to version 2.8.1.
 
-[font size=3][b]v1.13.1[/b][/font] (2021-03-13)
-&#x00a0;&#x00a0;- Fixed issue where saving the default site setting would fail.
+###v1.13.1 (2021-03-13)
+- Fixed issue where saving the default site setting would fail.
 
-[font size=3][b]v1.13.0[/b][/font] (2021-02-09)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.8.0.
-&#x00a0;&#x00a0;- Updated OpenResty to version 1.19.3.1.
-&#x00a0;&#x00a0;- Replaced the depricated GeoIP module by GeoIP2.
+###v1.13.0 (2021-02-09)
+- Updated Nginx Proxy Manager to version 2.8.0.
+- Updated OpenResty to version 1.19.3.1.
+- Replaced the depricated GeoIP module by GeoIP2.
 
-[font size=3][b]v1.12.0[/b][/font] (2021-01-06)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.7.2.
-&#x00a0;&#x00a0;- Added the GeoIP Nginx module.
+###v1.12.0 (2021-01-06)
+- Updated Nginx Proxy Manager to version 2.7.2.
+- Added the GeoIP Nginx module.
 
-[font size=3][b]v1.11.0[/b][/font] (2020-11-24)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.7.1.
-&#x00a0;&#x00a0;- Fixed rotation of nginx log files.
+###v1.11.0 (2020-11-24)
+- Updated Nginx Proxy Manager to version 2.7.1.
+- Fixed rotation of nginx log files.
 
-[font size=3][b]v1.10.3[/b][/font] (2020-11-06)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.6.2.
+###v1.10.3 (2020-11-06)
+- Updated Nginx Proxy Manager to version 2.6.2.
 
-[font size=3][b]v1.10.2[/b][/font] (2020-10-26)
-&#x00a0;&#x00a0;- Fixed generation of certificates that use DNS challenge.
+###v1.10.2 (2020-10-26)
+- Fixed generation of certificates that use DNS challenge.
 
-[font size=3][b]v1.10.1[/b][/font] (2020-10-26)
-&#x00a0;&#x00a0;- Fixed automatic installation of Certbot plugins.
+###v1.10.1 (2020-10-26)
+- Fixed automatic installation of Certbot plugins.
 
-[font size=3][b]v1.10.0[/b][/font] (2020-10-25)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.6.1.
-&#x00a0;&#x00a0;- Now using baseimage version 2.4.4, based on Alpine 3.12, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;- Use sqlite as database instead of mariadb.
-&#x00a0;&#x00a0;- Added proper support for the `DISABLE_IPV6` environment variable.
-&#x00a0;&#x00a0;- Periodically clean Let's Encrypt certificates.
+###v1.10.0 (2020-10-25)
+- Updated Nginx Proxy Manager to version 2.6.1.
+- Now using baseimage version 2.4.4, based on Alpine 3.12, which brings the following changes:
+&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+- Use sqlite as database instead of mariadb.
+- Added proper support for the `DISABLE_IPV6` environment variable.
+- Periodically clean Let's Encrypt certificates.
 
-[font size=3][b]v1.9.2[/b][/font] (2020-07-10)
-&#x00a0;&#x00a0;- Fixed an issue where the container would fail to start if custom Nginx files are mounted by Docker.
+###v1.9.2 (2020-07-10)
+- Fixed an issue where the container would fail to start if custom Nginx files are mounted by Docker.
 
-[font size=3][b]v1.9.1[/b][/font] (2020-07-10)
-&#x00a0;&#x00a0;- Improved compatibility by disabling usage of SSE4.2 in OpenResty.
+###v1.9.1 (2020-07-10)
+- Improved compatibility by disabling usage of SSE4.2 in OpenResty.
 
-[font size=3][b]v1.9.0[/b][/font] (2020-07-09)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.3.1.
+###v1.9.0 (2020-07-09)
+- Upgraded Nginx Proxy Manager to version 2.3.1.
 
-[font size=3][b]v1.8.1[/b][/font] (2020-05-21)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.4.
+###v1.8.1 (2020-05-21)
+- Upgraded Nginx Proxy Manager to version 2.2.4.
 
-[font size=3][b]v1.8.0[/b][/font] (2020-04-15)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.3.
+###v1.8.0 (2020-04-15)
+- Upgraded Nginx Proxy Manager to version 2.2.3.
 
-[font size=3][b]v1.7.4[/b][/font] (2020-04-08)
-&#x00a0;&#x00a0;- Fixed issue where generated proxy host config would use incorrect ports.
+###v1.7.4 (2020-04-08)
+- Fixed issue where generated proxy host config would use incorrect ports.
 
-[font size=3][b]v1.7.3[/b][/font] (2020-04-07)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.2.
+###v1.7.3 (2020-04-07)
+- Upgraded Nginx Proxy Manager to version 2.2.2.
 
-[font size=3][b]v1.7.2[/b][/font] (2020-04-06)
-&#x00a0;&#x00a0;- Fixed generation of resolvers.conf when IPv6 is involved.
+###v1.7.2 (2020-04-06)
+- Fixed generation of resolvers.conf when IPv6 is involved.
 
-[font size=3][b]v1.7.1[/b][/font] (2020-04-06)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.1.
+###v1.7.1 (2020-04-06)
+- Upgraded Nginx Proxy Manager to version 2.2.1.
 
-[font size=3][b]v1.7.0[/b][/font] (2020-03-16)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.2.0.
-&#x00a0;&#x00a0;- Now using baseimage v2.4.3, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+###v1.7.0 (2020-03-16)
+- Upgraded Nginx Proxy Manager to version 2.2.0.
+- Now using baseimage v2.4.3, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Make sure the tzdata is installed.
 
-[font size=3][b]v1.6.0[/b][/font] (2019-10-10)
-&#x00a0;&#x00a0;- Rotate Nginx log files.
-&#x00a0;&#x00a0;- Added tool to reset password of a user of the management interface.
+###v1.6.0 (2019-10-10)
+- Rotate Nginx log files.
+- Added tool to reset password of a user of the management interface.
 
-[font size=3][b]v1.5.3[/b][/font] (2019-09-04)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.14.
+###v1.5.3 (2019-09-04)
+- Upgraded Nginx Proxy Manager to version 2.0.14.
 
-[font size=3][b]v1.5.2[/b][/font] (2019-08-20)
-&#x00a0;&#x00a0;- Use baseimage based on Alpine 3.9.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- This fixes TLS1.3 support.
-&#x00a0;&#x00a0;- Keep the `fastcgi.conf` and `fastcgi_params` Nginx configuration files.
+###v1.5.2 (2019-08-20)
+- Use baseimage based on Alpine 3.9.
+&#x00a0;&#x00a0;- This fixes TLS1.3 support.
+- Keep the `fastcgi.conf` and `fastcgi_params` Nginx configuration files.
 
-[font size=3][b]v1.5.1[/b][/font] (2019-07-02)
-&#x00a0;&#x00a0;- Fixed issue where the wrong SSL protocols/ciphers were used.
+###v1.5.1 (2019-07-02)
+- Fixed issue where the wrong SSL protocols/ciphers were used.
 
-[font size=3][b]v1.5.0[/b][/font] (2019-05-09)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.13.
-&#x00a0;&#x00a0;- Now using baseimage v2.4.2, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+###v1.5.0 (2019-05-09)
+- Upgraded Nginx Proxy Manager to version 2.0.13.
+- Now using baseimage v2.4.2, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
 
-[font size=3][b]v1.4.2[/b][/font] (2019-04-18)
-&#x00a0;&#x00a0;- Fixed issue where using a hostname for the upstream proxy host would not work.
+###v1.4.2 (2019-04-18)
+- Fixed issue where using a hostname for the upstream proxy host would not work.
 
-[font size=3][b]v1.4.1[/b][/font] (2019-04-10)
-&#x00a0;&#x00a0;- Updated Nginx Proxy Manager to version 2.0.12.
-&#x00a0;&#x00a0;- Fixed a directory traversal vulnerability.
+###v1.4.1 (2019-04-10)
+- Updated Nginx Proxy Manager to version 2.0.12.
+- Fixed a directory traversal vulnerability.
 
-[font size=3][b]v1.4.0[/b][/font] (2019-03-05)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager version 2.0.11.
+###v1.4.0 (2019-03-05)
+- Upgraded Nginx Proxy Manager version 2.0.11.
 
-[font size=3][b]v1.3.1[/b][/font] (2019-02-21)
-&#x00a0;&#x00a0;- During startup, make sure there is no migration lock held.
+###v1.3.1 (2019-02-21)
+- During startup, make sure there is no migration lock held.
 
-[font size=3][b]v1.3.0[/b][/font] (2019-02-21)
-&#x00a0;&#x00a0;- Make sure to upgrade the database if required.
-&#x00a0;&#x00a0;- Properly notify the supervisor when the database is ready.
-&#x00a0;&#x00a0;- Make sure to not use the database directory if it was not initialized successfully.
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.9.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where HTTP/2 option could not be disabled.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added HSTS settings.
+###v1.3.0 (2019-02-21)
+- Make sure to upgrade the database if required.
+- Properly notify the supervisor when the database is ready.
+- Make sure to not use the database directory if it was not initialized successfully.
+- Upgraded Nginx Proxy Manager to version 2.0.9.
+&#x00a0;&#x00a0;- Fixed issue where HTTP/2 option could not be disabled.
+&#x00a0;&#x00a0;- Added HSTS settings.
 
-[font size=3][b]v1.2.1[/b][/font] (2019-01-26)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.9.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Increased custom SSL certificate file size limit.
+###v1.2.1 (2019-01-26)
+- Upgraded Nginx Proxy Manager to version 2.0.9.
+&#x00a0;&#x00a0;- Increased custom SSL certificate file size limit.
 
-[font size=3][b]v1.2.0[/b][/font] (2019-01-07)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.8.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the ability to enable/disable hosts.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- IP ranges are now fetched dynamically.
+###v1.2.0 (2019-01-07)
+- Upgraded Nginx Proxy Manager to version 2.0.8.
+&#x00a0;&#x00a0;- Added the ability to enable/disable hosts.
+&#x00a0;&#x00a0;- IP ranges are now fetched dynamically.
 
-[font size=3][b]v1.1.0[/b][/font] (2019-01-03)
-&#x00a0;&#x00a0;- Upgraded Nginx Proxy Manager to version 2.0.7.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added HTTP/2 option for SSL enabled hosts.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added upstream SSL option for proxy hosts.
+###v1.1.0 (2019-01-03)
+- Upgraded Nginx Proxy Manager to version 2.0.7.
+&#x00a0;&#x00a0;- Added HTTP/2 option for SSL enabled hosts.
+&#x00a0;&#x00a0;- Added upstream SSL option for proxy hosts.
 
-[font size=3][b]v1.0.1[/b][/font] (2018-12-19)
-&#x00a0;&#x00a0;- Fixed an issue where creation of an access list would fail.
+###v1.0.1 (2018-12-19)
+- Fixed an issue where creation of an access list would fail.
 
-[font size=3][b]v1.0.0[/b][/font] (2018-12-19)
-&#x00a0;&#x00a0;- Initial release.
+###v1.0.0 (2018-12-19)
+- Initial release.
 
   </Changes>
   <Networking>

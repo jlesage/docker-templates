@@ -36,43 +36,43 @@
   <Beta>False</Beta>
   <Project>https://github.com/shundhammer/qdirstat</Project>
   <Date>2021-04-13</Date>
-  <Changes>[font size=4][center]QDirStat Change Log[/center][/font]
-[font size=3][b]v1.3.1[/b][/font] (2021-04-13)
-&#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  <Changes>
+###v1.3.1 (2021-04-13)
+- Now using baseimage version 3.5.7, which brings the following change:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
 
-[font size=3][b]v1.3.0[/b][/font] (2021-04-06)
-&#x00a0;&#x00a0;- Updated QDirStat to version 1.7.1.
+###v1.3.0 (2021-04-06)
+- Updated QDirStat to version 1.7.1.
 
-[font size=3][b]v1.2.0[/b][/font] (2020-08-05)
-&#x00a0;&#x00a0;- Upgraded QDirStat to version 1.7.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.6, based on Alpine 12, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+###v1.2.0 (2020-08-05)
+- Upgraded QDirStat to version 1.7.
+- Now using baseimage v3.5.6, based on Alpine 12, which brings the following changes:
+&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
 
-[font size=3][b]v1.1.1[/b][/font] (2020-02-15)
-&#x00a0;&#x00a0;- Upgraded QDirStat to version 1.6.1.
+###v1.1.1 (2020-02-15)
+- Upgraded QDirStat to version 1.6.1.
 
-[font size=3][b]v1.1.0[/b][/font] (2020-01-24)
-&#x00a0;&#x00a0;- Upgraded QDirStat to version 1.6.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+###v1.1.0 (2020-01-24)
+- Upgraded QDirStat to version 1.6.
+- Now using baseimage v3.5.3, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Make sure the tzdata is installed.
 
-[font size=3][b]v1.0.2[/b][/font] (2019-04-24)
-&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+###v1.0.2 (2019-04-24)
+- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
 
-[font size=3][b]v1.0.1[/b][/font] (2018-09-18)
-&#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+###v1.0.1 (2018-09-18)
+- Now using baseimage v3.5.1, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
 
-[font size=3][b]v1.0.0[/b][/font] (2018-07-12)
-&#x00a0;&#x00a0;- Initial release.
+###v1.0.0 (2018-07-12)
+- Initial release.
 
   </Changes>
   <Networking>

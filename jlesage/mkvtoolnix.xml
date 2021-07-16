@@ -36,310 +36,310 @@
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
   <Date>2021-07-13</Date>
-  <Changes>[font size=4][center]MKVToolNix Change Log[/center][/font]
-[font size=3][b]v1.54.0[/b][/font] (2021-07-13)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 59.0.0.
+  <Changes>
+###v1.54.0 (2021-07-13)
+- Updated MKVToolNix to version 59.0.0.
 
-[font size=3][b]v1.53.0[/b][/font] (2021-06-16)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 58.0.0.
+###v1.53.0 (2021-06-16)
+- Updated MKVToolNix to version 58.0.0.
 
-[font size=3][b]v1.52.0[/b][/font] (2021-05-25)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 57.0.0.
+###v1.52.0 (2021-05-25)
+- Updated MKVToolNix to version 57.0.0.
 
-[font size=3][b]v1.51.1[/b][/font] (2021-04-13)
-&#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+###v1.51.1 (2021-04-13)
+- Now using baseimage version 3.5.7, which brings the following change:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
 
-[font size=3][b]v1.51.0[/b][/font] (2021-04-12)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 56.1.0.
+###v1.51.0 (2021-04-12)
+- Updated MKVToolNix to version 56.1.0.
 
-[font size=3][b]v1.50.0[/b][/font] (2021-04-07)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 56.0.0.
-&#x00a0;&#x00a0;- Updated MediaInfo to version 21.03.
+###v1.50.0 (2021-04-07)
+- Updated MKVToolNix to version 56.0.0.
+- Updated MediaInfo to version 21.03.
 
-[font size=3][b]v1.49.0[/b][/font] (2021-03-13)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 55.0.0.
+###v1.49.0 (2021-03-13)
+- Updated MKVToolNix to version 55.0.0.
 
-[font size=3][b]v1.48.0[/b][/font] (2021-03-05)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 54.0.0.
+###v1.48.0 (2021-03-05)
+- Updated MKVToolNix to version 54.0.0.
 
-[font size=3][b]v1.47.0[/b][/font] (2021-02-03)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 53.0.0.
+###v1.47.0 (2021-02-03)
+- Updated MKVToolNix to version 53.0.0.
 
-[font size=3][b]v1.46.0[/b][/font] (2021-01-05)
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 52.0.0.
-&#x00a0;&#x00a0;- Updated MediaInfo to version 20.09.
+###v1.46.0 (2021-01-05)
+- Updated MKVToolNix to version 52.0.0.
+- Updated MediaInfo to version 20.09.
 
-[font size=3][b]v1.45.0[/b][/font] (2020-10-04)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 51.0.0.
+###v1.45.0 (2020-10-04)
+- Upgraded MKVToolNix to version 51.0.0.
 
-[font size=3][b]v1.44.0[/b][/font] (2020-09-08)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 50.0.0.
-&#x00a0;&#x00a0;- Upgraded MediaInfo to version 20.08.
-&#x00a0;&#x00a0;- Fixed an issue where setting the interface language would not work.
+###v1.44.0 (2020-09-08)
+- Upgraded MKVToolNix to version 50.0.0.
+- Upgraded MediaInfo to version 20.08.
+- Fixed an issue where setting the interface language would not work.
 
-[font size=3][b]v1.43.0[/b][/font] (2020-08-05)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 49.0.0.
-&#x00a0;&#x00a0;- Now using baseimage version 3.5.6, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
+###v1.43.0 (2020-08-05)
+- Upgraded MKVToolNix to version 49.0.0.
+- Now using baseimage version 3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
 
-[font size=3][b]v1.42.0[/b][/font] (2020-07-19)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 48.0.0.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+###v1.42.0 (2020-07-19)
+- Upgraded MKVToolNix to version 48.0.0.
+- Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
+&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
 
-[font size=3][b]v1.41.0[/b][/font] (2020-06-22)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 47.0.0.
+###v1.41.0 (2020-06-22)
+- Upgraded MKVToolNix to version 47.0.0.
 
-[font size=3][b]v1.40.0[/b][/font] (2020-05-04)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 46.0.0.
+###v1.40.0 (2020-05-04)
+- Upgraded MKVToolNix to version 46.0.0.
 
-[font size=3][b]v1.39.0[/b][/font] (2020-04-05)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 45.0.0.
-&#x00a0;&#x00a0;- Upgraded MediaInfo to version 20.03.
+###v1.39.0 (2020-04-05)
+- Upgraded MKVToolNix to version 45.0.0.
+- Upgraded MediaInfo to version 20.03.
 
-[font size=3][b]v1.38.0[/b][/font] (2020-03-08)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 43.0.0.
+###v1.38.0 (2020-03-08)
+- Upgraded MKVToolNix to version 43.0.0.
 
-[font size=3][b]v1.37.0[/b][/font] (2020-02-11)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 43.0.0.
+###v1.37.0 (2020-02-11)
+- Upgraded MKVToolNix to version 43.0.0.
 
-[font size=3][b]v1.36.0[/b][/font] (2020-01-07)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 42.0.0.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+###v1.36.0 (2020-01-07)
+- Upgraded MKVToolNix to version 42.0.0.
+- Now using baseimage v3.5.3, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Make sure the tzdata is installed.
 
-[font size=3][b]v1.35.0[/b][/font] (2019-12-07)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 41.0.0.
+###v1.35.0 (2019-12-07)
+- Upgraded MKVToolNix to version 41.0.0.
 
-[font size=3][b]v1.34.0[/b][/font] (2019-11-09)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 40.0.0.
+###v1.34.0 (2019-11-09)
+- Upgraded MKVToolNix to version 40.0.0.
 
-[font size=3][b]v1.33.0[/b][/font] (2019-11-05)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 39.0.0.
+###v1.33.0 (2019-11-05)
+- Upgraded MKVToolNix to version 39.0.0.
 
-[font size=3][b]v1.32.0[/b][/font] (2019-10-06)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 38.0.0.
+###v1.32.0 (2019-10-06)
+- Upgraded MKVToolNix to version 38.0.0.
 
-[font size=3][b]v1.31.0[/b][/font] (2019-08-26)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 37.0.0.
+###v1.31.0 (2019-08-26)
+- Upgraded MKVToolNix to version 37.0.0.
 
-[font size=3][b]v1.30.0[/b][/font] (2019-08-13)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 36.0.0.
-&#x00a0;&#x00a0;- Upgraded MediaInfo to version 19.07.
+###v1.30.0 (2019-08-13)
+- Upgraded MKVToolNix to version 36.0.0.
+- Upgraded MediaInfo to version 19.07.
 
-[font size=3][b]v1.29.0[/b][/font] (2019-06-22)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 35.0.0.
+###v1.29.0 (2019-06-22)
+- Upgraded MKVToolNix to version 35.0.0.
 
-[font size=3][b]v1.28.0[/b][/font] (2019-05-28)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 34.0.0.
+###v1.28.0 (2019-05-28)
+- Upgraded MKVToolNix to version 34.0.0.
 
-[font size=3][b]v1.27.0[/b][/font] (2019-04-26)
-&#x00a0;&#x00a0;- Upgraded MediaInfo to version 19.04.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
-
-[font size=3][b]v1.26.0[/b][/font] (2019-04-18)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 33.1.0.
-
-[font size=3][b]v1.25.0[/b][/font] (2019-03-13)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 32.0.0.
-&#x00a0;&#x00a0;- Use baseimage based on Alpine Linux 3.9.
-
-[font size=3][b]v1.24.0[/b][/font] (2019-02-12)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 31.0.0.
-&#x00a0;&#x00a0;- Upgraded MediaInfo to version 18.12.
-
-[font size=3][b]v1.23.0[/b][/font] (2019-01-07)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 30.1.0.
-&#x00a0;&#x00a0;- Fixed issue where special characters would not display correctly in open file dialog box.
-
-[font size=3][b]v1.22.0[/b][/font] (2018-12-03)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 29.0.0.
-
-[font size=3][b]v1.21.0[/b][/font] (2018-10-26)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 28.2.0.
-&#x00a0;&#x00a0;- Added MediaInfo, which can be invoked from MKVToolNix context menu.
-
-[font size=3][b]v1.20.1[/b][/font] (2018-09-19)
-&#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-
-[font size=3][b]v1.20.0[/b][/font] (2018-08-27)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 26.0.0.
-
-[font size=3][b]v1.19.0[/b][/font] (2018-07-12)
-&#x00a0;&#x00a0;- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 25.0.0.
-
-[font size=3][b]v1.18.0[/b][/font] (2018-06-11)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 24.0.0.
-&#x00a0;&#x00a0;- Now using baseimage v3.3.6, which brings the following changes (since last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded s6-overlay to version 1.21.4.0.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Wait for a limited time when terminating a service.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set and create the XDG_RUNTIME_DIR directory.
-
-[font size=3][b]v1.17.0[/b][/font] (2018-05-02)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 23.0.0.
-
-[font size=3][b]v1.16.0[/b][/font] (2018-04-03)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 22.0.0.
-&#x00a0;&#x00a0;- Switched to a baseimage based on Alpine Linux 3.7.
-
-[font size=3][b]v1.15.1[/b][/font] (2018-03-02)
-&#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes (since last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed an issue where the log monitor `yad` target would use XDG folders of the application.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
-
-[font size=3][b]v1.15.0[/b][/font] (2018-02-24)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 21.0.0.
-
-[font size=3][b]v1.14.2[/b][/font] (2018-02-03)
-&#x00a0;&#x00a0;- Now using baseimage v3.3.2, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Restored timezone support in Alpine Linux images with glibc.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue in `add-pkg` helper where a package could be incorrectly detected as installed.
-
-[font size=3][b]v1.14.1[/b][/font] (2018-01-30)
-&#x00a0;&#x00a0;- Now using baseimage v3.3.1, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the way some ressources are accessed to better support reverse proxy to the container.
-
-[font size=3][b]v1.14.0[/b][/font] (2018-01-22)
-&#x00a0;&#x00a0;- Now using baseimage v3.3.0, which brings the following changes (since last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- For Alpine Linux images with glibc, automatically update dynamic linker's cache after new libraries are installed.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed the LANG environment variable not being set properly.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the ability to automatically install a CJK (Chinese/Japanese/Korean) font.
-
-[font size=3][b]v1.13.0[/b][/font] (2018-01-15)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 20.0.0.
-
-[font size=3][b]v1.12.1[/b][/font] (2018-01-11)
-&#x00a0;&#x00a0;- Now using baseimage v3.2.2, which brings the following changes (since last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.2.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.26 (Alpine Linux glibc images).
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the way ownership of /config is taken to better support cases where the folder is mapped to a network share.
-&#x00a0;&#x00a0;- Small adjustment to the way ownership of files are taken.
-
-[font size=3][b]v1.12.0[/b][/font] (2017-12-17)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 19.0.0.
-
-[font size=3][b]v1.11.2[/b][/font] (2017-12-12)
-&#x00a0;&#x00a0;- Now using baseimage v3.1.4, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Set 2 worker processes for nginx.
-
-[font size=3][b]v1.11.1[/b][/font] (2017-11-20)
-&#x00a0;&#x00a0;- Now using baseimage v3.1.3, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.1.
-
-[font size=3][b]v1.11.0[/b][/font] (2017-11-19)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 18.0.0.
-
-[font size=3][b]v1.10.1[/b][/font] (2017-11-07)
-&#x00a0;&#x00a0;- Now using baseimage v3.1.2, which brings the following changes (from last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed an issue where a self-disabled service could be restarted.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.0.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use a more efficient way to monitor status files.
-
-[font size=3][b]v1.10.0[/b][/font] (2017-10-29)
-&#x00a0;&#x00a0;- Now using baseimage v3.1.0, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.1.1.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Enhanced integration of service dependencies functionality.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added a simple log monitor.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed race condition where container's exit code would not be the expected one.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where application's GUI fails to displayed when accessing it through the web interface via standard ports 80/443.
-
-[font size=3][b]v1.9.0[/b][/font] (2017-10-17)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 17.0.0.
-
-[font size=3][b]v1.8.2[/b][/font] (2017-10-09)
-&#x00a0;&#x00a0;- Now using baseimage v3.0.2, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where nginx config change was not applied correctly on systems without IPV6 support and secure connection disabled.
-
-[font size=3][b]v1.8.1[/b][/font] (2017-10-08)
-&#x00a0;&#x00a0;- Now using baseimage v3.0.1, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed nginx config for systems without IPV6 support.
-
-[font size=3][b]v1.8.0[/b][/font] (2017-10-07)
-&#x00a0;&#x00a0;- Now using baseimage v3.0.0, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Better support for service dependencies.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added support for secure access to the application's GUI.
-
-[font size=3][b]v1.7.0[/b][/font] (2017-10-01)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 16.0.0.
-
-[font size=3][b]v1.6.0[/b][/font] (2017-09-21)
-&#x00a0;&#x00a0;- Added support for interface language.
-&#x00a0;&#x00a0;- Now using baseimage v2.0.9, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Restore default `/etc/shadow` during container startup.
-
-[font size=3][b]v1.5.1[/b][/font] (2017-09-08)
-&#x00a0;&#x00a0;- Now using baseimage v2.0.8, which brings the following changes (from last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed timezone support on alpine-glibc images.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed duplicated entries in /etc/passwd and /etc/group that were created after a restart of the container.
-
-[font size=3][b]v1.5.0[/b][/font] (2017-08-21)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 15.0.0.
-
-[font size=3][b]v1.4.3[/b][/font] (2017-08-14)
-&#x00a0;&#x00a0;- Now using baseimage v2.0.6, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.20.0.0.
-
-[font size=3][b]v1.4.2[/b][/font] (2017-07-31)
-&#x00a0;&#x00a0;- Now using baseimage v2.0.5, which brings the following changes (from last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clear the environment of the container during startup.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clear the /tmp folder during startup.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Cleanly terminate the X server when container is restarted/stopped.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Improved robustness of X server starting process.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Removed unneeded files from the image.
-
-[font size=3][b]v1.4.1[/b][/font] (2017-07-27)
-&#x00a0;&#x00a0;- Now using baseimage v2.0.3, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Improved robustness of the X server starting process.
-
-[font size=3][b]v1.4.0[/b][/font] (2017-07-23)
-&#x00a0;&#x00a0;- Upgraded MKVToolNix to version 14.0.0.
-&#x00a0;&#x00a0;- Now using baseimage v2.0.2, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Proper VNC port is exposed.
-
-[font size=3][b]v1.3.1[/b][/font] (2017-07-18)
-&#x00a0;&#x00a0;- Now using baseimage v2.0.1, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Internal enhancements.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Clean temporary files left by npm.
-
-[font size=3][b]v1.3.0[/b][/font] (2017-07-17)
-&#x00a0;&#x00a0;- Now using baseimage v2.0.0, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Various internal enhancements.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed the way a service waits for another one.
-
-[font size=3][b]v1.2.0[/b][/font] (2017-07-04)
-&#x00a0;&#x00a0;- Now using baseimage v1.5.0, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the UMASK environment variable to control how file permissions are set for newly created files.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added the X11VNC_EXTRA_OPTS environment variable used to pass additional arguments to the x11vnc server.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- By default, activate auto-scaling of application's window.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Applied latest Alpine Linux security updates.
-
-[font size=3][b]v1.1.0[/b][/font] (2017-06-25)
-&#x00a0;&#x00a0;- Display MKVToolNix version during startup.
-&#x00a0;&#x00a0;- Updated MKVToolNix to version 13.0.0.
-
-[font size=3][b]v1.0.2[/b][/font] (2017-06-22)
-&#x00a0;&#x00a0;- Now using baseimage v1.4.3, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated Alpine Linux to version 3.6.2.
-
-[font size=3][b]v1.0.1[/b][/font] (2017-06-21)
-&#x00a0;&#x00a0;- Now using baseimage v1.4.2, which brings the following changes (from last used version):
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Associate the application's icon to a unique version to avoid browser cache issues.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed prefix of some service related messages.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Added support for supplying supplementary groups of the application.
-
-[font size=3][b]v1.0.0[/b][/font] (2017-06-13)
-&#x00a0;&#x00a0;- Initial release.
+###v1.27.0 (2019-04-26)
+- Upgraded MediaInfo to version 19.04.
+- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+
+###v1.26.0 (2019-04-18)
+- Upgraded MKVToolNix to version 33.1.0.
+
+###v1.25.0 (2019-03-13)
+- Upgraded MKVToolNix to version 32.0.0.
+- Use baseimage based on Alpine Linux 3.9.
+
+###v1.24.0 (2019-02-12)
+- Upgraded MKVToolNix to version 31.0.0.
+- Upgraded MediaInfo to version 18.12.
+
+###v1.23.0 (2019-01-07)
+- Upgraded MKVToolNix to version 30.1.0.
+- Fixed issue where special characters would not display correctly in open file dialog box.
+
+###v1.22.0 (2018-12-03)
+- Upgraded MKVToolNix to version 29.0.0.
+
+###v1.21.0 (2018-10-26)
+- Upgraded MKVToolNix to version 28.2.0.
+- Added MediaInfo, which can be invoked from MKVToolNix context menu.
+
+###v1.20.1 (2018-09-19)
+- Now using baseimage v3.5.1, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
+###v1.20.0 (2018-08-27)
+- Upgraded MKVToolNix to version 26.0.0.
+
+###v1.19.0 (2018-07-12)
+- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
+- Upgraded MKVToolNix to version 25.0.0.
+
+###v1.18.0 (2018-06-11)
+- Upgraded MKVToolNix to version 24.0.0.
+- Now using baseimage v3.3.6, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;- Upgraded s6-overlay to version 1.21.4.0.
+&#x00a0;&#x00a0;- Wait for a limited time when terminating a service.
+&#x00a0;&#x00a0;- Set and create the XDG_RUNTIME_DIR directory.
+
+###v1.17.0 (2018-05-02)
+- Upgraded MKVToolNix to version 23.0.0.
+
+###v1.16.0 (2018-04-03)
+- Upgraded MKVToolNix to version 22.0.0.
+- Switched to a baseimage based on Alpine Linux 3.7.
+
+###v1.15.1 (2018-03-02)
+- Now using baseimage v3.3.4, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;- Make sure the log monitor is started after the X server.
+&#x00a0;&#x00a0;- Fixed an issue where the log monitor `yad` target would use XDG folders of the application.
+&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
+
+###v1.15.0 (2018-02-24)
+- Upgraded MKVToolNix to version 21.0.0.
+
+###v1.14.2 (2018-02-03)
+- Now using baseimage v3.3.2, which brings the following changes:
+&#x00a0;&#x00a0;- Restored timezone support in Alpine Linux images with glibc.
+&#x00a0;&#x00a0;- Fixed issue in `add-pkg` helper where a package could be incorrectly detected as installed.
+
+###v1.14.1 (2018-01-30)
+- Now using baseimage v3.3.1, which brings the following changes:
+&#x00a0;&#x00a0;- Adjusted the way some ressources are accessed to better support reverse proxy to the container.
+
+###v1.14.0 (2018-01-22)
+- Now using baseimage v3.3.0, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;- For Alpine Linux images with glibc, automatically update dynamic linker's cache after new libraries are installed.
+&#x00a0;&#x00a0;- Fixed the LANG environment variable not being set properly.
+&#x00a0;&#x00a0;- Added the ability to automatically install a CJK (Chinese/Japanese/Korean) font.
+
+###v1.13.0 (2018-01-15)
+- Upgraded MKVToolNix to version 20.0.0.
+
+###v1.12.1 (2018-01-11)
+- Now using baseimage v3.2.2, which brings the following changes (since last used version):
+&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.2.
+&#x00a0;&#x00a0;- Upgraded glibc to version 2.26 (Alpine Linux glibc images).
+&#x00a0;&#x00a0;- Adjusted the way ownership of /config is taken to better support cases where the folder is mapped to a network share.
+- Small adjustment to the way ownership of files are taken.
+
+###v1.12.0 (2017-12-17)
+- Upgraded MKVToolNix to version 19.0.0.
+
+###v1.11.2 (2017-12-12)
+- Now using baseimage v3.1.4, which brings the following changes:
+&#x00a0;&#x00a0;- Set 2 worker processes for nginx.
+
+###v1.11.1 (2017-11-20)
+- Now using baseimage v3.1.3, which brings the following changes:
+&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.1.
+
+###v1.11.0 (2017-11-19)
+- Upgraded MKVToolNix to version 18.0.0.
+
+###v1.10.1 (2017-11-07)
+- Now using baseimage v3.1.2, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;- Fixed an issue where a self-disabled service could be restarted.
+&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.2.0.
+&#x00a0;&#x00a0;- Use a more efficient way to monitor status files.
+
+###v1.10.0 (2017-10-29)
+- Now using baseimage v3.1.0, which brings the following changes:
+&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.21.1.1.
+&#x00a0;&#x00a0;- Enhanced integration of service dependencies functionality.
+&#x00a0;&#x00a0;- Added a simple log monitor.
+&#x00a0;&#x00a0;- Fixed race condition where container's exit code would not be the expected one.
+&#x00a0;&#x00a0;- Fixed issue where application's GUI fails to displayed when accessing it through the web interface via standard ports 80/443.
+
+###v1.9.0 (2017-10-17)
+- Upgraded MKVToolNix to version 17.0.0.
+
+###v1.8.2 (2017-10-09)
+- Now using baseimage v3.0.2, which brings the following changes:
+&#x00a0;&#x00a0;- Fixed issue where nginx config change was not applied correctly on systems without IPV6 support and secure connection disabled.
+
+###v1.8.1 (2017-10-08)
+- Now using baseimage v3.0.1, which brings the following changes:
+&#x00a0;&#x00a0;- Fixed nginx config for systems without IPV6 support.
+
+###v1.8.0 (2017-10-07)
+- Now using baseimage v3.0.0, which brings the following changes:
+&#x00a0;&#x00a0;- Better support for service dependencies.
+&#x00a0;&#x00a0;- Added support for secure access to the application's GUI.
+
+###v1.7.0 (2017-10-01)
+- Upgraded MKVToolNix to version 16.0.0.
+
+###v1.6.0 (2017-09-21)
+- Added support for interface language.
+- Now using baseimage v2.0.9, which brings the following changes:
+&#x00a0;&#x00a0;- Restore default `/etc/shadow` during container startup.
+
+###v1.5.1 (2017-09-08)
+- Now using baseimage v2.0.8, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;- Fixed timezone support on alpine-glibc images.
+&#x00a0;&#x00a0;- Fixed duplicated entries in /etc/passwd and /etc/group that were created after a restart of the container.
+
+###v1.5.0 (2017-08-21)
+- Upgraded MKVToolNix to version 15.0.0.
+
+###v1.4.3 (2017-08-14)
+- Now using baseimage v2.0.6, which brings the following changes:
+&#x00a0;&#x00a0;- Upgraded S6 overlay to version 1.20.0.0.
+
+###v1.4.2 (2017-07-31)
+- Now using baseimage v2.0.5, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;- Clear the environment of the container during startup.
+&#x00a0;&#x00a0;- Clear the /tmp folder during startup.
+&#x00a0;&#x00a0;- Cleanly terminate the X server when container is restarted/stopped.
+&#x00a0;&#x00a0;- Improved robustness of X server starting process.
+&#x00a0;&#x00a0;- Removed unneeded files from the image.
+
+###v1.4.1 (2017-07-27)
+- Now using baseimage v2.0.3, which brings the following changes:
+&#x00a0;&#x00a0;- Improved robustness of the X server starting process.
+
+###v1.4.0 (2017-07-23)
+- Upgraded MKVToolNix to version 14.0.0.
+- Now using baseimage v2.0.2, which brings the following changes:
+&#x00a0;&#x00a0;- Proper VNC port is exposed.
+
+###v1.3.1 (2017-07-18)
+- Now using baseimage v2.0.1, which brings the following changes:
+&#x00a0;&#x00a0;- Internal enhancements.
+&#x00a0;&#x00a0;- Clean temporary files left by npm.
+
+###v1.3.0 (2017-07-17)
+- Now using baseimage v2.0.0, which brings the following changes:
+&#x00a0;&#x00a0;- Various internal enhancements.
+&#x00a0;&#x00a0;- Fixed the way a service waits for another one.
+
+###v1.2.0 (2017-07-04)
+- Now using baseimage v1.5.0, which brings the following changes:
+&#x00a0;&#x00a0;- Added the UMASK environment variable to control how file permissions are set for newly created files.
+&#x00a0;&#x00a0;- Added the X11VNC_EXTRA_OPTS environment variable used to pass additional arguments to the x11vnc server.
+&#x00a0;&#x00a0;- By default, activate auto-scaling of application's window.
+&#x00a0;&#x00a0;- Applied latest Alpine Linux security updates.
+
+###v1.1.0 (2017-06-25)
+- Display MKVToolNix version during startup.
+- Updated MKVToolNix to version 13.0.0.
+
+###v1.0.2 (2017-06-22)
+- Now using baseimage v1.4.3, which brings the following changes:
+&#x00a0;&#x00a0;- Updated Alpine Linux to version 3.6.2.
+
+###v1.0.1 (2017-06-21)
+- Now using baseimage v1.4.2, which brings the following changes (from last used version):
+&#x00a0;&#x00a0;- Associate the application's icon to a unique version to avoid browser cache issues.
+&#x00a0;&#x00a0;- Fixed prefix of some service related messages.
+&#x00a0;&#x00a0;- Added support for supplying supplementary groups of the application.
+
+###v1.0.0 (2017-06-13)
+- Initial release.
 
   </Changes>
   <Networking>

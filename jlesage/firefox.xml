@@ -36,110 +36,110 @@
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
   <Date>2021-04-13</Date>
-  <Changes>[font size=4][center]Firefox Change Log[/center][/font]
-[font size=3][b]v1.17.1[/b][/font] (2021-04-13)
-&#x00a0;&#x00a0;- Now using baseimage version 3.5.7, which brings the following change:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  <Changes>
+###v1.17.1 (2021-04-13)
+- Now using baseimage version 3.5.7, which brings the following change:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
 
-[font size=3][b]v1.17.0[/b][/font] (2021-02-06)
-&#x00a0;&#x00a0;- Updated Firefox to version 84.0.2-r0.
+###v1.17.0 (2021-02-06)
+- Updated Firefox to version 84.0.2-r0.
 
-[font size=3][b]v1.16.0[/b][/font] (2020-12-16)
-&#x00a0;&#x00a0;- Updated Firefox to version 83.0-r1.
+###v1.16.0 (2020-12-16)
+- Updated Firefox to version 83.0-r1.
 
-[font size=3][b]v1.15.0[/b][/font] (2020-10-01)
-&#x00a0;&#x00a0;- Updated Firefox to version 81.0-r0
+###v1.15.0 (2020-10-01)
+- Updated Firefox to version 81.0-r0
 
-[font size=3][b]v1.14.0[/b][/font] (2020-08-05)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 79.0-r0.
-&#x00a0;&#x00a0;- Now using baseimage to version 3.5.6, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
+###v1.14.0 (2020-08-05)
+- Upgraded Firefox to version 79.0-r0.
+- Now using baseimage to version 3.5.6, which brings the following changes:
+&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
 
-[font size=3][b]v1.13.0[/b][/font] (2020-07-19)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 78.0.2-r1.
-&#x00a0;&#x00a0;- Added check for missing `membarrier` system call support.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+###v1.13.0 (2020-07-19)
+- Upgraded Firefox to version 78.0.2-r1.
+- Added check for missing `membarrier` system call support.
+- Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
+&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
 
-[font size=3][b]v1.12.0[/b][/font] (2020-06-24)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 77.0.1-r2.
+###v1.12.0 (2020-06-24)
+- Upgraded Firefox to version 77.0.1-r2.
 
-[font size=3][b]v1.11.0[/b][/font] (2020-04-25)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 75.0-r2.
+###v1.11.0 (2020-04-25)
+- Upgraded Firefox to version 75.0-r2.
 
-[font size=3][b]v1.10.0[/b][/font] (2020-03-15)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 74.0-r0.
+###v1.10.0 (2020-03-15)
+- Upgraded Firefox to version 74.0-r0.
 
-[font size=3][b]v1.9.1[/b][/font] (2020-02-10)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 72.0.2-r0.
+###v1.9.1 (2020-02-10)
+- Upgraded Firefox to version 72.0.2-r0.
 
-[font size=3][b]v1.9.0[/b][/font] (2020-01-14)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 72.0.1-r0.
+###v1.9.0 (2020-01-14)
+- Upgraded Firefox to version 72.0.1-r0.
 
-[font size=3][b]v1.8.0[/b][/font] (2019-12-25)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 71.0-r0.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.3, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Make sure the tzdata is installed.
-&#x00a0;&#x00a0;- Use baseimage based on Alpine Linux 3.10.
+###v1.8.0 (2019-12-25)
+- Upgraded Firefox to version 71.0-r0.
+- Now using baseimage v3.5.3, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+- Use baseimage based on Alpine Linux 3.10.
 
-[font size=3][b]v1.7.1[/b][/font] (2019-08-26)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 68.0.2-r0.
+###v1.7.1 (2019-08-26)
+- Upgraded Firefox to version 68.0.2-r0.
 
-[font size=3][b]v1.7.0[/b][/font] (2019-08-05)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 68.0.r0.
+###v1.7.0 (2019-08-05)
+- Upgraded Firefox to version 68.0.r0.
 
-[font size=3][b]v1.6.0[/b][/font] (2019-07-17)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 67.0.4-r0.
+###v1.6.0 (2019-07-17)
+- Upgraded Firefox to version 67.0.4-r0.
 
-[font size=3][b]v1.5.1[/b][/font] (2019-05-12)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 66.0.5-r1.
+###v1.5.1 (2019-05-12)
+- Upgraded Firefox to version 66.0.5-r1.
 
-[font size=3][b]v1.5.0[/b][/font] (2019-05-09)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 66.0.4-r0.
-&#x00a0;&#x00a0;- Print the Firefox version during the container startup.
+###v1.5.0 (2019-05-09)
+- Upgraded Firefox to version 66.0.4-r0.
+- Print the Firefox version during the container startup.
 
-[font size=3][b]v1.4.1[/b][/font] (2019-04-24)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 62.0.3-r4.
-&#x00a0;&#x00a0;- Now using baseimage v3.5.2, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+###v1.4.1 (2019-04-24)
+- Upgraded Firefox to version 62.0.3-r4.
+- Now using baseimage v3.5.2, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
+&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
 
-[font size=3][b]v1.4.0[/b][/font] (2019-02-24)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 62.0.3-r2.
-&#x00a0;&#x00a0;- Preferences can now be set via environment variables.
-&#x00a0;&#x00a0;- Use baseimage based on Alpine Linux 3.9.
+###v1.4.0 (2019-02-24)
+- Upgraded Firefox to version 62.0.3-r2.
+- Preferences can now be set via environment variables.
+- Use baseimage based on Alpine Linux 3.9.
 
-[font size=3][b]v1.3.1[/b][/font] (2018-09-18)
-&#x00a0;&#x00a0;- Now using baseimage v3.5.1, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+###v1.3.1 (2018-09-18)
+- Now using baseimage v3.5.1, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
 
-[font size=3][b]v1.3.0[/b][/font] (2018-07-27)
-&#x00a0;&#x00a0;- Added support for more playable video formats.
-&#x00a0;&#x00a0;- Added support for sound in Firefox.
+###v1.3.0 (2018-07-27)
+- Added support for more playable video formats.
+- Added support for sound in Firefox.
 
-[font size=3][b]v1.2.0[/b][/font] (2018-07-12)
-&#x00a0;&#x00a0;- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
-&#x00a0;&#x00a0;- Upgraded Firefox to version 61.0.1-r0.
+###v1.2.0 (2018-07-12)
+- Now using baseimage v3.4.0, which is based on Alpine Linux 3.8.
+- Upgraded Firefox to version 61.0.1-r0.
 
-[font size=3][b]v1.1.0[/b][/font] (2018-05-31)
-&#x00a0;&#x00a0;- Upgraded Firefox to version 60.0.1-r0.
+###v1.1.0 (2018-05-31)
+- Upgraded Firefox to version 60.0.1-r0.
 
-[font size=3][b]v1.0.2[/b][/font] (2018-03-15)
-&#x00a0;&#x00a0;- Fixed issue where Firefox would not gracefully terminate.
-&#x00a0;&#x00a0;- Fixed an issue where restoring session would resize window to the wrong dimensions.
+###v1.0.2 (2018-03-15)
+- Fixed issue where Firefox would not gracefully terminate.
+- Fixed an issue where restoring session would resize window to the wrong dimensions.
 
-[font size=3][b]v1.0.1[/b][/font] (2018-03-02)
-&#x00a0;&#x00a0;- Now using baseimage v3.3.4, which brings the following changes:
-&#x00a0;&#x00a0;&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
-&#x00a0;&#x00a0;- Updated Firefox to version 58.0.1-r2.
+###v1.0.1 (2018-03-02)
+- Now using baseimage v3.3.4, which brings the following changes:
+&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
+- Updated Firefox to version 58.0.1-r2.
 
-[font size=3][b]v1.0.0[/b][/font] (2018-02-16)
-&#x00a0;&#x00a0;- Initial release.
+###v1.0.0 (2018-02-16)
+- Initial release.
 
   </Changes>
   <Networking>
