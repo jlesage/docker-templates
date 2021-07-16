@@ -7,24 +7,24 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/57756-support-crashplan/</Support>
   <Overview>
-    CrashPlan makes it easy to protect your digital life, so you can get back to
+CrashPlan makes it easy to protect your digital life, so you can get back to
 what’s important in real life.  Only CrashPlan offers totally free local and
 offsite backup. A subscription to the cloud backup service gets you continuous
 backup, mobile file access and lots more. For the ultimate in computer backup,
 get all three, from the same easy application.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 160MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-crashplan/blob/master/README.md"]
-    https://github.com/jlesage/docker-crashplan/blob/master/README.md[/a].
-    [br][br]
-    [span style='color: red;'][b]Warning:[/b][/span] Make sure to read the
-    [i]Taking Over Existing Backup[/i] section from the documentation if you are
-    installing this container to replace another CrashPlan installation (from
-    Windows, Linux, Mac or even another Docker container).
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 160MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-crashplan/blob/master/README.md
+
+**Warning**: Make sure to read the *Taking Over Existing Backup* section from
+the documentation if you are installing this container to replace another
+CrashPlan installation (from Windows, Linux, Mac or even another Docker
+container).
   </Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -32,24 +32,24 @@ get all three, from the same easy application.
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/crashplan-icon.png</Icon>
   <ExtraParams/>
   <Description>
-    CrashPlan makes it easy to protect your digital life, so you can get back to
+CrashPlan makes it easy to protect your digital life, so you can get back to
 what’s important in real life.  Only CrashPlan offers totally free local and
 offsite backup. A subscription to the cloud backup service gets you continuous
 backup, mobile file access and lots more. For the ultimate in computer backup,
 get all three, from the same easy application.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 160MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-crashplan/blob/master/README.md"]
-    https://github.com/jlesage/docker-crashplan/blob/master/README.md[/a].
-    [br][br]
-    [span style='color: red;'][b]Warning:[/b][/span] Make sure to read the
-    [i]Taking Over Existing Backup[/i] section from the documentation if you are
-    installing this container to replace another CrashPlan installation (from
-    Windows, Linux, Mac or even another Docker container).
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 160MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-crashplan/blob/master/README.md.
+
+**Warning**: Make sure to read the *Taking Over Existing Backup* section from
+the documentation if you are installing this container to replace another
+CrashPlan installation (from Windows, Linux, Mac or even another Docker
+container).
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>

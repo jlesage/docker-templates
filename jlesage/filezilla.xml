@@ -7,15 +7,15 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/59047-support-filezilla/</Support>
   <Overview>
-    FileZilla is a cross-platform graphical FTP, SFTP, and FTPS file management tool with a vast list of features.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 100MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-filezilla/blob/master/README.md"]
-    https://github.com/jlesage/docker-filezilla/blob/master/README.md[/a].
+FileZilla is a cross-platform graphical FTP, SFTP, and FTPS file management tool with a vast list of features.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 100MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-filezilla/blob/master/README.md
   </Overview>
   <Category>Network:FTP</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -23,15 +23,15 @@
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/filezilla-icon.png</Icon>
   <ExtraParams/>
   <Description>
-    FileZilla is a cross-platform graphical FTP, SFTP, and FTPS file management tool with a vast list of features.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 100MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-filezilla/blob/master/README.md"]
-    https://github.com/jlesage/docker-filezilla/blob/master/README.md[/a].
+FileZilla is a cross-platform graphical FTP, SFTP, and FTPS file management tool with a vast list of features.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 100MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-filezilla/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>

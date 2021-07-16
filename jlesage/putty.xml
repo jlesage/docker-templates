@@ -7,15 +7,15 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/73494-support-putty/</Support>
   <Overview>
-    PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 50MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-putty/blob/master/README.md"]
-    https://github.com/jlesage/docker-putty/blob/master/README.md[/a].
+PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 50MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-putty/blob/master/README.md
   </Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -23,15 +23,15 @@
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/putty-icon.png</Icon>
   <ExtraParams/>
   <Description>
-    PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 50MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-putty/blob/master/README.md"]
-    https://github.com/jlesage/docker-putty/blob/master/README.md[/a].
+PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 50MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-putty/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.putty.org</Project>

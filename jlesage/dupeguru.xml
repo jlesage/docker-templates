@@ -7,17 +7,17 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/56392-support-dupeguru/</Support>
   <Overview>
-    dupeGuru is a tool to find duplicate files on your computer. It can scan either
+dupeGuru is a tool to find duplicate files on your computer. It can scan either
 filenames or contents. The filename scan features a fuzzy matching algorithm
 that can find duplicate filenames even when they are not exactly the same.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 100MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-dupeguru/blob/master/README.md"]
-    https://github.com/jlesage/docker-dupeguru/blob/master/README.md[/a].
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 100MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-dupeguru/blob/master/README.md
   </Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -25,17 +25,17 @@ that can find duplicate filenames even when they are not exactly the same.
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/dupeguru-icon.png</Icon>
   <ExtraParams/>
   <Description>
-    dupeGuru is a tool to find duplicate files on your computer. It can scan either
+dupeGuru is a tool to find duplicate files on your computer. It can scan either
 filenames or contents. The filename scan features a fuzzy matching algorithm
 that can find duplicate filenames even when they are not exactly the same.
-    [br][br]
-    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
-    Also, being based on Alpine Linux, size of this container
-    is very small (less than 100MB in download size).
-    [br][br][span][/span]
-    For a complete documentation of this container, see
-    [a href="https://github.com/jlesage/docker-dupeguru/blob/master/README.md"]
-    https://github.com/jlesage/docker-dupeguru/blob/master/README.md[/a].
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small (less
+than 100MB in download size).
+
+For a complete documentation of this container, see
+https://github.com/jlesage/docker-dupeguru/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
