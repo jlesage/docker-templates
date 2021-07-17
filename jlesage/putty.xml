@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-putty/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.putty.org</Project>
-  <Date>2021-05-10</Date>
+  <Date>2021-07-17</Date>
   <Changes>
+###v1.3.0 (2021-07-17)
+- Updated PuTTY to version 0.76.
+
 ###v1.2.0 (2021-05-10)
 - Updated PuTTY to version 0.75.
 
