@@ -37,8 +37,17 @@ https://github.com/jlesage/docker-handbrake/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2021-03-13</Date>
+  <Date>2021-07-19</Date>
   <Changes>
+###v1.24.0 (2021-07-19)
+- Updated Handbrake to version 1.4.0.
+- Updated libva to version 2.12.0.
+- Updated gmmlib to version 21.2.1.
+- Updated Intel Media Driver to version 21.2.3.
+- Updated Intel Media SDK to version 21.2.3.
+- Now using baseimage version 3.5.7, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 ###v1.23.2 (2021-03-13)
 - Fixed issue where the wrong parameter was passed to the post watch folder processing hook.
 
