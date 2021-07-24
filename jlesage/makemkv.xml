@@ -403,6 +403,11 @@ determine the right devices to use, start the container and look at its log.
       <Mode/>
     </Variable>
     <Variable>
+      <Value/>
+      <Name>AUTO_DISC_RIPPER_MAKEMKV_PROFILE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>0</Value>
       <Name>AUTO_DISC_RIPPER_EJECT</Name>
       <Mode/>
@@ -453,6 +458,7 @@ determine the right devices to use, start the container and look at its log.
   <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Licence Key" Target="MAKEMKV_KEY" Default="BETA" Mode="" Description="MakeMKV registration key to use.  The key is written to the configuration file during container startup.  When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;BETA&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, the latest beta key is automatically used.  When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;UNSET&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt;, no key is automatically written to the configuration file." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Enabled" Target="AUTO_DISC_RIPPER" Default="0" Mode="" Description="Set to 1 to enable automatic rippping of DVD/Blu-ray discs." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Automatic Disc Ripper: Custom MakeMKV Profile" Target="AUTO_DISC_RIPPER_MAKEMKV_PROFILE" Default="" Mode="" Description="Filename of the custom MakeMKV profile the automatic disc ripper should use.  The profile is expected to be found under the /config folder of the container, unless an absolute path is specified." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Eject" Target="AUTO_DISC_RIPPER_EJECT" Default="0" Mode="" Description="Set to 1 to eject disc when ripping is terminated." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Parallel" Target="AUTO_DISC_RIPPER_PARALLEL_RIP" Default="0" Mode="" Description="When set to 1, discs from all available optical drives are ripped in parallel.  Else, each disc from optical drives is ripped one at time." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automatic Disc Ripper: Interval" Target="AUTO_DISC_RIPPER_INTERVAL" Default="5" Mode="" Description="Interval, in seconds, the automatic disc ripper checks for the presence of a DVD/Blu-ray discs." Type="Variable" Display="advanced" Required="false" Mask="false"/>
