@@ -59,8 +59,13 @@ determine the right devices to use, start the container and look at its log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2021-04-14</Date>
+  <Date>2021-07-23</Date>
   <Changes>
+###v1.21.0 (2021-07-23)
+- Updated MakeMKV to version 1.16.4.
+- Added environment variable that defines the custom MakeMKV profile the automatic video converter should use.
+- Fixed an issue where the write test on the output folder would incorrectly fail.
+
 ###v1.20.3 (2021-04-14)
 - Now using baseimage version 3.5.7, which brings the following change:
 &#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
