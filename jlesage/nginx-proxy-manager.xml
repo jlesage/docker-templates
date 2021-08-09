@@ -49,8 +49,15 @@ management interface are:
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2021-06-25</Date>
+  <Date>2021-08-08</Date>
   <Changes>
+###v1.19.0 (2021-08-08)
+- Updated Nginx Proxy Manager to version 2.9.7.
+
+###v1.18.0 (2021-08-03)
+- Updated Nginx Proxy Manager to version 2.6.9.
+- Removed random delay that was applied when manually renewing a certificate.
+
 ###v1.17.0 (2021-06-25)
 - Updated Nginx Proxy Manager to version 2.9.4.
 
