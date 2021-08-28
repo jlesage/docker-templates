@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-qdirstat/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/shundhammer/qdirstat</Project>
-  <Date>2021-04-13</Date>
+  <Date>2021-08-28</Date>
   <Changes>
+###v1.4.0 (2021-08-28)
+- Updated QDirStat to version 1.8.
+
 ###v1.3.1 (2021-04-13)
 - Now using baseimage version 3.5.7, which brings the following change:
 &#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
