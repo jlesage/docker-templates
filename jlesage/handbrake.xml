@@ -37,8 +37,11 @@ https://github.com/jlesage/docker-handbrake/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2021-07-19</Date>
+  <Date>2021-08-21</Date>
   <Changes>
+###v1.24.1 (2021-08-21)
+- Updated Handbrake to version 1.4.1.
+
 ###v1.24.0 (2021-07-19)
 - Updated Handbrake to version 1.4.0.
 - Updated libva to version 2.12.0.
