@@ -39,8 +39,11 @@ https://github.com/jlesage/docker-dupeguru/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2021-04-13</Date>
+  <Date>2021-09-14</Date>
   <Changes>
+###v1.11.3 (2021-09-14)
+- Fixed issue where the container would fail to start under certain environments.
+
 ###v1.11.2 (2021-04-13)
 - Now using baseimage version 3.5.7, which brings the following change:
 &#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
