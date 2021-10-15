@@ -39,8 +39,12 @@ https://github.com/jlesage/docker-filebot/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2021-04-01</Date>
+  <Date>2021-10-15</Date>
   <Changes>
+###v1.12.0 (2021-10-15)
+- Updated FileBot to version 4.9.4 (r8735).
+- Adjusted the way the output folder is tested for write permission to support mapping to a NFSv4 share.
+
 ###v1.11.1 (2021-04-01)
 - Updated MediaInfo library to version 21.03.
 
