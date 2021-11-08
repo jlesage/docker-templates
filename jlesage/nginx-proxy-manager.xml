@@ -49,8 +49,11 @@ management interface are:
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2021-11-02</Date>
+  <Date>2021-11-08</Date>
   <Changes>
+###v1.22.1 (2021-11-08)
+- Updated NginxProxyManager to version 2.9.12.
+
 ###v1.22.0 (2021-11-02)
 - Updated Nginx Proxy Manager to version 2.9.11.
 
