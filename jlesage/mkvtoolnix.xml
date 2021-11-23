@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-mkvtoolnix/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download/</Project>
-  <Date>2021-10-13</Date>
+  <Date>2021-11-23</Date>
   <Changes>
+###v1.58.0 (2021-11-23)
+- Updated MKVToolNix to version 63.0.0.
+
 ###v1.57.0 (2021-10-13)
 - Updated MKVToolNix to version 62.0.0.
 - Updated MediaInfo to version 29.09.
