@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2021-11-23</Date>
+  <Date>2021-12-16</Date>
   <Changes>
+###v1.26.0 (2021-12-16)
+- Updated CloudBerry Backup to version 3.3.0.11.
+
 ###v1.25.0 (2021-11-23)
 - Updated CloudBerry Backup to version 3.2.3.156.
 
