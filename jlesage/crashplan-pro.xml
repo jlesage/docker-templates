@@ -49,8 +49,11 @@ installation (from Windows, Linux, Mac or even another Docker container).
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2021-12-16</Date>
+  <Date>2021-12-20</Date>
   <Changes>
+###v2.16.1 (2021-12-20)
+- Updated CrashPlan to version 8.8.1.36.
+
 ###v2.16.0 (2021-12-16)
 - Updated CrashPlan to version 8.8.1.
 
