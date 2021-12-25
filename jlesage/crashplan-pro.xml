@@ -49,8 +49,12 @@ installation (from Windows, Linux, Mac or even another Docker container).
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2021-12-20</Date>
+  <Date>2021-12-25</Date>
   <Changes>
+###v2.16.2 (2021-12-25)
+- Fixed an issue where restoring files to an "other" location would crash the UI.
+- Fixed handling of filenames with special characters.
+
 ###v2.16.1 (2021-12-20)
 - Updated CrashPlan to version 8.8.1.36.
 
