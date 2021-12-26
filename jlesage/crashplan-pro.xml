@@ -49,8 +49,11 @@ installation (from Windows, Linux, Mac or even another Docker container).
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com/en-us/business/</Project>
-  <Date>2021-12-25</Date>
+  <Date>2021-12-26</Date>
   <Changes>
+###v2.16.4 (2021-12-26)
+- Fixed, again, an issue where restoring files to an "other" location would crash the UI.
+
 ###v2.16.3 (2021-12-25)
 - Added workaround for an issue where the CrashPlan engine would not start on devices running older kernel version.
 
