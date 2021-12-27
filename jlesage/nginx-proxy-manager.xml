@@ -49,8 +49,14 @@ management interface are:
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2021-11-08</Date>
+  <Date>2021-12-26</Date>
   <Changes>
+###v1.23.0 (2021-12-26)
+- Updated Nginx Proxy Manager to version 2.9.13.
+- Updated OpenResty to version 1.19.9.1.
+- Fixed rotation of some log files.
+- Properly handle nameserver in resolv.conf with interface name appended to its IPv6 address.
+
 ###v1.22.1 (2021-11-08)
 - Updated NginxProxyManager to version 2.9.12.
 
