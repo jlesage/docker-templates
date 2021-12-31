@@ -35,8 +35,15 @@ https://github.com/jlesage/docker-filezilla/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2021-08-21</Date>
+  <Date>2021-12-30</Date>
   <Changes>
+###v1.33.0 (2021-12-30)
+- Updated FileZilla to version 3.57.0.
+- Updated libfilezilla to version 0.35.0.
+- Now using baseimage version 3.5.8, based on Alpine 3.15, which brings the following change:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+- None
+
 ###v1.32.1 (2021-08-21)
 - Updated FileZilla to version 3.55.1
 - Updated libfilezilla to version 0.31.1.
