@@ -37,8 +37,11 @@ https://github.com/jlesage/docker-czkawka/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2021-11-23</Date>
+  <Date>2022-01-21</Date>
   <Changes>
+###v1.6.0 (2022-01-21)
+- Updated Czkawka to version 4.0.0.
+
 ###v1.5.0 (2021-11-23)
 - Updated Czkawka to version 3.3.1.
 
