@@ -49,8 +49,11 @@ management interface are:
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.jc21.com</Project>
-  <Date>2022-01-02</Date>
+  <Date>2022-01-21</Date>
   <Changes>
+###v1.25.0 (2022-01-21)
+- Updated Nginx Proxy Manager to version 2.9.15.
+
 ###v1.24.1 (2022-01-02)
 - Now using baseimage version 2.4.6, based on Alpine 3.15, which brings the following change:
 &#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
