@@ -37,8 +37,12 @@ https://github.com/jlesage/docker-czkawka/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2022-01-21</Date>
+  <Date>2022-01-22</Date>
   <Changes>
+###v1.6.1 (2022-01-22)
+- Added FFmpeg, needed to find similar videos.
+- Fixed some icons not being displayed correctly.
+
 ###v1.6.0 (2022-01-21)
 - Updated Czkawka to version 4.0.0.
 
