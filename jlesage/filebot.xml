@@ -257,6 +257,11 @@ https://github.com/jlesage/docker-filebot/blob/master/README.md.
       <Mode/>
     </Variable>
     <Variable>
+      <Value>0</Value>
+      <Name>USE_FILEBOT_BETA</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>1800</Value>
       <Name>AMC_INTERVAL</Name>
       <Mode/>
@@ -359,6 +364,7 @@ https://github.com/jlesage/docker-filebot/blob/master/README.md.
   <Config Name="OpenSubtitles Username" Target="OPENSUBTITLES_USERNAME" Default="" Mode="" Description="Username of your OpenSubtitles (https://www.opensubtitles.org) account.  Required to download subtitles." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="OpenSubtitles Password" Target="OPENSUBTITLES_PASSWORD" Default="" Mode="" Description="Password of your OpenSubtitles (https://www.opensubtitles.org) account.  Required to download subtitles." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Custom Options" Target="FILEBOT_CUSTOM_OPTIONS" Default="" Mode="" Description="Custom arguments to pass to FileBot.  This applies to the UI only." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Use FileBot Beta Version" Target="USE_FILEBOT_BETA" Default="0" Mode="" Description="When set to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;1&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, FileBot installed under &amp;lt;i&amp;gt;/config/beta&amp;lt;/i&amp;gt; (container path) is used.  If no FileBot installation is found under this folder, the latest beta version is automatically downloaded during container startup.  &amp;lt;b&amp;gt;NOTE&amp;lt;/b&amp;gt;: Use at your own risk.  Beta version may have bugs and stability issues." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Interval" Target="AMC_INTERVAL" Default="1800" Mode="" Description="Time (in seconds) between each invocation of the Automated Media Center (AMC) script." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Input Stable Time" Target="AMC_INPUT_STABLE_TIME" Default="10" Mode="" Description="Time (in seconds) during which properties (e.g. size, time, etc) of files in the watch folder need to remain the same before invoking the Automated Media Center (AMC) script.  This is to avoid processing the watch folder while files are being copied." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Automated Media Center: Action" Target="AMC_ACTION" Default="test" Mode="" Description="Action performed by the Automated Media Center (AMC) script on files.  Valid values are &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;test&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;copy&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;move&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;symlink&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;hardlink&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;keeplink&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;duplicate&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; or &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;clone&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;.  Use the &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;test&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; operation to perform a dry-run and verify that everything gets matched up correctly." Type="Variable" Display="always" Required="false" Mask="false"/>
