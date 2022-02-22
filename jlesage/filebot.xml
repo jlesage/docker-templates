@@ -39,8 +39,18 @@ https://github.com/jlesage/docker-filebot/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2021-10-15</Date>
+  <Date>2022-02-21</Date>
   <Changes>
+###v1.13.0 (2022-02-21)
+- Java 17 is now used to run FileBot.
+- Language used by AMC to rename files can now be set via the `AMC_LANG` environment variable.
+- Allow using a beta version of FieBot by using the `USE_FILE_BETA` environment variable.
+- Updated MediaInfo library to version 21.09.
+- Updated Chromaprint to version 1.5.1.
+- Allow replacing a license without having to remove the old one
+- Now using baseimage version 3.5.8, based on Alpine 3.15, which brings the following change:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 ###v1.12.0 (2021-10-15)
 - Updated FileBot to version 4.9.4 (r8735).
 - Adjusted the way the output folder is tested for write permission to support mapping to a NFSv4 share.
