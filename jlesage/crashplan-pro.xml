@@ -54,7 +54,7 @@ installation (from Windows, Linux, Mac or even another Docker container).
 ###v2.16.6 (2022-02-15)
 - Fixed an issue where restoring files would not work.
 - Now using baseimage version 3.5.8, based on Alpine 3.14, which brings the following change:
-- Updated installed packages to get latest security fixes.
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
 
 ###v2.16.5 (2022-01-21)
 - Updated CrashPlan to version 8.8.2.143.
