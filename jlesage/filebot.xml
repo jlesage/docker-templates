@@ -39,8 +39,13 @@ https://github.com/jlesage/docker-filebot/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2022-02-21</Date>
+  <Date>2022-02-24</Date>
   <Changes>
+###v1.14.0 (2022-02-24)
+- Updated FileBot to version 4.9.5 (r9112).
+- Fixed an issue where a folder could not be selected from the selection window.
+- Fixed an issue where some icons were missing from the file/folder selection window.
+
 ###v1.13.0 (2022-02-21)
 - Java 17 is now used to run FileBot.
 - Language used by AMC to rename files can now be set via the `AMC_LANG` environment variable.
