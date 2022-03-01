@@ -59,8 +59,13 @@ determine the right devices to use, start the container and look at its log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2021-12-30</Date>
+  <Date>2022-02-28</Date>
   <Changes>
+###v1.21.3 (2022-02-28)
+- Updated MakeMKV to version 1.16.7.
+- Automatic disc ripper: Retry disc ejection if drive is busy.
+- Automatic disc ripper: Show error message in case disc ejection fails.
+
 ###v1.21.2 (2021-12-30)
 - Fixed extraction of CC subtitles.
 - Fixed permissions of files created by MakeMKV.
