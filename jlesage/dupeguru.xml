@@ -39,8 +39,13 @@ https://github.com/jlesage/docker-dupeguru/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2021-09-14</Date>
+  <Date>2022-03-10</Date>
   <Changes>
+###v1.12.0 (2022-03-10)
+- Updated dupeGuru to version 4.2.0.
+- Updated baseimage to version 3.5.8, based on Alpine 3.15, which brings to following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 ###v1.11.3 (2021-09-14)
 - Fixed issue where the container would fail to start under certain environments.
 
