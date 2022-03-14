@@ -39,8 +39,11 @@ https://github.com/jlesage/docker-filebot/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.filebot.net/</Project>
-  <Date>2022-02-24</Date>
+  <Date>2022-03-14</Date>
   <Changes>
+###v1.14.1 (2022-03-14)
+- Updated FileBot to version 4.9.6 (r9125).
+
 ###v1.14.0 (2022-02-24)
 - Updated FileBot to version 4.9.5 (r9112).
 - Fixed an issue where a folder could not be selected from the selection window.
