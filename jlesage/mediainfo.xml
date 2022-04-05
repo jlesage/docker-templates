@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-mediainfo/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2021-10-12</Date>
+  <Date>2022-04-05</Date>
   <Changes>
+###v1.9.0 (2022-04-05)
+- Updated MediaInfo to version 22.03.
+
 ###v1.8.0 (2021-10-12)
 - Updated MediaInfo to version 21.09.
 
