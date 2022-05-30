@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-putty/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.putty.org</Project>
-  <Date>2022-02-10</Date>
+  <Date>2022-05-30</Date>
   <Changes>
+###v1.4.0 (2022-05-30)
+- Updated PuTTY to version 0.77.
+
 ###v1.3.1 (2022-02-10)
 - Fixed missing icons in settings window.
 - Now using baseimage version 3.5.8, based on Alpine 3.14, which brings the following change:
