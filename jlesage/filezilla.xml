@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-filezilla/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2022-06-02</Date>
+  <Date>2022-06-25</Date>
   <Changes>
+###v1.35.3 (2022-06-25)
+- Fixed issue where transfers using sftp would fail on devices running older kernel.
+
 ###v1.35.2 (2022-06-02)
 - Updated FileZilla to version 3.60.1.
 
