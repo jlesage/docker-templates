@@ -37,8 +37,19 @@ https://github.com/jlesage/docker-handbrake/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2021-10-04</Date>
+  <Date>2022-06-27</Date>
   <Changes>
+###v1.25.0 (2022-06-27)
+- Updated HandBrake to version 1.5.1.
+- Updated libva to version 2.14.0.
+- Updated gmmlib to version 22.1.4.
+- Updated Intel Media Driver to version 22.3.1.
+- Updated Intel Media SDK to version 22.3.0.
+- Updated x264 library to get support for the H.264 10bit encoder.
+- Added the `AUTOMATED_CONVERSION_MAIN_TITLE_DETECTION` environment variable that enables main feature title detection of HandBrake.
+- Now using baseimage version 3.5.8, based on Alpine Linux 3.14, which brings the following changes:
+&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+
 ###v1.24.2 (2021-10-04)
 - Updated HandBrake to version 1.4.2.
 - Updated Intel Media SDK to version 21.3.5.
