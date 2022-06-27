@@ -559,6 +559,11 @@ https://github.com/jlesage/docker-handbrake/blob/master/README.md.
       <Mode/>
     </Variable>
     <Variable>
+      <Value>0</Value>
+      <Name>AUTOMATED_CONVERSION_MAIN_TITLE_DETECTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>5</Value>
       <Name>AUTOMATED_CONVERSION_CHECK_INTERVAL</Name>
       <Mode/>
@@ -609,6 +614,7 @@ https://github.com/jlesage/docker-handbrake/blob/master/README.md.
   <Config Name="Automatic Video Converter: Overwrite Destination" Target="AUTOMATED_CONVERSION_OVERWRITE_OUTPUT" Default="0" Mode="" Description="Setting this to 1 allows the final destination file to be overwritten if it already exists." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Source File Stable Time" Target="AUTOMATED_CONVERSION_SOURCE_STABLE_TIME" Default="5" Mode="" Description="Time (in seconds) during which properties (e.g. size, time, etc) of a video file in the watch folder need to remain the same.  This is to avoid processing a file that is being copied." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Minimum Title Duration" Target="AUTOMATED_CONVERSION_SOURCE_MIN_DURATION" Default="10" Mode="" Description="Minimum title duration (in seconds).  Shorter titles will be ignored.  This applies only to video disc sources (ISO file, &amp;lt;i&amp;gt;VIDEO_TS&amp;lt;/i&amp;gt; folder or &amp;lt;i&amp;gt;BDMV&amp;lt;/i&amp;gt; folder)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Automatic Video Converter: Main Title Detection" Target="AUTOMATED_CONVERSION_MAIN_TITLE_DETECTION" Default="0" Mode="" Description="Setting this to &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;1&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt; enables HandBrake main feature title detection to try to guess and select the main title." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Check Interval" Target="AUTOMATED_CONVERSION_CHECK_INTERVAL" Default="5" Mode="" Description="Interval (in seconds) at which the automatic video converter checks for new files." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Number of Watch Folders" Target="AUTOMATED_CONVERSION_MAX_WATCH_FOLDERS" Default="5" Mode="" Description="Maximum number of watch folders handled by the automatic video converter." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Automatic Video Converter: Disable Progress in GUI" Target="AUTOMATED_CONVERSION_NO_GUI_PROGRESS" Default="0" Mode="" Description="Set to 1 to disable display of the video conversion progress in HandBrake GUI." Type="Variable" Display="advanced" Required="false" Mask="false"/>
