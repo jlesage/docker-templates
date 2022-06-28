@@ -37,8 +37,12 @@ https://github.com/jlesage/docker-handbrake/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
-  <Date>2022-06-27</Date>
+  <Date>2022-06-28</Date>
   <Changes>
+###v1.25.1 (2022-06-28)
+- Fixed the Automatic Video Converter not working due to usage of undefined variable.
+- The Automatic Video Converter now correctly uses the main feature detection.
+
 ###v1.25.0 (2022-06-27)
 - Updated HandBrake to version 1.5.1.
 - Updated libva to version 2.14.0.
