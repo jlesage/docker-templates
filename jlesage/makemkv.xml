@@ -59,8 +59,12 @@ determine the right devices to use, start the container and look at its log.
   </Description>
   <Beta>False</Beta>
   <Project>http://www.makemkv.com/</Project>
-  <Date>2022-06-28</Date>
+  <Date>2022-07-14</Date>
   <Changes>
+###v1.22.1 (2022-07-14)
+- Updated MakeMKV to version 1.17.1.
+- Fixed the disc eject retry mechanism of the automatic disc ripper.
+
 ###v1.22.0 (2022-06-28)
 - Updated MakeMKV to version 1.17.0.
 
