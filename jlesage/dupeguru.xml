@@ -39,8 +39,11 @@ https://github.com/jlesage/docker-dupeguru/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2022-03-27</Date>
+  <Date>2022-07-15</Date>
   <Changes>
+###v1.13.0 (2022-07-15)
+- Updated dupeGuru to version 4.3.1.
+
 ###v1.12.1 (2022-03-27)
 - Updated dupeGuru to version 4.2.1.
 
