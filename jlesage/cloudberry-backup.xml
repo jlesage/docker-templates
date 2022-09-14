@@ -35,8 +35,11 @@ https://github.com/jlesage/docker-cloudberry-backup/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.cloudberrylab.com/backup/linux.aspx</Project>
-  <Date>2022-03-12</Date>
+  <Date>2022-09-13</Date>
   <Changes>
+###v1.28.0 (2022-09-13)
+- Updated CloudBerry Backup to version 4.0.0.260.
+
 ###v1.27.1 (2022-03-12)
 - Fixed issue where files whith special characters were not processed.
 
