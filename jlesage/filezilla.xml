@@ -35,8 +35,12 @@ https://github.com/jlesage/docker-filezilla/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org/</Project>
-  <Date>2022-07-24</Date>
+  <Date>2022-09-22</Date>
   <Changes>
+###v1.36.0 (2022-09-22)
+- Updated FileZilla to version 3.61.0.
+- Updated libfilezilla to version 0.39.1.
+
 ###v1.35.4 (2022-07-24)
 - Updated FileZilla to version 3.60.2 and libfilezilla to version 0.38.1.
 
