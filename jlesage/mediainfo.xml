@@ -6,16 +6,15 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/75222-support-mediainfo/</Support>
+  <ReadMe>https://github.com/jlesage/docker-mediainfo#readme</ReadMe>
   <Overview>
 MediaInfo is a convenient unified display of the most relevant technical and tag data for video and audio files.
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small (less
-than 100MB in download size).
+Also, being based on Alpine Linux, size of this container is very small (less than 100MB in download size).
 
-For a complete documentation of this container, see
-https://github.com/jlesage/docker-mediainfo/blob/master/README.md
+For a complete documentation of this container, see https://github.com/jlesage/docker-mediainfo#readme
   </Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -27,16 +26,22 @@ MediaInfo is a convenient unified display of the most relevant technical and tag
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small (less
-than 100MB in download size).
+Also, being based on Alpine Linux, size of this container is very small (less than 100MB in download size).
 
-For a complete documentation of this container, see
-https://github.com/jlesage/docker-mediainfo/blob/master/README.md.
+For a complete documentation of this container, see https://github.com/jlesage/docker-mediainfo/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2022-10-09</Date>
+  <Date>2022-10-14</Date>
   <Changes>
+###v22.10.1 (2022-10-14)
+- Versioning scheme changed to `YY.MM.SEQUENCE`.
+- Update of the baseimage to version 4.0.4 brings the following new features:
+&#x00a0;&#x00a0;- Multi-arch image support.
+&#x00a0;&#x00a0;- Support for dark mode.
+&#x00a0;&#x00a0;- Support for remote window resize.
+&#x00a0;&#x00a0;- Updated the web UI with a new, simplified and less intrusive look.
+
 ###v1.11.0 (2022-10-09)
 - Updated MediaInfo to version 22.09.
 
@@ -134,23 +139,28 @@ https://github.com/jlesage/docker-mediainfo/blob/master/README.md.
       <Mode/>
     </Variable>
     <Variable>
-      <Value>000</Value>
+      <Value>0000</Value>
       <Name>UMASK</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>0</Value>
       <Name>APP_NICENESS</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>1280</Value>
+      <Value>1920</Value>
       <Name>DISPLAY_WIDTH</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>768</Value>
+      <Value>1080</Value>
       <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>DARK_MODE</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -159,24 +169,43 @@ https://github.com/jlesage/docker-mediainfo/blob/master/README.md.
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
-      <Name>X11VNC_EXTRA_OPTS</Name>
+      <Value>SSL</Value>
+      <Name>SECURE_CONNECTION_VNC_METHOD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>60</Value>
+      <Name>SECURE_CONNECTION_CERTS_CHECK_INTERVAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5800</Value>
+      <Name>WEB_LISTENING_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5900</Value>
+      <Name>VNC_LISTENING_PORT</Name>
       <Mode/>
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/mediainfo" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible by the application.&amp;lt;br&amp;gt;Container path: /storage" Type="Path" Display="always-hide" Required="true" Mask="false"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/mediainfo" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency. Container path: /config" Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible to the application. Container path: /storage" Type="Path" Display="always-hide" Required="True" Mask="False"/>
   <!-- Variable Mappings -->
-  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="Umask" Target="UMASK" Default="000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; Setting a negative value requires additional permissions.  Thus, &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;--cap-add=SYS_NICE&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; must be added in &amp;lt;i&amp;gt;Extra Parameters&amp;lt;/i&amp;gt; (shown when &amp;lt;i&amp;gt;Advanced View&amp;lt;/i&amp;gt; is enabled)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;1&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; to encrypt the connection.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Note:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; When enabling the secure connection, security parameters needs to be generated.  This &amp;lt;b&amp;gt;one-time&amp;lt;/b&amp;gt; operation is done during container startup.  Depending on your system, this could take a few minutes.  GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Extra x11vnc Options" Target="X11VNC_EXTRA_OPTS" Default="" Mode="" Description="Extra options to pass to the x11vnc server running in the Docker container.&amp;lt;br&amp;gt;&amp;lt;span style='color: red;'&amp;gt;&amp;lt;b&amp;gt;Warning:&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt; For advanced users. Do not use unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Umask" Target="UMASK" Default="0000" Mode="" Description="Mask that controls how file permissions are set for newly created files.  The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="0" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority. NOTE: Setting a negative value requires additional permissions.  Thus, &quot;--cap-add=SYS_NICE&quot; must be added to Extra Parameters (shown when Advanced View is enabled)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1920" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="1080" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, dark mode is enabled for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &quot;1&quot; to encrypt the connection. NOTE: When enabling the secure connection, security parameters needs to be generated.  This one-time operation is done during container startup.  Depending on your system, this could take a few minutes. GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used to perform the secure VNC connection.  Possible values are &quot;SSL&quot; or &quot;TLS&quot;." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system verifies if web or VNC certificates have changed.  When a change is detected, the affected services are automatically restarted.  A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI" Target="5800" Default="7817" Mode="tcp" Description="Port used to access the application's GUI via the web interface.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This applies only when &amp;lt;i&amp;gt;Network Type&amp;lt;/i&amp;gt; is set to &amp;lt;i&amp;gt;Bridge&amp;lt;/i&amp;gt;.  For other network types, port 5800 should be used instead." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="VNC Port for GUI" Target="5900" Default="7917" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This applies only when &amp;lt;i&amp;gt;Network Type&amp;lt;/i&amp;gt; is set to &amp;lt;i&amp;gt;Bridge&amp;lt;/i&amp;gt;.  For other network types, port 5900 should be used instead." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7817" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7917" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
 </Container>
