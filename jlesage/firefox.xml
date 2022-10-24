@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2022-10-10</Date>
+  <Date>2022-10-14</Date>
   <Changes>
+###v22.10.3 (2022-10-14)
+- Fixed scenario where a reverse proxy with routing based un URL path is used.
+
 ###v22.10.2 (2022-10-10)
 - Fixed an issue where taking ownership of `/config` would fail if a subfolder is mapped to a network share.
 - Fixed handling of exposed sound device.
