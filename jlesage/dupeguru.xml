@@ -12,7 +12,7 @@ dupeGuru is a tool to find duplicate files on your computer. It can scan either 
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small (less than 100MB in download size).
+Also, being based on Alpine Linux, size of this container is very small (less than 200MB in download size).
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-dupeguru#readme
   </Overview>
@@ -26,14 +26,22 @@ dupeGuru is a tool to find duplicate files on your computer. It can scan either 
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small (less than 100MB in download size).
+Also, being based on Alpine Linux, size of this container is very small (less than 200MB in download size).
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-dupeguru/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.hardcoded.net/dupeguru/</Project>
-  <Date>2022-10-12</Date>
+  <Date>2022-10-24</Date>
   <Changes>
+###v22.10.2 (2022-10-24)
+- Update of the baseimage to version 4.1.1 brings the following changes:
+&#x00a0;&#x00a0;- Fixed Websockify and favicons paths for compatibility with scenario where a reverse proxy with routing based un URL path is used.
+&#x00a0;&#x00a0;- Collapse the setting section of the control panel by default on touch devices to accommodate the size taken by the on-screen keyboard.
+&#x00a0;&#x00a0;- Include the Docker image platform in informational box printed during container startup.
+&#x00a0;&#x00a0;- A umask value of `0000` was not properly applied.
+&#x00a0;&#x00a0;- Fixed issue where the window manager configuration may fail to load.
+
 ###v22.10.1 (2022-10-12)
 - Versioning scheme changed to `YY.MM.SEQUENCE`.
 - Update of the baseimage to version 4.0.2 brings the following new features:
