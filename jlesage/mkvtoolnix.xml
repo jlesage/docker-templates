@@ -12,7 +12,7 @@ MKVToolNix is a set of tools to create, alter and inspect Matroska files.
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small (less than 100MB in download size).
+Also, being based on Alpine Linux, size of this container is very small (less than 150MB in download size).
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-mkvtoolnix#readme
   </Overview>
@@ -26,14 +26,21 @@ MKVToolNix is a set of tools to create, alter and inspect Matroska files.
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small (less than 100MB in download size).
+Also, being based on Alpine Linux, size of this container is very small (less than 150MB in download size).
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-mkvtoolnix/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download</Project>
-  <Date>2022-10-16</Date>
+  <Date>2022-10-24</Date>
   <Changes>
+###v22.10.2 (2022-10-24)
+- Update of the baseimage to version 4.1.1 brings the following changes:
+&#x00a0;&#x00a0;- Collapse the setting section of the control panel by default on touch devices to accommodate the size taken by the on-screen keyboard.
+&#x00a0;&#x00a0;- Include the Docker image platform in informational box printed during container startup.
+&#x00a0;&#x00a0;- A umask value of `0000` was not properly applied.
+&#x00a0;&#x00a0;- Fixed issue where the window manager configuration may fail to load.
+
 ###v22.10.1 (2022-10-16)
 - Versioning scheme changed to `YY.MM.SEQUENCE`.
 - Update of the baseimage to version 4.0.4 brings the following new features:
