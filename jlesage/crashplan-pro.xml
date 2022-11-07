@@ -36,8 +36,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2022-11-02</Date>
+  <Date>2022-11-07</Date>
   <Changes>
+###v22.11.2 (2022-11-07)
+- Fixed issue where the log monitor would use too much CPU.
+- Fixed issue where the same alert would be shown multiple times.
+
 ###v22.11.1 (2022-11-02)
 - Fixed display of non-english characters in filenames.
 
