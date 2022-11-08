@@ -32,11 +32,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/justdan96/tsMuxer</Project>
-  <Date>2022-10-25</Date>
+  <Date>2022-11-07</Date>
   <Changes>
+###v22.11.1 (2022-11-07)
+- Updated tsMuxeR to version nightly-2022-11-05-03-01-23.
+
 ###v22.10.1 (2022-10-25)
 - Now using the open source version of tsMuxeR.
-- Versioning scheme changed to `YY.MM.SEQUENCE`.
+- Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
 - Update of the baseimage to version 4.1.1 brings the following new features:
 &#x00a0;&#x00a0;- Multi-arch image support.
 &#x00a0;&#x00a0;- Support for dark mode.
