@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download</Project>
-  <Date>2022-10-24</Date>
+  <Date>2022-11-14</Date>
   <Changes>
+###v22.11.1 (2022-11-14)
+- Updated MKVToolNix to version 72.0.0.
+
 ###v22.10.2 (2022-10-24)
 - Update of the baseimage to version 4.1.1 brings the following changes:
 &#x00a0;&#x00a0;- Collapse the setting section of the control panel by default on touch devices to accommodate the size taken by the on-screen keyboard.
@@ -42,7 +45,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 &#x00a0;&#x00a0;- Fixed issue where the window manager configuration may fail to load.
 
 ###v22.10.1 (2022-10-16)
-- Versioning scheme changed to `YY.MM.SEQUENCE`.
+- Versioning scheme  of the Docker image changed to `YY.MM.SEQUENCE`.
 - Update of the baseimage to version 4.0.4 brings the following new features:
 &#x00a0;&#x00a0;- Multi-arch image support.
 &#x00a0;&#x00a0;- Support for dark mode.
