@@ -415,8 +415,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/crashplan-pro" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency. Container path: /config" Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible to the application. Container path: /storage" Type="Path" Display="always-hide" Required="True" Mask="False"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/crashplan-pro" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible to the application." Type="Path" Display="always-hide" Required="True" Mask="False"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>

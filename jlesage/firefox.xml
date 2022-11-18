@@ -52,7 +52,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Fixed handling of the VNC password.
 
 ###v22.10.1 (2022-10-09)
-- Versioning scheme changed to `YY.MM.SEQUENCE`.
+- Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
 - Updated Firefox to version 101.0.1-r0.
 - Added support for kiosk mode.
 - Added support for URL opening at launch.
@@ -257,7 +257,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/firefox" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency. Container path: /config" Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/firefox" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>

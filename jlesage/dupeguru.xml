@@ -43,7 +43,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 &#x00a0;&#x00a0;- Fixed issue where the window manager configuration may fail to load.
 
 ###v22.10.1 (2022-10-12)
-- Versioning scheme changed to `YY.MM.SEQUENCE`.
+- Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
 - Update of the baseimage to version 4.0.2 brings the following new features:
 &#x00a0;&#x00a0;- Multi-arch image support.
 &#x00a0;&#x00a0;- Support for dark mode.
@@ -373,8 +373,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/dupeguru" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency. Container path: /config" Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This location contains files from your host that need to be accessible to the application. Container path: /storage" Type="Path" Display="always-hide" Required="True" Mask="False"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/dupeguru" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="rw" Description="This location contains files from your host that need to be accessible to the application." Type="Path" Display="always-hide" Required="True" Mask="False"/>
   <Config Name="Trash" Target="/trash" Default="/dev/null" Mode="rw" Description="This is where dupeGuru moves files when they are sent to trash.  Usage of the trash is optional.  The default value of /dev/null can be kept if the trash is not wanted." Type="Path" Display="advanced-hide" Required="False" Mask="False"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
