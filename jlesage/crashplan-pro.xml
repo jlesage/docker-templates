@@ -36,8 +36,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2022-11-07</Date>
+  <Date>2022-11-21</Date>
   <Changes>
+###v22.11.3 (2022-11-21)
+- Updated CrashPlan to version 10.4.1.
+
 ###v22.11.2 (2022-11-07)
 - Fixed issue where the log monitor would use too much CPU.
 - Fixed issue where the same alert would be shown multiple times.
