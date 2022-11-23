@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org</Project>
-  <Date>2022-11-18</Date>
+  <Date>2022-11-22</Date>
   <Changes>
+###v22.11.2 (2022-11-22)
+- Updated FileZilla to version 3.62.2.
+
 ###v22.11.1 (2022-11-18)
 - Updated FileZilla to version 3.62.1.
 
