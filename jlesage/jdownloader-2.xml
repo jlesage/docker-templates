@@ -32,8 +32,13 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org</Project>
-  <Date>2022-11-18</Date>
+  <Date>2022-11-30</Date>
   <Changes>
+###v22.11.2 (2022-11-30)
+- Allow more time to JDownloader to restart itself.
+- Fixed issue where permissions of `/tmp` were incorrect on some systems.
+- Updated baseimage to version `4.2.0`, which brings multiple internal enhancements.
+
 ###v22.11.1 (2022-11-18)
 - Added the ability to set MyJDownloader credentials via environment variables.
 - Added the ability to run JDownloader in headless mode.
