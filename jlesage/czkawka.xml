@@ -32,8 +32,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2022-11-19</Date>
+  <Date>2022-11-30</Date>
   <Changes>
+###v22.11.2 (2022-11-30)
+- Fixed saving of results to file.
+- Disabled trash functionality: current implementation is not adapted for container environment.
+- Fixed issue where permissions of `/tmp` were incorrect on some systems.
+- Updated baseimage to version `4.2.0`, which brings multiple internal enhancements.
+
 ###v22.11.1 (2022-11-19)
 - Updated Czkawka to version 5.0.2.
 - Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
