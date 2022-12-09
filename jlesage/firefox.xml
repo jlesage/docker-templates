@@ -32,8 +32,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2022-10-24</Date>
+  <Date>2022-12-09</Date>
   <Changes>
+###v22.12.1 (2022-12-09)
+- Updated Firefox to version 107.0.1-r1.
+- Updated baseimage to version `4.2.1`, which brings multiple internal enhancements.
+
 ###v22.10.4 (2022-10-24)
 - Update of the baseimage to version 4.1.1 brings the following changes:
 &#x00a0;&#x00a0;- Collapse the setting section of the control panel by default on touch devices to accommodate the size taken by the on-screen keyboard.
