@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org</Project>
-  <Date>2022-12-01</Date>
+  <Date>2022-12-11</Date>
   <Changes>
+###v22.12.2 (2022-12-11)
+- Implemented workaround for issue seen with Synology devices where container would not start after an image update.  The problem is caused by Synology explicitly setting all environment variables and keeping values from the old version.
+
 ###v22.12.1 (2022-12-01)
 - Fixed issue where taking ownership of `/output` could fail during startup.
 
