@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2022-10-24</Date>
+  <Date>2022-12-11</Date>
   <Changes>
+###v22.12.1 (2022-12-11)
+- Updated baseimage to version `4.2.2`, which brings multiple internal enhancements.
+
 ###v22.10.2 (2022-10-24)
 - Fixed dark mode not working.
 - Update of the baseimage to version 4.1.1 brings the following changes:
