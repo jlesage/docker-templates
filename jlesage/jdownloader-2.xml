@@ -297,17 +297,17 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Mode/>
     </Variable>
     <Variable>
-      <Value>None</Value>
+      <Value/>
       <Name>MYJDOWNLOADER_EMAIL</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>None</Value>
+      <Value/>
       <Name>MYJDOWNLOADER_PASSWORD</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>None</Value>
+      <Value/>
       <Name>MYJDOWNLOADER_DEVICE_NAME</Name>
       <Mode/>
     </Variable>
@@ -333,9 +333,9 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system verifies if web or VNC certificates have changed.  When a change is detected, the affected services are automatically restarted.  A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="MyJDownloader Email" Target="MYJDOWNLOADER_EMAIL" Default="None" Mode="" Description="Email address of the MyJDownloader account to use.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="MyJDownloader Password" Target="MYJDOWNLOADER_PASSWORD" Default="None" Mode="" Description="Password of the MyJDownloader account to use.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="MyJDownloader Device Name" Target="MYJDOWNLOADER_DEVICE_NAME" Default="None" Mode="" Description="The name of this JDownloader instance.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="MyJDownloader Email" Target="MYJDOWNLOADER_EMAIL" Default="" Mode="" Description="Email address of the MyJDownloader account to use.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="MyJDownloader Password" Target="MYJDOWNLOADER_PASSWORD" Default="" Mode="" Description="Password of the MyJDownloader account to use.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="MyJDownloader Device Name" Target="MYJDOWNLOADER_DEVICE_NAME" Default="" Mode="" Description="The name of this JDownloader instance.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Headless Mode" Target="JDOWNLOADER_HEADLESS" Default="0" Mode="" Description="When set to &quot;1&quot;, JDownloader is running in headless mode, meaning that no GUI is available.  In this mode, MyJDownloader should be used to remote control JDownloader." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7807" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
