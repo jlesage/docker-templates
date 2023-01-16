@@ -32,8 +32,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2023-01-08</Date>
+  <Date>2023-01-15</Date>
   <Changes>
+###v23.01.3 (2023-01-15)
+- Fixed issue where the AMC script would not use the configured UMASK value.
+
+###v23.01.2 (2023-01-10)
+- Fixed error that was occurring during license installation.
+
 ###v23.01.1 (2023-01-08)
 - Added the ability to disable the FileBot GUI.
 - Added the ability to disable the AMC script.
