@@ -32,8 +32,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/justdan96/tsMuxer</Project>
-  <Date>2023-01-04</Date>
+  <Date>2023-02-04</Date>
   <Changes>
+###v23.02.1 (2023-02-04)
+- Updated tsMuxeR to version nightly-2023-02-03-02-25-21.
+- Updated baseimage to version 4.3.3, which brings robustness related enhancements.
+
 ###v23.01.1 (2023-01-04)
 - Updated tsMuxeR to version 2023-01-02-02-15-09.
 - Update of the baseimage to version 4.3.1 brings the following changes:
