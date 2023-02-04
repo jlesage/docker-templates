@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2023-01-15</Date>
+  <Date>2023-02-04</Date>
   <Changes>
+###v23.02.1 (2023-02-04)
+- Updated baseimage to version 4.3.3, which brings robustness related enhancements.
+
 ###v23.01.3 (2023-01-15)
 - Fixed issue where the AMC script would not use the configured UMASK value.
 
