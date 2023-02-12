@@ -32,8 +32,16 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/0x90d/videoduplicatefinder</Project>
-  <Date>2023-02-04</Date>
+  <Date>2023-02-12</Date>
   <Changes>
+###v23.02.3 (2023-02-12)
+- Updated Video Duplicate Finder to version 3.0.x-73d33ed.
+
+###v23.02.2 (2023-02-08)
+- Updated baseimage to version 4.3.4, which brings the following changes:
+&#x00a0;&#x00a0;- Fixed error message from openbox about missing Fontconfig cache directory.
+- Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).
+
 ###v23.02.1 (2023-02-04)
 - Initial release.
 
