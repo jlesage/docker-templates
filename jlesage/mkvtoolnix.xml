@@ -32,8 +32,13 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download</Project>
-  <Date>2023-02-13</Date>
+  <Date>2023-02-14</Date>
   <Changes>
+###v23.02.5 (2023-02-14)
+- Restored proper handling of filenames with non-ASCII characters.
+- Updated baseimage to version 4.3.6, which brings the following changes:
+&#x00a0;&#x00a0;- Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.
+
 ###v23.02.4 (2023-02-13)
 - Fixed MKVToolNix not starting correctly.
 
