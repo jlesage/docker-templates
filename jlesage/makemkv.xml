@@ -40,8 +40,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2023-02-14</Date>
+  <Date>2023-02-15</Date>
   <Changes>
+###v23.02.5 (2023-02-15)
+- Fixed issue that could occur during setup of supplementary groups of optical drives.
+
+###v23.02.4 (2023-02-15)
+- Fixed issue where MakeMKV could not access Internet.
+
 ###v23.02.3 (2023-02-14)
 - Fixed the Automatic Disc Ripper not working when parallel mode is activated.
 
