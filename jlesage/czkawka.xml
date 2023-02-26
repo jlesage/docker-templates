@@ -32,8 +32,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2023-02-08</Date>
+  <Date>2023-02-20</Date>
   <Changes>
+###v23.02.3 (2023-02-20)
+- Updated Czkawka to version 5.1.0.
+- Updated baseimage to version 4.3.6, which brings robustness related enhancements.
+
 ###v23.02.2 (2023-02-08)
 - Updated baseimage to version 4.3.4, which brings the following changes:
 &#x00a0;&#x00a0;- Fixed error message from openbox about missing Fontconfig cache directory.
