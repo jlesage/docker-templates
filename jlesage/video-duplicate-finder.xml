@@ -32,8 +32,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/0x90d/videoduplicatefinder</Project>
-  <Date>2023-02-12</Date>
+  <Date>2023-02-25</Date>
   <Changes>
+###v23.02.4 (2023-02-25)
+- Updated Video Duplicate Finder to version 3.0.x-625a85f.
+- Updated baseimage to version 4.3.6, which brings robustness related enhancements.
+
 ###v23.02.3 (2023-02-12)
 - Updated Video Duplicate Finder to version 3.0.x-73d33ed.
 
