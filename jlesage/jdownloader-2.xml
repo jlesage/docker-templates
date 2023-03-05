@@ -32,8 +32,15 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org</Project>
-  <Date>2023-02-08</Date>
+  <Date>2023-03-05</Date>
   <Changes>
+###v23.03.1 (2023-03-05)
+- Updated baseimage to version 4.4.0, which brings the following changes:
+&#x00a0;&#x00a0;- Updated components providing access to application's UI over web.
+&#x00a0;&#x00a0;- Improved web UI usage with touch devices.
+&#x00a0;&#x00a0;- Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.
+&#x00a0;&#x00a0;- Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.
+
 ###v23.02.2 (2023-02-08)
 - Updated baseimage to version 4.3.4, which brings the following changes:
 &#x00a0;&#x00a0;- Fixed error message from openbox about missing Fontconfig cache directory.
