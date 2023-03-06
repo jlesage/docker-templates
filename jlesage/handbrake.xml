@@ -38,6 +38,9 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Project>https://handbrake.fr</Project>
   <Date>2023-03-05</Date>
   <Changes>
+###v23.03.2 (2023-03-05)
+- Fixed issue where the Automatic Video Converter was not running with the correct supplementary groups.
+
 ###v23.03.1 (2023-03-05)
 - Fixed `AUTOMATED_CONVERSION_NO_GUI_PROGRESS` environment variable not being handled.
 - Make sure the Automatic Video Converter does not report conversion progress to GUI when it is disabled.
