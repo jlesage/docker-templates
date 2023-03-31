@@ -32,8 +32,15 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2023-03-17</Date>
+  <Date>2023-03-31</Date>
   <Changes>
+###v23.03.4 (2023-03-31)
+- Fixed the Groovy Pad being fullscreen.
+- Updated MediaInfo library to version 23.03.
+
+###v23.03.3 (2023-03-20)
+- Updated FileBot to version 5.0.1.
+
 ###v23.03.2 (2023-03-17)
 - Updated FileBot to version 5.0.0.
 
