@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2023-03-29</Date>
+  <Date>2023-04-05</Date>
   <Changes>
+###v23.04.1 (2023-04-05)
+- Updated ZenLib to version 0.4.41, which fixes a crash that could occur when opening video file.
+
 ###v23.03.2 (2023-03-29)
 - Updated MediaInfo to version 23.03.
 
