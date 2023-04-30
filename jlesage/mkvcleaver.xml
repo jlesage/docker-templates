@@ -32,8 +32,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://blogs.sapib.ca/apps/mkvcleaver/</Project>
-  <Date>2023-03-19</Date>
+  <Date>2023-04-29</Date>
   <Changes>
+###v23.04.1 (2023-04-29)
+- Update of the baseimage to version 4.4.0 brings the following changes:
+&#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
+
 ###v23.03.1 (2023-03-19)
 - Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
 - Update of the baseimage to version 4.4.0 brings the following new features:

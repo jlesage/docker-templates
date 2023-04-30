@@ -32,8 +32,13 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download</Project>
-  <Date>2023-03-26</Date>
+  <Date>2023-04-30</Date>
   <Changes>
+###v23.04.1 (2023-04-30)
+- Updated MediaInfo to version 23.04.
+- Update of the baseimage to version 4.4.0 brings the following changes:
+&#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
+
 ###v23.03.2 (2023-03-26)
 - Updated MKVToolNix to version 75.0.0.
 

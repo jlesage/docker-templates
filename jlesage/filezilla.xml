@@ -32,8 +32,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org</Project>
-  <Date>2023-03-05</Date>
+  <Date>2023-04-29</Date>
   <Changes>
+###v23.04.1 (2023-04-29)
+- Updated FileZilla to version 3.64.0.
+- Updated libfilezilla to version 0.42.2.
+- Update of the baseimage to version 4.4.0 brings the following changes:
+&#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
+
 ###v23.03.1 (2023-03-05)
 - Updated FileZilla to version 3.63.2.1.
 - Updated baseimage to version 4.4.0, which brings the following changes:

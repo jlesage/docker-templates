@@ -36,8 +36,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2023-03-05</Date>
+  <Date>2023-04-29</Date>
   <Changes>
+###v23.04.1 (2023-04-29)
+- Update of the baseimage to version 4.4.0 brings the following changes:
+&#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
+
 ###v23.03.2 (2023-03-05)
 - Fixed issue where the Automatic Video Converter was not running with the correct supplementary groups.
 
