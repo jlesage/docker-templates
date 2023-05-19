@@ -35,7 +35,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Date>2023-04-29</Date>
   <Changes>
 ###v23.04.1 (2023-04-29)
-- Update of the baseimage to version 4.4.0 brings the following changes:
+- Updated baseimage to version 4.4.1, which brings the following changes:
 &#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
 
 ###v23.03.1 (2023-03-19)
@@ -200,6 +200,6 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7812" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7912" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
+  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7812" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7912" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
 </Container>

@@ -36,7 +36,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Changes>
 ###v23.04.2 (2023-04-29)
 - Updated FileBot to version 5.0.2 (r9722).
-- Update of the baseimage to version 4.4.0 brings the following changes:
+- Updated baseimage to version 4.4.1, which brings the following changes:
 &#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
 
 ###v23.04.1 (2023-04-05)
@@ -474,6 +474,6 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Automated Media Center: Input Directory" Target="AMC_INPUT_DIR" Default="/watch" Mode="" Description="Directory inside the container used as the input folder of the Automated Media Center (AMC) script." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automated Media Center: Output Directory" Target="AMC_OUTPUT_DIR" Default="/output" Mode="" Description="Directory inside the container used as the output folder of the Automated Media Center (AMC) script." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7813" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7913" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
+  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7813" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7913" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
 </Container>

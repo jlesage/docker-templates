@@ -43,7 +43,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Date>2023-04-29</Date>
   <Changes>
 ###v23.04.2 (2023-04-29)
-- Update of the baseimage to version 4.4.0 brings the following changes:
+- Updated baseimage to version 4.4.1, which brings the following changes:
 &#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
 
 ###v23.04.1 (2023-04-07)
@@ -545,6 +545,6 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Automatic Disc Ripper: Force Unique Output Directory" Target="AUTO_DISC_RIPPER_FORCE_UNIQUE_OUTPUT_DIR" Default="0" Mode="" Description="When set to 0, files are written to &quot;/output/DISC_LABEL/&quot;, where &quot;DISC_LABEL&quot; is the label/name of the disc.  If this directory exists, then files are written to &quot;/output/DISC_LABEL-XXXXXX&quot;, where &quot;XXXXXX&quot; are random readable characters.  When set to 1, the &quot;/output/DISC_LABEL-XXXXXX&quot; pattern is always used." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Disable Progress in GUI" Target="AUTO_DISC_RIPPER_NO_GUI_PROGRESS" Default="0" Mode="" Description="When set to 1, progress of discs ripped by the automatic disc ripper is not shown in the MakeMKV GUI." Type="Variable" Display="always" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7806" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7906" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This applies only when Network Type is set to Bridge." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
+  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7806" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7906" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
 </Container>
