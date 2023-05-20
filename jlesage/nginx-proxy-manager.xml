@@ -49,8 +49,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Updated Nginx Proxy Manager to version 2.9.19.
 - Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
 - Updated baseimage to version 3.4.6, which brings:
-&#x00a0;&#x00a0;- Multi-arch image support.
-&#x00a0;&#x00a0;- Multiple internal functional enhancements and improvements.
+  - Multi-arch image support.
+  - Multiple internal functional enhancements and improvements.
 
 ###v1.26.1 (2022-06-02)
 - Updated Nginx Proxy Manager to version 2.9.18.
@@ -63,7 +63,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 
 ###v1.24.1 (2022-01-02)
 - Now using baseimage version 2.4.6, based on Alpine 3.15, which brings the following change:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 - This also fixes an error that was occurring because of the usage of an insufficient Node.js version.
 
 ###v1.24.0 (2022-01-02)
@@ -145,8 +145,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.10.0 (2020-10-25)
 - Updated Nginx Proxy Manager to version 2.6.1.
 - Now using baseimage version 2.4.4, based on Alpine 3.12, which brings the following changes:
-&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+  - Updated installed packages to get latest security fixes.
 - Use sqlite as database instead of mariadb.
 - Added proper support for the `DISABLE_IPV6` environment variable.
 - Periodically clean Let's Encrypt certificates.
@@ -181,8 +181,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.7.0 (2020-03-16)
 - Upgraded Nginx Proxy Manager to version 2.2.0.
 - Now using baseimage v2.4.3, which brings the following changes:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+  - Updated installed packages to get latest security fixes.
+  - Make sure the tzdata is installed.
 
 ###v1.6.0 (2019-10-10)
 - Rotate Nginx log files.
@@ -193,7 +193,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 
 ###v1.5.2 (2019-08-20)
 - Use baseimage based on Alpine 3.9.
-&#x00a0;&#x00a0;- This fixes TLS1.3 support.
+  - This fixes TLS1.3 support.
 - Keep the `fastcgi.conf` and `fastcgi_params` Nginx configuration files.
 
 ###v1.5.1 (2019-07-02)
@@ -202,7 +202,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.5.0 (2019-05-09)
 - Upgraded Nginx Proxy Manager to version 2.0.13.
 - Now using baseimage v2.4.2, which brings the following changes:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 
 ###v1.4.2 (2019-04-18)
 - Fixed issue where using a hostname for the upstream proxy host would not work.
@@ -222,22 +222,22 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Properly notify the supervisor when the database is ready.
 - Make sure to not use the database directory if it was not initialized successfully.
 - Upgraded Nginx Proxy Manager to version 2.0.9.
-&#x00a0;&#x00a0;- Fixed issue where HTTP/2 option could not be disabled.
-&#x00a0;&#x00a0;- Added HSTS settings.
+  - Fixed issue where HTTP/2 option could not be disabled.
+  - Added HSTS settings.
 
 ###v1.2.1 (2019-01-26)
 - Upgraded Nginx Proxy Manager to version 2.0.9.
-&#x00a0;&#x00a0;- Increased custom SSL certificate file size limit.
+  - Increased custom SSL certificate file size limit.
 
 ###v1.2.0 (2019-01-07)
 - Upgraded Nginx Proxy Manager to version 2.0.8.
-&#x00a0;&#x00a0;- Added the ability to enable/disable hosts.
-&#x00a0;&#x00a0;- IP ranges are now fetched dynamically.
+  - Added the ability to enable/disable hosts.
+  - IP ranges are now fetched dynamically.
 
 ###v1.1.0 (2019-01-03)
 - Upgraded Nginx Proxy Manager to version 2.0.7.
-&#x00a0;&#x00a0;- Added HTTP/2 option for SSL enabled hosts.
-&#x00a0;&#x00a0;- Added upstream SSL option for proxy hosts.
+  - Added HTTP/2 option for SSL enabled hosts.
+  - Added upstream SSL option for proxy hosts.
 
 ###v1.0.1 (2018-12-19)
 - Fixed an issue where creation of an access list would fail.

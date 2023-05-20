@@ -36,18 +36,18 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Changes>
 ###v23.04.1 (2023-04-30)
 - Updated baseimage to version 4.4.1, which brings the following changes:
-&#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
+  - Updated TigerVNC to version 1.13.1.
 
 ###v23.03.1 (2023-03-05)
 - Updated baseimage to version 4.4.0, which brings the following changes:
-&#x00a0;&#x00a0;- Updated components providing access to application's UI over web.
-&#x00a0;&#x00a0;- Improved web UI usage with touch devices.
-&#x00a0;&#x00a0;- Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.
-&#x00a0;&#x00a0;- Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.
+  - Updated components providing access to application's UI over web.
+  - Improved web UI usage with touch devices.
+  - Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.
+  - Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.
 
 ###v23.02.2 (2023-02-08)
 - Updated baseimage to version 4.3.4, which brings the following changes:
-&#x00a0;&#x00a0;- Fixed error message from openbox about missing Fontconfig cache directory.
+  - Fixed error message from openbox about missing Fontconfig cache directory.
 - Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).
 
 ###v23.02.1 (2023-02-04)
@@ -55,20 +55,20 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 
 ###v23.01.1 (2023-01-04)
 - Update of the baseimage to version 4.3.1 brings the following changes:
-&#x00a0;&#x00a0;- Control menu can be moved to the right side of the screen.
-&#x00a0;&#x00a0;- Automatic focus of the clipboard text box when opening the control menu.
-&#x00a0;&#x00a0;- Automatic close of the control menu when clicking into the application.
-&#x00a0;&#x00a0;- Rotation of the internal web server log files.
+  - Control menu can be moved to the right side of the screen.
+  - Automatic focus of the clipboard text box when opening the control menu.
+  - Automatic close of the control menu when clicking into the application.
+  - Rotation of the internal web server log files.
 
 ###v22.11.1 (2022-11-08)
 - Updated PuTTY to version 0.78.
 - Better integration of the `Restart PuTTY session` button.
 - Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
 - Update of the baseimage to version 4.1.5 brings the following new features:
-&#x00a0;&#x00a0;- Multi-arch image support.
-&#x00a0;&#x00a0;- Support for dark mode.
-&#x00a0;&#x00a0;- Support for remote window resize.
-&#x00a0;&#x00a0;- Updated the web UI with a new, simplified and less intrusive look.
+  - Multi-arch image support.
+  - Support for dark mode.
+  - Support for remote window resize.
+  - Updated the web UI with a new, simplified and less intrusive look.
 
 ###v1.4.0 (2022-05-30)
 - Updated PuTTY to version 0.77.
@@ -76,7 +76,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.3.1 (2022-02-10)
 - Fixed missing icons in settings window.
 - Now using baseimage version 3.5.8, based on Alpine 3.14, which brings the following change:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 
 ###v1.3.0 (2021-07-17)
 - Updated PuTTY to version 0.76.
@@ -86,19 +86,19 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 
 ###v1.1.1 (2021-04-13)
 - Now using baseimage version 3.5.7, which brings the following change:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 
 ###v1.1.0 (2021-01-04)
 - Added dialog window to easily restart the PuTTY session.
 - Updated baseimage to version 3.5.6, which brings the following changes:
-&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
+  - Other small adjustments for the YAD log monitor target.
 
 ###v1.0.5 (2020-07-19)
 - Upgraded PuTTY to version 0.74.
 - Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
-&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+  - Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+  - Updated installed packages to get latest security fixes.
+  - Adjusted the log monitor target for recent versions of YAD.
 
 ###v1.0.4 (2019-09-30)
 - Upgraded PuTTY to version 0.73.
@@ -109,14 +109,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.0.2 (2019-04-25)
 - Upgraded PuTTY to version 0.71.
 - Now using baseimage v3.5.2, which brings the following changes:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
-&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
-&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+  - Updated installed packages to get latest security fixes.
+  - Fixed issue where the container could have a zombie process.
+  - Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+  - Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
 
 ###v1.0.1 (2018-09-18)
 - Now using baseimage v3.5.1, which brings the following changes:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 
 ###v1.0.0 (2018-08-15)
 - Initial release.

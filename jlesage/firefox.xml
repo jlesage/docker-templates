@@ -39,22 +39,22 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Reverted to using a font with better UTF-8 characters support.
 - Improved graceful shutdown of Firefox.
 - Updated baseimage to version 4.4.1, which brings the following changes:
-&#x00a0;&#x00a0;- Updated TigerVNC to version 1.13.1.
+  - Updated TigerVNC to version 1.13.1.
 
 ###v23.03.1 (2023-03-05)
 - Updated baseimage to version 4.4.0, which brings the following changes:
-&#x00a0;&#x00a0;- Updated components providing access to application's UI over web.
-&#x00a0;&#x00a0;- Improved web UI usage with touch devices.
-&#x00a0;&#x00a0;- Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.
+  - Updated components providing access to application's UI over web.
+  - Improved web UI usage with touch devices.
+  - Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.
 
 ###v23.02.3 (2023-02-13)
 - Updated baseimage to version 4.3.6, which brings the following changes:
-&#x00a0;&#x00a0;- Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.
+  - Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.
 - Added default preference to prevent closing Firefox when closing the last tab.
 
 ###v23.02.2 (2023-02-08)
 - Updated baseimage to version 4.3.4, which brings the following changes:
-&#x00a0;&#x00a0;- Fixed error message from openbox about missing Fontconfig cache directory.
+  - Fixed error message from openbox about missing Fontconfig cache directory.
 - Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).
 
 ###v23.02.1 (2023-02-04)
@@ -64,10 +64,10 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v23.01.1 (2023-01-04)
 - Updated Firefox to version 108.0.1-r1.
 - Update of the baseimage to version 4.3.1 brings the following changes:
-&#x00a0;&#x00a0;- Control menu can be moved to the right side of the screen.
-&#x00a0;&#x00a0;- Automatic focus of the clipboard text box when opening the control menu.
-&#x00a0;&#x00a0;- Automatic close of the control menu when clicking into the application.
-&#x00a0;&#x00a0;- Rotation of the internal web server log files.
+  - Control menu can be moved to the right side of the screen.
+  - Automatic focus of the clipboard text box when opening the control menu.
+  - Automatic close of the control menu when clicking into the application.
+  - Rotation of the internal web server log files.
 
 ###v22.12.2 (2022-12-11)
 - Implemented workaround for issue seen with Synology devices where container would not start after an image update.  The problem is caused by Synology explicitly setting all environment variables and keeping values from the old version.
@@ -78,12 +78,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 
 ###v22.10.4 (2022-10-24)
 - Update of the baseimage to version 4.1.1 brings the following changes:
-&#x00a0;&#x00a0;- Collapse the setting section of the control panel by default on touch devices to accommodate the size taken by the on-screen keyboard.
-&#x00a0;&#x00a0;- Include the Docker image platform in informational box printed during container startup.
-&#x00a0;&#x00a0;- Fixed logmonitor crash on arm64 platform.
-&#x00a0;&#x00a0;- A umask value of `0000` was not properly applied.
-&#x00a0;&#x00a0;- Fixed issue where the window manager configuration may fail to load.
-&#x00a0;&#x00a0;- Fixed errors from yad caused by usage of wrong fontconfig related files.
+  - Collapse the setting section of the control panel by default on touch devices to accommodate the size taken by the on-screen keyboard.
+  - Include the Docker image platform in informational box printed during container startup.
+  - Fixed logmonitor crash on arm64 platform.
+  - A umask value of `0000` was not properly applied.
+  - Fixed issue where the window manager configuration may fail to load.
+  - Fixed errors from yad caused by usage of wrong fontconfig related files.
 
 ###v22.10.3 (2022-10-14)
 - Fixed scenario where a reverse proxy with routing based un URL path is used.
@@ -99,19 +99,19 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Added support for kiosk mode.
 - Added support for URL opening at launch.
 - Update of the baseimage to version 4.0.1 brings the following nbew features:
-&#x00a0;&#x00a0;- Multi-arch image support.
-&#x00a0;&#x00a0;- Support for dark mode.
-&#x00a0;&#x00a0;- Support for remote window resize.
-&#x00a0;&#x00a0;- Updated the web UI with a new, simplified and less intrusive look.
+  - Multi-arch image support.
+  - Support for dark mode.
+  - Support for remote window resize.
+  - Updated the web UI with a new, simplified and less intrusive look.
 
 ###v1.18.0 (2021-12-30)
 - Updated Firefox to version 94.0-r0.
 - Now using baseimage version 3.5.8, based on Alpine 3.15, which brings the following change:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 
 ###v1.17.1 (2021-04-13)
 - Now using baseimage version 3.5.7, which brings the following change:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 
 ###v1.17.0 (2021-02-06)
 - Updated Firefox to version 84.0.2-r0.
@@ -125,15 +125,15 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.14.0 (2020-08-05)
 - Upgraded Firefox to version 79.0-r0.
 - Now using baseimage to version 3.5.6, which brings the following changes:
-&#x00a0;&#x00a0;- Other small adjustments for the YAD log monitor target.
+  - Other small adjustments for the YAD log monitor target.
 
 ###v1.13.0 (2020-07-19)
 - Upgraded Firefox to version 78.0.2-r1.
 - Added check for missing `membarrier` system call support.
 - Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:
-&#x00a0;&#x00a0;- Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;- Adjusted the log monitor target for recent versions of YAD.
+  - Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+  - Updated installed packages to get latest security fixes.
+  - Adjusted the log monitor target for recent versions of YAD.
 
 ###v1.12.0 (2020-06-24)
 - Upgraded Firefox to version 77.0.1-r2.
@@ -153,8 +153,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.8.0 (2019-12-25)
 - Upgraded Firefox to version 71.0-r0.
 - Now using baseimage v3.5.3, which brings the following changes:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;- Make sure the tzdata is installed.
+  - Updated installed packages to get latest security fixes.
+  - Make sure the tzdata is installed.
 - Use baseimage based on Alpine Linux 3.10.
 
 ###v1.7.1 (2019-08-26)
@@ -176,10 +176,10 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v1.4.1 (2019-04-24)
 - Upgraded Firefox to version 62.0.3-r4.
 - Now using baseimage v3.5.2, which brings the following changes:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
-&#x00a0;&#x00a0;- Fixed issue where the container could have a zombie process.
-&#x00a0;&#x00a0;- Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
-&#x00a0;&#x00a0;- Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+  - Updated installed packages to get latest security fixes.
+  - Fixed issue where the container could have a zombie process.
+  - Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+  - Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
 
 ###v1.4.0 (2019-02-24)
 - Upgraded Firefox to version 62.0.3-r2.
@@ -188,7 +188,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 
 ###v1.3.1 (2018-09-18)
 - Now using baseimage v3.5.1, which brings the following changes:
-&#x00a0;&#x00a0;- Updated installed packages to get latest security fixes.
+  - Updated installed packages to get latest security fixes.
 
 ###v1.3.0 (2018-07-27)
 - Added support for more playable video formats.
@@ -207,7 +207,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 
 ###v1.0.1 (2018-03-02)
 - Now using baseimage v3.3.4, which brings the following changes:
-&#x00a0;&#x00a0;- Fixed issue where log monitor states were not cleared during container startup.
+  - Fixed issue where log monitor states were not cleared during container startup.
 - Updated Firefox to version 58.0.1-r2.
 
 ###v1.0.0 (2018-02-16)

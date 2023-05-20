@@ -37,8 +37,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 ###v23.05.2 (2023-05-19)
 - Updated FreeFileSync to version 12.3.
 - Updated baseimage to version 4.4.2, which brings the following changes:
-&#x00a0;&#x00a0;- Rebuilt against latest distro images to get security fixes.
-&#x00a0;&#x00a0;- Updated X server to version 1.20.14.
+  - Rebuilt against latest distro images to get security fixes.
+  - Updated X server to version 1.20.14.
 
 ###v23.05.1 (2024-05-15)
 - Initial release.
