@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/jlesage/tixati/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/XXXXXX-support-tixati/</Support>
+  <Support>https://forums.unraid.net/topic/139447-support-tixati/</Support>
   <ReadMe>https://github.com/jlesage/docker-tixati#readme</ReadMe>
   <Overview>
 Tixati is a peer-to-peer file sharing program that uses the popular BitTorrent protocol.
@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.tixati.com</Project>
-  <Date>2023-05-19</Date>
+  <Date>2023-05-27</Date>
   <Changes>
+###v23.05.2 (2023-05-27)
+- Updated Tixati to version 3.19.
+
 ###v23.05.1 (2023-05-19)
 - Initial release.
 
