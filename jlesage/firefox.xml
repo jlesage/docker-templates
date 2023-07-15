@@ -32,8 +32,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2023-05-27</Date>
+  <Date>2023-06-24</Date>
   <Changes>
+###v23.06.1 (2023-06-24)
+- Updated Firefox to version 114.0.2-r0.
+- Fixed issue caused by the presence slash or backslash characters in Firefox preference's value set via environment variable.
+
 ###v23.05.2 (2023-05-27)
 - Updated Firefox to version 113.0.2-r1.
 
