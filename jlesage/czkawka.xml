@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2023-06-12</Date>
+  <Date>2023-09-07</Date>
   <Changes>
+###v23.09.1 (2023-09-07)
+- Added support to open video files.
+
 ###v23.06.2 (2023-06-12)
 - Updated Czkawka to version 6.0.0.
 
