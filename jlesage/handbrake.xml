@@ -36,8 +36,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2023-06-08</Date>
+  <Date>2023-10-10</Date>
   <Changes>
+###v23.10.1 (2023-10-10)
+- Updated libva to version 2.20.0.
+- Updated gmmlib to version 22.3.12.
+- Updated Intel Media Driver to version 23.2.4.
+- Updated Intel OneVPL GPU Runtime to version 23.2.4.
+
 ###v23.06.1 (2023-06-08)
 - Updated libva to version 2.18.
 - Updated gmmlib to version 22.3.5.
