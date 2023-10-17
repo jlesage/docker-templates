@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/justdan96/tsMuxer</Project>
-  <Date>2023-06-08</Date>
+  <Date>2023-10-16</Date>
   <Changes>
+###v23.10.1 (2023-10-16)
+- Updated tsMuxeR to version nightly-2023-10-11-01-53-10.
+
 ###v23.06.1 (2023-06-08)
 - Updated tsMuxeR to version nightly-2023-06-04-02-47-33.
 
