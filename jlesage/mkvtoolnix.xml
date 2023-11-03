@@ -32,8 +32,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download</Project>
-  <Date>2023-08-20</Date>
+  <Date>2023-11-02</Date>
   <Changes>
+###v23.11.1 (2023-11-02)
+- Updated MKVToolNix to version 80.0.
+
 ###v23.08.1 (2023-08-20)
 - Updated MKVToolNix to version 79.0.
 - Updated MediaInfo to version 23.07.
