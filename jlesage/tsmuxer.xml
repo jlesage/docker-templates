@@ -32,8 +32,17 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/justdan96/tsMuxer</Project>
-  <Date>2023-10-16</Date>
+  <Date>2023-11-10</Date>
   <Changes>
+###v23.11.1 (2023-11-10)
+- Updated baseimage to version 4.5.1, which brings the following changes:
+  - Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.
+  - Improved the way the `take-ownership` script is working.
+  - Readiness and minimum running time checks should not be done for a service defined with an interval.
+  - Raise an error when a synched service fails to start.
+  - Minimum running time check of a service was using an incorrect way to verify if process is still alive.
+  - Fixed installation of CJK font.
+
 ###v23.10.1 (2023-10-16)
 - Updated tsMuxeR to version nightly-2023-10-11-01-53-10.
 
