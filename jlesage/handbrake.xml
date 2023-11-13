@@ -36,8 +36,22 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2023-10-10</Date>
+  <Date>2023-11-11</Date>
   <Changes>
+###v23.11.2 (2023-11-11)
+- Updated Intel Media Driver to version 23.3.5.
+- Updated Intel Media SDK to version 23.2.2.
+- Updated Intel OneVPL GPU runtime to version 23.3.4.
+
+###v23.11.1 (2023-11-10)
+- Updated baseimage to version 4.5.1, which brings the following changes:
+  - Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.
+  - Improved the way the `take-ownership` script is working.
+  - Readiness and minimum running time checks should not be done for a service defined with an interval.
+  - Raise an error when a synched service fails to start.
+  - Minimum running time check of a service was using an incorrect way to verify if process is still alive.
+  - Fixed installation of CJK font.
+
 ###v23.10.1 (2023-10-10)
 - Updated libva to version 2.20.0.
 - Updated gmmlib to version 22.3.12.
