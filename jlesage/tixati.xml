@@ -32,8 +32,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.tixati.com</Project>
-  <Date>2023-11-10</Date>
+  <Date>2023-11-19</Date>
   <Changes>
+###v23.11.2 (2023-11-19)
+- Updated baseimage to version 4.5.2, which brings the following changes:
+  - Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.
+
 ###v23.11.1 (2023-11-10)
 - Updated baseimage to version 4.5.1, which brings the following changes:
   - Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.
