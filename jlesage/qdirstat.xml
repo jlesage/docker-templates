@@ -7,6 +7,8 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/72787-support-qdirstat/</Support>
   <ReadMe>https://github.com/jlesage/docker-qdirstat#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-qdirstat</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/qdirstat</Registry>
   <Overview>
 QDirStat is a graphical application to show where your disk space has gone and to help you to clean it up.
 

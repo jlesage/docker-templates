@@ -7,6 +7,8 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/73494-support-putty/</Support>
   <ReadMe>https://github.com/jlesage/docker-putty#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-putty</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/putty</Registry>
   <Overview>
 PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port.
 

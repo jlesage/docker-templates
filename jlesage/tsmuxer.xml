@@ -7,6 +7,8 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/58629-support-tsmuxer/</Support>
   <ReadMe>https://github.com/jlesage/docker-tsmuxer#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-tsmuxer</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/tsmuxer</Registry>
   <Overview>
 tsMuxer is a Transport Stream muxer. Remux/mux elementary streams, EVO/VOB/MPG, MKV/MKA, MP4/MOV, TS, M2TS to TS to M2TS. Supported video codecs H.264, VC-1, MPEG2. Supported audio codecs AAC, AC3 / E-AC3(DD+), DTS/ DTS-HD. Ability to set muxing fps manually and automatically, change level for H.264 streams, shift sound tracks, extract DTS core from DTS-HD, join files. Output/author to compliant Blu-ray Disc or AVCHD.  Blu-ray 3D support.
 

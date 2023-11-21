@@ -7,6 +7,8 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/61701-support-mkvcleaver/</Support>
   <ReadMe>https://github.com/jlesage/docker-mkvcleaver#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-mkvcleaver</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/mkvcleaver</Registry>
   <Overview>
 MKVcleaver is a GUI (Graphical User Interface) for mkvtoolnix, designed to extract data from MKV files. It can be used in a batch mode (loading and extracting data from many files) as well as single file mode. It has a simple GUI interface, but a lot of functionality.
 

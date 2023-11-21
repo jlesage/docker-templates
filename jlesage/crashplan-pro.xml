@@ -7,6 +7,8 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/59647-support-crashplan-pro/</Support>
   <ReadMe>https://github.com/jlesage/docker-crashplan-pro#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-crashplan-pro</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/crashplan-pro</Registry>
   <Overview>
 CrashPlan offers the most comprehensive online backup solution to tens of thousands of businesses around the world.  The highly secure, automatic and continuous service provides customers the peace of mind that their digital life is protected and easily accessible.
 

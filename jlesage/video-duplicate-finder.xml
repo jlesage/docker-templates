@@ -7,6 +7,8 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/134636-support-video-duplicate-finder/</Support>
   <ReadMe>https://github.com/jlesage/docker-video-duplicate-finder#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-video-duplicate-finder</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/video-duplicate-finder</Registry>
   <Overview>
 Video Duplicate Finder is a cross-platform software to find duplicated video (and image) files on hard disk based on similiarity.  That means unlike other duplicate finders, this one does also finds duplicates which have a different resolution, frame rate and even watermarked.
 
