@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CrashPlanEnterprise</Name>
+  <Repository>jlesage/crashplan-enterprise</Repository>
+  <Registry>https://hub.docker.com/r/jlesage/crashplan-enterprise/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/jlesage/docker-crashplan-enterprise/issues/new/choose</Support>
+  <ReadMe>https://github.com/jlesage/docker-crashplan-enterprise#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-crashplan-enterprise</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/crashplan-enterprise</Registry>
+  <Overview>
+One solution to safeguard corporate data against data loss, leak, misuse and theft.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small.
+
+For a complete documentation of this container, see https://github.com/jlesage/docker-crashplan-enterprise#readme
+
+**Warning**: Make sure to read the *Taking Over Existing Backup* section of the documentation if you are installing this container to replace another CrashPlan installation (from Windows, Linux, Mac or even another Docker container). #support_url: https://forums.unraid.net/topic/XXXXX-support-crashplan-enterprise/
+  </Overview>
+  <Category>Backup:</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/crashplan-enterprise.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/crashplan-enterprise-icon.png</Icon>
+  <ExtraParams/>
+  <Description>
+One solution to safeguard corporate data against data loss, leak, misuse and theft.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small.
+
+For a complete documentation of this container, see https://github.com/jlesage/docker-crashplan-enterprise/blob/master/README.md.
+
+**Warning**: Make sure to read the *Taking Over Existing Backup* section of the documentation if you are installing this container to replace another CrashPlan installation (from Windows, Linux, Mac or even another Docker container). #support_url: https://forums.unraid.net/topic/XXXXX-support-crashplan-enterprise/
+  </Description>
+  <Beta>False</Beta>
+  <Project>https://www.code42.com</Project>
+  <Date>2023-11-19</Date>
+  <Changes>
+###v23.11.3 (2023-11-19)
+- Updated baseimage to version 4.5.2, which brings the following changes:
+  - Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.
+
+###v23.11.2 (2023-11-10)
+- Updated baseimage to version 4.5.1, which brings the following changes:
+  - Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.
+  - Improved the way the `take-ownership` script is working.
+  - Readiness and minimum running time checks should not be done for a service defined with an interval.
+  - Raise an error when a synched service fails to start.
+  - Minimum running time check of a service was using an incorrect way to verify if process is still alive.
+  - Fixed installation of CJK font.
+
+###v23.11.1 (2023-11-07)
+- Updated CrashPlan to version 11.2.0.
+
+###v23.06.2 (2023-06-21)
+- Updated CrashPlan to version 11.1.1.
+
+###v23.06.1 (2023-06-07)
+- Updated baseimage to version 4.4.2, which brings the following changes:
+  - Rebuilt against latest distro images to get security fixes.
+  - Updated X server to version 1.20.14.
+
+###v23.04.2 (2023-04-29)
+- Updated baseimage to version 4.4.1, which brings the following changes:
+  - Updated TigerVNC to version 1.13.1.
+
+###v23.04.1 (2023-04-13)
+- Updated CrashPlan to version 11.0.1.
+
+###v23.03.1 (2023-03-05)
+- Updated baseimage to version 4.4.0, which brings the following changes:
+  - Updated components providing access to application's UI over web.
+  - Improved web UI usage with touch devices.
+  - Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.
+  - Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.
+
+###v23.02.2 (2023-02-08)
+- Updated baseimage to version 4.3.4, which brings the following changes:
+  - Fixed error message from openbox about missing Fontconfig cache directory.
+- Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).
+
+###v23.02.1 (2023-02-04)
+- Updated baseimage to version 4.3.3, which brings robustness related enhancements.
+
+###v23.01.1 (2023-01-04)
+- Update of the baseimage to version 4.3.1 brings the following changes:
+  - Control menu can be moved to the right side of the screen.
+  - Automatic focus of the clipboard text box when opening the control menu.
+  - Automatic close of the control menu when clicking into the application.
+  - Rotation of the internal web server log files.
+
+###v22.12.2 (2022-12-11)
+- Implemented workaround for issue seen with Synology devices where container would not start after an image update.  The problem is caused by Synology explicitly setting all environment variables and keeping values from the old version.
+
+###v22.12.1 (2022-12-10)
+- Updated baseimage to version 4.2.1, which brings multiple internal enhancements.
+
+###v22.11.3 (2022-11-21)
+- Updated CrashPlan to version 10.4.1.
+
+###v22.11.2 (2022-11-07)
+- Fixed issue where the log monitor would use too much CPU.
+- Fixed issue where the same alert would be shown multiple times.
+
+###v22.11.1 (2022-11-02)
+- Fixed display of non-english characters in filenames.
+
+###v22.10.4 (2022-10-30)
+- Fixed UI crash that was occuring when opening a file/directory selection window.
+
+###v22.10.3 (2022-10-30)
+- Fixed the history window being full screen.
+
+###v22.10.2 (2022-10-29)
+- Do not prevent the container from starting if CrashPlan engine is taking too long to start.
+
+###v22.10.1 (2022-10-29)
+- Updated CrashPlan to version 10.4.0.
+- Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.
+- Update of the baseimage to version 4.1.2 brings the following new features:
+  - Support for remote window resize.
+  - Updated the web UI with a new, simplified and less intrusive look.
+
+###v1.11.2 (2022-08-06)
+- Updated CrashPlan to version 10.2.1.
+
+###v1.11.1 (2022-07-15)
+- Updated CrashPlan to version 10.2.0.
+
+###v1.11.0 (2022-05-15)
+- Updated CrashPlan to version 10.0.0.
+
+###v1.10.8 (2022-03-24)
+- Updated CrashPlan to version 8.8.4.
+
+###v1.10.7 (2022-02-25)
+- Updated CrashPlan to version 8.8.3.39.
+
+###v1.10.6 (2022-02-15)
+- Fixed an issue where restoring files would not work.
+- Now using baseimage version 3.5.8, based on Alpine 3.14, which brings the following change:
+  - Updated installed packages to get latest security fixes.
+
+###v1.10.5 (2022-01-21)
+- Updated CrashPlan to version 8.8.2.143.
+
+###v1.10.4 (2021-12-26)
+- Fixed, again, an issue where restoring files to an "other" location would crash the UI.
+
+###v1.10.3 (2021-12-25)
+- Added workaround for an issue where the CrashPlan engine would not start on devices running older kernel version.
+
+###v1.10.2 (2021-12-25)
+- Fixed an issue where restoring files to an "other" location would crash the UI.
+- Fixed handling of filenames with special characters.
+
+###v1.10.1 (2021-12-20)
+- Updated CrashPlan to version 8.8.1.36.
+
+###v1.10.0 (2021-12-16)
+- Updated CrashPlan to version 8.8.1.
+
+###v1.9.1 (2021-09-08)
+- Updated CrashPlan to version 8.7.1.
+
+###v1.9.0 (2021-08-12)
+- Updated CrashPlan to version 8.7.0.
+
+###v1.8.1 (2021-06-03)
+- Updated CrashPlan to version 8.6.1.
+
+###v1.8.0 (2021-03-18)
+- Updated CrashPlan to version 8.6.0.
+
+###v1.7.1 (2020-10-29)
+- Removed debug messages that were left by mistake.
+
+###v1.7.0 (2020-10-20)
+- Updated CrashPlan Enterprise to version 8.5.0.
+
+###v1.6.2 (2020-09-10)
+- Fixed an issue that was preventing files to be restored.
+- Fixed an issue where the restart command of the console would not work.
+
+###v1.6.1 (2020-08-05)
+- Upgraded CrashPlan Enterprise to version 8.2.2.
+- Now using baseimage version 3.5.6, which brings the following changes:
+  - Other small adjustments for the YAD log monitor target.
+
+###v1.6.0 (2020-07-19)
+- Upgraded CrashPlan Enterprise to version 8.2.0.
+- Now using baseimage v3.5.5, which brings the following changes:
+  - Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.
+  - Updated installed packages to get latest security fixes.
+  - Adjusted the log monitor target for recent versions of YAD.
+
+###v1.5.0 (2020-05-10)
+- Upgraded CrashPlan Enterprise to version 8.0.0.
+
+###v1.4.1 (2020-04-06)
+- Fixed handling of CRASHPLAN_SRV_MAX_MEM.
+
+###v1.4.0 (2020-02-12)
+- Upgraded CrashPlan Enterprise to version 7.7.0.
+
+###v1.3.0 (2019-11-22)
+- Upgraded CrashPlan Enterprise to version 7.4.0.
+- Now using baseimage v3.5.3, which brings the following changes:
+  - Updated installed packages to get latest security fixes.
+  - Make sure the tzdata is installed.
+
+###v1.2.2 (2019-10-22)
+- Fixed a notification message.
+
+###v1.2.1 (2019-10-08)
+- Fixed issue where the wrong log file was monitored.
+
+###v1.2.0 (2019-09-18)
+- Upgraded CrashPlan Enterprise to version 7.2.0.
+
+###v1.1.3 (2019-09-05)
+- Fixed misleading message about real-time file watching failure.
+
+###v1.1.2 (2019-07-13)
+- Upgraded CrashPlan Enterprise to version 7.0.0 build 585.
+
+###v1.1.1 (2019-06-22)
+- Fixed an issue where setting (via the environment variable) the maximum amount of memory CrashPlan is allowed to use would prevent the engine to start.
+
+###v1.1.0 (2019-06-22)
+- Upgraded CrashPlan Enterprise to version 7.0.0.
+
+###v1.0.3 (2019-04-24)
+- Now using baseimage v3.5.2, which brings the following changes:
+  - Updated installed packages to get latest security fixes.
+  - Fixed issue where the container could have a zombie process.
+  - Fixed issue where the password would not be submitted when pressing the enter key in the password modal.
+  - Use relative path for favicon ressources to be more friendly with reverse proxy senarios.
+
+###v1.0.2 (2019-04-18)
+- Upgraded CrashPlan Enterprise to version 6.9.4.
+
+###v1.0.1 (2019-02-25)
+- Upgraded CrashPlan Enterprise to version 6.9.2.
+
+###v1.0.0 (2018-12-19)
+- Initial release.
+
+  </Changes>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7819</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7919</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/crashplan-enterprise</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GROUP_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0000</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1920</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1080</Value>
+      <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>DARK_MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>SECURE_CONNECTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>SSL</Value>
+      <Name>SECURE_CONNECTION_VNC_METHOD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>60</Value>
+      <Name>SECURE_CONNECTION_CERTS_CHECK_INTERVAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5800</Value>
+      <Name>WEB_LISTENING_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5900</Value>
+      <Name>VNC_LISTENING_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1024M</Value>
+      <Name>CRASHPLAN_SRV_MAX_MEM</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <!-- Volume Mappings -->
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/crashplan-enterprise" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible to the application." Type="Path" Display="always-hide" Required="True" Mask="False"/>
+  <!-- Variable Mappings -->
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Umask" Target="UMASK" Default="0000" Mode="" Description="Mask that controls how file permissions are set for newly created files.  The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="0" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority. NOTE: Setting a negative value requires additional permissions.  Thus, &quot;--cap-add=SYS_NICE&quot; must be added to Extra Parameters (shown when Advanced View is enabled)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1920" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="1080" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, dark mode is enabled for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &quot;1&quot; to encrypt the connection. NOTE: When enabling the secure connection, security parameters needs to be generated.  This one-time operation is done during container startup.  Depending on your system, this could take a few minutes. GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used to perform the secure VNC connection.  Possible values are &quot;SSL&quot; or &quot;TLS&quot;." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system verifies if web or VNC certificates have changed.  When a change is detected, the affected services are automatically restarted.  A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Maximum Memory" Target="CRASHPLAN_SRV_MAX_MEM" Default="1024M" Mode="" Description="Maximum amount of memory the CrashPlan Engine is allowed to use.  One of the following memory unit (case insensitive) should be added as a suffix to the size: G, M or K." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <!-- Port Mappings -->
+  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7819" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7919" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
+</Container>
