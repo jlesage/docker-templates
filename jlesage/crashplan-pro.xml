@@ -10,9 +10,11 @@
   <GitHub>https://github.com/jlesage/docker-crashplan-pro</GitHub>
   <Registry>https://hub.docker.com/r/jlesage/crashplan-pro</Registry>
   <Overview>
-CrashPlan offers the most comprehensive online backup solution to tens of thousands of businesses around the world.  The highly secure, automatic and continuous service provides customers the peace of mind that their digital life is protected and easily accessible.
+CrashPlan provides peace of mind through secure, scalable, and straightforward endpoint data backup. We help organizations recover from any worst-case scenario, whether it is a disaster, simple human error, a stolen laptop, ransomware or an as-of-yet undiscovered calamity.
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+This Docker container can be used with all CrashPlan products: Essential, Professional, Enterprise, MSPs and Small Business (no longer sold).
 
 Also, being based on Alpine Linux, size of this container is very small.
 
@@ -26,9 +28,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/crashplan-pro-icon.png</Icon>
   <ExtraParams/>
   <Description>
-CrashPlan offers the most comprehensive online backup solution to tens of thousands of businesses around the world.  The highly secure, automatic and continuous service provides customers the peace of mind that their digital life is protected and easily accessible.
+CrashPlan provides peace of mind through secure, scalable, and straightforward endpoint data backup. We help organizations recover from any worst-case scenario, whether it is a disaster, simple human error, a stolen laptop, ransomware or an as-of-yet undiscovered calamity.
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+This Docker container can be used with all CrashPlan products: Essential, Professional, Enterprise, MSPs and Small Business (no longer sold).
 
 Also, being based on Alpine Linux, size of this container is very small.
 
@@ -38,8 +42,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2023-11-19</Date>
+  <Date>2023-11-28</Date>
   <Changes>
+###v23.11.4 (2023-11-28)
+- Added support for new CrashPlan products.
+- The CrashPlan server address can be set via the `CRASHPLAN_SERVER_ADDRESS` environment variable.
+
 ###v23.11.3 (2023-11-19)
 - Updated baseimage to version 4.5.2, which brings the following changes:
   - Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.
@@ -477,6 +485,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Name>CRASHPLAN_SRV_MAX_MEM</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>CRASHPLAN_SERVER_ADDRESS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/crashplan-pro" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
@@ -495,6 +508,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Maximum Memory" Target="CRASHPLAN_SRV_MAX_MEM" Default="1024M" Mode="" Description="Maximum amount of memory the CrashPlan Engine is allowed to use.  One of the following memory unit (case insensitive) should be added as a suffix to the size: G, M or K." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="CrashPlan Server Address" Target="CRASHPLAN_SERVER_ADDRESS" Default="" Mode="" Description="The CrashPlan server address to use.  This is provided by CrashPlan when subscribing to a plan. **NOTE**: CrashPlan for Small Business version requires this variable to be set to &quot;SMB&quot;.  This edition comes with a specific, pre-defined server address." Type="Variable" Display="always" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7810" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7910" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
