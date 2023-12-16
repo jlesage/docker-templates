@@ -39,8 +39,19 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2023-08-04</Date>
+  <Date>2023-12-15</Date>
   <Changes>
+###v23.12.1 (2023-12-15)
+- Fixed PowerDNS DNS provider plugin installation.
+- Fixed issue where HTTP2 support would always be enabled.
+- Fixed server reachability test.
+- Updated baseimage to version 3.5.2, which brings the following changes:
+  - Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.
+  - Improved the way the `take-ownership` script is working.
+  - Readiness and minimum running time checks should not be done for a service defined with an interval.
+  - Raise an error when a synched service fails to start.
+  - Minimum running time check of a service was using an incorrect way to verify if process is still alive.
+
 ###v23.08.1 (2023-08-04)
 - Updated Nginx Proxy Manager to version 2.10.4.
 
