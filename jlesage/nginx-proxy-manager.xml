@@ -39,8 +39,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2023-12-15</Date>
+  <Date>2023-12-20</Date>
   <Changes>
+###v23.12.2 (2023-12-20)
+- Fixed warning message about uninitialized variable.
+
 ###v23.12.1 (2023-12-15)
 - Fixed PowerDNS DNS provider plugin installation.
 - Fixed issue where HTTP2 support would always be enabled.
