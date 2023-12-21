@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-CA/firefox/enterprise/</Project>
-  <Date>2023-11-21</Date>
+  <Date>2023-12-20</Date>
   <Changes>
+###v23.12.1 (2023-12-20)
+- Updated Firefox ESR to version 115.5.0-r0.
+
 ###v23.11.1 (2023-11-21)
 - Initial release.
 
