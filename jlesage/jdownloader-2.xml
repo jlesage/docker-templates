@@ -365,6 +365,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Name>JDOWNLOADER_HEADLESS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>JDOWNLOADER_MAX_MEM</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/jdownloader-2" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
@@ -386,6 +391,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="MyJDownloader Password" Target="MYJDOWNLOADER_PASSWORD" Default="" Mode="" Description="Password of the MyJDownloader account to use.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="MyJDownloader Device Name" Target="MYJDOWNLOADER_DEVICE_NAME" Default="" Mode="" Description="The name of this JDownloader instance.  Note that this can also be configured via the JDownloader GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Headless Mode" Target="JDOWNLOADER_HEADLESS" Default="0" Mode="" Description="When set to &quot;1&quot;, JDownloader is running in headless mode, meaning that no GUI is available.  In this mode, MyJDownloader should be used to remote control JDownloader." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Maximum Memory" Target="JDOWNLOADER_MAX_MEM" Default="" Mode="" Description="Maximum amount of memory JDownloader is allowed to use.  One of the following memory unit (case insensitive) should be added as a suffix to the size: G, M or K." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7807" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7907" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
