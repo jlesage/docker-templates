@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>http://jdownloader.org</Project>
-  <Date>2023-12-25</Date>
+  <Date>2023-12-26</Date>
   <Changes>
+###v23.12.2 (2023-12-26)
+- Fixed race condition that could prevent JDownloader from starting correctly.
+
 ###v23.12.1 (2023-12-25)
 - Added the ability to set the maximum amount of memory used by JDownloader via the `JDOWNLOADER_MAX_MEM` environment variable.
 - Added support for the `JDownloader2.vmoptions` file.
