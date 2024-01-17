@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/yaser01/mkv-muxing-batch-gui</Project>
-  <Date>2024-01-07</Date>
+  <Date>2024-01-17</Date>
   <Changes>
+###v24.01.2 (2024-01-17)
+- Updated MKV Muxing Batch GUI to version 2.4.2.
+
 ###v24.01.1 (2024-01-07)
 - Updated MKV Muxing Batch GUI to version 2.4.1.
 - Updated baseimage to version 4.5.3, based on Alpine Linux 3.19, which brings the following changes:
