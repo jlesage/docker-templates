@@ -34,8 +34,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.thunderbird.net</Project>
-  <Date>2023-12-20</Date>
+  <Date>2024-01-20</Date>
   <Changes>
+###v24.01.1 (2024-01-20)
+- Updated Firefox to version 115.6.1-r0.
+- Updated baseimage to version 4.5.3, based on Alpine Linux 3.19, which brings the following changes:
+  - Disabled fullscreen support when page is loaded into an iFrame.
+  - Rebuilt against latest distro images to get security fixes.
+
 ###v23.12.1 (2023-12-20)
 - Updated Thunderbird to version 115.5.0-r0.
 
