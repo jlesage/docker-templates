@@ -34,8 +34,15 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download</Project>
-  <Date>2023-12-09</Date>
+  <Date>2024-02-01</Date>
   <Changes>
+###v24.02.1 (2024-02-01)
+- Updated MKVToolNix to version 82.0.
+- Updated MediaInfo to version 24.01.
+- Updated baseimage to version 4.5.3, which brings the following changes:
+  - Disabled fullscreen support when page is loaded into an iFrame.
+  - Rebuilt against latest distro images to get security fixes.
+
 ###v23.12.1 (2023-12-09)
 - Updated MKVToolNix to version 81.0.
 
