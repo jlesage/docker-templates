@@ -38,8 +38,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2024-01-13</Date>
+  <Date>2024-03-04</Date>
   <Changes>
+###v24.03.1 (2024-03-04)
+- Updated HandBrake to version 1.7.3.
+
 ###v24.01.2 (2024-01-13)
 - Issue where Linux device of an optical drive could not be opened is now really fixed.
 
