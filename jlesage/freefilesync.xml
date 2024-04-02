@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://freefilesync.org</Project>
-  <Date>2024-03-03</Date>
+  <Date>2024-04-02</Date>
   <Changes>
+###v24.04.1 (2024-04-02)
+- Updated FreeFileSync to version 13.5.
+
 ###v24.03.1 (2024-03-03)
 - Updated FreeFileSync to version 13.4.
 
