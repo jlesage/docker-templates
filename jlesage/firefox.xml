@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2024-01-20</Date>
+  <Date>2024-04-12</Date>
   <Changes>
+###v24.04.1 (2024-04-12)
+- Updated Firefox to version 124.0.1-r0.
+
 ###v24.01.1 (2024-01-20)
 - Updated Firefox to version 120.0.1-r0.
 - Updated baseimage to version 4.5.3, based on Alpine Linux 3.19, which brings the following changes:
