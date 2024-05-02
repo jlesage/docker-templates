@@ -34,8 +34,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2024-02-17</Date>
+  <Date>2024-05-02</Date>
   <Changes>
+###v24.05.1 (2024-05-02)
+- Updated FileBot to version 5.1.3.
+- Updated MediaInfo library to version 24.04.
+
 ###v24.02.1 (2024-02-17)
 - Updated baseimage to version 4.5.3, which brings the following changes:
   - Disabled fullscreen support when page is loaded into an iFrame.
