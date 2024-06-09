@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2024-05-02</Date>
+  <Date>2024-06-09</Date>
   <Changes>
+###v24.06.1 (2024-06-09)
+- Updated MediaInfo library to version 24.05.
+
 ###v24.05.1 (2024-05-02)
 - Updated FileBot to version 5.1.3.
 - Updated MediaInfo library to version 24.04.
