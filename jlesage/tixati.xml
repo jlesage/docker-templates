@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.tixati.com</Project>
-  <Date>2024-07-03</Date>
+  <Date>2024-07-24</Date>
   <Changes>
+###v24.07.2 (2024-07-24)
+- Updated Tixati to version 3.28.
+
 ###v24.07.1 (2024-07-03)
 - Fixed issue where Tixati would not save configuration when container is restarted or stopped.
 - Updated baseimage to version 4.6.3, which brings the following changes:
