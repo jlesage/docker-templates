@@ -10,7 +10,7 @@
   <GitHub>https://github.com/jlesage/docker-crashplan-enterprise</GitHub>
   <Registry>https://hub.docker.com/r/jlesage/crashplan-enterprise</Registry>
   <Overview>
-One solution to safeguard corporate data against data loss, leak, misuse and theft.
+CrashPlan provides peace of mind through secure, scalable, and straightforward endpoint data backup. We help organizations recover from any worst-case scenario, whether it is a disaster, simple human error, a stolen laptop, ransomware or an as-of-yet undiscovered calamity.
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
@@ -18,7 +18,7 @@ Also, being based on Alpine Linux, size of this container is very small.
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-crashplan-enterprise#readme
 
-**Warning**: Make sure to read the *Taking Over Existing Backup* section of the documentation if you are installing this container to replace another CrashPlan installation (from Windows, Linux, Mac or even another Docker container). #support_url: https://forums.unraid.net/topic/XXXXX-support-crashplan-enterprise/
+**Warning**: Make sure to read the *Taking Over Existing Backup* section of the documentation if you are installing this container to replace another CrashPlan installation (from Windows, Linux, Mac or even another Docker container).
   </Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -26,7 +26,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/crashplan-enterprise-icon.png</Icon>
   <ExtraParams/>
   <Description>
-One solution to safeguard corporate data against data loss, leak, misuse and theft.
+CrashPlan provides peace of mind through secure, scalable, and straightforward endpoint data backup. We help organizations recover from any worst-case scenario, whether it is a disaster, simple human error, a stolen laptop, ransomware or an as-of-yet undiscovered calamity.
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
@@ -34,12 +34,23 @@ Also, being based on Alpine Linux, size of this container is very small.
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-crashplan-enterprise/blob/master/README.md.
 
-**Warning**: Make sure to read the *Taking Over Existing Backup* section of the documentation if you are installing this container to replace another CrashPlan installation (from Windows, Linux, Mac or even another Docker container). #support_url: https://forums.unraid.net/topic/XXXXX-support-crashplan-enterprise/
+**Warning**: Make sure to read the *Taking Over Existing Backup* section of the documentation if you are installing this container to replace another CrashPlan installation (from Windows, Linux, Mac or even another Docker container).
   </Description>
   <Beta>False</Beta>
-  <Project>https://www.code42.com</Project>
-  <Date>2023-11-19</Date>
+  <Project>https://www.crashplan.com</Project>
+  <Date>2024-08-01</Date>
   <Changes>
+###v24.08.1 (2024-08-01)
+- Updated CrashPlan to version 11.4.0.
+- Updated baseimage to version 4.6.3, which brings the following changes:
+  - Audio support through web browser.
+  - Web authentication support.
+  - Better support of GTK4 applications.
+  - Updated noVNC to version 1.5.0.
+  - Updated web UI components (Bootstrap, Font Awesome).
+  - When connecting, the control bar is now temporarily shown only once.
+  - During package mirror setup, make sure to keep permissions of copied files.
+
 ###v23.11.3 (2023-11-19)
 - Updated baseimage to version 4.5.2, which brings the following changes:
   - Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.
@@ -316,6 +327,26 @@ For a complete documentation of this container, see https://github.com/jlesage/d
     </Variable>
     <Variable>
       <Value>0</Value>
+      <Name>WEB_AUDIO</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>WEB_AUTHENTICATION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WEB_AUTHENTICATION_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WEB_AUTHENTICATION_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
       <Name>SECURE_CONNECTION</Name>
       <Mode/>
     </Variable>
@@ -356,6 +387,10 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1920" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="1080" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, dark mode is enabled for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to &quot;1&quot;, audio support is enabled, meaning that any audio produced by the application is played through the browser. Note that audio is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to &quot;1&quot;, the application' GUI is protected via a login page when accessed via a web browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username to configure for the web authentication.  This is a quick and easy way to configure credentials for a single user.  To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="Optional password to configure for the web authentication.  This is a quick and easy way to configure credentials for a single user.  To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &quot;1&quot; to encrypt the connection. NOTE: When enabling the secure connection, security parameters needs to be generated.  This one-time operation is done during container startup.  Depending on your system, this could take a few minutes. GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used to perform the secure VNC connection.  Possible values are &quot;SSL&quot; or &quot;TLS&quot;." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system verifies if web or VNC certificates have changed.  When a change is detected, the affected services are automatically restarted.  A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
