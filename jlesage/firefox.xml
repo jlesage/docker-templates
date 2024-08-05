@@ -33,9 +33,12 @@ Also, being based on Alpine Linux, size of this container is very small.
 For a complete documentation of this container, see https://github.com/jlesage/docker-firefox/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
-  <Project>https://www.mozilla.org/en-US/firefox/</Project>
-  <Date>2024-07-02</Date>
+  <Project>https://www.mozilla.org/firefox/</Project>
+  <Date>2024-08-05</Date>
   <Changes>
+###v24.08.1 (2024-08-05)
+- Updated Firefox to version 128.0.3-r0.
+
 ###v24.07.1 (2024-07-02)
 - Updated Firefox to version 126.0.1-r0.
 - Updated baseimage to version 4.6.3, which brings the following changes:
