@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.thunderbird.net</Project>
-  <Date>2024-07-03</Date>
+  <Date>2024-08-05</Date>
   <Changes>
+###v24.08.1 (2024-08-05)
+- Updated Thunderbird to version 128.0.1-r0.
+
 ###v24.07.1 (2024-07-03)
 - Updated Thunderbird to version 115.11.0-r0.
 - Updated baseimage to version 4.6.3, which brings the following changes:
