@@ -14,9 +14,9 @@ MakeMKV is your one-click solution to convert video that you own into free and p
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-A fully automated mode is also available: insert a DVD or Blu-ray disc into an optical drive and let MakeMKV rips it without any user interaction.
-
 Also, being based on Alpine Linux, size of this container is very small.
+
+A fully automated mode is also available: insert a DVD or Blu-ray disc into an optical drive and let MakeMKV rips it without any user interaction.
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-makemkv#readme
 
@@ -32,9 +32,9 @@ MakeMKV is your one-click solution to convert video that you own into free and p
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-A fully automated mode is also available: insert a DVD or Blu-ray disc into an optical drive and let MakeMKV rips it without any user interaction.
-
 Also, being based on Alpine Linux, size of this container is very small.
+
+A fully automated mode is also available: insert a DVD or Blu-ray disc into an optical drive and let MakeMKV rips it without any user interaction.
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-makemkv/blob/master/README.md.
 

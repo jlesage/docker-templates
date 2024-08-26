@@ -14,9 +14,9 @@ CrashPlan provides peace of mind through secure, scalable, and straightforward e
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-This Docker container can be used with all CrashPlan products: Essential, Professional, Enterprise, MSPs and Small Business (no longer sold).
-
 Also, being based on Alpine Linux, size of this container is very small.
+
+This Docker container can be used with all CrashPlan products: Essential, Professional, Enterprise, MSPs and Small Business (no longer sold).
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-crashplan-pro#readme
 
@@ -32,9 +32,9 @@ CrashPlan provides peace of mind through secure, scalable, and straightforward e
 
 The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
 
-This Docker container can be used with all CrashPlan products: Essential, Professional, Enterprise, MSPs and Small Business (no longer sold).
-
 Also, being based on Alpine Linux, size of this container is very small.
+
+This Docker container can be used with all CrashPlan products: Essential, Professional, Enterprise, MSPs and Small Business (no longer sold).
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-crashplan-pro/blob/master/README.md.
 

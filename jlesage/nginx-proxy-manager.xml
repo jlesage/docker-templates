@@ -12,9 +12,7 @@
   <Overview>
 Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.
 
-
-
-Also, being based on Alpine Linux, size of this container is very small.
+Being based on Alpine Linux, size of this container is very small.
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-nginx-proxy-manager#readme
 
@@ -28,9 +26,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Description>
 Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.
 
-
-
-Also, being based on Alpine Linux, size of this container is very small.
+Being based on Alpine Linux, size of this container is very small.
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-nginx-proxy-manager/blob/master/README.md.
 
