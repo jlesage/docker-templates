@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Xfburn</Name>
+  <Repository>jlesage/xfburn</Repository>
+  <Registry>https://hub.docker.com/r/jlesage/xfburn/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/jlesage/docker-xfburn/issues/new/choose</Support>
+  <ReadMe>https://github.com/jlesage/docker-xfburn#readme</ReadMe>
+  <GitHub>https://github.com/jlesage/docker-xfburn</GitHub>
+  <Registry>https://hub.docker.com/r/jlesage/xfburn</Registry>
+  <Overview>
+Xfburn is an easy to use burning software. It uses libburn and libisofs as a backend, in difference to most other GUI programs at the moment.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small.
+
+For a complete documentation of this container, see https://github.com/jlesage/docker-xfburn#readme
+  </Overview>
+  <Category>MediaApp:Other Tools:</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/xfburn.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/xfburn-icon.png</Icon>
+  <ExtraParams/>
+  <Description>
+Xfburn is an easy to use burning software. It uses libburn and libisofs as a backend, in difference to most other GUI programs at the moment.
+
+The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+
+Also, being based on Alpine Linux, size of this container is very small.
+
+For a complete documentation of this container, see https://github.com/jlesage/docker-xfburn/blob/master/README.md.
+  </Description>
+  <Beta>False</Beta>
+  <Project>https://docs.xfce.org/apps/xfburn/start</Project>
+  <Date>2024-08-31</Date>
+  <Changes>
+###v24.08.1 (2024-08-31)
+- Initial release.
+
+  </Changes>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7829</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7929</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/xfburn</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GROUP_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0000</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>APP_NICENESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1920</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1080</Value>
+      <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>DARK_MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>WEB_AUDIO</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>WEB_AUTHENTICATION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WEB_AUTHENTICATION_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WEB_AUTHENTICATION_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>SECURE_CONNECTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>SSL</Value>
+      <Name>SECURE_CONNECTION_VNC_METHOD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>60</Value>
+      <Name>SECURE_CONNECTION_CERTS_CHECK_INTERVAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5800</Value>
+      <Name>WEB_LISTENING_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5900</Value>
+      <Name>VNC_LISTENING_PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <!-- Volume Mappings -->
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/xfburn" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible to the application." Type="Path" Display="always-hide" Required="True" Mask="False"/>
+  <!-- Variable Mappings -->
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Umask" Target="UMASK" Default="0000" Mode="" Description="Mask that controls how file permissions are set for newly created files.  The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="0" Mode="" Description="Priority at which the application should run.  A niceness value of -20 is the highest priority and 19 is the lowest priority. NOTE: Setting a negative value requires additional permissions.  Thus, &quot;--cap-add=SYS_NICE&quot; must be added to Extra Parameters (shown when Advanced View is enabled)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1920" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="1080" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, dark mode is enabled for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to &quot;1&quot;, audio support is enabled, meaning that any audio produced by the application is played through the browser. Note that audio is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to &quot;1&quot;, the application' GUI is protected via a login page when accessed via a web browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username to configure for the web authentication.  This is a quick and easy way to configure credentials for a single user.  To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="Optional password to configure for the web authentication.  This is a quick and easy way to configure credentials for a single user.  To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI.  Set to &quot;1&quot; to encrypt the connection. NOTE: When enabling the secure connection, security parameters needs to be generated.  This one-time operation is done during container startup.  Depending on your system, this could take a few minutes. GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used to perform the secure VNC connection.  Possible values are &quot;SSL&quot; or &quot;TLS&quot;." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system verifies if web or VNC certificates have changed.  When a change is detected, the affected services are automatically restarted.  A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <!-- Port Mappings -->
+  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7829" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7929" Mode="tcp" Description="Port to access the application's GUI via VNC protocol.  Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
+</Container>
