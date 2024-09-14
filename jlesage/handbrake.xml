@@ -38,8 +38,16 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2024-06-30</Date>
+  <Date>2024-09-14</Date>
   <Changes>
+###v24.09.1 (2024-09-14)
+- Updated HandBrake to version 1.8.2.
+- Updated libva to version 2.22.0.
+- Updated gmmlib to version 22.5.0.
+- Updated Intel Media Driver to version 24.2.5.
+- Updated Intel OneVPL GPU Runtime to version 24.2.5.
+- Added environment variable to control the HandBrake GUI queue startup action.
+
 ###v24.06.1 (2024-06-30)
 - Updated HandBrake to version 1.8.1.
 - Updated libva to version 2.21.0.
@@ -676,6 +684,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Mode/>
     </Variable>
     <Variable>
+      <Value>NONE</Value>
+      <Name>HANDBRAKE_GUI_QUEUE_STARTUP_ACTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>1</Value>
       <Name>AUTOMATED_CONVERSION</Name>
       <Mode/>
@@ -795,6 +808,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application.  This port is used internally by the container and it is usually not required to be changed.  NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="HandBrake GUI State" Target="HANDBRAKE_GUI" Default="1" Mode="" Description="Setting this to 1 enables the HandBrake GUI, 0 disables it." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="HandBrake GUI State" Target="HANDBRAKE_GUI_QUEUE_STARTUP_ACTION" Default="NONE" Mode="" Description="Action to be taken on the queue of HandBrake (GUI) when it starts. When set to &quot;PROCESS&quot;, HandBrake automatically starts encoding elements present in the queue. When set to &quot;CLEAR&quot;, the content of the queue is cleared. With any other value, no action is taken on the queue." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automatic Video Converter: State" Target="AUTOMATED_CONVERSION" Default="1" Mode="" Description="Setting this to 1 enables the automatic video converter, 0 disables it." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="General/Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Identification of the preset must follow the format 'CATEGORY/PRESET NAME'.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="False" Mask="False"/>
