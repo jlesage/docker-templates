@@ -34,8 +34,14 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2024-07-03</Date>
+  <Date>2024-09-29</Date>
   <Changes>
+###v24.09.1 (2024-09-29)
+- Updated FileBot to version 5.1.5.
+- Updated baseimage to version 4.6.4, which brings the following changes:
+  - Fixed web authentication feature with URL path-based reverse proxy.
+  - Rebuild against latest distro images to get security fixes.
+
 ###v24.07.1 (2024-07-03)
 - Updated MediaInfo library to version 24.06.
 - Updated baseimage to version 4.6.3, which brings the following changes:
