@@ -34,8 +34,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2024-09-29</Date>
+  <Date>2024-10-18</Date>
   <Changes>
+###v24.10.1 (2024-10-18)
+- Updated FileBot to version 5.1.6.
+- Make sure to save FileBot settings immediately.
+
 ###v24.09.1 (2024-09-29)
 - Updated FileBot to version 5.1.5.
 - Updated baseimage to version 4.6.4, which brings the following changes:
