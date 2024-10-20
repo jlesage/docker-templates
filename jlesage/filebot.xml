@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.filebot.net</Project>
-  <Date>2024-10-18</Date>
+  <Date>2024-10-20</Date>
   <Changes>
+###v24.10.2 (2024-10-20)
+- Temporarily reverted FileBot to version 5.1.5, because 5.1.6 has an incompatiblity with JNA native library.
+
 ###v24.10.1 (2024-10-18)
 - Updated FileBot to version 5.1.6.
 - Make sure to save FileBot settings immediately.
