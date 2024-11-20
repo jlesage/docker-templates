@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.putty.org</Project>
-  <Date>2024-09-29</Date>
+  <Date>2024-11-19</Date>
   <Changes>
+###v24.11.1 (2024-11-19)
+- Fixed display issue that was occurring past the configuration window.
+
 ###v24.09.1 (2024-09-29)
 - Updated baseimage to version 4.6.4, which brings the following changes:
   - Fixed web authentication feature with URL path-based reverse proxy.
