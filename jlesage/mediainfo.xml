@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2024-11-18</Date>
+  <Date>2024-11-23</Date>
   <Changes>
+###v24.11.2 (2024-11-23)
+- Fixed MediaInfo not starting properly on some architectures.
+
 ###v24.11.1 (2024-11-18)
 - Updated MediaInfo to version 24.11.
 
