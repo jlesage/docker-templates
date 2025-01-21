@@ -35,8 +35,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2024-12-07</Date>
+  <Date>2025-01-20</Date>
   <Changes>
+###v25.01.1 (2025-01-20)
+- Updated Nginx Proxy Manager to version 2.12.2.
+
 ###v24.12.1 (2024-12-07)
 - Updated Nginx Proxy Manager to version 2.12.1.
 - Updated OpenResty to version 1.27.1.1.
