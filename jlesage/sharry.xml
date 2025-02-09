@@ -30,8 +30,13 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://eikek.github.io/sharry/</Project>
-  <Date>2024-12-07</Date>
+  <Date>2025-02-09</Date>
   <Changes>
+###v25.02.1 (2025-02-09)
+- Updated baseimage to version 3.6.5, which brings the following changes:
+  - Increased the default service ready timeout from 5 seconds to 10 seconds and allow runtime adjustment via environment variable.
+  - Rebuild against latest distro images to get security fixes.
+
 ###v24.12.1 (2024-12-07)
 - Updated baseimage to version 3.6.4, which brings the following changes:
   - Rebuild against latest distro images to get security fixes.
