@@ -20,7 +20,7 @@ A fully automated mode is also available: insert a DVD or Blu-ray disc into an o
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-makemkv#readme
 
-**NOTE**: For the container to have access to your optical drive(s), you need to add them to your container configuration.  This is done by adding a new "Device".  An optical drive is represented by two Linux device files: "/dev/srX" and "/dev/sgY".  For optimal performance, the container needs both of them.  To determine the right devices to use, start the container and look at its log.
+**NOTE**: For the container to have access to your optical drive(s), you need to add them to your container configuration. This is done by adding a new "Device". An optical drive is represented by two Linux device files: "/dev/srX" and "/dev/sgY". For optimal performance, the container needs both of them. To determine the right devices to use, start the container and look at its log.
   </Overview>
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -38,12 +38,23 @@ A fully automated mode is also available: insert a DVD or Blu-ray disc into an o
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-makemkv/blob/master/README.md.
 
-**NOTE**: For the container to have access to your optical drive(s), you need to add them to your container configuration.  This is done by adding a new "Device".  An optical drive is represented by two Linux device files: "/dev/srX" and "/dev/sgY".  For optimal performance, the container needs both of them.  To determine the right devices to use, start the container and look at its log.
+**NOTE**: For the container to have access to your optical drive(s), you need to add them to your container configuration. This is done by adding a new "Device". An optical drive is represented by two Linux device files: "/dev/srX" and "/dev/sgY". For optimal performance, the container needs both of them. To determine the right devices to use, start the container and look at its log.
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2024-12-07</Date>
+  <Date>2025-02-09</Date>
   <Changes>
+###v25.02.1 (2025-02-09)
+- Updated MakeMKV to version 1.17.9.
+- Improved detection of optical drive usability issues.
+- Improved disc ejection mechanism.
+- Fixed optical drive detection by MakeMKV when using a license key.
+- Added support for hooks.
+- Updated baseimage to version 4.7.1, which brings the following changes (since last used version):
+  - Added environment variable that allows configuring the web authentication token lifetime.
+  - Fixed compatibility issues that were introduced with support of GTK4 applications.
+  - Rebuild against latest distro images to get security fixes.
+
 ###v24.12.1 (2024-12-07)
 - Updated baseimage to version 4.6.7, which brings the following changes:
   - Fixed web audio feature with URL path-based reverse proxy.
@@ -276,7 +287,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Small enhancements to the MakeMKV builder.
 
 ###v1.9.5 (2018-10-26)
-- Updated OpenJDK to version 11.0.1.  This fixes an issue where MakeMKV would crash with certain BluRay discs.
+- Updated OpenJDK to version 11.0.1. This fixes an issue where MakeMKV would crash with certain BluRay discs.
 - Auto disc ripper: Make sure to abort if tray is opened.
 
 ###v1.9.4 (2018-10-02)
@@ -504,6 +515,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Mode/>
     </Variable>
     <Variable>
+      <Value>24</Value>
+      <Name>WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value/>
       <Name>WEB_AUTHENTICATION_USERNAME</Name>
       <Mode/>
@@ -597,7 +613,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/makemkv" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible to the application." Type="Path" Display="always-hide" Required="True" Mask="False"/>
-  <Config Name="Output Directory" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos.  Also used by the automatic disc ripper." Type="Path" Display="always-hide" Required="True" Mask="False"/>
+  <Config Name="Output Directory" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos. Also used by the automatic disc ripper." Type="Path" Display="always-hide" Required="True" Mask="False"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
@@ -608,6 +624,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, dark mode is enabled for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to &quot;1&quot;, audio support is enabled, meaning that any audio produced by the application is played through the browser. Note that audio is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to &quot;1&quot;, the application's GUI is protected via a login page when accessed via a web browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="The lifetime of a token, in hours. A token is attributed to the user after a successful login. As long as the token is valid, user can access the application's GUI without having to log in again. Once the token expires, the login page is prompted again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username to configure for the web authentication. This is a quick and easy way to configure credentials for a single user. To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="Optional password to configure for the web authentication. This is a quick and easy way to configure credentials for a single user. To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI. Set to &quot;1&quot; to encrypt the connection. NOTE: When enabling the secure connection, security parameters needs to be generated. This one-time operation is done during container startup. Depending on your system, this could take a few minutes. GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="False" Mask="False"/>
@@ -615,16 +632,16 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system verifies if web or VNC certificates have changed. When a change is detected, the affected services are automatically restarted. A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application. This port is used internally by the container and it is usually not required to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application. This port is used internally by the container and it is usually not required to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="License Key" Target="MAKEMKV_KEY" Default="BETA" Mode="" Description="MakeMKV registration key to use.  The key is written to the configuration file during container startup.  When set to &quot;BETA&quot;, the latest beta key is automatically used.  When set to &quot;UNSET&quot;, no key is automatically written to the configuration file." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="License Key" Target="MAKEMKV_KEY" Default="BETA" Mode="" Description="MakeMKV registration key to use. The key is written to the configuration file during container startup. When set to &quot;BETA&quot;, the latest beta key is automatically used. When set to &quot;UNSET&quot;, no key is automatically written to the configuration file." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="MakeMKV GUI State" Target="MAKEMKV_GUI" Default="1" Mode="" Description="Setting this to 1 enables the MakeMKV GUI, 0 disables it." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Enabled" Target="AUTO_DISC_RIPPER" Default="0" Mode="" Description="Set to 1 to enable automatic rippping of DVD/Blu-ray discs." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Disc Ripper: Custom MakeMKV Profile" Target="AUTO_DISC_RIPPER_MAKEMKV_PROFILE" Default="" Mode="" Description="Filename of the custom MakeMKV profile the automatic disc ripper should use.  The profile is expected to be found under the /config folder of the container, unless an absolute path is specified." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Disc Ripper: Custom MakeMKV Profile" Target="AUTO_DISC_RIPPER_MAKEMKV_PROFILE" Default="" Mode="" Description="Filename of the custom MakeMKV profile the automatic disc ripper should use. The profile is expected to be found under the /config folder of the container, unless an absolute path is specified." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Eject" Target="AUTO_DISC_RIPPER_EJECT" Default="0" Mode="" Description="Set to 1 to eject disc when ripping is terminated." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Disc Ripper: Parallel" Target="AUTO_DISC_RIPPER_PARALLEL_RIP" Default="0" Mode="" Description="When set to 1, discs from all available optical drives are ripped in parallel.  Else, each disc from optical drives is ripped one at time." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Disc Ripper: Parallel" Target="AUTO_DISC_RIPPER_PARALLEL_RIP" Default="0" Mode="" Description="When set to 1, discs from all available optical drives are ripped in parallel. Else, each disc from optical drives is ripped one at time." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Interval" Target="AUTO_DISC_RIPPER_INTERVAL" Default="5" Mode="" Description="Interval, in seconds, the automatic disc ripper checks for the presence of a DVD/Blu-ray discs." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Disc Ripper: Minimum Title Length" Target="AUTO_DISC_RIPPER_MIN_TITLE_LENGTH" Default="" Mode="" Description="Titles with a length less than this value are ignored.  Length is in seconds.  By default, no value is set, meaning that value from MakeMKV's configuration file is taken." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Disc Ripper: Blu-ray Rip Mode" Target="AUTO_DISC_RIPPER_BD_MODE" Default="mkv" Mode="" Description="Rip mode of Blu-ray discs.  &quot;mkv&quot; is the default mode, where a set of MKV files are produced.  When set to &quot;backup&quot;, a copy of the (decrypted) file system is created instead. [b]NOTE[/b]: This applies to Blu-ray discs only.  For DVD, MKV files are always produced." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Disc Ripper: Force Unique Output Directory" Target="AUTO_DISC_RIPPER_FORCE_UNIQUE_OUTPUT_DIR" Default="0" Mode="" Description="When set to 0, files are written to &quot;/output/DISC_LABEL/&quot;, where &quot;DISC_LABEL&quot; is the label/name of the disc.  If this directory exists, then files are written to &quot;/output/DISC_LABEL-XXXXXX&quot;, where &quot;XXXXXX&quot; are random readable characters.  When set to 1, the &quot;/output/DISC_LABEL-XXXXXX&quot; pattern is always used." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Disc Ripper: Minimum Title Length" Target="AUTO_DISC_RIPPER_MIN_TITLE_LENGTH" Default="" Mode="" Description="Titles with a length less than this value are ignored. Length is in seconds. By default, no value is set, meaning that value from MakeMKV's configuration file is taken." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Disc Ripper: Blu-ray Rip Mode" Target="AUTO_DISC_RIPPER_BD_MODE" Default="mkv" Mode="" Description="Rip mode of Blu-ray discs. &quot;mkv&quot; is the default mode, where a set of MKV files are produced. When set to &quot;backup&quot;, a copy of the (decrypted) file system is created instead. [b]NOTE[/b]: This applies to Blu-ray discs only. For DVD, MKV files are always produced." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Disc Ripper: Force Unique Output Directory" Target="AUTO_DISC_RIPPER_FORCE_UNIQUE_OUTPUT_DIR" Default="0" Mode="" Description="When set to 0, files are written to &quot;/output/DISC_LABEL/&quot;, where &quot;DISC_LABEL&quot; is the label/name of the disc. If this directory exists, then files are written to &quot;/output/DISC_LABEL-XXXXXX&quot;, where &quot;XXXXXX&quot; are random readable characters. When set to 1, the &quot;/output/DISC_LABEL-XXXXXX&quot; pattern is always used." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Disable Progress in GUI" Target="AUTO_DISC_RIPPER_NO_GUI_PROGRESS" Default="0" Mode="" Description="When set to 1, progress of discs ripped by the automatic disc ripper is not shown in the MakeMKV GUI." Type="Variable" Display="always" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7806" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
