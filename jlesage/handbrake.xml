@@ -38,8 +38,18 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2024-12-07</Date>
+  <Date>2025-02-09</Date>
   <Changes>
+###v25.02.1 (2025-02-09)
+- Updated gmmlib to version 22.6.0.
+- Updated Intel Media Driver to version 24.4.4.0
+- Improved detection of optical drive usability issues.
+- Updated baseimage to version 4.7.1, which brings the following changes (since last used version):
+  - Added environment variable that allows configuring the web authentication token lifetime.
+  - Fixed compatibility issues that were introduced with support of GTK4 applications.
+  - Increased the default service ready timeout from 5 seconds to 10 seconds and allow ^Cntime adjustment via environment variable.
+  - Rebuild against latest distro images to get security fixes.
+
 ###v24.12.1 (2024-12-07)
 - Updated HandBrake to version 1.9.0.
 - Updated gmmlib to version 22.5.4.
@@ -656,6 +666,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Mode/>
     </Variable>
     <Variable>
+      <Value>24</Value>
+      <Name>WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value/>
       <Name>WEB_AUTHENTICATION_USERNAME</Name>
       <Mode/>
@@ -812,6 +827,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, dark mode is enabled for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to &quot;1&quot;, audio support is enabled, meaning that any audio produced by the application is played through the browser. Note that audio is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to &quot;1&quot;, the application's GUI is protected via a login page when accessed via a web browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="The lifetime of a token, in hours. A token is attributed to the user after a successful login. As long as the token is valid, user can access the application's GUI without having to log in again. Once the token expires, the login page is prompted again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username to configure for the web authentication. This is a quick and easy way to configure credentials for a single user. To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="Optional password to configure for the web authentication. This is a quick and easy way to configure credentials for a single user. To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI. Set to &quot;1&quot; to encrypt the connection. NOTE: When enabling the secure connection, security parameters needs to be generated. This one-time operation is done during container startup. Depending on your system, this could take a few minutes. GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="False" Mask="False"/>
