@@ -42,8 +42,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2025-02-09</Date>
+  <Date>2025-02-12</Date>
   <Changes>
+###v25.02.2 (2025-02-12)
+- Report the case where an optical drive cannot be used because of an improper user namespace configuration.
+
 ###v25.02.1 (2025-02-09)
 - Updated MakeMKV to version 1.17.9.
 - Improved detection of optical drive usability issues.
@@ -53,6 +56,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Updated baseimage to version 4.7.1, which brings the following changes (since last used version):
   - Added environment variable that allows configuring the web authentication token lifetime.
   - Fixed compatibility issues that were introduced with support of GTK4 applications.
+  - Increased the default service ready timeout from 5 seconds to 10 seconds and allow runtime adjustment via environment variable.
   - Rebuild against latest distro images to get security fixes.
 
 ###v24.12.1 (2024-12-07)
