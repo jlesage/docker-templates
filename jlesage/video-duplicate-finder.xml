@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/0x90d/videoduplicatefinder</Project>
-  <Date>2025-02-09</Date>
+  <Date>2025-02-16</Date>
   <Changes>
+###v25.02.2 (2025-02-16)
+- Updated Video Duplicate Finder to version 3.0.x-e253212.
+
 ###v25.02.1 (2025-02-09)
 - Updated baseimage to version 4.7.1, which brings the following changes (since last used version):
   - Added environment variable that allows configuring the web authentication token lifetime.
