@@ -48,6 +48,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Updated baseimage to version 4.7.1, which brings the following changes (since last used version):
   - Added environment variable that allows configuring the web authentication token lifetime.
   - Fixed compatibility issues that were introduced with support of GTK4 applications.
+  - Increased the default service ready timeout from 5 seconds to 10 seconds and allow runtime adjustment via environment variable.
   - Rebuild against latest distro images to get security fixes.
 
 ###v24.12.1 (2024-12-07)
