@@ -38,8 +38,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2025-02-12</Date>
+  <Date>2025-02-23</Date>
   <Changes>
+###v25.02.3 (2025-02-23)
+- Updated HandBrake to version 1.9.2.
+
 ###v25.02.2 (2025-02-12)
 - Updated HandBrake to version 1.9.1.
 - Updated Intel OneVPL GPU Runtime to version 24.4.4.
