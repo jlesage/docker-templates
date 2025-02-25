@@ -38,8 +38,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.crashplan.com</Project>
-  <Date>2025-02-09</Date>
+  <Date>2025-02-24</Date>
   <Changes>
+###v25.02.2 (2025-02-24)
+- Fixed crash that would occur when opening a file/folder selection dialog.
+
 ###v25.02.1 (2025-02-09)
 - Updated baseimage to version 4.7.1, which brings the following changes (since last used version):
   - Added environment variable that allows configuring the web authentication token lifetime.
