@@ -34,8 +34,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/firefox/</Project>
-  <Date>2025-03-19</Date>
+  <Date>2025-04-06</Date>
   <Changes>
+###v25.04.1 (2025-04-06)
+- Updated Firefox to version 136.0.4-r0.
+
 ###v25.03.1 (2025-03-19)
 - Updated Firefox to version 136.0-r0.
 
