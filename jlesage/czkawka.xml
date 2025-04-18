@@ -34,8 +34,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2025-03-11</Date>
+  <Date>2025-04-18</Date>
   <Changes>
+###v25.04.1 (2025-04-18)
+- Updated Czkawka to version 9.0.0.
+- Fixed potential issues with handling of HEIC files.
+
 ###v25.03.1 (2025-03-11)
 - Improved handling of file parsing problems.
 
