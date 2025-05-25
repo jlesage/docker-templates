@@ -42,8 +42,12 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2025-04-09</Date>
+  <Date>2025-05-24</Date>
   <Changes>
+###v25.05.1 (2025-05-24)
+- Automatic disc ripper: Added support for backup mode of DVD video discs.
+- Automatic disc ripper: Ignore the configured profile in backup mode.
+
 ###v25.04.1 (2025-04-09)
 - Updated MakeMKV to version 1.18.1.
 
