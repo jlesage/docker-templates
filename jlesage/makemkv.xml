@@ -610,6 +610,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Mode/>
     </Variable>
     <Variable>
+      <Value>mkv</Value>
+      <Name>AUTO_DISC_RIPPER_DVD_MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>0</Value>
       <Name>AUTO_DISC_RIPPER_FORCE_UNIQUE_OUTPUT_DIR</Name>
       <Mode/>
@@ -650,7 +655,8 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Config Name="Automatic Disc Ripper: Parallel" Target="AUTO_DISC_RIPPER_PARALLEL_RIP" Default="0" Mode="" Description="When set to 1, discs from all available optical drives are ripped in parallel. Else, each disc from optical drives is ripped one at time." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Interval" Target="AUTO_DISC_RIPPER_INTERVAL" Default="5" Mode="" Description="Interval, in seconds, the automatic disc ripper checks for the presence of a DVD/Blu-ray discs." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Minimum Title Length" Target="AUTO_DISC_RIPPER_MIN_TITLE_LENGTH" Default="" Mode="" Description="Titles with a length less than this value are ignored. Length is in seconds. By default, no value is set, meaning that value from MakeMKV's configuration file is taken." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Disc Ripper: Blu-ray Rip Mode" Target="AUTO_DISC_RIPPER_BD_MODE" Default="mkv" Mode="" Description="Rip mode of Blu-ray discs. &quot;mkv&quot; is the default mode, where a set of MKV files are produced. When set to &quot;backup&quot;, a copy of the (decrypted) file system is created instead. [b]NOTE[/b]: This applies to Blu-ray discs only. For DVD, MKV files are always produced." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Disc Ripper: Blu-ray Rip Mode" Target="AUTO_DISC_RIPPER_BD_MODE" Default="mkv" Mode="" Description="Rip mode of Blu-ray discs. &quot;mkv&quot; is the default mode, where a set of MKV files are produced. When set to &quot;backup&quot;, a copy of the (decrypted) file system of the disc is created instead." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Disc Ripper: DVD Rip Mode" Target="AUTO_DISC_RIPPER_DVD_MODE" Default="mkv" Mode="" Description="Rip mode of DVD discs. &quot;mkv&quot; is the default mode, where a set of MKV files are produced. When set to &quot;backup&quot;, a copy of the (decrypted) file system of the disc is instead created as an ISO file." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Force Unique Output Directory" Target="AUTO_DISC_RIPPER_FORCE_UNIQUE_OUTPUT_DIR" Default="0" Mode="" Description="When set to 0, files are written to &quot;/output/DISC_LABEL/&quot;, where &quot;DISC_LABEL&quot; is the label/name of the disc. If this directory exists, then files are written to &quot;/output/DISC_LABEL-XXXXXX&quot;, where &quot;XXXXXX&quot; are random readable characters. When set to 1, the &quot;/output/DISC_LABEL-XXXXXX&quot; pattern is always used." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Automatic Disc Ripper: Disable Progress in GUI" Target="AUTO_DISC_RIPPER_NO_GUI_PROGRESS" Default="0" Mode="" Description="When set to 1, progress of discs ripped by the automatic disc ripper is not shown in the MakeMKV GUI." Type="Variable" Display="always" Required="False" Mask="False"/>
   <!-- Port Mappings -->
