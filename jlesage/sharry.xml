@@ -12,7 +12,7 @@
   <Overview>
 Sharry allows to share files with others in a simple way. It is a self-hosted web application. The basic concept is: upload files and get a url back that can then be shared.
 
-Being based on Alpine Linux, size of this container is very small.
+The container is built against Alpine Linux to provide an efficient image in terms of size and resource usage.
 
 For a complete documentation of this container, see https://github.com/jlesage/docker-sharry#readme
   </Overview>
@@ -24,9 +24,9 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Description>
 Sharry allows to share files with others in a simple way. It is a self-hosted web application. The basic concept is: upload files and get a url back that can then be shared.
 
-Being based on Alpine Linux, size of this container is very small.
+The container is built against Alpine Linux to provide an efficient image in terms of size and resource usage.
 
-For a complete documentation of this container, see https://github.com/jlesage/docker-sharry/blob/master/README.md.
+For a complete documentation, visit https://github.com/jlesage/docker-sharry/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://eikek.github.io/sharry/</Project>
@@ -104,15 +104,15 @@ For a complete documentation of this container, see https://github.com/jlesage/d
     </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/sharry" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/sharry" Mode="rw" Description="This location stores the application's configuration, state, logs, and any files requiring persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="Umask" Target="UMASK" Default="0000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="0" Mode="" Description="Priority at which the application should run. A niceness value of -20 is the highest priority and 19 is the lowest priority. NOTE: Setting a negative value requires additional permissions. Thus, &quot;--cap-add=SYS_NICE&quot; must be added to Extra Parameters (shown when Advanced View is enabled)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Umask" Target="UMASK" Default="0000" Mode="" Description="Mask controlling permissions for newly created files and folders, specified in octal notation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="0" Mode="" Description="Priority at which the application should run. A niceness value of -20 is the highest, 19 is the lowest and 0 the default. NOTE: Setting a negative value requires additional permissions. Thus, &quot;--cap-add=SYS_NICE&quot; must be added to Extra Parameters (shown when Advanced View is enabled)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="External URL" Target="SHARRY_BASE_URL" Default="http://localhost:9090" Mode="" Description="The external URL where Sharry can be reached (e.g. &quot;https://sharry.example.com&quot;). This is used to create absolute URLs and to configure the authentication cookie. These URLs are sent to the client, so they must resolve back to the Sharry server. If the default value is used, the external URL is obtained dynamically by inspecting HTTP headers of the request." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Admin Account Username" Target="SHARRY_BACKEND_AUTH_FIXED_USER" Default="admin" Mode="" Description="Username of the built-in administrator account. Setting this variable to an empty value disables this account." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Admin Account Password" Target="SHARRY_BACKEND_AUTH_FIXED_PASSWORD" Default="changeme" Mode="" Description="Password of the built-in administrator account. Setting this variable to an empty value disables this account." Type="Variable" Display="always" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="Web UI Port" Target="9090" Default="7828" Mode="tcp" Description="Port used to access the web interface of the application.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="always" Required="True" Mask="False"/>
+  <Config Name="Web UI Port" Target="9090" Default="7828" Mode="tcp" Description="Port used to access the web interface of the application. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="always" Required="True" Mask="False"/>
 </Container>

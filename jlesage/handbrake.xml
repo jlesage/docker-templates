@@ -12,9 +12,9 @@
   <Overview>
 HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
 
-The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+The graphical user interface (GUI) of the application can be accessed through a modern web browser, requiring no installation or configuration on the client side, or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small.
+The container is built against Alpine Linux to provide an efficient image in terms of size and resource usage.
 
 A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.
 
@@ -28,18 +28,33 @@ For a complete documentation of this container, see https://github.com/jlesage/d
   <Description>
 HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
 
-The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.
+The graphical user interface (GUI) of the application can be accessed through a modern web browser, requiring no installation or configuration on the client side, or via any VNC client.
 
-Also, being based on Alpine Linux, size of this container is very small.
+The container is built against Alpine Linux to provide an efficient image in terms of size and resource usage.
 
 A fully automated mode is also available: drop files into a watch folder and let HandBrake process them without any user interaction.
 
-For a complete documentation of this container, see https://github.com/jlesage/docker-handbrake/blob/master/README.md.
+For a complete documentation, visit https://github.com/jlesage/docker-handbrake/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2025-02-23</Date>
+  <Date>2025-06-23</Date>
   <Changes>
+###v25.06.1 (2025-06-23)
+- Automatic Video Converter: Disabled QSV decoding by default (like the GUI) to prevent potential crashes.
+- Automatic Video Converter: Added the ability to customize the trash directory location.
+- Automatic Video Converter: Added the ability to customize the watch folder directory location.
+- Automatic Video Converter: Added hook that can be used to provide custom conversion arguments to HandBrake.
+- Updated gmmlib to version 22.7.2.
+- Updated Intel Media Driver to version 25.1.4.
+- Updated Intel OneVPL GPU runtime to version 25.1.4.
+- Updated baseimage to version 4.8.0, which brings the following changes:
+  - Added automatic reconnect support of the web interface.
+  - Added web file manager.
+  - Updated noVNC to version 1.6.0.
+  - Updated web UI components (Bootstrap).
+  - Do not ask VNC password when accessing the web interface and web authentication is enabled.
+
 ###v25.02.3 (2025-02-23)
 - Updated HandBrake to version 1.9.2.
 
@@ -269,7 +284,7 @@ For a complete documentation of this container, see https://github.com/jlesage/d
 - Upgraded Intel VAAPI driver to version 2.4.0.
 
 ###v1.19.0 (2019-12-08)
-- Added the ability to set a list of file extensions to be considered as non-video files.  This fixes an issue where the automatic video converter would successfully convert non-video files, like images.
+- Added the ability to set a list of file extensions to be considered as non-video files. This fixes an issue where the automatic video converter would successfully convert non-video files, like images.
 - Added the ability to provide custom arguments to HandBrake when it is invoked by the automatic video converter.
 
 ###v1.18.0 (2019-11-11)
@@ -670,6 +685,21 @@ For a complete documentation of this container, see https://github.com/jlesage/d
     </Variable>
     <Variable>
       <Value>0</Value>
+      <Name>WEB_FILE_MANAGER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>AUTO</Value>
+      <Name>WEB_FILE_MANAGER_ALLOWED_PATHS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WEB_FILE_MANAGER_DENIED_PATHS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
       <Name>WEB_AUTHENTICATION</Name>
       <Mode/>
     </Variable>
@@ -759,6 +789,11 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Mode/>
     </Variable>
     <Variable>
+      <Value>AUTO</Value>
+      <Name>AUTOMATED_CONVERSION_WATCH_DIR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>/output</Value>
       <Name>AUTOMATED_CONVERSION_OUTPUT_DIR</Name>
       <Mode/>
@@ -809,62 +844,66 @@ For a complete documentation of this container, see https://github.com/jlesage/d
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
-      <Name>AUTOMATED_CONVERSION_INSTALL_PKGS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
       <Value>0</Value>
       <Name>AUTOMATED_CONVERSION_USE_TRASH</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>/trash</Value>
+      <Name>AUTOMATED_CONVERSION_TRASH_DIR</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This is where the application stores its configuration, states, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/handbrake" Mode="rw" Description="This location stores the application's configuration, state, logs, and any files requiring persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="Storage" Target="/storage" Default="/mnt/user" Mode="ro" Description="This location contains files from your host that need to be accessible to the application." Type="Path" Display="always-hide" Required="True" Mask="False"/>
-  <Config Name="Watch Directory" Target="/watch" Default="" Mode="rw" Description="This is the watch folder of the automatic video converter.  Any video copied into this folder will be automatically converted by HandBrake." Type="Path" Display="always" Required="False" Mask="False"/>
-  <Config Name="Output Directory" Target="/output" Default="" Mode="rw" Description="This is the default output folder for converted videos.  Also used by the automatic video converter." Type="Path" Display="always" Required="True" Mask="False"/>
-  <Config Name="Trash Directory" Target="/trash" Default="" Mode="rw" Description="When trash usage is enabled, this is where the automatic video converter moves converted files instead of deleting them." Type="Path" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Watch Directory" Target="/watch" Default="" Mode="rw" Description="The location for videos to be automatically converted." Type="Path" Display="always" Required="False" Mask="False"/>
+  <Config Name="Output Directory" Target="/output" Default="" Mode="rw" Description="The destination for converted video files." Type="Path" Display="always" Required="True" Mask="False"/>
+  <Config Name="Trash Directory" Target="/trash" Default="" Mode="rw" Description="When trash usage is enabled, converted source files are moved here instead of being deleted." Type="Path" Display="advanced" Required="False" Mask="False"/>
   <!-- Variable Mappings -->
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="Umask" Target="UMASK" Default="0000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="0" Mode="" Description="Priority at which the application should run. A niceness value of -20 is the highest priority and 19 is the lowest priority. NOTE: Setting a negative value requires additional permissions. Thus, &quot;--cap-add=SYS_NICE&quot; must be added to Extra Parameters (shown when Advanced View is enabled)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Umask" Target="UMASK" Default="0000" Mode="" Description="Mask controlling permissions for newly created files and folders, specified in octal notation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Niceness (priority)" Target="APP_NICENESS" Default="0" Mode="" Description="Priority at which the application should run. A niceness value of -20 is the highest, 19 is the lowest and 0 the default. NOTE: Setting a negative value requires additional permissions. Thus, &quot;--cap-add=SYS_NICE&quot; must be added to Extra Parameters (shown when Advanced View is enabled)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1920" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="1080" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, dark mode is enabled for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to &quot;1&quot;, audio support is enabled, meaning that any audio produced by the application is played through the browser. Note that audio is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to &quot;1&quot;, the application's GUI is protected via a login page when accessed via a web browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="The lifetime of a token, in hours. A token is attributed to the user after a successful login. As long as the token is valid, user can access the application's GUI without having to log in again. Once the token expires, the login page is prompted again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username to configure for the web authentication. This is a quick and easy way to configure credentials for a single user. To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Authentication Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="Optional password to configure for the web authentication. This is a quick and easy way to configure credentials for a single user. To configure credentials in a more secure way, or to add more users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="Whether or not an encrypted connection should be used to access the application's GUI. Set to &quot;1&quot; to encrypt the connection. NOTE: When enabling the secure connection, security parameters needs to be generated. This one-time operation is done during container startup. Depending on your system, this could take a few minutes. GUI of the application won't be available until the operation completes." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used to perform the secure VNC connection. Possible values are &quot;SSL&quot; or &quot;TLS&quot;." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system verifies if web or VNC certificates have changed. When a change is detected, the affected services are automatically restarted. A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the UI of the application. This port is used internally by the container and it is usually not required to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the UI of the application. This port is used internally by the container and it is usually not required to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="HandBrake GUI State" Target="HANDBRAKE_GUI" Default="1" Mode="" Description="Setting this to 1 enables the HandBrake GUI, 0 disables it." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="HandBrake GUI State" Target="HANDBRAKE_GUI_QUEUE_STARTUP_ACTION" Default="NONE" Mode="" Description="Action to be taken on the queue of HandBrake (GUI) when it starts. When set to &quot;PROCESS&quot;, HandBrake automatically starts encoding elements present in the queue. When set to &quot;CLEAR&quot;, the content of the queue is cleared. With any other value, no action is taken on the queue." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: State" Target="AUTOMATED_CONVERSION" Default="1" Mode="" Description="Setting this to 1 enables the automatic video converter, 0 disables it." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="General/Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter.  Identification of the preset must follow the format 'CATEGORY/PRESET NAME'.  Name of all available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files.  This is typically the video filename extension." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="Set to 0 to remove successfully converted videos from the watch folder, 1 to keep them." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Video File Extensions" Target="AUTOMATED_CONVERSION_VIDEO_FILE_EXTENSIONS" Default="" Mode="" Description="Space-separated list of file extensions to be considered as video files.  By default, this list is empty, meaning that the automatic video converter will let HandBrake automatically detects if a file, no matter its extension, is a video or not (note that extensions defined by the Non-Video File Extensions list are always considered as non-video files).  Normally, this variable doesn't need to be set. Usage of this variable is useful when only specific video files need to converted." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Non-Video File Action" Target="AUTOMATED_CONVERSION_NON_VIDEO_FILE_ACTION" Default="ignore" Mode="" Description="Set to &quot;ignore&quot; to ignore non-video files from the watch folder, or set to &quot;copy&quot; to copy them as-is to the output folder." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Non-Video File Extensions" Target="AUTOMATED_CONVERSION_NON_VIDEO_FILE_EXTENSIONS" Default="jpg jpeg bmp png gif txt nfo" Mode="" Description="Space-separated list of file extensions to be considered as not being videos.  Most non-video files are properly rejected by HandBrake. However, some files, like images, are convertible by HandBrake even if they are not video files." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Output directory" Target="AUTOMATED_CONVERSION_OUTPUT_DIR" Default="/output" Mode="" Description="Root directory, inside the container, where converted videos should be written." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Output Subdirectory" Target="AUTOMATED_CONVERSION_OUTPUT_SUBDIR" Default="" Mode="" Description="Subdirectory of the output folder into which converted videos should be written.  Leave value empty to save converted videos directly into &quot;/output/&quot;.  Use the special value &quot;SAME_AS_SRC&quot; to use the same subfolder as the source.  For example, if the video source file is &quot;/watch/Movies/mymovie.mkv&quot;, the converted video will be written to &quot;/output/Movies/&quot;.  Any other value is considered as the subfolder name.  For example, setting the value &quot;Home/Movies&quot; will make converted videos to be written to &quot;/output/Home/Movies&quot;." Type="Variable" Display="always" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Overwrite Destination" Target="AUTOMATED_CONVERSION_OVERWRITE_OUTPUT" Default="0" Mode="" Description="Setting this to 1 allows the final destination file to be overwritten if it already exists." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Source File Stable Time" Target="AUTOMATED_CONVERSION_SOURCE_STABLE_TIME" Default="5" Mode="" Description="Time (in seconds) during which properties (e.g. size, time, etc) of a video file in the watch folder need to remain the same.  This is to avoid processing a file that is being copied." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Minimum Title Duration" Target="AUTOMATED_CONVERSION_SOURCE_MIN_DURATION" Default="10" Mode="" Description="Minimum title duration (in seconds).  Shorter titles will be ignored. This applies only to video disc sources (ISO file, VIDEO_TS folder or BDMV folder)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Main Title Detection" Target="AUTOMATED_CONVERSION_SOURCE_MAIN_TITLE_DETECTION" Default="0" Mode="" Description="Setting this to 1 enables HandBrake main feature title detection to try to guess and select the main title." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to &quot;1&quot;, enables dark mode for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to &quot;1&quot;, enables audio support, allowing audio produced by the application to play through the browser. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web File Manager" Target="WEB_FILE_MANAGER" Default="0" Mode="" Description="When set to &quot;1&quot;, enables the web file manager, allowing interaction with files inside the container through a web browser, supporting operations like renaming, deleting, uploading, and downloading. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web File Manager Allowed Paths" Target="WEB_FILE_MANAGER_ALLOWED_PATHS" Default="AUTO" Mode="" Description="Comma-separated list of paths within the container that the file manager can access. By default, the container's entire filesystem is not accessible, and this variable specifies allowed paths. If set to &quot;AUTO&quot;, commonly used folders and those mapped to the container are automatically allowed. The value &quot;ALL&quot; allows access to all paths (no restrictions)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web File Manager Denied Paths" Target="WEB_FILE_MANAGER_DENIED_PATHS" Default="None" Mode="" Description="Comma-separated list of paths within the container that the file manager cannot access. A denied path takes precedence over an allowed path." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to &quot;1&quot;, protects the application's GUI with a login page when accessed via a web browser. Access is granted only with valid credentials. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="Lifetime of a token, in hours. A token is assigned to the user after successful login. As long as the token is valid, the user can access the application's GUI without logging in again. Once the token expires, the login page is displayed again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username for web authentication. Provides a quick and easy way to configure credentials for a single user. For more secure configuration or multiple users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="Optional password for web authentication. Provides a quick and easy way to configure credentials for a single user. For more secure configuration or multiple users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="When set to &quot;1&quot;, uses an encrypted connection to access the application's GUI (via web browser or VNC client)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used for encrpyted VNC connection. Possible values are &quot;SSL&quot; or &quot;TLS&quot;." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system checks if web or VNC certificates have changed. When a change is detected, affected services are automatically restarted. A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the application's GUI. This port internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="HandBrake GUI State" Target="HANDBRAKE_GUI" Default="1" Mode="" Description="Setting this to &quot;1&quot; enables the HandBrake GUI, &quot;0&quot; disables it." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="HandBrake GUI State" Target="HANDBRAKE_GUI_QUEUE_STARTUP_ACTION" Default="NONE" Mode="" Description="Action to be taken on the HandBrake GUI queue at startup. When set to &quot;PROCESS&quot;, HandBrake automatically starts encoding items in the queue. When set to &quot;CLEAR&quot;, the queue is cleared. Any other value results in no action on the queue." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: State" Target="AUTOMATED_CONVERSION" Default="1" Mode="" Description="Setting this to &quot;1&quot; enables the automatic video converter, &quot;0&quot; disables it." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Preset" Target="AUTOMATED_CONVERSION_PRESET" Default="General/Very Fast 1080p30" Mode="" Description="Preset used by the automatic video converter. The preset must be identified in the format 'CATEGORY/PRESET NAME'. Available presets can be seen via the HandBrake GUI." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Format" Target="AUTOMATED_CONVERSION_FORMAT" Default="mp4" Mode="" Description="Video container format used by the automatic video converter for output files, typically the video filename extension." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Keep Source Files" Target="AUTOMATED_CONVERSION_KEEP_SOURCE" Default="1" Mode="" Description="When set to &quot;0&quot;, a successfully converted video is removed from the watch folder." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Video File Extensions" Target="AUTOMATED_CONVERSION_VIDEO_FILE_EXTENSIONS" Default="" Mode="" Description="Space-separated list of file extensions considered as video files. By default, this list is empty, allowing HandBrake to automatically detect if a file is a video, regardless of its extension (except for extensions defined by the Non-Video File Extensions list, which are always considered non-video). This variable is typically unnecessary but useful when only specific video files need conversion." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Non-Video File Action" Target="AUTOMATED_CONVERSION_NON_VIDEO_FILE_ACTION" Default="ignore" Mode="" Description="When set to &quot;ignore&quot;, non-video files in the watch folder are ignored. If set to &quot;copy&quot;, non-video files are copied as-is to the output folder." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Non-Video File Extensions" Target="AUTOMATED_CONVERSION_NON_VIDEO_FILE_EXTENSIONS" Default="jpg jpeg bmp png gif txt nfo" Mode="" Description="Space-separated list of file extensions considered non-video. Most non-video files are properly rejected by HandBrake, but some files, like images, may be convertible despite not being videos." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Watch Directory" Target="AUTOMATED_CONVERSION_WATCH_DIR" Default="AUTO" Mode="" Description="Path to the watch directory within the container. When set to &quot;AUTO&quot; (the default), the path is set to &quot;/watch&quot; for the first watch directory and &quot;/watchX&quot; for additional ones, where &quot;X&quot; is the index (e.g., &quot;2&quot; for the second)." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Output Directory" Target="AUTOMATED_CONVERSION_OUTPUT_DIR" Default="/output" Mode="" Description="Root directory inside the container where converted videos are written." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Output Subdirectory" Target="AUTOMATED_CONVERSION_OUTPUT_SUBDIR" Default="" Mode="" Description="Subdirectory of the output folder where converted videos are written. By default, videos are saved directly to &quot;/output/&quot;. If set to &quot;Home/Movies&quot;, videos are written to &quot;/output/Home/Movies&quot;. Use &quot;SAME_AS_SRC&quot; to match the source subfolder. For example, if the source is &quot;/watch/Movies/MyMovie/MyMovie.mkv&quot;, the output is written to &quot;/output/Movies/MyMovie/&quot;." Type="Variable" Display="always" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Overwrite Destination" Target="AUTOMATED_CONVERSION_OVERWRITE_OUTPUT" Default="0" Mode="" Description="When set to &quot;1&quot;, allows overwriting an existing destination file." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Source File Stable Time" Target="AUTOMATED_CONVERSION_SOURCE_STABLE_TIME" Default="5" Mode="" Description="Time (in seconds) during which properties (e.g., size, time) of a video file in the watch folder must remain unchanged to avoid processing a file being copied." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Minimum Title Duration" Target="AUTOMATED_CONVERSION_SOURCE_MIN_DURATION" Default="10" Mode="" Description="Minimum title duration (in seconds). Shorter titles are ignored. Applies only to video disc sources (ISO files, &quot;VIDEO_TS&quot; folders, or &quot;BDMV&quot; folders)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Main Title Detection" Target="AUTOMATED_CONVERSION_SOURCE_MAIN_TITLE_DETECTION" Default="0" Mode="" Description="When set to &quot;1&quot;, enables HandBrake's main feature title detection to guess and select the main title. Applies only to video disc sources (ISO files, &quot;VIDEO_TS&quot; folders, or &quot;BDMV&quot; folders)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automatic Video Converter: Check Interval" Target="AUTOMATED_CONVERSION_CHECK_INTERVAL" Default="5" Mode="" Description="Interval (in seconds) at which the automatic video converter checks for new files." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Automatic Video Converter: Number of Watch Folders" Target="AUTOMATED_CONVERSION_MAX_WATCH_FOLDERS" Default="5" Mode="" Description="Maximum number of watch folders handled by the automatic video converter." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Disable Progress in GUI" Target="AUTOMATED_CONVERSION_NO_GUI_PROGRESS" Default="0" Mode="" Description="Set to 1 to disable display of the video conversion progress in HandBrake GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Custom HandBrake Arguments" Target="AUTOMATED_CONVERSION_HANDBRAKE_CUSTOM_ARGS" Default="" Mode="" Description="Custom arguments to pass to HandBrake when performing a conversion." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Install Packages" Target="AUTOMATED_CONVERSION_INSTALL_PKGS" Default="" Mode="" Description="Space-separated list of Alpine Linux packages to install.  This is useful when the automatic video converter's hooks require tools not available in the container image.  See https://pkgs.alpinelinux.org for the list of available Alpine Linux packages." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Automatic Video Converter: Use Trash Directory" Target="AUTOMATED_CONVERSION_USE_TRASH" Default="0" Mode="" Description="Set to 1 to enable usage of the trash directory. So when the automatic video converter is configured to not keep sources, it will move files to the trash directory (/trash inside the container) instead of deleting them." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Disable Progress in GUI" Target="AUTOMATED_CONVERSION_NO_GUI_PROGRESS" Default="0" Mode="" Description="When set to &quot;1&quot;, progress of videos converted by the automatic video converter is not shown in the HandBrake GUI." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Custom HandBrake Arguments" Target="AUTOMATED_CONVERSION_HANDBRAKE_CUSTOM_ARGS" Default="" Mode="" Description="Custom arguments to pass to HandBrake during conversion." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Use Trash Directory" Target="AUTOMATED_CONVERSION_USE_TRASH" Default="0" Mode="" Description="When set to &quot;1&quot;, the automatic video converter uses the trash directory. This applies only when the converter is configured not to keep source files. In that case, they will be moved to the trash directory (&quot;/trash&quot; inside the container by default) instead of being permanently deleted." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Automatic Video Converter: Trash Directory" Target="AUTOMATED_CONVERSION_TRASH_DIR" Default="/trash" Mode="" Description="Location of the trash directory inside the container." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7803" Mode="tcp" Description="Port to access the application's GUI via the web interface.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
-  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7903" Mode="tcp" Description="Port to access the application's GUI via VNC protocol. Optional if no VNC client is used.  NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
+  <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7803" Mode="tcp" Description="Port to access the application's GUI via the web interface. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
+  <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7903" Mode="tcp" Description="Port to access the application's GUI via VNC protocol. Optional if no VNC client is used. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
 </Container>
