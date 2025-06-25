@@ -35,8 +35,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2025-03-19</Date>
+  <Date>2025-06-25</Date>
   <Changes>
+###v25.06.1 (2025-06-25)
+- Updated baseimage to version 3.7.1.
+
 ###v25.03.1 (2025-03-19)
 - Fixed creation of streams.
 

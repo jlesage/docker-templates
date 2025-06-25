@@ -30,8 +30,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-sharry/blo
   </Description>
   <Beta>False</Beta>
   <Project>https://eikek.github.io/sharry/</Project>
-  <Date>2025-02-09</Date>
+  <Date>2025-06-25</Date>
   <Changes>
+###v25.06.1 (2025-06-25)
+- Updated Sharry to version 1.15.0.
+- Updated baseimage to version 3.7.1.
+
 ###v25.02.1 (2025-02-09)
 - Updated baseimage to version 3.6.5, which brings the following changes:
   - Increased the default service ready timeout from 5 seconds to 10 seconds and allow runtime adjustment via environment variable.
