@@ -38,8 +38,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-handbrake/
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2025-06-23</Date>
+  <Date>2025-06-25</Date>
   <Changes>
+###v25.06.2 (2025-06-25)
+- Updated baseimage to version 4.8.1, which brings the following changes:
+  - Fixed crash with some binaries on systems using old kernel.
+
 ###v25.06.1 (2025-06-23)
 - Automatic Video Converter: Disabled QSV decoding by default (like the GUI) to prevent potential crashes.
 - Automatic Video Converter: Added the ability to customize the trash directory location.
