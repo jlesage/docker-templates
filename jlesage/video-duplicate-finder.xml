@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-video-dupl
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/0x90d/videoduplicatefinder</Project>
-  <Date>2025-06-24</Date>
+  <Date>2025-06-25</Date>
   <Changes>
+###v25.06.2 (2025-06-25)
+- Updated baseimage to version 4.8.1, which brings the following changes:
+  - Fixed crash with some binaries on systems using old kernel.
+
 ###v25.06.1 (2025-06-24)
 - Updated baseimage to version 4.8.0, which brings the following changes:
   - Added automatic reconnect support of the web interface.
