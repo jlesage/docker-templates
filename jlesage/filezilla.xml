@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-filezilla/
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org</Project>
-  <Date>2025-06-25</Date>
+  <Date>2025-07-05</Date>
   <Changes>
+###v25.07.1 (2025-07-05)
+- Updated baseimage to version 4.8.2, which brings the following changes:
+  - Fixed automatic reconnect of the web interface when web authentication is enabled.
+  - Fixed some resources that could not be accessed behind a reverse proxy based on URL path.
+
 ###v25.06.2 (2025-06-25)
 - Updated baseimage to version 4.8.1, which brings the following changes:
   - Fixed crash with some binaries on systems using old kernel.
