@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-mkvcleaver
   </Description>
   <Beta>False</Beta>
   <Project>https://blogs.sapib.ca/apps/mkvcleaver/</Project>
-  <Date>2025-07-05</Date>
+  <Date>2025-07-27</Date>
   <Changes>
+###v25.07.2 (2025-07-27)
+- Updated baseimage to version 4.9.0.
+
 ###v25.07.1 (2025-07-05)
 - Fixed `UMASK` value not being applied.
 - Updated baseimage to version 4.8.2, which brings the following changes:
