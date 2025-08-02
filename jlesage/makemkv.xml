@@ -42,8 +42,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-makemkv/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2025-07-27</Date>
+  <Date>2025-08-02</Date>
   <Changes>
+###v25.08.1 (2025-08-02)
+- Fixed an issue where the wrong configuration file was used when checking for available drives, causing the registered key to be ignored.
+- The container will no longer fail to start if MakeMKV cannot retrieve available drives. Instead, errors are logged and the automatic disc ripper is disabled.
+
 ###v25.07.2 (2025-07-27)
 - Take ownership of the output directory only if it is not writable.
 - Updated baseimage to version 4.9.0.
