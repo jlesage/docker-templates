@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-czkawka/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2025-07-24</Date>
+  <Date>2025-08-24</Date>
   <Changes>
+###v25.08.1 (2025-08-24)
+- Updated Czkawka to version 10.0.0.
+
 ###v25.07.2 (2025-07-24)
 - Fixed opening of media files in Czkawka.
 - Updated baseimage to version 4.9.0.
