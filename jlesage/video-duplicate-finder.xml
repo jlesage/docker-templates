@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-video-dupl
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/0x90d/videoduplicatefinder</Project>
-  <Date>2025-07-28</Date>
+  <Date>2025-09-07</Date>
   <Changes>
+###v25.09.1 (2025-09-07)
+- Updated Video Duplicate Finder to version 3.0.x-5313fef.
+- Updated FFmpeg to version 7.1.1.
+
 ###v25.07.2 (2025-07-28)
 - Updated baseimage to version 4.9.0.
 
