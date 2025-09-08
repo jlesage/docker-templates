@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-CA/firefox/enterprise/</Project>
-  <Date>2025-07-26</Date>
+  <Date>2025-09-07</Date>
   <Changes>
+###v25.09.1 (2025-09-07)
+- Updated Firefox to version 128.14.0-r0.
+- Added support for multiple URLs defined by `FF_OPEN_URL`.
+
 ###v25.07.2 (2025-07-26)
 - Updated baseimage to version 4.9.0.
 
@@ -286,7 +290,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system checks if web or VNC certificates have changed. When a change is detected, affected services are automatically restarted. A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Open URL" Target="FF_OPEN_URL" Default="" Mode="" Description="The URL to open when Firefox ESR starts." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Open URL" Target="FF_OPEN_URL" Default="" Mode="" Description="The URL to open when Firefox ESR starts. Multiple URLs can be opened by separating them with the pipe character ('|')." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Kiosk Mode" Target="FF_KIOSK" Default="0" Mode="" Description="Set to 1 to enable kiosk mode.  This mode launches Firefox in a very restricted and limited mode best suitable for public areas or customer-facing displays." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Custom Arguments" Target="FF_CUSTOM_ARGS" Default="0" Mode="" Description="Custom argument(s) to pass when launching Firefox ESR." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
