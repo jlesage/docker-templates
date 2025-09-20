@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-cloudberry
   </Description>
   <Beta>False</Beta>
   <Project>https://www.msp360.com/backup/</Project>
-  <Date>2025-07-24</Date>
+  <Date>2025-09-20</Date>
   <Changes>
+###v25.09.1 (2025-09-20)
+- Updated MSP360 Backup to version 4.4.2.221.
+
 ###v25.07.2 (2025-07-24)
 - Updated baseimage to version 4.9.0.
 
@@ -165,7 +168,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-cloudberry
 - More time is allowed to the backup service to start.
 
 ###v22.12.3 (2022-12-11)
-- Implemented workaround for issue seen with Synology devices where container would not start after an image update.  The problem is caused by Synology explicitly setting all environment variables and keeping values from the old version.
+- Implemented workaround for issue seen with Synology devices where container would not start after an image update. The problem is caused by Synology explicitly setting all environment variables and keeping values from the old version.
 
 ###v22.12.2 (2022-12-09)
 - Fixed CloudBerry Backup version number stored into the image.
