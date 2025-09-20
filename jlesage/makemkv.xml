@@ -42,8 +42,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-makemkv/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2025-08-02</Date>
+  <Date>2025-09-15</Date>
   <Changes>
+###v25.09.1 (2025-09-15)
+- Updated FFmpeg to version 7.1.1.
+
 ###v25.08.1 (2025-08-02)
 - Fixed an issue where the wrong configuration file was used when checking for available drives, causing the registered key to be ignored.
 - The container will no longer fail to start if MakeMKV cannot retrieve available drives. Instead, errors are logged and the automatic disc ripper is disabled.
