@@ -38,8 +38,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-handbrake/
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2025-09-06</Date>
+  <Date>2025-09-27</Date>
   <Changes>
+###v25.09.2 (2025-09-27)
+- When possible, create a lock in the watch folder before starting conversion. This allows multiple containers to work on the same watch folder.
+
 ###v25.09.1 (2025-09-06)
 - Updated HandBrake to version 1.10.2.
 
