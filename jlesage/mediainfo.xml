@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-mediainfo/
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2025-07-31</Date>
+  <Date>2025-10-01</Date>
   <Changes>
+###v25.10.1 (2025-10-01)
+- Updated MediaInfo to version 25.09.
+
 ###v25.07.3 (2025-07-31)
 - Updated MediaInfo to version 25.07.
 
