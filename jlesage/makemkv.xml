@@ -42,8 +42,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-makemkv/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2025-09-15</Date>
+  <Date>2025-10-02</Date>
   <Changes>
+###v25.10.1 (2025-10-02)
+- Updated MakeMKV to version 1.18.2.
+
 ###v25.09.1 (2025-09-15)
 - Updated FFmpeg to version 7.1.1.
 
