@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-xnview-mp/
   </Description>
   <Beta>False</Beta>
   <Project>https://www.xnview.com/en/xnview/</Project>
-  <Date>2025-09-13</Date>
+  <Date>2025-10-06</Date>
   <Changes>
+###v25.10.1 (2025-10-06)
+- Updated XnView MP to version 1.9.4.
+
 ###v25.09.1 (2025-09-13)
 - Updated XnView MP to version 1.9.3.
 
