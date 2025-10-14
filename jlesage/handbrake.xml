@@ -38,8 +38,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-handbrake/
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2025-09-27</Date>
+  <Date>2025-10-13</Date>
   <Changes>
+###v25.10.1 (2025-10-13)
+- Automatic Video Converter: Lock the video file before checking its stability.
+- Automatic Video Converter: Enhanced cleanup performed during container shutdown.
+
 ###v25.09.2 (2025-09-27)
 - When possible, create a lock in the watch folder before starting conversion. This allows multiple containers to work on the same watch folder.
 
