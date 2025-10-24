@@ -262,7 +262,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
       <Mode/>
     </Variable>
     <Variable>
-      <Value>0</Value>
+      <Value/>
       <Name>FF_CUSTOM_ARGS</Name>
       <Mode/>
     </Variable>
@@ -292,7 +292,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Open URL" Target="FF_OPEN_URL" Default="" Mode="" Description="The URL to open when Firefox ESR starts. Multiple URLs can be opened by separating them with the pipe character ('|')." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Kiosk Mode" Target="FF_KIOSK" Default="0" Mode="" Description="Set to 1 to enable kiosk mode.  This mode launches Firefox in a very restricted and limited mode best suitable for public areas or customer-facing displays." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Custom Arguments" Target="FF_CUSTOM_ARGS" Default="0" Mode="" Description="Custom argument(s) to pass when launching Firefox ESR." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Custom Arguments" Target="FF_CUSTOM_ARGS" Default="" Mode="" Description="Custom argument(s) to pass when launching Firefox ESR." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7825" Mode="tcp" Description="Port to access the application's GUI via the web interface. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7925" Mode="tcp" Description="Port to access the application's GUI via VNC protocol. Optional if no VNC client is used. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
