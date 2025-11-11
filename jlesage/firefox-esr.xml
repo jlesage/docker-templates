@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-CA/firefox/enterprise/</Project>
-  <Date>2025-09-07</Date>
+  <Date>2025-11-10</Date>
   <Changes>
+###v25.11.1 (2025-11-10)
+- Updated Firefox ESR to version 140.4.0-r0.
+
 ###v25.09.1 (2025-09-07)
 - Updated Firefox to version 128.14.0-r0.
 - Added support for multiple URLs defined by `FF_OPEN_URL`.
