@@ -36,6 +36,9 @@ For a complete documentation, visit https://github.com/jlesage/docker-xnview-mp/
   <Project>https://www.xnview.com/en/xnview/</Project>
   <Date>2025-11-11</Date>
   <Changes>
+###v25.11.2 (2025-11-11)
+- Fixed support of HEIC images.
+
 ###v25.11.1 (2025-11-11)
 - Updated XnView MP to version 1.9.5.
 
