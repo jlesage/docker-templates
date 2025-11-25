@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-freefilesy
   </Description>
   <Beta>False</Beta>
   <Project>https://freefilesync.org</Project>
-  <Date>2025-11-11</Date>
+  <Date>2025-11-25</Date>
   <Changes>
+###v25.11.2 (2025-11-25)
+- Fixed issue where FreeFileSync configuration files would not be saved at the correct location when running as root.
+
 ###v25.11.1 (2025-11-11)
 - Updated FreeFileSync to version 14.5.
 
