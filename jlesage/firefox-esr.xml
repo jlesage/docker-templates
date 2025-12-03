@@ -34,8 +34,17 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-CA/firefox/enterprise/</Project>
-  <Date>2025-11-10</Date>
+  <Date>2025-12-02</Date>
   <Changes>
+###v25.12.1 (2025-12-02)
+- Updated baseimage to version 4.10.1, which brings the following changes:
+  - Added hardware acceleration support for the X server.
+  - Added seamless clipboard synchronization for Chromium-based browsers.
+  - Added web notification service to forward desktop notifications to the browser.
+  - Added the ability to restrict web and VNC connections from localhost only.
+  - Added web server support for TLS 1.3.
+  - Removed web server support of static Diffie-Hellman parameters file (no longer needed in modern TLS configurations and ECDHE).
+
 ###v25.11.1 (2025-11-10)
 - Updated Firefox ESR to version 140.4.0-r0.
 
@@ -211,6 +220,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
     </Variable>
     <Variable>
       <Value>0</Value>
+      <Name>WEB_NOTIFICATION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
       <Name>WEB_AUTHENTICATION</Name>
       <Mode/>
     </Variable>
@@ -284,6 +298,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   <Config Name="Web File Manager" Target="WEB_FILE_MANAGER" Default="0" Mode="" Description="When set to &quot;1&quot;, enables the web file manager, allowing interaction with files inside the container through a web browser, supporting operations like renaming, deleting, uploading, and downloading. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web File Manager Allowed Paths" Target="WEB_FILE_MANAGER_ALLOWED_PATHS" Default="AUTO" Mode="" Description="Comma-separated list of paths within the container that the file manager can access. By default, the container's entire filesystem is not accessible, and this variable specifies allowed paths. If set to &quot;AUTO&quot;, commonly used folders and those mapped to the container are automatically allowed. The value &quot;ALL&quot; allows access to all paths (no restrictions)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web File Manager Denied Paths" Target="WEB_FILE_MANAGER_DENIED_PATHS" Default="None" Mode="" Description="Comma-separated list of paths within the container that the file manager cannot access. A denied path takes precedence over an allowed path." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Desktop Notifications" Target="WEB_NOTIFICATION" Default="0" Mode="" Description="When set to '1', enables the web notification service, allowing the browser to display desktop notifications from the application. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to &quot;1&quot;, protects the application's GUI with a login page when accessed via a web browser. Access is granted only with valid credentials. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="Lifetime of a token, in hours. A token is assigned to the user after successful login. As long as the token is valid, the user can access the application's GUI without logging in again. Once the token expires, the login page is displayed again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username for web authentication. Provides a quick and easy way to configure credentials for a single user. For more secure configuration or multiple users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
