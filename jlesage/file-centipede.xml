@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-file-centi
   </Description>
   <Beta>False</Beta>
   <Project>https://filecxx.com</Project>
-  <Date>2025-12-02</Date>
+  <Date>2025-12-07</Date>
   <Changes>
+###v25.12.3 (2025-12-07)
+- Updated baseimage to version 4.10.3.
+
 ###v25.12.2 (2025-12-02)
 - Updated baseimage to version 4.10.1.
 
