@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/firefox/</Project>
-  <Date>2025-12-02</Date>
+  <Date>2025-12-07</Date>
   <Changes>
+###v25.12.2 (2025-12-07)
+- Updated Firefox to version 145.0-r0.
+- Updated baseimage to version 4.10.3, which brings the following changes:
+  - Fixed desktop notification forwarding service issues related to clients and WebSocket management.
+
 ###v25.12.1 (2025-12-02)
 - Updated baseimage to version 4.10.1, which brings the following changes:
   - Added hardware acceleration support for the X server.
