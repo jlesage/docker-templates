@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-CA/firefox/enterprise/</Project>
-  <Date>2025-12-07</Date>
+  <Date>2025-12-12</Date>
   <Changes>
+###v25.12.3 (2025-12-12)
+- Use Firefox native notification backend when web notification support is disabled.
+
 ###v25.12.2 (2025-12-07)
 - Updated Firefox ESR to version 140.5.0-r0.
 - Updated baseimage to version 4.10.3, which brings the following changes:
