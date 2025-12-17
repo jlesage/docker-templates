@@ -30,8 +30,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-sharry/blo
   </Description>
   <Beta>False</Beta>
   <Project>https://eikek.github.io/sharry/</Project>
-  <Date>2025-06-25</Date>
+  <Date>2025-12-17</Date>
   <Changes>
+###v25.12.1 (2025-12-17)
+- Updated baseimage to version 3.10.2
+
 ###v25.06.1 (2025-06-25)
 - Updated Sharry to version 1.15.0.
 - Updated baseimage to version 3.7.1.
