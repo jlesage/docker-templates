@@ -38,8 +38,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-handbrake/
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2025-12-07</Date>
+  <Date>2025-12-18</Date>
   <Changes>
+###v25.12.2 (2025-12-18)
+- Automatic Video Converter: Improved detection of conversion failures.
+
 ###v25.12.1 (2025-12-07)
 - Updated Intel Media Driver to version 25.3.4.
 - Updated Intel OneVPL GPU Runtime to version 25.3.4.
