@@ -34,8 +34,15 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.chromium.org/Home/</Project>
-  <Date>2025-12-12</Date>
+  <Date>2025-12-20</Date>
   <Changes>
+###v25.12.2 (2025-12-20)
+- Updated Chromium to version 143.0.7499.40-r0.
+- Updated baseimage to version 4.10.4, which brings the following changes:
+  - Web audio is now automatically re-enabled upon first user interaction.
+  - Improved robustness of GPU devices detection.
+  - Command key on Mac devices has been remapped to better match Linux application interactions.
+
 ###v25.12.1 (2025-12-12)
 - Initial release.
 
