@@ -33,9 +33,15 @@ The container is built against Alpine Linux to provide an efficient image in ter
 For a complete documentation, visit https://github.com/jlesage/docker-jdownloader-2/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
-  <Project>http://jdownloader.org</Project>
-  <Date>2025-12-07</Date>
+  <Project>https://jdownloader.org</Project>
+  <Date>2025-12-20</Date>
   <Changes>
+###v25.12.2 (2025-12-20)
+- Updated baseimage to version 4.10.4, which brings the following changes:
+  - Web audio is now automatically re-enabled upon first user interaction.
+  - Improved robustness of GPU devices detection.
+  - Command key on Mac devices has been remapped to better match Linux application interactions.
+
 ###v25.12.1 (2025-12-07)
 - Updated baseimage to version 4.10.3, which brings the following changes:
   - Added hardware acceleration support for the X server.
