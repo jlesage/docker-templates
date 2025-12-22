@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-imgburn/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://www.imgburn.com</Project>
-  <Date>2025-12-20</Date>
+  <Date>2025-12-22</Date>
   <Changes>
+###v25.12.3 (2025-12-22)
+- Updated baseimage to version 4.10.5, which brings the following changes:
+  - Fixed key combinations in some Linux applications broken by the Command key remapping.
+
 ###v25.12.2 (2025-12-20)
 - Updated baseimage to version 4.10.4, which brings the following changes:
   - Web audio is now automatically re-enabled upon first user interaction.
