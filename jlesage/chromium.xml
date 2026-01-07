@@ -38,7 +38,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   <Changes>
 ###v26.01.1 (2026-01-04)
 - Updated baseimage to version 4.10.6, which brings the following changes:
-  - On Mac devices, fixed conversion of Command+<Key> shortcuts to the proper Alt+<Key> shortcuts for Linux applications.
+  - On Mac devices, fixed conversion of Command+&lt;Key&gt; shortcuts to the proper Alt+&lt;Key&gt; shortcuts for Linux applications.
 
 ###v25.12.3 (2025-12-22)
 - Updated baseimage to version 4.10.5, which brings the following changes:
