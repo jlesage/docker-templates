@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.chromium.org/Home/</Project>
-  <Date>2026-01-04</Date>
+  <Date>2026-01-23</Date>
   <Changes>
+###v26.01.2 (2026-01-23)
+- Updated Chromium to version 144.0.7559.96-r0.
+- Added an environment variable that allows Chromium to launch in application mode with a specified website.
+
 ###v26.01.1 (2026-01-04)
 - Updated baseimage to version 4.10.6, which brings the following changes:
   - On Mac devices, fixed conversion of Command+&lt;Key&gt; shortcuts to the proper Alt+&lt;Key&gt; shortcuts for Linux applications.
