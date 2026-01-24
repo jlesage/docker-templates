@@ -183,6 +183,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
       <Name>VNC_LISTENING_PORT</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>CHROMIUM_APP_URL</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/chromium" Mode="rw" Description="This location stores the application's configuration, state, logs, and any files requiring persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
@@ -208,6 +213,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system checks if web or VNC certificates have changed. When a change is detected, affected services are automatically restarted. A value of &quot;0&quot; disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Application mode URL" Target="CHROMIUM_APP_URL" Default="" Mode="" Description="URL of the website to launch in a dedicated, minimalist window without browser UI components like the address bar or tabs, essentially running it as a desktop application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7835" Mode="tcp" Description="Port to access the application's GUI via the web interface. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7935" Mode="tcp" Description="Port to access the application's GUI via VNC protocol. Optional if no VNC client is used. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
