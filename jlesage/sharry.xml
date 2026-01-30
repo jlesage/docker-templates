@@ -121,5 +121,5 @@ For a complete documentation, visit https://github.com/jlesage/docker-sharry/blo
   <Config Name="Admin Account Username" Target="SHARRY_BACKEND_AUTH_FIXED_USER" Default="admin" Mode="" Description="Username of the built-in administrator account. Setting this variable to an empty value disables this account." Type="Variable" Display="always" Required="False" Mask="False"/>
   <Config Name="Admin Account Password" Target="SHARRY_BACKEND_AUTH_FIXED_PASSWORD" Default="changeme" Mode="" Description="Password of the built-in administrator account. Setting this variable to an empty value disables this account." Type="Variable" Display="always" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="Web UI Port" Target="9090" Default="7828" Mode="tcp" Description="Port used to access the web interface of the application. NOTE: This setting is relevant only when the Network Type is set to &quot;Bridge&quot;." Type="Port" Display="always" Required="True" Mask="False"/>
+  <Config Name="Web UI Port" Target="9090" Default="7828" Mode="tcp" Description="Port used to access the web interface of the application. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="always" Required="True" Mask="False"/>
 </Container>
