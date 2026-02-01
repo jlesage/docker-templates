@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.chromium.org/Home/</Project>
-  <Date>2026-01-23</Date>
+  <Date>2026-02-01</Date>
   <Changes>
+###v26.02.1 (2026-02-01)
+- Updated Chromium to version 144.0.7559.109-r0.
+
 ###v26.01.2 (2026-01-23)
 - Updated Chromium to version 144.0.7559.96-r0.
 - Added an environment variable that allows Chromium to launch in application mode with a specified website.
