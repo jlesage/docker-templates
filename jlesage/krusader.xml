@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-krusader/b
   </Description>
   <Beta>False</Beta>
   <Project>https://krusader.org</Project>
-  <Date>2026-01-24</Date>
+  <Date>2026-02-06</Date>
   <Changes>
+###v26.02.1 (2026-02-06)
+- Fixed an issue where some UI icons were missing.
+- Added unrar to the available tools.
+
 ###v26.01.1 (2026-01-24)
 - Initial release.
 
