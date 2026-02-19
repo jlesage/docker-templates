@@ -34,8 +34,25 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.chromium.org/Home/</Project>
-  <Date>2026-02-01</Date>
+  <Date>2026-02-19</Date>
   <Changes>
+###v26.02.3 (2026-02-19)
+- Updated baseimage to version 4.11.1, bringing the following changes:
+  - Fixed issue where taking ownership of directory would fail.
+
+###v26.02.2 (2026-02-18)
+- Updated Chromium to version 144.0.7559.132-r1.
+- Updated baseimage to version 4.11.0, bringing the following improvements:
+  - Added a web terminal providing shell access to the container.
+  - Fixed audio being paused when switching to another browser tab.
+  - Web file manager is now displayed in a modal window.
+  - Fixed several web file manager issues:
+    - Uploading zero-byte files no longer fails.
+    - Interrupted uploads no longer interfere with other uploads.
+    - Error reporting is now more accurate.
+  - Improved web services server stability and reliability.
+  - Updated TigerVNC to 1.16.0 and X server to 21.1.21.
+
 ###v26.02.1 (2026-02-01)
 - Updated Chromium to version 144.0.7559.109-r0.
 
@@ -147,6 +164,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
     </Variable>
     <Variable>
       <Value>0</Value>
+      <Name>WEB_TERMINAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
       <Name>WEB_AUTHENTICATION</Name>
       <Mode/>
     </Variable>
@@ -206,17 +228,18 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1920" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="1080" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to `1`, enables dark mode for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to `1`, enables audio support, allowing audio produced by the application to play through the browser. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web File Manager" Target="WEB_FILE_MANAGER" Default="0" Mode="" Description="When set to `1`, enables the web file manager, allowing interaction with files inside the container through a web browser, supporting operations like renaming, deleting, uploading, and downloading. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to `1`, enables audio support, allowing audio produced by the application to play through the browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web File Manager" Target="WEB_FILE_MANAGER" Default="0" Mode="" Description="When set to `1`, enables the web file manager, allowing interaction with files inside the container through a web browser, supporting operations like renaming, deleting, uploading, and downloading." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web File Manager Allowed Paths" Target="WEB_FILE_MANAGER_ALLOWED_PATHS" Default="AUTO" Mode="" Description="Comma-separated list of paths within the container that the file manager can access. By default, the container's entire filesystem is not accessible, and this variable specifies allowed paths. If set to `AUTO`, commonly used folders and those mapped to the container are automatically allowed. The value `ALL` allows access to all paths (no restrictions)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web File Manager Denied Paths" Target="WEB_FILE_MANAGER_DENIED_PATHS" Default="None" Mode="" Description="Comma-separated list of paths within the container that the file manager cannot access. A denied path takes precedence over an allowed path." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Desktop Notifications" Target="WEB_NOTIFICATION" Default="0" Mode="" Description="When set to `1`, enables the web notification service, allowing the browser to display desktop notifications from the application. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to `1`, protects the application's GUI with a login page when accessed via a web browser. Access is granted only with valid credentials. Note that this feature is not supported for VNC clients." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Desktop Notifications" Target="WEB_NOTIFICATION" Default="0" Mode="" Description="When set to `1`, enables the web notification service, allowing the browser to display desktop notifications from the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Terminal" Target="WEB_TERMINAL" Default="0" Mode="" Description="When set to `1`, enables access to a terminal from the web interface. It is strongly recommended to configure the container with secure web access (HTTPS)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to `1`, protects the application's GUI with a login page when accessed via a web browser. Access is granted only with valid credentials." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="Lifetime of a token, in hours. A token is assigned to the user after successful login. As long as the token is valid, the user can access the application's GUI without logging in again. Once the token expires, the login page is displayed again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username for web authentication. Provides a quick and easy way to configure credentials for a single user. For more secure configuration or multiple users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="Optional password for web authentication. Provides a quick and easy way to configure credentials for a single user. For more secure configuration or multiple users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="0" Mode="" Description="When set to `1`, uses an encrypted connection to access the application's GUI (via web browser or VNC client)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
-  <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used for encrpyted VNC connection. Possible values are `SSL` or `TLS`." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Secure Connection VNC Method" Target="SECURE_CONNECTION_VNC_METHOD" Default="SSL" Mode="" Description="Method used for encrypted VNC connection. Possible values are `SSL` or `TLS`." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system checks if web or VNC certificates have changed. When a change is detected, affected services are automatically restarted. A value of `0` disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
