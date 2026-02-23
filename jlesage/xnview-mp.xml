@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-xnview-mp/
   </Description>
   <Beta>False</Beta>
   <Project>https://www.xnview.com/en/xnview/</Project>
-  <Date>2026-02-19</Date>
+  <Date>2026-02-22</Date>
   <Changes>
+###v26.02.3 (2026-02-22)
+- Updated baseimage to version 4.11.2, bringing the following changes
+  - Fixed X server failing to find the appropriate Mesa driver on some setups.
+
 ###v26.02.2 (2026-02-19)
 - Updated baseimage to version 4.11.1, bringing the following changes:
   - Fixed issue where taking ownership of directory would fail.
