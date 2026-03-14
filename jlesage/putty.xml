@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-putty/blob
   </Description>
   <Beta>False</Beta>
   <Project>https://www.putty.org</Project>
-  <Date>2026-02-22</Date>
+  <Date>2026-03-14</Date>
   <Changes>
+###v26.03.1 (2026-03-14)
+- Updated baseimage to version 4.11.3, bringing the following changes:
+  - Enable xcompmgr output only when debug is enabled.
+  - Enhanced self-signed certificates by including the Subject Alternative Name (SAN) and using the container hostname instead of a dummy domain name.
+
 ###v26.02.2 (2026-02-22)
 - Updated baseimage to version 4.11.2, bringing the following changes
   - Fixed X server failing to find the appropriate Mesa driver on some setups.
