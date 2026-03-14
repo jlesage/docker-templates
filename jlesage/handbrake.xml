@@ -38,8 +38,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-handbrake/
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2026-03-13</Date>
+  <Date>2026-03-14</Date>
   <Changes>
+###v26.03.2 (2026-03-14)
+- Updated baseimage to version 4.11.3, bringing the following changes:
+  - Enable xcompmgr output only when debug is enabled.
+  - Enhanced self-signed certificates by including the Subject Alternative Name (SAN) and using the container hostname instead of a dummy domain name.
+
 ###v26.03.1 (2026-03-13)
 - Updated HandBrake to version 1.11.0.
 - Updated libva to version 2.23.0.
