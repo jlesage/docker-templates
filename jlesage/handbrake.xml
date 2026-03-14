@@ -38,8 +38,15 @@ For a complete documentation, visit https://github.com/jlesage/docker-handbrake/
   </Description>
   <Beta>False</Beta>
   <Project>https://handbrake.fr</Project>
-  <Date>2026-02-22</Date>
+  <Date>2026-03-13</Date>
   <Changes>
+###v26.03.1 (2026-03-13)
+- Updated HandBrake to version 1.11.0.
+- Updated libva to version 2.23.0.
+- Updated gmmlib to version 22.9.0.
+- Updated Intel Media Driver to version 25.4.6.
+- Updated Intel OneVPL GPU Runtime to version 25.4.6.
+
 ###v26.02.2 (2026-02-22)
 - Updated baseimage to version 4.11.2, bringing the following changes
   - Fixed X server failing to find the appropriate Mesa driver on some setups.
