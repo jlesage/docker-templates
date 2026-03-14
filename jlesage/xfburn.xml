@@ -42,7 +42,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-xfburn/blo
   - Enhanced self-signed certificates by including the Subject Alternative Name (SAN) and using the container hostname instead of a dummy domain name.
 
 ###v26.02.3 (2026-02-22)
-- Updated baseimage to version 4.11.2, bringing the following changes
+- Updated baseimage to version 4.11.2, bringing the following changes:
   - Fixed X server failing to find the appropriate Mesa driver on some setups.
 
 ###v26.02.2 (2026-02-19)
