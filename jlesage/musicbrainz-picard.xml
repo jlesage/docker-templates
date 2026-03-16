@@ -105,7 +105,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-musicbrain
   - Updated web UI components (Bootstrap).
   - Do not ask VNC password when accessing the web interface and web authentication is enabled.
 
-###v25.04.1 (2005-04-25)
+###v25.04.1 (2025-04-25)
 - Initial release.
 
   </Changes>
