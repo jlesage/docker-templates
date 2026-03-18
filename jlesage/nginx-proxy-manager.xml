@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2026-03-15</Date>
+  <Date>2026-03-18</Date>
   <Changes>
+###v26.03.2 (2026-03-18)
+- Fixed an issue where connection from Cloudflare would fail during the SSL handshake.
+- Perform a backup of the database when upgrading to a new version of Nginx Proxy Manager.
+
 ###v26.03.1 (2026-03-15)
 - Updated Nginx Proxy Manager to version 2.14.0.
 - Certbot plugins are now pre-installed with their own virtual environment.
