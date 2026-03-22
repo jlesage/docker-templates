@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-jmkvproped
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/BrunoReX/jmkvpropedit</Project>
-  <Date>2026-03-20</Date>
+  <Date>2026-03-21</Date>
   <Changes>
+###v26.03.3 (2026-03-21)
+- Fixed an issue where the `.java` folder would be unexpectedly created under the storage directory.
+
 ###v26.03.2 (2026-03-20)
 - Files now sort alphabetically when added.
 
