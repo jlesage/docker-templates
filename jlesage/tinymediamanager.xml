@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-tinymediam
   </Description>
   <Beta>False</Beta>
   <Project>https://www.tinymediamanager.org</Project>
-  <Date>2026-03-18</Date>
+  <Date>2026-03-22</Date>
   <Changes>
+###v26.03.3 (2026-03-22)
+- Updated tinyMediaManager to version 5.2.10.
+
 ###v26.03.2 (2026-03-18)
 - Updated tinyMediaManager to version 5.2.9.
 
