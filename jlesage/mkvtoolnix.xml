@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-mkvtoolnix
   </Description>
   <Beta>False</Beta>
   <Project>https://mkvtoolnix.download</Project>
-  <Date>2026-03-14</Date>
+  <Date>2026-04-11</Date>
   <Changes>
+###v26.04.1 (2026-04-11)
+- Updated MKVToolNix to version 98.0.
+
 ###v26.03.1 (2026-03-14)
 - Updated baseimage to version 4.11.3, bringing the following changes:
   - Enable xcompmgr output only when debug is enabled.
