@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.chromium.org/Home/</Project>
-  <Date>2026-03-14</Date>
+  <Date>2026-04-11</Date>
   <Changes>
+###v26.04.1 (2026-04-11)
+- Updated Chromium to version 146.0.7680.177-r0.
+
 ###v26.03.2 (2026-03-14)
 - Updated baseimage to version 4.11.3, bringing the following changes:
   - Enable xcompmgr output only when debug is enabled.
