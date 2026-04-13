@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-cloudberry
   </Description>
   <Beta>False</Beta>
   <Project>https://www.msp360.com/backup/</Project>
-  <Date>2026-03-14</Date>
+  <Date>2026-04-12</Date>
   <Changes>
+###v26.04.1 (2026-04-12)
+- Updated MSP360 Backup to version 4.5.0.31.
+
 ###v26.03.1 (2026-03-14)
 - Updated baseimage to version 4.11.3, bringing the following changes:
   - Enable xcompmgr output only when debug is enabled.
