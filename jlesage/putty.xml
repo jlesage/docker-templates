@@ -33,7 +33,7 @@ The container is built against Alpine Linux to provide an efficient image in ter
 For a complete documentation, visit https://github.com/jlesage/docker-putty/blob/master/README.md.
   </Description>
   <Beta>False</Beta>
-  <Project>https://www.putty.org</Project>
+  <Project>https://putty.software</Project>
   <Date>2026-03-14</Date>
   <Changes>
 ###v26.03.1 (2026-03-14)
