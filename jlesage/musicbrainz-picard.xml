@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-musicbrain
   </Description>
   <Beta>False</Beta>
   <Project>https://picard.musicbrainz.org</Project>
-  <Date>2026-05-02</Date>
+  <Date>2026-05-14</Date>
   <Changes>
+###v26.05.2 (2026-05-14)
+- Fixed opening of media files containing spaces or special characters in their path.
+
 ###v26.05.1 (2026-05-02)
 - Added the ability to play media files.
 
