@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2026-03-18</Date>
+  <Date>2026-05-23</Date>
   <Changes>
+###v26.05.1 (2026-05-23)
+- Fixed an issue causing some plugins to fail to run.
+
 ###v26.03.2 (2026-03-18)
 - Fixed an issue where connection from Cloudflare would fail during the SSL handshake.
 - Perform a backup of the database when upgrading to a new version of Nginx Proxy Manager.
