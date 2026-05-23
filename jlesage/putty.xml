@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-putty/blob
   </Description>
   <Beta>False</Beta>
   <Project>https://putty.software</Project>
-  <Date>2026-03-14</Date>
+  <Date>2026-05-23</Date>
   <Changes>
+###v26.05.1 (2026-05-23)
+- Updated PuTTY to version 0.84.
+
 ###v26.03.1 (2026-03-14)
 - Updated baseimage to version 4.11.3, bringing the following changes:
   - Enable xcompmgr output only when debug is enabled.
