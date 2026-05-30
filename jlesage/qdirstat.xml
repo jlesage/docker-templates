@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-qdirstat/b
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/shundhammer/qdirstat</Project>
-  <Date>2026-03-14</Date>
+  <Date>2026-05-29</Date>
   <Changes>
+###v26.05.1 (2026-05-29)
+- Added the ability to automatically scan a folder on startup.
+
 ###v26.03.1 (2026-03-14)
 - Updated baseimage to version 4.11.3, bringing the following changes:
   - Enable xcompmgr output only when debug is enabled.
@@ -384,6 +387,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-qdirstat/b
       <Name>VNC_LISTENING_PORT</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>QDIRSTAT_STARTUP_SCAN_FOLDER</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/qdirstat" Mode="rw" Description="Stores the application's configuration, state, logs, and any files requiring persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
@@ -411,6 +419,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-qdirstat/b
   <Config Name="Secure Connection Certificate Check Interval" Target="SECURE_CONNECTION_CERTS_CHECK_INTERVAL" Default="60" Mode="" Description="Interval, in seconds, at which the system checks if web or VNC certificates have changed. When a change is detected, affected services are automatically restarted. A value of `0` disables the check." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Startup Scan Folder" Target="QDIRSTAT_STARTUP_SCAN_FOLDER" Default="" Mode="" Description="Path to the folder inside the container that QDirStat scans automatically on startup." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7815" Mode="tcp" Description="Port to access the application's GUI via the web interface. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7915" Mode="tcp" Description="Port to access the application's GUI via VNC protocol. Optional if no VNC client is used. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
