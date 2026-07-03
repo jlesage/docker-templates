@@ -34,8 +34,22 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.chromium.org/Home/</Project>
-  <Date>2026-04-11</Date>
+  <Date>2026-07-03</Date>
   <Changes>
+###v26.07.1 (2026-07-03)
+- Updated Chromium to version 149.0.7827.200-r0.
+- Added support for the Chromium remote debugging interface.
+- Added the ability to specify custom arguments to Chromium.
+- Updated baseimage to version 4.12.5, bringing the following changes:
+  - Added the ability to run the container with read-only filesystem.
+  - Added the ability to configure the shell used by the web terminal.
+  - Enabled window shadows to improve support of GTK4 applications.
+  - Switched to fastcompmgr as the X compositor.
+  - Updated TigerVNC to version 1.16.2.
+  - Updated noVNC to version 1.7.0.
+  - Improved web authentication compatibility with reverse proxies by using relative redirects.
+  - Force usage of the local X display to avoid connecting to the host X server in Docker host network mode.
+
 ###v26.04.1 (2026-04-11)
 - Updated Chromium to version 146.0.7680.177-r0.
 
@@ -106,6 +120,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
       <Port>
         <HostPort>7935</HostPort>
         <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9222</HostPort>
+        <ContainerPort>9222</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -184,6 +203,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
       <Mode/>
     </Variable>
     <Variable>
+      <Value>/bin/sh</Value>
+      <Name>WEB_TERMINAL_SHELL_PATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>0</Value>
       <Name>WEB_AUTHENTICATION</Name>
       <Mode/>
@@ -233,6 +257,21 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
       <Name>CHROMIUM_APP_URL</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>CHROMIUM_REMOTE_DEBUGGING</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>9222</Value>
+      <Name>CHROMIUM_REMOTE_DEBUGGING_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>CHROMIUM_CUSTOM_ARGS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/chromium" Mode="rw" Description="Stores the application's configuration, state, logs, and any files requiring persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
@@ -250,6 +289,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   <Config Name="Web File Manager Denied Paths" Target="WEB_FILE_MANAGER_DENIED_PATHS" Default="None" Mode="" Description="Comma-separated list of paths within the container that the file manager cannot access. A denied path takes precedence over an allowed path." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Desktop Notifications" Target="WEB_NOTIFICATION" Default="0" Mode="" Description="When set to `1`, enables the web notification service, allowing the browser to display desktop notifications from the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Terminal" Target="WEB_TERMINAL" Default="0" Mode="" Description="When set to `1`, enables access to a terminal from the web interface. It is strongly recommended to configure the container with secure web access (HTTPS)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Terminal" Target="WEB_TERMINAL_SHELL_PATH" Default="/bin/sh" Mode="" Description="The shell used by the web terminal." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to `1`, protects the application's GUI with a login page when accessed via a web browser. Access is granted only with valid credentials." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="Lifetime of a token, in hours. A token is assigned to the user after successful login. As long as the token is valid, the user can access the application's GUI without logging in again. Once the token expires, the login page is displayed again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username for web authentication. Provides a quick and easy way to configure credentials for a single user. For more secure configuration or multiple users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
@@ -260,7 +300,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   <Config Name="Web Listening Port (Non-Bridge Network Type)" Target="WEB_LISTENING_PORT" Default="5800" Mode="" Description="Port used by the web server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="VNC Listening Port (Non-Bridge Network Type)" Target="VNC_LISTENING_PORT" Default="5900" Mode="" Description="Port used by the VNC server to serve the application's GUI. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Application mode URL" Target="CHROMIUM_APP_URL" Default="" Mode="" Description="URL of the website to launch in a dedicated, minimalist window without browser UI components like the address bar or tabs, essentially running it as a desktop application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Remote Debugging" Target="CHROMIUM_REMOTE_DEBUGGING" Default="0" Mode="" Description="When set to `1`, enables the Chrome DevTools Protocol (CDP) interface, which allows external tools to inspect and control the browser instance." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Remote Debugging Interface Listen Port" Target="CHROMIUM_REMOTE_DEBUGGING_PORT" Default="9222" Mode="" Description="Port on which the remote debugging interface listens." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Custom Arguments" Target="CHROMIUM_CUSTOM_ARGS" Default="" Mode="" Description="Custom arguments to pass to Chromium." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI (Bridge Network Type)" Target="5800" Default="7835" Mode="tcp" Description="Port to access the application's GUI via the web interface. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="advanced-hide" Required="True" Mask="False"/>
   <Config Name="VNC Port for GUI (Bridge Network Type)" Target="5900" Default="7935" Mode="tcp" Description="Port to access the application's GUI via VNC protocol. Optional if no VNC client is used. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="advanced-hide" Required="False" Mask="False"/>
+  <Config Name="Remote Debugging Interface Port" Target="9222" Default="9222" Mode="tcp" Description="Port to access the Chromium remote debugging interface. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="advanced" Required="False" Mask="False"/>
 </Container>
