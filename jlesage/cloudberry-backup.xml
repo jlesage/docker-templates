@@ -34,12 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-cloudberry
   </Description>
   <Beta>False</Beta>
   <Project>https://www.msp360.com/backup/</Project>
-  <Date>2026-07-04</Date>
+  <Date>2026-07-06</Date>
   <Changes>
+###v26.07.2 (2026-07-06)
+- Fixed an issue creating the user required by the MSP360 Backup web interface.
+
 ###v26.07.1 (2026-07-04)
 - Updated MSP360 Backup to version 4.5.1.120.
-- Added support for the Chromium remote debugging interface.
-- Added the ability to specify custom arguments to Chromium.
 - Updated baseimage to version 4.12.5, bringing the following changes:
   - Added the ability to run the container with read-only filesystem.
   - Added the ability to configure the shell used by the web terminal.
