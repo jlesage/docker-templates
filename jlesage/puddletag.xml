@@ -34,8 +34,20 @@ For a complete documentation, visit https://github.com/jlesage/docker-puddletag/
   </Description>
   <Beta>False</Beta>
   <Project>https://docs.puddletag.net/index.html</Project>
-  <Date>2026-03-15</Date>
+  <Date>2026-07-13</Date>
   <Changes>
+###v26.07.1 (2026-07-13)
+- Updated baseimage to version 4.12.6, bringing the following changes:
+  - Added the ability to run the container with read-only filesystem.
+  - Added the ability to configure the shell used by the web terminal.
+  - Enabled window shadows to improve support of GTK4 applications.
+  - Switched to fastcompmgr as the X compositor.
+  - Updated TigerVNC to version 1.16.2.
+  - Updated noVNC to version 1.7.0.
+  - Improved web authentication compatibility with reverse proxies by using relative redirects.
+  - Force usage of the local X display to avoid connecting to the host X server in Docker host network mode.
+  - Fixed regression causing container startup failure when the container engine automatically mounts files under /run.
+
 ###v26.03.1 (2026-03-15)
 - Initial release.
 
@@ -134,6 +146,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-puddletag/
       <Mode/>
     </Variable>
     <Variable>
+      <Value>/bin/sh</Value>
+      <Name>WEB_TERMINAL_SHELL_PATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>0</Value>
       <Name>WEB_AUTHENTICATION</Name>
       <Mode/>
@@ -196,6 +213,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-puddletag/
   <Config Name="Web File Manager Denied Paths" Target="WEB_FILE_MANAGER_DENIED_PATHS" Default="None" Mode="" Description="Comma-separated list of paths within the container that the file manager cannot access. A denied path takes precedence over an allowed path." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Desktop Notifications" Target="WEB_NOTIFICATION" Default="0" Mode="" Description="When set to `1`, enables the web notification service, allowing the browser to display desktop notifications from the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Terminal" Target="WEB_TERMINAL" Default="0" Mode="" Description="When set to `1`, enables access to a terminal from the web interface. It is strongly recommended to configure the container with secure web access (HTTPS)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Terminal" Target="WEB_TERMINAL_SHELL_PATH" Default="/bin/sh" Mode="" Description="The shell used by the web terminal." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="0" Mode="" Description="When set to `1`, protects the application's GUI with a login page when accessed via a web browser. Access is granted only with valid credentials." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Token Validity Time" Target="WEB_AUTHENTICATION_TOKEN_VALIDITY_TIME" Default="24" Mode="" Description="Lifetime of a token, in hours. A token is assigned to the user after successful login. As long as the token is valid, the user can access the application's GUI without logging in again. Once the token expires, the login page is displayed again." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Authentication Username" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="Optional username for web authentication. Provides a quick and easy way to configure credentials for a single user. For more secure configuration or multiple users, see the documentation." Type="Variable" Display="advanced" Required="False" Mask="False"/>
