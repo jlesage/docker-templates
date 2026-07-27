@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2026-07-22</Date>
+  <Date>2026-07-27</Date>
   <Changes>
+###v26.07.2 (2026-07-27)
+- Fixed an issue that prevented the Route 53 DNS plugin from functioning properly.
+
 ###v26.07.1 (2026-07-22)
 - Updated Nginx Proxy Manager to version 2.15.1.
 - Updated OpenResty to version 1.29.2.5.
