@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-krokiet/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2026-08-11</Date>
+  <Date>2026-08-17</Date>
   <Changes>
+###v26.08.2 (2026-08-17)
+- Updated baseimage to version 4.13.2.
+
 ###v26.08.1 (2026-08-11)
 - Updated baseimage to version 4.13.1, bringing the following changes:
   - Host clipboard sync can now be controlled via environment variable and web UI toggle.
