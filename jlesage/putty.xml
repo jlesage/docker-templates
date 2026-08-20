@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-putty/blob
   </Description>
   <Beta>False</Beta>
   <Project>https://putty.software</Project>
-  <Date>2026-08-17</Date>
+  <Date>2026-08-20</Date>
   <Changes>
+###v26.08.3 (2026-08-20)
+- Updated PuTTY to version 0.85.
+
 ###v26.08.2 (2026-08-17)
 - Updated baseimage to version 4.13.2.
 
