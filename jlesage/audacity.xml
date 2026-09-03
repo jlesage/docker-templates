@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-audacity/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.audacityteam.org</Project>
-  <Date>2026-08-17</Date>
+  <Date>2026-09-03</Date>
   <Changes>
+###v26.09.1 (2026-09-03)
+- Updated Audacity to version 3.7.9.
+
 ###v26.08.2 (2026-08-17)
 - Updated baseimage to version 4.13.2.
 
