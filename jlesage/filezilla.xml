@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-filezilla/
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org</Project>
-  <Date>2026-08-17</Date>
+  <Date>2026-09-17</Date>
   <Changes>
+###v26.09.1 (2026-09-17)
+- Updated FileZilla to version 3.71.1.
+- Updated libfilezilla to version 0.57.0.
+- Updated fzssh to version 1.4.0.
+
 ###v26.08.2 (2026-08-17)
 - Updated baseimage to version 4.13.2.
 
