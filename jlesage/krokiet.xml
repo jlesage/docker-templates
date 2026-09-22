@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-krokiet/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://github.com/qarmin/czkawka</Project>
-  <Date>2026-09-15</Date>
+  <Date>2026-09-22</Date>
   <Changes>
+###v26.09.2 (2026-09-22)
+- Updated baseimage to version 4.14.0, bringing the following changes:
+  - The web interface can now be installed as an application on a computer or phone.
+  - Fixed host clipboard synchronization disabling itself.
+
 ###v26.09.1 (2026-09-15)
 - Updated Krokiet to version 12.0.2.
 
