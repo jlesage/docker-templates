@@ -42,8 +42,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-makemkv/bl
   </Description>
   <Beta>False</Beta>
   <Project>https://www.makemkv.com</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-09-23</Date>
   <Changes>
+###v26.09.2 (2026-09-23)
+- Updated MakeMKV to version 2.0.0.
+
 ###v26.09.1 (2026-09-22)
 - Updated baseimage to version 4.14.0, bringing the following changes:
   - The web interface can now be installed as an application on a computer or phone.
