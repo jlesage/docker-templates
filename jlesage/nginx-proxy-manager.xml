@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-10-05</Date>
   <Changes>
+###v26.10.1 (2026-10-05)
+- Updated Nginx Proxy Manager to version 2.16.0.
+
 ###v26.09.1 (2026-09-22)
 - Updated baseimage to version 3.11.12.
 
@@ -387,6 +390,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
       <Name>IP_RANGES_FETCH_ENABLED</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>8181</Value>
+      <Name>NPM_ADMIN_PORT</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/nginx-proxy-manager" Mode="rw" Description="Stores the application's configuration, state, logs, and any files requiring persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
@@ -399,8 +407,9 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   <Config Name="Disable IPv6" Target="DISABLE_IPV6" Default="0" Mode="" Description="When set to `1`, IPv6 support is disabled. This is needed when IPv6 is not enabled/supported on the host." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Disable NGINX Resolver" Target="DISABLE_RESOLVER" Default="0" Mode="" Description="When set to `1`, usage of NGINX resolver is disabled." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Fetch IP Ranges" Target="IP_RANGES_FETCH_ENABLED" Default="1" Mode="" Description="When set to `1`, official Cloudflare and CloudFront IP ranges are periodically fetched to define a trusted list. This ensures the system recognizes these providers as legitimate intermediaries, allowing it use the original client IP from request headers instead of the provider's IP." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Admin Listening Port (Non-Bridge Network Type)" Target="NPM_ADMIN_PORT" Default="8181" Mode="" Description="Port used by the administration web interface. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
-  <Config Name="Web UI Port" Target="8181" Default="7818" Mode="tcp" Description="Port used to access the web interface of the application. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="always" Required="True" Mask="False"/>
+  <Config Name="Web UI Port" Target="8181" Default="7818" Mode="tcp" Description="Port used to access the administration web interface. For non-default bridge networks, the port can be changed with the `NPM_ADMIN_PORT` environment variable. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="always" Required="True" Mask="False"/>
   <Config Name="HTTP Port" Target="8080" Default="1880" Mode="tcp" Description="Port used to serve HTTP requests. NOTE: Your router should be configured to forward port 80 to this port. If your router doesn't allow setting the destination/internal IP address, this *must* be set to 80. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="always" Required="True" Mask="False"/>
   <Config Name="HTTPs Port" Target="4443" Default="18443" Mode="tcp" Description="Port used to serve HTTPs requests. NOTE: Your router should be configured to forward port 443 to this port. If your router doesn't allow setting the destination/internal IP address, this *must* be set to 443. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="always" Required="True" Mask="False"/>
 </Container>
