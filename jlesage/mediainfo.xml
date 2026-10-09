@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-mediainfo/
   </Description>
   <Beta>False</Beta>
   <Project>https://mediaarea.net/en/MediaInfo</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-10-09</Date>
   <Changes>
+###v26.10.1 (2026-10-09)
+- Updated MediaInfo to version 26.10.
+
 ###v26.09.1 (2026-09-22)
 - Updated baseimage to version 4.14.0, bringing the following changes:
   - The web interface can now be installed as an application on a computer or phone.
