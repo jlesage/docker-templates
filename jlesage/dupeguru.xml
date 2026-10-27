@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-dupeguru/b
   </Description>
   <Beta>False</Beta>
   <Project>https://dupeguru.voltaicideas.net</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-10-27</Date>
   <Changes>
+###v26.10.1 (2026-10-27)
+- Fixed a dupeGuru bug that could delete the original file when replacing duplicates with symlinks.
+
 ###v26.09.1 (2026-09-22)
 - Updated baseimage to version 4.14.0, bringing the following changes:
   - The web interface can now be installed as an application on a computer or phone.
