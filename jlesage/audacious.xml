@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-audacious/
   </Description>
   <Beta>False</Beta>
   <Project>https://audacious-media-player.org</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-11-05</Date>
   <Changes>
+###v26.11.1 (2026-11-05)
+- Updated Audacious to version 4.6.2.
+
 ###v26.09.1 (2026-09-22)
 - Updated baseimage to version 4.14.0, bringing the following changes:
   - The web interface can now be installed as an application on a computer or phone.
