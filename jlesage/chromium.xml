@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-chromium/b
   </Description>
   <Beta>False</Beta>
   <Project>https://www.chromium.org/Home/</Project>
-  <Date>2026-10-28</Date>
+  <Date>2026-11-20</Date>
   <Changes>
+###v26.11.1 (2026-11-20)
+- Updated Chromium to version 156.0.8078.79-r0.
+
 ###v26.10.1 (2026-10-28)
 - Updated Chromium to version 155.0.8059.84-r0.
 
