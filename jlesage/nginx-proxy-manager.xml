@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2026-10-25</Date>
+  <Date>2026-11-20</Date>
   <Changes>
+###v26.11.1 (2026-11-20)
+- Updated Nginx Proxy Manager to version 2.17.1.
+- Updated OpenResty to version 1.31.8.1.
+- Updated Nginx bundled with OpenResty to version 1.31.9.
+
 ###v26.10.2 (2026-10-25)
 - Updated installed packages to get latest security fixes.
 
