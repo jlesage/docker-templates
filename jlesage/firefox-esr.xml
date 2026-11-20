@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-firefox-es
   </Description>
   <Beta>False</Beta>
   <Project>https://www.mozilla.org/en-CA/firefox/enterprise/</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-11-20</Date>
   <Changes>
+###v26.11.1 (2026-11-20)
+- Updated Firefox ESR to version 153.7.0-r0.
+
 ###v26.09.1 (2026-09-22)
 - Updated baseimage to version 4.14.0, bringing the following changes:
   - The web interface can now be installed as an application on a computer or phone.
