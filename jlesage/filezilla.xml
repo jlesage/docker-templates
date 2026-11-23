@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-filezilla/
   </Description>
   <Beta>False</Beta>
   <Project>https://filezilla-project.org</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-11-23</Date>
   <Changes>
+###v26.11.1 (2026-11-23)
+- Updated FileZilla to version 3.72.1.
+- Updated libfileilla to version 0.57.0.
+- Updated fzssh to version 1.4.0.
+
 ###v26.09.2 (2026-09-22)
 - Updated baseimage to version 4.14.0, bringing the following changes:
   - The web interface can now be installed as an application on a computer or phone.
