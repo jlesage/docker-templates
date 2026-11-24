@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-musicbrain
   </Description>
   <Beta>False</Beta>
   <Project>https://picard.musicbrainz.org</Project>
-  <Date>2026-11-04</Date>
+  <Date>2026-11-24</Date>
   <Changes>
+###v26.11.2 (2026-11-24)
+- Updated MusicBrainz Picard to version 3.0.5.
+
 ###v26.11.1 (2026-11-04)
 - Updated MusicBrainz Picard to version 3.0.4.
 
