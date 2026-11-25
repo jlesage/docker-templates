@@ -34,8 +34,21 @@ For a complete documentation, visit https://github.com/jlesage/docker-xfburn/blo
   </Description>
   <Beta>False</Beta>
   <Project>https://docs.xfce.org/apps/xfburn/start</Project>
-  <Date>2026-09-22</Date>
+  <Date>2026-11-25</Date>
   <Changes>
+###v26.11.1 (2026-11-25)
+- Updated baseimage to version 4.15.0, which brings the following changes:
+  - Added web microphone support.
+  - Added H.264 encoding support for a moving screen in the web interface.
+  - Web audio sample rate is now 48000 Hz.
+  - Web audio now skips near-silence.
+  - The web interface now shows the browser's own mouse pointer.
+  - Improved responsiveness of screen updates in the web interface.
+  - Fixed one-pixel border showing above the main application window.
+  - Fixed main window un-maximizing on Alt+drag.
+  - Fixed web audio staying off after the web interface reconnects.
+  - Fixed idle JPEG refresh delaying the next interaction.
+
 ###v26.09.1 (2026-09-22)
 - Updated baseimage to version 4.14.0, bringing the following changes:
   - The web interface can now be installed as an application on a computer or phone.
@@ -227,6 +240,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-xfburn/blo
       <Mode/>
     </Variable>
     <Variable>
+      <Value>0</Value>
+      <Name>WEB_MICROPHONE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>1</Value>
       <Name>WEB_HOST_CLIPBOARD_SYNC</Name>
       <Mode/>
@@ -330,6 +348,7 @@ For a complete documentation, visit https://github.com/jlesage/docker-xfburn/blo
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="1080" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Dark Mode" Target="DARK_MODE" Default="0" Mode="" Description="When set to `1`, enables dark mode for the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Audio" Target="WEB_AUDIO" Default="0" Mode="" Description="When set to `1`, enables audio support, allowing audio produced by the application to play through the browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="Web Microphone" Target="WEB_MICROPHONE" Default="0" Mode="" Description="When set to `1`, enables microphone support, allowing audio captured by the browser to be used by the application." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web Host Clipboard Sync" Target="WEB_HOST_CLIPBOARD_SYNC" Default="1" Mode="" Description="When set to `1`, enables support for synchronizing the host system clipboard with the application inside the container. Actual availability still depends on the browser." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web File Manager" Target="WEB_FILE_MANAGER" Default="0" Mode="" Description="When set to `1`, enables the web file manager, allowing interaction with files inside the container through a web browser, supporting operations like renaming, deleting, uploading, and downloading." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Web File Manager Allowed Paths" Target="WEB_FILE_MANAGER_ALLOWED_PATHS" Default="AUTO" Mode="" Description="Comma-separated list of paths within the container that the file manager can access. By default, the container's entire filesystem is not accessible, and this variable specifies allowed paths. If set to `AUTO`, commonly used folders and those mapped to the container are automatically allowed. The value `ALL` allows access to all paths (no restrictions)." Type="Variable" Display="advanced" Required="False" Mask="False"/>
