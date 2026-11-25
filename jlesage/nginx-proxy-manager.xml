@@ -34,8 +34,13 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   </Description>
   <Beta>False</Beta>
   <Project>https://nginxproxymanager.com</Project>
-  <Date>2026-11-20</Date>
+  <Date>2026-11-25</Date>
   <Changes>
+###v26.11.2 (2026-11-25)
+- Added the ability to configure the HTTP and HTTPS listening ports.
+- Updated OpenResty to version 1.31.9.1.
+- Updated baseimage to version 3.11.13.
+
 ###v26.11.1 (2026-11-20)
 - Updated Nginx Proxy Manager to version 2.17.1.
 - Updated OpenResty to version 1.31.8.1.
@@ -403,6 +408,16 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
       <Name>NPM_ADMIN_PORT</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>8080</Value>
+      <Name>NPM_HTTP_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>4443</Value>
+      <Name>NPM_HTTPS_PORT</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <!-- Volume Mappings -->
   <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/nginx-proxy-manager" Mode="rw" Description="Stores the application's configuration, state, logs, and any files requiring persistency." Type="Path" Display="advanced-hide" Required="True" Mask="False"/>
@@ -416,6 +431,8 @@ For a complete documentation, visit https://github.com/jlesage/docker-nginx-prox
   <Config Name="Disable NGINX Resolver" Target="DISABLE_RESOLVER" Default="0" Mode="" Description="When set to `1`, usage of NGINX resolver is disabled." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Fetch IP Ranges" Target="IP_RANGES_FETCH_ENABLED" Default="1" Mode="" Description="When set to `1`, official Cloudflare and CloudFront IP ranges are periodically fetched to define a trusted list. This ensures the system recognizes these providers as legitimate intermediaries, allowing it use the original client IP from request headers instead of the provider's IP." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <Config Name="Admin Listening Port (Non-Bridge Network Type)" Target="NPM_ADMIN_PORT" Default="8181" Mode="" Description="Port used by the administration web interface. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="HTTP Listening Port (Non-Bridge Network Type)" Target="NPM_HTTP_PORT" Default="8080" Mode="" Description="Port used to serve HTTP requests. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
+  <Config Name="HTTPs Listening Port (Non-Bridge Network Type)" Target="NPM_HTTPS_PORT" Default="4443" Mode="" Description="Port used to serve HTTPs requests. This port is internal to the container and typically does not need to be changed. NOTE: This setting is relevant only when the Network Type is set to something else than Bridge." Type="Variable" Display="advanced" Required="False" Mask="False"/>
   <!-- Port Mappings -->
   <Config Name="Web UI Port" Target="8181" Default="7818" Mode="tcp" Description="Port used to access the administration web interface. For non-default bridge networks, the port can be changed with the `NPM_ADMIN_PORT` environment variable. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="always" Required="True" Mask="False"/>
   <Config Name="HTTP Port" Target="8080" Default="1880" Mode="tcp" Description="Port used to serve HTTP requests. NOTE: Your router should be configured to forward port 80 to this port. If your router doesn't allow setting the destination/internal IP address, this *must* be set to 80. NOTE: This setting is relevant only when the Network Type is set to `Bridge`." Type="Port" Display="always" Required="True" Mask="False"/>
