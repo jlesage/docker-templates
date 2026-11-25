@@ -36,6 +36,9 @@ For a complete documentation, visit https://github.com/jlesage/docker-cloudberry
   <Project>https://www.msp360.com/backup/</Project>
   <Date>2026-11-25</Date>
   <Changes>
+###v26.11.2 (2026-11-25)
+- Updated MSP360 Backup to version 4.5.4.527.
+
 ###v26.11.1 (2026-11-25)
 - Updated baseimage to version 4.15.0, which brings the following changes:
   - Added web microphone support.
