@@ -34,8 +34,12 @@ For a complete documentation, visit https://github.com/jlesage/docker-cloudberry
   </Description>
   <Beta>False</Beta>
   <Project>https://www.msp360.com/backup/</Project>
-  <Date>2026-11-25</Date>
+  <Date>2026-11-26</Date>
   <Changes>
+###v26.11.3 (2026-11-26)
+- Updated baseimage to version 4.15.1, which brings the following changes:
+  - Fixed issue that could affect application window display.
+
 ###v26.11.2 (2026-11-25)
 - Updated MSP360 Backup to version 4.5.4.527.
 
