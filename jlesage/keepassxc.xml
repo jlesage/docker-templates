@@ -34,8 +34,11 @@ For a complete documentation, visit https://github.com/jlesage/docker-keepassxc/
   </Description>
   <Beta>False</Beta>
   <Project>https://keepassxc.org</Project>
-  <Date>2026-11-26</Date>
+  <Date>2026-11-27</Date>
   <Changes>
+###v26.11.3 (2026-11-27)
+- Updated KeePassXC to version 2.8.0.
+
 ###v26.11.2 (2026-11-26)
 - Updated baseimage to version 4.15.1, which brings the following changes:
   - Fixed issue that could affect application window display.
